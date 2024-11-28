@@ -97,144 +97,160 @@ Partial Class ADMAddOFW
         Panel1.Controls.Add(txtbxAddOFWLName)
         Panel1.Controls.Add(txtbxAddOFWMName)
         Panel1.Controls.Add(txtbxAddOFWFName)
-        Panel1.Location = New Point(0, 87)
+        Panel1.Location = New Point(0, 122)
+        Panel1.Margin = New Padding(4, 4, 4, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(827, 415)
+        Panel1.Size = New Size(1317, 581)
         Panel1.TabIndex = 0
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label18.Location = New Point(14, 349)
+        Label18.Location = New Point(18, 489)
+        Label18.Margin = New Padding(4, 0, 4, 0)
         Label18.Name = "Label18"
-        Label18.Size = New Size(78, 15)
+        Label18.Size = New Size(99, 20)
         Label18.TabIndex = 48
         Label18.Text = "OEC Number"
         ' 
         ' txtbxAddOFWOECNum
         ' 
-        txtbxAddOFWOECNum.Location = New Point(14, 367)
+        txtbxAddOFWOECNum.Location = New Point(18, 514)
+        txtbxAddOFWOECNum.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWOECNum.Name = "txtbxAddOFWOECNum"
         txtbxAddOFWOECNum.PlaceholderText = "OEC Number"
-        txtbxAddOFWOECNum.Size = New Size(177, 23)
+        txtbxAddOFWOECNum.Size = New Size(226, 29)
         txtbxAddOFWOECNum.TabIndex = 47
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(14, 299)
+        Label17.Location = New Point(18, 419)
+        Label17.Margin = New Padding(4, 0, 4, 0)
         Label17.Name = "Label17"
-        Label17.Size = New Size(83, 15)
+        Label17.Size = New Size(105, 20)
         Label17.TabIndex = 46
         Label17.Text = "VISA Number"
         ' 
         ' txtbxAddOFWVisaNum
         ' 
-        txtbxAddOFWVisaNum.Location = New Point(14, 317)
+        txtbxAddOFWVisaNum.Location = New Point(18, 444)
+        txtbxAddOFWVisaNum.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWVisaNum.Name = "txtbxAddOFWVisaNum"
         txtbxAddOFWVisaNum.PlaceholderText = "VISA Number"
-        txtbxAddOFWVisaNum.Size = New Size(177, 23)
+        txtbxAddOFWVisaNum.Size = New Size(226, 29)
         txtbxAddOFWVisaNum.TabIndex = 45
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(12, 249)
+        Label16.Location = New Point(15, 349)
+        Label16.Margin = New Padding(4, 0, 4, 0)
         Label16.Name = "Label16"
-        Label16.Size = New Size(103, 15)
+        Label16.Size = New Size(132, 20)
         Label16.TabIndex = 44
         Label16.Text = "Passport Number"
         ' 
         ' txtbxAddOFWPassportNum
         ' 
-        txtbxAddOFWPassportNum.Location = New Point(12, 267)
+        txtbxAddOFWPassportNum.Location = New Point(15, 374)
+        txtbxAddOFWPassportNum.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWPassportNum.Name = "txtbxAddOFWPassportNum"
         txtbxAddOFWPassportNum.PlaceholderText = "Passport Number"
-        txtbxAddOFWPassportNum.Size = New Size(177, 23)
+        txtbxAddOFWPassportNum.Size = New Size(226, 29)
         txtbxAddOFWPassportNum.TabIndex = 43
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(197, 185)
+        Label15.Location = New Point(272, 419)
+        Label15.Margin = New Padding(4, 0, 4, 0)
         Label15.Name = "Label15"
-        Label15.Size = New Size(115, 15)
+        Label15.Size = New Size(144, 20)
         Label15.TabIndex = 42
         Label15.Text = "Emergency Contact"
         ' 
         ' txtbxAddOFWEmrContNum
         ' 
-        txtbxAddOFWEmrContNum.Location = New Point(197, 203)
+        txtbxAddOFWEmrContNum.Location = New Point(272, 444)
+        txtbxAddOFWEmrContNum.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWEmrContNum.Name = "txtbxAddOFWEmrContNum"
         txtbxAddOFWEmrContNum.PlaceholderText = "Emergency Contact"
-        txtbxAddOFWEmrContNum.Size = New Size(177, 23)
+        txtbxAddOFWEmrContNum.Size = New Size(226, 29)
         txtbxAddOFWEmrContNum.TabIndex = 41
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(14, 185)
+        Label14.Location = New Point(272, 349)
+        Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
-        Label14.Size = New Size(99, 15)
+        Label14.Size = New Size(125, 20)
         Label14.TabIndex = 40
         Label14.Text = "Contact Number"
         ' 
         ' txtbxAddOFWContNum
         ' 
-        txtbxAddOFWContNum.Location = New Point(14, 203)
+        txtbxAddOFWContNum.Location = New Point(272, 374)
+        txtbxAddOFWContNum.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWContNum.Name = "txtbxAddOFWContNum"
         txtbxAddOFWContNum.PlaceholderText = "Contact Number"
-        txtbxAddOFWContNum.Size = New Size(177, 23)
+        txtbxAddOFWContNum.Size = New Size(226, 29)
         txtbxAddOFWContNum.TabIndex = 39
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(746, 128)
+        Label13.Location = New Point(253, 255)
+        Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(51, 15)
+        Label13.Size = New Size(64, 20)
         Label13.TabIndex = 38
         Label13.Text = "Zipcode"
         ' 
         ' txtbxAddOFWZip
         ' 
-        txtbxAddOFWZip.Location = New Point(746, 146)
+        txtbxAddOFWZip.Location = New Point(253, 280)
+        txtbxAddOFWZip.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWZip.Name = "txtbxAddOFWZip"
         txtbxAddOFWZip.PlaceholderText = "Zipcode"
-        txtbxAddOFWZip.Size = New Size(72, 23)
+        txtbxAddOFWZip.Size = New Size(91, 29)
         txtbxAddOFWZip.TabIndex = 37
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(563, 128)
+        Label12.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Location = New Point(18, 255)
+        Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
-        Label12.Size = New Size(56, 15)
+        Label12.Size = New Size(69, 20)
         Label12.TabIndex = 36
         Label12.Text = "Province"
         ' 
         ' txtbxAddOFWProv
         ' 
-        txtbxAddOFWProv.Location = New Point(563, 146)
+        txtbxAddOFWProv.Location = New Point(18, 280)
+        txtbxAddOFWProv.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWProv.Name = "txtbxAddOFWProv"
         txtbxAddOFWProv.PlaceholderText = "Province"
-        txtbxAddOFWProv.Size = New Size(177, 23)
+        txtbxAddOFWProv.Size = New Size(226, 29)
         txtbxAddOFWProv.TabIndex = 35
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(380, 128)
+        Label9.Location = New Point(489, 179)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(100, 15)
+        Label9.Size = New Size(129, 20)
         Label9.TabIndex = 34
         Label9.Text = "City/Municipality"
         ' 
@@ -242,9 +258,10 @@ Partial Class ADMAddOFW
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(14, 128)
+        Label10.Location = New Point(18, 179)
+        Label10.Margin = New Padding(4, 0, 4, 0)
         Label10.Name = "Label10"
-        Label10.Size = New Size(43, 15)
+        Label10.Size = New Size(51, 20)
         Label10.TabIndex = 33
         Label10.Text = "Street"
         ' 
@@ -252,43 +269,48 @@ Partial Class ADMAddOFW
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(197, 128)
+        Label11.Location = New Point(253, 179)
+        Label11.Margin = New Padding(4, 0, 4, 0)
         Label11.Name = "Label11"
-        Label11.Size = New Size(58, 15)
+        Label11.Size = New Size(75, 20)
         Label11.TabIndex = 32
         Label11.Text = "Barangay"
         ' 
         ' txtbxAddOFWCity
         ' 
-        txtbxAddOFWCity.Location = New Point(380, 146)
+        txtbxAddOFWCity.Location = New Point(489, 204)
+        txtbxAddOFWCity.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWCity.Name = "txtbxAddOFWCity"
         txtbxAddOFWCity.PlaceholderText = "City/Municipality"
-        txtbxAddOFWCity.Size = New Size(177, 23)
+        txtbxAddOFWCity.Size = New Size(226, 29)
         txtbxAddOFWCity.TabIndex = 31
         ' 
         ' txtbxAddOFWBrgy
         ' 
-        txtbxAddOFWBrgy.Location = New Point(197, 146)
+        txtbxAddOFWBrgy.Location = New Point(253, 204)
+        txtbxAddOFWBrgy.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWBrgy.Name = "txtbxAddOFWBrgy"
         txtbxAddOFWBrgy.PlaceholderText = "Barangay"
-        txtbxAddOFWBrgy.Size = New Size(177, 23)
+        txtbxAddOFWBrgy.Size = New Size(226, 29)
         txtbxAddOFWBrgy.TabIndex = 30
         ' 
         ' txtbxAddOFWStreet
         ' 
-        txtbxAddOFWStreet.Location = New Point(14, 146)
+        txtbxAddOFWStreet.Location = New Point(18, 204)
+        txtbxAddOFWStreet.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWStreet.Name = "txtbxAddOFWStreet"
         txtbxAddOFWStreet.PlaceholderText = "Street"
-        txtbxAddOFWStreet.Size = New Size(177, 23)
+        txtbxAddOFWStreet.Size = New Size(226, 29)
         txtbxAddOFWStreet.TabIndex = 29
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(12, 73)
+        Label8.Location = New Point(15, 102)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(81, 15)
+        Label8.Size = New Size(101, 20)
         Label8.TabIndex = 28
         Label8.Text = "Date of BIrth"
         ' 
@@ -296,9 +318,10 @@ Partial Class ADMAddOFW
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(176, 73)
+        Label7.Location = New Point(226, 102)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(49, 15)
+        Label7.Size = New Size(60, 20)
         Label7.TabIndex = 27
         Label7.Text = "Gender"
         ' 
@@ -306,43 +329,48 @@ Partial Class ADMAddOFW
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(340, 73)
+        Label6.Location = New Point(437, 102)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(68, 15)
+        Label6.Size = New Size(86, 20)
         Label6.TabIndex = 26
         Label6.Text = "Civil Status"
         ' 
         ' cbxAddOFWCivStat
         ' 
         cbxAddOFWCivStat.FormattingEnabled = True
-        cbxAddOFWCivStat.Location = New Point(340, 91)
+        cbxAddOFWCivStat.Location = New Point(437, 127)
+        cbxAddOFWCivStat.Margin = New Padding(4, 4, 4, 4)
         cbxAddOFWCivStat.Name = "cbxAddOFWCivStat"
-        cbxAddOFWCivStat.Size = New Size(150, 23)
+        cbxAddOFWCivStat.Size = New Size(192, 29)
         cbxAddOFWCivStat.TabIndex = 25
         ' 
         ' cbxAddOFWGender
         ' 
         cbxAddOFWGender.FormattingEnabled = True
-        cbxAddOFWGender.Location = New Point(176, 91)
+        cbxAddOFWGender.Location = New Point(226, 127)
+        cbxAddOFWGender.Margin = New Padding(4, 4, 4, 4)
         cbxAddOFWGender.Name = "cbxAddOFWGender"
-        cbxAddOFWGender.Size = New Size(150, 23)
+        cbxAddOFWGender.Size = New Size(192, 29)
         cbxAddOFWGender.TabIndex = 24
         ' 
         ' dateAddOFWDOB
         ' 
         dateAddOFWDOB.Format = DateTimePickerFormat.Short
-        dateAddOFWDOB.Location = New Point(12, 91)
+        dateAddOFWDOB.Location = New Point(15, 127)
+        dateAddOFWDOB.Margin = New Padding(4, 4, 4, 4)
         dateAddOFWDOB.Name = "dateAddOFWDOB"
-        dateAddOFWDOB.Size = New Size(150, 23)
+        dateAddOFWDOB.Size = New Size(192, 29)
         dateAddOFWDOB.TabIndex = 23
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(432, 14)
+        Label5.Location = New Point(555, 20)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(65, 15)
+        Label5.Size = New Size(84, 20)
         Label5.TabIndex = 22
         Label5.Text = "Last Name"
         ' 
@@ -350,9 +378,10 @@ Partial Class ADMAddOFW
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 14)
+        Label4.Location = New Point(15, 20)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(67, 15)
+        Label4.Size = New Size(86, 20)
         Label4.TabIndex = 21
         Label4.Text = "First Name"
         ' 
@@ -360,34 +389,38 @@ Partial Class ADMAddOFW
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(222, 14)
+        Label3.Location = New Point(285, 20)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 15)
+        Label3.Size = New Size(103, 20)
         Label3.TabIndex = 20
         Label3.Text = "Middle Name"
         ' 
         ' txtbxAddOFWLName
         ' 
-        txtbxAddOFWLName.Location = New Point(432, 32)
+        txtbxAddOFWLName.Location = New Point(555, 45)
+        txtbxAddOFWLName.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWLName.Name = "txtbxAddOFWLName"
         txtbxAddOFWLName.PlaceholderText = "Last Name"
-        txtbxAddOFWLName.Size = New Size(196, 23)
+        txtbxAddOFWLName.Size = New Size(251, 29)
         txtbxAddOFWLName.TabIndex = 2
         ' 
         ' txtbxAddOFWMName
         ' 
-        txtbxAddOFWMName.Location = New Point(222, 32)
+        txtbxAddOFWMName.Location = New Point(285, 45)
+        txtbxAddOFWMName.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWMName.Name = "txtbxAddOFWMName"
         txtbxAddOFWMName.PlaceholderText = "Middle Name"
-        txtbxAddOFWMName.Size = New Size(196, 23)
+        txtbxAddOFWMName.Size = New Size(251, 29)
         txtbxAddOFWMName.TabIndex = 1
         ' 
         ' txtbxAddOFWFName
         ' 
-        txtbxAddOFWFName.Location = New Point(12, 32)
+        txtbxAddOFWFName.Location = New Point(15, 45)
+        txtbxAddOFWFName.Margin = New Padding(4, 4, 4, 4)
         txtbxAddOFWFName.Name = "txtbxAddOFWFName"
         txtbxAddOFWFName.PlaceholderText = "First Name"
-        txtbxAddOFWFName.Size = New Size(196, 23)
+        txtbxAddOFWFName.Size = New Size(251, 29)
         txtbxAddOFWFName.TabIndex = 0
         ' 
         ' Label1
@@ -396,9 +429,10 @@ Partial Class ADMAddOFW
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Maiandra GD", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.MidnightBlue
-        Label1.Location = New Point(167, 33)
+        Label1.Location = New Point(215, 46)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(134, 45)
+        Label1.Size = New Size(166, 56)
         Label1.TabIndex = 8
         Label1.Text = ">ADD"
         ' 
@@ -408,9 +442,10 @@ Partial Class ADMAddOFW
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Maiandra GD", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.MidnightBlue
-        Label2.Location = New Point(0, 7)
+        Label2.Location = New Point(0, 10)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(189, 77)
+        Label2.Size = New Size(233, 96)
         Label2.TabIndex = 9
         Label2.Text = "OFW"
         ' 
@@ -420,9 +455,10 @@ Partial Class ADMAddOFW
         btnADD.FlatStyle = FlatStyle.Flat
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
-        btnADD.Location = New Point(699, 510)
+        btnADD.Location = New Point(1134, 718)
+        btnADD.Margin = New Padding(4, 4, 4, 4)
         btnADD.Name = "btnADD"
-        btnADD.Size = New Size(119, 40)
+        btnADD.Size = New Size(153, 56)
         btnADD.TabIndex = 10
         btnADD.Text = "ADD"
         btnADD.UseVisualStyleBackColor = False
@@ -433,25 +469,27 @@ Partial Class ADMAddOFW
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(574, 510)
+        btnCANCEL.Location = New Point(959, 718)
+        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
         btnCANCEL.Name = "btnCANCEL"
-        btnCANCEL.Size = New Size(119, 40)
+        btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 11
         btnCANCEL.Text = "CANCEL"
         btnCANCEL.UseVisualStyleBackColor = False
         ' 
         ' ADMAddOFW
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SteelBlue
-        ClientSize = New Size(828, 562)
+        ClientSize = New Size(1317, 787)
         Controls.Add(btnCANCEL)
         Controls.Add(btnADD)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 4, 4, 4)
         Name = "ADMAddOFW"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMAddOFW"
