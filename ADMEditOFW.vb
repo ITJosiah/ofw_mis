@@ -1,5 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports MySqlConnector
+Imports MySqlCommand = MySqlConnector.MySqlCommand
+Imports MySqlConnection = MySqlConnector.MySqlConnection
+Imports MySqlDataReader = MySqlConnector.MySqlDataReader
 
 Public Class ADMEditOFW
     Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
