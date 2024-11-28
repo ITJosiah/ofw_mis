@@ -461,7 +461,7 @@ Partial Class ADMAddOFW
         btnADD.FlatStyle = FlatStyle.Flat
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
-        btnADD.Location = New Point(1134, 718)
+        btnADD.Location = New Point(1099, 718)
         btnADD.Margin = New Padding(4)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(153, 56)
@@ -475,7 +475,7 @@ Partial Class ADMAddOFW
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(959, 718)
+        btnCANCEL.Location = New Point(920, 718)
         btnCANCEL.Margin = New Padding(4)
         btnCANCEL.Name = "btnCANCEL"
         btnCANCEL.Size = New Size(153, 56)
