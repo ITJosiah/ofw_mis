@@ -337,7 +337,7 @@ Partial Class ADMDashboardAGCTab
         dgvAGC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvAGC.Location = New Point(346, 150)
         dgvAGC.Name = "dgvAGC"
-        dgvAGC.Size = New Size(755, 625)
+        dgvAGC.Size = New Size(755, 606)
         dgvAGC.TabIndex = 83
         ' 
         ' txtAGCLicNumFilt
@@ -525,6 +525,7 @@ Partial Class ADMDashboardAGCTab
         Name = "ADMDashboardAGCTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardAGCTab"
+        WindowState = FormWindowState.Maximized
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(dgvAGC, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
