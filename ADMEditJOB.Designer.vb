@@ -267,9 +267,9 @@ Partial Class ADMEditJOB
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(12, 14)
         Label4.Name = "Label4"
-        Label4.Size = New Size(54, 15)
+        Label4.Size = New Size(61, 15)
         Label4.TabIndex = 21
-        Label4.Text = "Job Title"
+        Label4.Text = "Job TitleS"
         ' 
         ' Label3
         ' 
