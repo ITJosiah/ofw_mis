@@ -4,6 +4,9 @@ Imports System.Security
 Imports System.Security.Cryptography
 Imports ST = System.Runtime.InteropServices
 Imports MySql.Data.MySqlClient
+Imports MySqlConnector
+
+
 Module modDB
     Public myadocon, conn As New MySqlConnection
     Public cmd As New MySqlCommand
@@ -129,8 +132,8 @@ Module modDB
         Dim EncryptionKey As String = "MAKV2SPBNI99212"
         Dim clearBytes As Byte() = Encoding.Unicode.GetBytes(clearText)
         Using encryptor As Aes = Aes.Create()
-            Dim pdb As New Rfc2898DeriveBytes(EncryptionKey, New Byte() {&H49, &H76, &H61, &H6E, &H20, &H4D, _
-             &H65, &H64, &H76, &H65, &H64, &H65, _
+            Dim pdb As New Rfc2898DeriveBytes(EncryptionKey, New Byte() {&H49, &H76, &H61, &H6E, &H20, &H4D,
+             &H65, &H64, &H76, &H65, &H64, &H65,
              &H76})
             encryptor.Key = pdb.GetBytes(32)
             encryptor.IV = pdb.GetBytes(16)
@@ -148,8 +151,8 @@ Module modDB
         Dim EncryptionKey As String = "MAKV2SPBNI99212"
         Dim cipherBytes As Byte() = Convert.FromBase64String(cipherText)
         Using encryptor As Aes = Aes.Create()
-            Dim pdb As New Rfc2898DeriveBytes(EncryptionKey, New Byte() {&H49, &H76, &H61, &H6E, &H20, &H4D, _
-             &H65, &H64, &H76, &H65, &H64, &H65, _
+            Dim pdb As New Rfc2898DeriveBytes(EncryptionKey, New Byte() {&H49, &H76, &H61, &H6E, &H20, &H4D,
+             &H65, &H64, &H76, &H65, &H64, &H65,
              &H76})
             encryptor.Key = pdb.GetBytes(32)
             encryptor.IV = pdb.GetBytes(16)
@@ -165,9 +168,9 @@ Module modDB
     End Function
     Sub Logs(ByVal transaction As String, Optional ByVal events As String = "*_Click")
         Try
-            readQuery(String.Format("INSERT INTO `logs`(`dt`, `user_accounts_id`, `event`, `transactions`) VALUES ({0},{1},'{2}','{3}')", "now()", _
-                                    CurrentLoggedUser.id, _
-                                    events, _
+            readQuery(String.Format("INSERT INTO `logs`(`dt`, `user_accounts_id`, `event`, `transactions`) VALUES ({0},{1},'{2}','{3}')", "now()",
+                                    CurrentLoggedUser.id,
+                                    events,
                                     transaction))
         Catch ex As Exception
             MsgBox(ex.Message)
