@@ -69,7 +69,7 @@ Partial Class ADMAddEMP
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label16.Location = New Point(14, 70)
         Label16.Name = "Label16"
         Label16.Size = New Size(94, 15)
@@ -87,7 +87,7 @@ Partial Class ADMAddEMP
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.Location = New Point(197, 185)
         Label15.Name = "Label15"
         Label15.Size = New Size(41, 15)
@@ -96,7 +96,7 @@ Partial Class ADMAddEMP
         ' 
         ' txtEMPEmail
         ' 
-        txtEMPEmail.Location = New Point(197, 203)
+        txtEMPEmail.Location = New Point(269, 203)
         txtEMPEmail.Name = "txtEMPEmail"
         txtEMPEmail.PlaceholderText = "E-mail"
         txtEMPEmail.Size = New Size(177, 23)
@@ -105,7 +105,7 @@ Partial Class ADMAddEMP
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label14.Location = New Point(14, 185)
         Label14.Name = "Label14"
         Label14.Size = New Size(99, 15)
@@ -123,7 +123,7 @@ Partial Class ADMAddEMP
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.Location = New Point(746, 128)
         Label13.Name = "Label13"
         Label13.Size = New Size(51, 15)
@@ -141,7 +141,7 @@ Partial Class ADMAddEMP
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.Location = New Point(563, 128)
         Label12.Name = "Label12"
         Label12.Size = New Size(51, 15)
@@ -159,7 +159,7 @@ Partial Class ADMAddEMP
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.Location = New Point(380, 128)
         Label9.Name = "Label9"
         Label9.Size = New Size(37, 15)
@@ -169,7 +169,7 @@ Partial Class ADMAddEMP
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.Location = New Point(14, 128)
         Label10.Name = "Label10"
         Label10.Size = New Size(43, 15)
@@ -179,7 +179,7 @@ Partial Class ADMAddEMP
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.Location = New Point(197, 128)
         Label11.Name = "Label11"
         Label11.Size = New Size(28, 15)
@@ -203,7 +203,7 @@ Partial Class ADMAddEMP
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Maiandra GD", 48.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Maiandra GD", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.MidnightBlue
         Label2.Location = New Point(1, 10)
         Label2.Name = "Label2"
@@ -230,7 +230,7 @@ Partial Class ADMAddEMP
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.Location = New Point(432, 14)
         Label5.Name = "Label5"
         Label5.Size = New Size(65, 15)
@@ -240,7 +240,7 @@ Partial Class ADMAddEMP
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(12, 14)
         Label4.Name = "Label4"
         Label4.Size = New Size(67, 15)
@@ -250,7 +250,7 @@ Partial Class ADMAddEMP
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(222, 14)
         Label3.Name = "Label3"
         Label3.Size = New Size(81, 15)
@@ -337,7 +337,7 @@ Partial Class ADMAddEMP
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.Location = New Point(222, 70)
         Label6.Name = "Label6"
         Label6.Size = New Size(53, 15)
@@ -354,7 +354,7 @@ Partial Class ADMAddEMP
         ' 
         ' ADMAddEMP
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(828, 419)
