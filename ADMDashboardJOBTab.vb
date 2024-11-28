@@ -22,4 +22,8 @@
         Close()
         ADMDashAGC.Show()
     End Sub
+
+    Private Sub dgvJOB_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJOB.CellContentClick
+
+    End Sub
 End Class
