@@ -72,7 +72,7 @@ Partial Class ADMDashboardEMPTab
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(1142, 199)
+        Label13.Location = New Point(1119, 199)
         Label13.Name = "Label13"
         Label13.Size = New Size(36, 15)
         Label13.TabIndex = 74
@@ -81,7 +81,7 @@ Partial Class ADMDashboardEMPTab
         ' btnClearFilter
         ' 
         btnClearFilter.FlatStyle = FlatStyle.Popup
-        btnClearFilter.Location = New Point(1208, 561)
+        btnClearFilter.Location = New Point(1188, 559)
         btnClearFilter.Name = "btnClearFilter"
         btnClearFilter.Size = New Size(76, 27)
         btnClearFilter.TabIndex = 73
@@ -91,7 +91,7 @@ Partial Class ADMDashboardEMPTab
         ' lblEMPTally
         ' 
         lblEMPTally.AutoSize = True
-        lblEMPTally.Location = New Point(1335, 593)
+        lblEMPTally.Location = New Point(1315, 591)
         lblEMPTally.Name = "lblEMPTally"
         lblEMPTally.Size = New Size(13, 15)
         lblEMPTally.TabIndex = 72
@@ -100,7 +100,7 @@ Partial Class ADMDashboardEMPTab
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(1139, 593)
+        Label12.Location = New Point(1119, 591)
         Label12.Name = "Label12"
         Label12.Size = New Size(190, 15)
         Label12.TabIndex = 71
@@ -111,7 +111,7 @@ Partial Class ADMDashboardEMPTab
         btnDLT.BackColor = Color.MistyRose
         btnDLT.FlatStyle = FlatStyle.Popup
         btnDLT.ForeColor = Color.DarkRed
-        btnDLT.Location = New Point(1299, 711)
+        btnDLT.Location = New Point(1290, 690)
         btnDLT.Name = "btnDLT"
         btnDLT.Size = New Size(73, 66)
         btnDLT.TabIndex = 70
@@ -123,7 +123,7 @@ Partial Class ADMDashboardEMPTab
         btnGEN.BackColor = Color.LightCyan
         btnGEN.FlatStyle = FlatStyle.Popup
         btnGEN.ForeColor = Color.DarkBlue
-        btnGEN.Location = New Point(1299, 639)
+        btnGEN.Location = New Point(1290, 618)
         btnGEN.Name = "btnGEN"
         btnGEN.Size = New Size(73, 66)
         btnGEN.TabIndex = 69
@@ -135,7 +135,7 @@ Partial Class ADMDashboardEMPTab
         btnEDIT.BackColor = Color.LightCyan
         btnEDIT.FlatStyle = FlatStyle.Popup
         btnEDIT.ForeColor = Color.DarkBlue
-        btnEDIT.Location = New Point(1220, 639)
+        btnEDIT.Location = New Point(1211, 618)
         btnEDIT.Name = "btnEDIT"
         btnEDIT.Size = New Size(73, 66)
         btnEDIT.TabIndex = 68
@@ -147,7 +147,7 @@ Partial Class ADMDashboardEMPTab
         btnADD.BackColor = Color.LightCyan
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
-        btnADD.Location = New Point(1142, 639)
+        btnADD.Location = New Point(1133, 618)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(73, 66)
         btnADD.TabIndex = 67
@@ -157,7 +157,7 @@ Partial Class ADMDashboardEMPTab
         ' btnFilter
         ' 
         btnFilter.FlatStyle = FlatStyle.Popup
-        btnFilter.Location = New Point(1290, 561)
+        btnFilter.Location = New Point(1270, 559)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(76, 27)
         btnFilter.TabIndex = 66
@@ -167,7 +167,7 @@ Partial Class ADMDashboardEMPTab
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(1139, 495)
+        Label11.Location = New Point(1116, 495)
         Label11.Name = "Label11"
         Label11.Size = New Size(96, 15)
         Label11.TabIndex = 64
@@ -175,7 +175,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPContNumFilt
         ' 
-        txtEMPContNumFilt.Location = New Point(1139, 468)
+        txtEMPContNumFilt.Location = New Point(1116, 468)
         txtEMPContNumFilt.Name = "txtEMPContNumFilt"
         txtEMPContNumFilt.PlaceholderText = "####"
         txtEMPContNumFilt.Size = New Size(137, 23)
@@ -184,7 +184,7 @@ Partial Class ADMDashboardEMPTab
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(1139, 541)
+        Label10.Location = New Point(1119, 540)
         Label10.Name = "Label10"
         Label10.Size = New Size(36, 15)
         Label10.TabIndex = 62
@@ -192,7 +192,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPEmailFilt
         ' 
-        txtEMPEmailFilt.Location = New Point(1139, 514)
+        txtEMPEmailFilt.Location = New Point(1116, 514)
         txtEMPEmailFilt.Name = "txtEMPEmailFilt"
         txtEMPEmailFilt.PlaceholderText = "####"
         txtEMPEmailFilt.Size = New Size(137, 23)
@@ -201,7 +201,7 @@ Partial Class ADMDashboardEMPTab
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(1139, 449)
+        Label9.Location = New Point(1116, 449)
         Label9.Name = "Label9"
         Label9.Size = New Size(50, 15)
         Label9.TabIndex = 60
@@ -209,7 +209,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPZipFilt
         ' 
-        txtEMPZipFilt.Location = New Point(1139, 422)
+        txtEMPZipFilt.Location = New Point(1116, 422)
         txtEMPZipFilt.Name = "txtEMPZipFilt"
         txtEMPZipFilt.PlaceholderText = "####"
         txtEMPZipFilt.Size = New Size(137, 23)
@@ -218,7 +218,7 @@ Partial Class ADMDashboardEMPTab
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(1139, 403)
+        Label7.Location = New Point(1116, 403)
         Label7.Name = "Label7"
         Label7.Size = New Size(0, 15)
         Label7.TabIndex = 57
@@ -226,7 +226,7 @@ Partial Class ADMDashboardEMPTab
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(1139, 357)
+        Label6.Location = New Point(1116, 357)
         Label6.Name = "Label6"
         Label6.Size = New Size(63, 15)
         Label6.TabIndex = 54
@@ -234,7 +234,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPLNameFilt
         ' 
-        txtEMPLNameFilt.Location = New Point(1139, 330)
+        txtEMPLNameFilt.Location = New Point(1116, 330)
         txtEMPLNameFilt.Name = "txtEMPLNameFilt"
         txtEMPLNameFilt.PlaceholderText = "Last Name"
         txtEMPLNameFilt.Size = New Size(227, 23)
@@ -243,7 +243,7 @@ Partial Class ADMDashboardEMPTab
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(1139, 311)
+        Label5.Location = New Point(1116, 311)
         Label5.Name = "Label5"
         Label5.Size = New Size(79, 15)
         Label5.TabIndex = 52
@@ -252,7 +252,7 @@ Partial Class ADMDashboardEMPTab
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(1139, 265)
+        Label4.Location = New Point(1116, 265)
         Label4.Name = "Label4"
         Label4.Size = New Size(64, 15)
         Label4.TabIndex = 50
@@ -260,7 +260,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPFNameFilt
         ' 
-        txtEMPFNameFilt.Location = New Point(1139, 238)
+        txtEMPFNameFilt.Location = New Point(1116, 238)
         txtEMPFNameFilt.Name = "txtEMPFNameFilt"
         txtEMPFNameFilt.PlaceholderText = "First Name"
         txtEMPFNameFilt.Size = New Size(227, 23)
@@ -269,7 +269,7 @@ Partial Class ADMDashboardEMPTab
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(1139, 219)
+        Label3.Location = New Point(1116, 219)
         Label3.Name = "Label3"
         Label3.Size = New Size(118, 15)
         Label3.TabIndex = 48
@@ -277,7 +277,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPIdFilt
         ' 
-        txtEMPIdFilt.Location = New Point(1181, 194)
+        txtEMPIdFilt.Location = New Point(1158, 194)
         txtEMPIdFilt.Name = "txtEMPIdFilt"
         txtEMPIdFilt.PlaceholderText = "#####"
         txtEMPIdFilt.Size = New Size(57, 23)
@@ -287,7 +287,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1132, 155)
+        Label2.Location = New Point(1109, 155)
         Label2.Name = "Label2"
         Label2.Size = New Size(197, 33)
         Label2.TabIndex = 46
@@ -313,12 +313,12 @@ Partial Class ADMDashboardEMPTab
         dgvEMP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvEMP.Location = New Point(346, 155)
         dgvEMP.Name = "dgvEMP"
-        dgvEMP.Size = New Size(755, 625)
+        dgvEMP.Size = New Size(755, 601)
         dgvEMP.TabIndex = 44
         ' 
         ' txtEMPMNameFilt
         ' 
-        txtEMPMNameFilt.Location = New Point(1139, 284)
+        txtEMPMNameFilt.Location = New Point(1116, 284)
         txtEMPMNameFilt.Name = "txtEMPMNameFilt"
         txtEMPMNameFilt.PlaceholderText = "Middle Name"
         txtEMPMNameFilt.Size = New Size(227, 23)
@@ -470,7 +470,7 @@ Partial Class ADMDashboardEMPTab
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(1139, 402)
+        Label8.Location = New Point(1116, 402)
         Label8.Name = "Label8"
         Label8.Size = New Size(94, 15)
         Label8.TabIndex = 76
@@ -478,7 +478,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPCompanyFilt
         ' 
-        txtEMPCompanyFilt.Location = New Point(1139, 375)
+        txtEMPCompanyFilt.Location = New Point(1116, 375)
         txtEMPCompanyFilt.Name = "txtEMPCompanyFilt"
         txtEMPCompanyFilt.PlaceholderText = "Company Name"
         txtEMPCompanyFilt.Size = New Size(137, 23)
@@ -487,7 +487,7 @@ Partial Class ADMDashboardEMPTab
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(1282, 403)
+        Label14.Location = New Point(1259, 403)
         Label14.Name = "Label14"
         Label14.Size = New Size(50, 15)
         Label14.TabIndex = 78
@@ -495,7 +495,7 @@ Partial Class ADMDashboardEMPTab
         ' 
         ' txtEMPIndustryFilt
         ' 
-        txtEMPIndustryFilt.Location = New Point(1282, 374)
+        txtEMPIndustryFilt.Location = New Point(1259, 374)
         txtEMPIndustryFilt.Name = "txtEMPIndustryFilt"
         txtEMPIndustryFilt.PlaceholderText = "Industry"
         txtEMPIndustryFilt.Size = New Size(84, 23)
@@ -506,7 +506,7 @@ Partial Class ADMDashboardEMPTab
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1386, 788)
+        ClientSize = New Size(1366, 768)
         Controls.Add(Label14)
         Controls.Add(txtEMPIndustryFilt)
         Controls.Add(Label8)

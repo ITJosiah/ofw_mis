@@ -69,7 +69,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCSpecFilt
         ' 
-        txtAGCSpecFilt.Location = New Point(1289, 327)
+        txtAGCSpecFilt.Location = New Point(1270, 332)
         txtAGCSpecFilt.Name = "txtAGCSpecFilt"
         txtAGCSpecFilt.PlaceholderText = "Industry"
         txtAGCSpecFilt.Size = New Size(84, 23)
@@ -78,7 +78,7 @@ Partial Class ADMDashboardAGCTab
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(1146, 355)
+        Label8.Location = New Point(1127, 360)
         Label8.Name = "Label8"
         Label8.Size = New Size(49, 15)
         Label8.TabIndex = 111
@@ -86,7 +86,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCWebFilt
         ' 
-        txtAGCWebFilt.Location = New Point(1146, 328)
+        txtAGCWebFilt.Location = New Point(1127, 333)
         txtAGCWebFilt.Name = "txtAGCWebFilt"
         txtAGCWebFilt.PlaceholderText = "Company Name"
         txtAGCWebFilt.Size = New Size(137, 23)
@@ -104,7 +104,7 @@ Partial Class ADMDashboardAGCTab
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(1289, 356)
+        Label14.Location = New Point(1270, 361)
         Label14.Name = "Label14"
         Label14.Size = New Size(79, 15)
         Label14.TabIndex = 113
@@ -113,7 +113,7 @@ Partial Class ADMDashboardAGCTab
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(1149, 198)
+        Label13.Location = New Point(1130, 203)
         Label13.Name = "Label13"
         Label13.Size = New Size(36, 15)
         Label13.TabIndex = 109
@@ -122,7 +122,7 @@ Partial Class ADMDashboardAGCTab
         ' btnClearFilter
         ' 
         btnClearFilter.FlatStyle = FlatStyle.Popup
-        btnClearFilter.Location = New Point(1215, 514)
+        btnClearFilter.Location = New Point(1196, 519)
         btnClearFilter.Name = "btnClearFilter"
         btnClearFilter.Size = New Size(76, 27)
         btnClearFilter.TabIndex = 108
@@ -132,7 +132,7 @@ Partial Class ADMDashboardAGCTab
         ' lblAGCTally
         ' 
         lblAGCTally.AutoSize = True
-        lblAGCTally.Location = New Point(1337, 554)
+        lblAGCTally.Location = New Point(1321, 562)
         lblAGCTally.Name = "lblAGCTally"
         lblAGCTally.Size = New Size(13, 15)
         lblAGCTally.TabIndex = 107
@@ -141,7 +141,7 @@ Partial Class ADMDashboardAGCTab
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(1146, 554)
+        Label12.Location = New Point(1130, 562)
         Label12.Name = "Label12"
         Label12.Size = New Size(183, 15)
         Label12.TabIndex = 106
@@ -152,7 +152,7 @@ Partial Class ADMDashboardAGCTab
         btnDLT.BackColor = Color.MistyRose
         btnDLT.FlatStyle = FlatStyle.Popup
         btnDLT.ForeColor = Color.DarkRed
-        btnDLT.Location = New Point(1303, 710)
+        btnDLT.Location = New Point(1277, 689)
         btnDLT.Name = "btnDLT"
         btnDLT.Size = New Size(73, 66)
         btnDLT.TabIndex = 105
@@ -164,7 +164,7 @@ Partial Class ADMDashboardAGCTab
         btnGEN.BackColor = Color.LightCyan
         btnGEN.FlatStyle = FlatStyle.Popup
         btnGEN.ForeColor = Color.DarkBlue
-        btnGEN.Location = New Point(1303, 638)
+        btnGEN.Location = New Point(1277, 617)
         btnGEN.Name = "btnGEN"
         btnGEN.Size = New Size(73, 66)
         btnGEN.TabIndex = 104
@@ -176,7 +176,7 @@ Partial Class ADMDashboardAGCTab
         btnEDIT.BackColor = Color.LightCyan
         btnEDIT.FlatStyle = FlatStyle.Popup
         btnEDIT.ForeColor = Color.DarkBlue
-        btnEDIT.Location = New Point(1224, 638)
+        btnEDIT.Location = New Point(1198, 617)
         btnEDIT.Name = "btnEDIT"
         btnEDIT.Size = New Size(73, 66)
         btnEDIT.TabIndex = 103
@@ -188,7 +188,7 @@ Partial Class ADMDashboardAGCTab
         btnADD.BackColor = Color.LightCyan
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
-        btnADD.Location = New Point(1146, 638)
+        btnADD.Location = New Point(1120, 617)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(73, 66)
         btnADD.TabIndex = 102
@@ -198,7 +198,7 @@ Partial Class ADMDashboardAGCTab
         ' btnFilter
         ' 
         btnFilter.FlatStyle = FlatStyle.Popup
-        btnFilter.Location = New Point(1297, 514)
+        btnFilter.Location = New Point(1278, 519)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(76, 27)
         btnFilter.TabIndex = 101
@@ -208,7 +208,7 @@ Partial Class ADMDashboardAGCTab
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Location = New Point(1146, 448)
+        Label11.Location = New Point(1127, 453)
         Label11.Name = "Label11"
         Label11.Size = New Size(96, 15)
         Label11.TabIndex = 100
@@ -216,7 +216,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCContNumFilt
         ' 
-        txtAGCContNumFilt.Location = New Point(1146, 421)
+        txtAGCContNumFilt.Location = New Point(1127, 426)
         txtAGCContNumFilt.Name = "txtAGCContNumFilt"
         txtAGCContNumFilt.PlaceholderText = "####"
         txtAGCContNumFilt.Size = New Size(137, 23)
@@ -225,7 +225,7 @@ Partial Class ADMDashboardAGCTab
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Location = New Point(1146, 494)
+        Label10.Location = New Point(1127, 499)
         Label10.Name = "Label10"
         Label10.Size = New Size(36, 15)
         Label10.TabIndex = 98
@@ -233,7 +233,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCEmailFilt
         ' 
-        txtAGCEmailFilt.Location = New Point(1146, 467)
+        txtAGCEmailFilt.Location = New Point(1127, 472)
         txtAGCEmailFilt.Name = "txtAGCEmailFilt"
         txtAGCEmailFilt.PlaceholderText = "####"
         txtAGCEmailFilt.Size = New Size(137, 23)
@@ -242,7 +242,7 @@ Partial Class ADMDashboardAGCTab
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(1146, 402)
+        Label9.Location = New Point(1127, 407)
         Label9.Name = "Label9"
         Label9.Size = New Size(50, 15)
         Label9.TabIndex = 96
@@ -250,7 +250,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCZipFilt
         ' 
-        txtAGCZipFilt.Location = New Point(1146, 375)
+        txtAGCZipFilt.Location = New Point(1127, 380)
         txtAGCZipFilt.Name = "txtAGCZipFilt"
         txtAGCZipFilt.PlaceholderText = "####"
         txtAGCZipFilt.Size = New Size(137, 23)
@@ -259,7 +259,7 @@ Partial Class ADMDashboardAGCTab
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(1146, 402)
+        Label7.Location = New Point(1127, 407)
         Label7.Name = "Label7"
         Label7.Size = New Size(0, 15)
         Label7.TabIndex = 94
@@ -267,7 +267,7 @@ Partial Class ADMDashboardAGCTab
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(1146, 310)
+        Label5.Location = New Point(1127, 315)
         Label5.Name = "Label5"
         Label5.Size = New Size(136, 15)
         Label5.TabIndex = 91
@@ -276,7 +276,7 @@ Partial Class ADMDashboardAGCTab
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(1146, 264)
+        Label4.Location = New Point(1127, 269)
         Label4.Name = "Label4"
         Label4.Size = New Size(82, 15)
         Label4.TabIndex = 89
@@ -284,7 +284,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCNameFilt
         ' 
-        txtAGCNameFilt.Location = New Point(1146, 237)
+        txtAGCNameFilt.Location = New Point(1127, 242)
         txtAGCNameFilt.Name = "txtAGCNameFilt"
         txtAGCNameFilt.PlaceholderText = "First Name"
         txtAGCNameFilt.Size = New Size(227, 23)
@@ -293,7 +293,7 @@ Partial Class ADMDashboardAGCTab
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(1146, 218)
+        Label3.Location = New Point(1127, 223)
         Label3.Name = "Label3"
         Label3.Size = New Size(108, 15)
         Label3.TabIndex = 87
@@ -301,7 +301,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCIdFilt
         ' 
-        txtAGCIdFilt.Location = New Point(1188, 193)
+        txtAGCIdFilt.Location = New Point(1169, 198)
         txtAGCIdFilt.Name = "txtAGCIdFilt"
         txtAGCIdFilt.PlaceholderText = "#####"
         txtAGCIdFilt.Size = New Size(57, 23)
@@ -311,7 +311,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1146, 150)
+        Label2.Location = New Point(1127, 155)
         Label2.Name = "Label2"
         Label2.Size = New Size(197, 33)
         Label2.TabIndex = 85
@@ -342,7 +342,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtAGCLicNumFilt
         ' 
-        txtAGCLicNumFilt.Location = New Point(1146, 283)
+        txtAGCLicNumFilt.Location = New Point(1127, 288)
         txtAGCLicNumFilt.Name = "txtAGCLicNumFilt"
         txtAGCLicNumFilt.PlaceholderText = "Middle Name"
         txtAGCLicNumFilt.Size = New Size(227, 23)
