@@ -2,7 +2,7 @@
 
 Module ConnectDBfromTXT
 
-    Public Sub ConnectDB()
+    Public Function ConnectDB()
         Try
             Dim filename As String = Path.Combine(Directory.GetCurrentDirectory(), "config", "databaseConnector.txt")
 
@@ -23,6 +23,6 @@ Module ConnectDBfromTXT
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message, MsgBoxStyle.Critical)
         End Try
-    End Sub
+    End Function
 
 End Module

@@ -1,0 +1,4 @@
+Server=localhost;
+Database=ofw_mis;
+User Id=root;
+Password=;

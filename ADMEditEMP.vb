@@ -1,8 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 Public Class ADMEditEMP
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
+    Dim connectionString As String = ConnectDB()
     Dim connection As New MySqlConnection(connectionString)
     Private selectedEMPId As Integer
 

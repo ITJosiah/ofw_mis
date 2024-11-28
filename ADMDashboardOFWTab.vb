@@ -1,6 +1,6 @@
 ﻿
 Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 Public Class ADMDashboardOFWTab
 
@@ -8,7 +8,8 @@ Public Class ADMDashboardOFWTab
         LoadToDGVOfw()
     End Sub
 
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
+
+    Dim connectionString As String = ConnectDB()
     Dim connection As New MySqlConnection(connectionString)
     Private ofwDataTable As New DataTable()
 
@@ -192,4 +193,7 @@ Public Class ADMDashboardOFWTab
         ADMDashJOB.Show()
     End Sub
 
+    Private Sub dgvOFW_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvOFW.CellContentClick
+
+    End Sub
 End Class
