@@ -1,8 +1,8 @@
-﻿Public Class OFWDashboardEMPTab
-    Private Sub btnOFWDashJOB_Click(sender As Object, e As EventArgs) Handles btnOFWDashJOB.Click
-        Dim btnOFWDashJOB As New OFWDashboardJOBTab
+﻿Public Class OFWDashboardSTATTab
+    Private Sub btnOFWDashEMP_Click(sender As Object, e As EventArgs) Handles btnOFWDashEMP.Click
+        Dim btnOFWDashEMP As New OFWDashboardEMPTab
         Close()
-        btnOFWDashJOB.Show()
+        btnOFWDashEMP.Show()
     End Sub
 
     Private Sub btnOFWDashAGC_Click(sender As Object, e As EventArgs) Handles btnOFWDashAGC.Click
@@ -11,10 +11,10 @@
         btnOFWDashAGC.Show()
     End Sub
 
-    Private Sub btnOFWashSTAT_Click(sender As Object, e As EventArgs) Handles btnOFWDashSTAT.Click
-        Dim btnOFWDashSTAT As New OFWDashboardSTATTab
+    Private Sub btnOFWashJOB_Click(sender As Object, e As EventArgs) Handles btnOFWDashJOB.Click
+        Dim btnOFWDashJOB As New OFWDashboardJOBTab
         Close()
-        btnOFWDashSTAT.Show()
+        btnOFWDashJOB.Show()
     End Sub
 
     Private Sub btnOFWDashDEP_Click(sender As Object, e As EventArgs) Handles btnOFWDashDEP.Click
@@ -28,4 +28,5 @@
         Close()
         btnOFWDashOFW.Show()
     End Sub
+
 End Class

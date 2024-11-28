@@ -1,8 +1,8 @@
-﻿Public Class OFWDashboardEMPTab
-    Private Sub btnOFWDashJOB_Click(sender As Object, e As EventArgs) Handles btnOFWDashJOB.Click
-        Dim btnOFWDashJOB As New OFWDashboardJOBTab
+﻿Public Class OFWDashboardJOBTab
+    Private Sub btnOFWDashEMP_Click(sender As Object, e As EventArgs) Handles btnOFWDashEMP.Click
+        Dim btnOFWDashEMP As New OFWDashboardEMPTab
         Close()
-        btnOFWDashJOB.Show()
+        btnOFWDashEMP.Show()
     End Sub
 
     Private Sub btnOFWDashAGC_Click(sender As Object, e As EventArgs) Handles btnOFWDashAGC.Click

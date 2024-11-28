@@ -23,13 +23,13 @@ Partial Class OFWDashboardEMPTab
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        btnADMDashSTAT = New Button()
+        btnOFWDashSTAT = New Button()
         PictureBox1 = New PictureBox()
-        btnADMDashDEP = New Button()
-        btnADMDashJOB = New Button()
-        btnADMDashOFW = New Button()
-        btnADMDashAGC = New Button()
-        btnADMDashEMP = New Button()
+        btnOFWDashDEP = New Button()
+        btnOFWDashJOB = New Button()
+        btnOFWDashOFW = New Button()
+        btnOFWDashAGC = New Button()
+        btnOFWDashEMP = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -37,32 +37,32 @@ Partial Class OFWDashboardEMPTab
         ' Panel1
         ' 
         Panel1.BackColor = Color.MidnightBlue
-        Panel1.Controls.Add(btnADMDashSTAT)
+        Panel1.Controls.Add(btnOFWDashSTAT)
         Panel1.Controls.Add(PictureBox1)
-        Panel1.Controls.Add(btnADMDashDEP)
-        Panel1.Controls.Add(btnADMDashJOB)
-        Panel1.Controls.Add(btnADMDashOFW)
-        Panel1.Controls.Add(btnADMDashAGC)
-        Panel1.Controls.Add(btnADMDashEMP)
+        Panel1.Controls.Add(btnOFWDashDEP)
+        Panel1.Controls.Add(btnOFWDashJOB)
+        Panel1.Controls.Add(btnOFWDashOFW)
+        Panel1.Controls.Add(btnOFWDashAGC)
+        Panel1.Controls.Add(btnOFWDashEMP)
         Panel1.ForeColor = SystemColors.ControlText
         Panel1.Location = New Point(-1, -34)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(342, 836)
+        Panel1.Size = New Size(342, 803)
         Panel1.TabIndex = 5
         ' 
-        ' btnADMDashSTAT
+        ' btnOFWDashSTAT
         ' 
-        btnADMDashSTAT.BackColor = Color.RoyalBlue
-        btnADMDashSTAT.FlatAppearance.BorderSize = 0
-        btnADMDashSTAT.FlatStyle = FlatStyle.Flat
-        btnADMDashSTAT.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashSTAT.ForeColor = Color.MidnightBlue
-        btnADMDashSTAT.Location = New Point(52, 724)
-        btnADMDashSTAT.Name = "btnADMDashSTAT"
-        btnADMDashSTAT.Size = New Size(237, 45)
-        btnADMDashSTAT.TabIndex = 45
-        btnADMDashSTAT.Text = "Statistics"
-        btnADMDashSTAT.UseVisualStyleBackColor = False
+        btnOFWDashSTAT.BackColor = Color.RoyalBlue
+        btnOFWDashSTAT.FlatAppearance.BorderSize = 0
+        btnOFWDashSTAT.FlatStyle = FlatStyle.Flat
+        btnOFWDashSTAT.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashSTAT.ForeColor = Color.MidnightBlue
+        btnOFWDashSTAT.Location = New Point(52, 724)
+        btnOFWDashSTAT.Name = "btnOFWDashSTAT"
+        btnOFWDashSTAT.Size = New Size(237, 45)
+        btnOFWDashSTAT.TabIndex = 45
+        btnOFWDashSTAT.Text = "Statistics"
+        btnOFWDashSTAT.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
@@ -73,75 +73,75 @@ Partial Class OFWDashboardEMPTab
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' btnADMDashDEP
+        ' btnOFWDashDEP
         ' 
-        btnADMDashDEP.BackColor = Color.RoyalBlue
-        btnADMDashDEP.FlatAppearance.BorderSize = 0
-        btnADMDashDEP.FlatStyle = FlatStyle.Flat
-        btnADMDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashDEP.ForeColor = Color.MidnightBlue
-        btnADMDashDEP.Location = New Point(52, 660)
-        btnADMDashDEP.Name = "btnADMDashDEP"
-        btnADMDashDEP.Size = New Size(237, 45)
-        btnADMDashDEP.TabIndex = 44
-        btnADMDashDEP.Text = "Deployments"
-        btnADMDashDEP.UseVisualStyleBackColor = False
+        btnOFWDashDEP.BackColor = Color.RoyalBlue
+        btnOFWDashDEP.FlatAppearance.BorderSize = 0
+        btnOFWDashDEP.FlatStyle = FlatStyle.Flat
+        btnOFWDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashDEP.ForeColor = Color.MidnightBlue
+        btnOFWDashDEP.Location = New Point(52, 660)
+        btnOFWDashDEP.Name = "btnOFWDashDEP"
+        btnOFWDashDEP.Size = New Size(237, 45)
+        btnOFWDashDEP.TabIndex = 44
+        btnOFWDashDEP.Text = "Deployments"
+        btnOFWDashDEP.UseVisualStyleBackColor = False
         ' 
-        ' btnADMDashJOB
+        ' btnOFWDashJOB
         ' 
-        btnADMDashJOB.BackColor = Color.RoyalBlue
-        btnADMDashJOB.FlatAppearance.BorderSize = 0
-        btnADMDashJOB.FlatStyle = FlatStyle.Flat
-        btnADMDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashJOB.ForeColor = Color.MidnightBlue
-        btnADMDashJOB.Location = New Point(52, 595)
-        btnADMDashJOB.Name = "btnADMDashJOB"
-        btnADMDashJOB.Size = New Size(237, 45)
-        btnADMDashJOB.TabIndex = 43
-        btnADMDashJOB.Text = "Job Placements"
-        btnADMDashJOB.UseVisualStyleBackColor = False
+        btnOFWDashJOB.BackColor = Color.RoyalBlue
+        btnOFWDashJOB.FlatAppearance.BorderSize = 0
+        btnOFWDashJOB.FlatStyle = FlatStyle.Flat
+        btnOFWDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashJOB.ForeColor = Color.MidnightBlue
+        btnOFWDashJOB.Location = New Point(52, 595)
+        btnOFWDashJOB.Name = "btnOFWDashJOB"
+        btnOFWDashJOB.Size = New Size(237, 45)
+        btnOFWDashJOB.TabIndex = 43
+        btnOFWDashJOB.Text = "Job Placements"
+        btnOFWDashJOB.UseVisualStyleBackColor = False
         ' 
-        ' btnADMDashOFW
+        ' btnOFWDashOFW
         ' 
-        btnADMDashOFW.BackColor = Color.RoyalBlue
-        btnADMDashOFW.FlatAppearance.BorderSize = 0
-        btnADMDashOFW.FlatStyle = FlatStyle.Flat
-        btnADMDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashOFW.ForeColor = Color.MidnightBlue
-        btnADMDashOFW.Location = New Point(52, 405)
-        btnADMDashOFW.Name = "btnADMDashOFW"
-        btnADMDashOFW.Size = New Size(237, 45)
-        btnADMDashOFW.TabIndex = 40
-        btnADMDashOFW.Text = "OFWs"
-        btnADMDashOFW.UseVisualStyleBackColor = False
+        btnOFWDashOFW.BackColor = Color.RoyalBlue
+        btnOFWDashOFW.FlatAppearance.BorderSize = 0
+        btnOFWDashOFW.FlatStyle = FlatStyle.Flat
+        btnOFWDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashOFW.ForeColor = Color.MidnightBlue
+        btnOFWDashOFW.Location = New Point(52, 405)
+        btnOFWDashOFW.Name = "btnOFWDashOFW"
+        btnOFWDashOFW.Size = New Size(237, 45)
+        btnOFWDashOFW.TabIndex = 40
+        btnOFWDashOFW.Text = "OFWs"
+        btnOFWDashOFW.UseVisualStyleBackColor = False
         ' 
-        ' btnADMDashAGC
+        ' btnOFWDashAGC
         ' 
-        btnADMDashAGC.BackColor = Color.RoyalBlue
-        btnADMDashAGC.FlatAppearance.BorderSize = 0
-        btnADMDashAGC.FlatStyle = FlatStyle.Flat
-        btnADMDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashAGC.ForeColor = Color.MidnightBlue
-        btnADMDashAGC.Location = New Point(52, 528)
-        btnADMDashAGC.Name = "btnADMDashAGC"
-        btnADMDashAGC.Size = New Size(237, 45)
-        btnADMDashAGC.TabIndex = 42
-        btnADMDashAGC.Text = "Agencies"
-        btnADMDashAGC.UseVisualStyleBackColor = False
+        btnOFWDashAGC.BackColor = Color.RoyalBlue
+        btnOFWDashAGC.FlatAppearance.BorderSize = 0
+        btnOFWDashAGC.FlatStyle = FlatStyle.Flat
+        btnOFWDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashAGC.ForeColor = Color.MidnightBlue
+        btnOFWDashAGC.Location = New Point(52, 528)
+        btnOFWDashAGC.Name = "btnOFWDashAGC"
+        btnOFWDashAGC.Size = New Size(237, 45)
+        btnOFWDashAGC.TabIndex = 42
+        btnOFWDashAGC.Text = "Agencies"
+        btnOFWDashAGC.UseVisualStyleBackColor = False
         ' 
-        ' btnADMDashEMP
+        ' btnOFWDashEMP
         ' 
-        btnADMDashEMP.BackColor = Color.DeepSkyBlue
-        btnADMDashEMP.FlatAppearance.BorderSize = 0
-        btnADMDashEMP.FlatStyle = FlatStyle.Flat
-        btnADMDashEMP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnADMDashEMP.ForeColor = Color.MidnightBlue
-        btnADMDashEMP.Location = New Point(52, 467)
-        btnADMDashEMP.Name = "btnADMDashEMP"
-        btnADMDashEMP.Size = New Size(290, 45)
-        btnADMDashEMP.TabIndex = 41
-        btnADMDashEMP.Text = "Employers"
-        btnADMDashEMP.UseVisualStyleBackColor = False
+        btnOFWDashEMP.BackColor = Color.DeepSkyBlue
+        btnOFWDashEMP.FlatAppearance.BorderSize = 0
+        btnOFWDashEMP.FlatStyle = FlatStyle.Flat
+        btnOFWDashEMP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOFWDashEMP.ForeColor = Color.MidnightBlue
+        btnOFWDashEMP.Location = New Point(52, 467)
+        btnOFWDashEMP.Name = "btnOFWDashEMP"
+        btnOFWDashEMP.Size = New Size(290, 45)
+        btnOFWDashEMP.TabIndex = 41
+        btnOFWDashEMP.Text = "Employers"
+        btnOFWDashEMP.UseVisualStyleBackColor = False
         ' 
         ' OFWDashboardEMPTab
         ' 
@@ -161,11 +161,11 @@ Partial Class OFWDashboardEMPTab
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnADMDashSTAT As Button
+    Friend WithEvents btnOFWDashSTAT As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents btnADMDashDEP As Button
-    Friend WithEvents btnADMDashJOB As Button
-    Friend WithEvents btnADMDashOFW As Button
-    Friend WithEvents btnADMDashAGC As Button
-    Friend WithEvents btnADMDashEMP As Button
+    Friend WithEvents btnOFWDashDEP As Button
+    Friend WithEvents btnOFWDashJOB As Button
+    Friend WithEvents btnOFWDashOFW As Button
+    Friend WithEvents btnOFWDashAGC As Button
+    Friend WithEvents btnOFWDashEMP As Button
 End Class

@@ -508,7 +508,7 @@ Partial Class ADMDashboardOFWTab
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1366, 768)
+        ClientSize = New Size(1366, 749)
         Controls.Add(Label13)
         Controls.Add(btnClearFilter)
         Controls.Add(lblOFWTally)
