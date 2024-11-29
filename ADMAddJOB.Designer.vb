@@ -30,8 +30,8 @@ Partial Class ADMAddJOB
         Label5 = New Label()
         Label4 = New Label()
         Label3 = New Label()
-        Me.txtJOBCountry = New TextBox()
-        Me.txtJOBDescription = New TextBox()
+        txtJOBCountry = New TextBox()
+        txtJOBDescription = New TextBox()
         txtJOBTitle = New TextBox()
         Label1 = New Label()
         txtJOBConditions = New TextBox()
@@ -45,10 +45,10 @@ Partial Class ADMAddJOB
         btnADD = New Button()
         Label16 = New Label()
         Panel1 = New Panel()
+        dateJOBDeadline = New DateTimePicker()
+        cbxJOBStat = New ComboBox()
         Label10 = New Label()
         btnCANCEL = New Button()
-        cbxJOBStat = New ComboBox()
-        dateJOBDeadline = New DateTimePicker()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -56,53 +56,59 @@ Partial Class ADMAddJOB
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(197, 70)
+        Label6.Location = New Point(330, 98)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(88, 15)
+        Label6.Size = New Size(110, 20)
         Label6.TabIndex = 50
         Label6.Text = "Salary Offered"
         ' 
         ' txtJOBSalary
         ' 
-        txtJOBSalary.Location = New Point(197, 88)
+        txtJOBSalary.Location = New Point(330, 123)
+        txtJOBSalary.Margin = New Padding(4, 4, 4, 4)
         txtJOBSalary.Name = "txtJOBSalary"
         txtJOBSalary.PlaceholderText = "Industry"
-        txtJOBSalary.Size = New Size(177, 23)
+        txtJOBSalary.Size = New Size(280, 29)
         txtJOBSalary.TabIndex = 49
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(149, 128)
+        Label11.Location = New Point(18, 249)
+        Label11.Margin = New Padding(4, 0, 4, 0)
         Label11.Name = "Label11"
-        Label11.Size = New Size(42, 15)
+        Label11.Size = New Size(53, 20)
         Label11.TabIndex = 32
         Label11.Text = "Status"
         ' 
         ' txtJOBSkill
         ' 
-        txtJOBSkill.Location = New Point(380, 88)
+        txtJOBSkill.Location = New Point(629, 123)
+        txtJOBSkill.Margin = New Padding(4, 4, 4, 4)
         txtJOBSkill.Name = "txtJOBSkill"
         txtJOBSkill.PlaceholderText = "State"
-        txtJOBSkill.Size = New Size(177, 23)
+        txtJOBSkill.Size = New Size(280, 29)
         txtJOBSkill.TabIndex = 31
         ' 
         ' txtJOBVacancies
         ' 
-        txtJOBVacancies.Location = New Point(14, 146)
+        txtJOBVacancies.Location = New Point(18, 204)
+        txtJOBVacancies.Margin = New Padding(4, 4, 4, 4)
         txtJOBVacancies.Name = "txtJOBVacancies"
         txtJOBVacancies.PlaceholderText = "Street"
-        txtJOBVacancies.Size = New Size(124, 23)
+        txtJOBVacancies.Size = New Size(277, 29)
         txtJOBVacancies.TabIndex = 29
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(432, 14)
+        Label5.Location = New Point(629, 20)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(139, 15)
+        Label5.Size = New Size(178, 20)
         Label5.TabIndex = 22
         Label5.Text = "Country of Employment"
         ' 
@@ -110,9 +116,10 @@ Partial Class ADMAddJOB
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 14)
+        Label4.Location = New Point(15, 20)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(54, 15)
+        Label4.Size = New Size(69, 20)
         Label4.TabIndex = 21
         Label4.Text = "Job Title"
         ' 
@@ -120,34 +127,38 @@ Partial Class ADMAddJOB
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(222, 14)
+        Label3.Location = New Point(330, 20)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(93, 15)
+        Label3.Size = New Size(118, 20)
         Label3.TabIndex = 20
         Label3.Text = "Job Description"
         ' 
         ' txtJOBCountry
         ' 
-        Me.txtJOBCountry.Location = New Point(432, 32)
-        Me.txtJOBCountry.Name = "txtJOBCountry"
-        Me.txtJOBCountry.PlaceholderText = "Last Name"
-        Me.txtJOBCountry.Size = New Size(196, 23)
-        Me.txtJOBCountry.TabIndex = 2
+        txtJOBCountry.Location = New Point(629, 45)
+        txtJOBCountry.Margin = New Padding(4, 4, 4, 4)
+        txtJOBCountry.Name = "txtJOBCountry"
+        txtJOBCountry.PlaceholderText = "Last Name"
+        txtJOBCountry.Size = New Size(280, 29)
+        txtJOBCountry.TabIndex = 2
         ' 
         ' txtJOBDescription
         ' 
-        Me.txtJOBDescription.Location = New Point(222, 32)
-        Me.txtJOBDescription.Name = "txtJOBDescription"
-        Me.txtJOBDescription.PlaceholderText = "Middle Name"
-        Me.txtJOBDescription.Size = New Size(196, 23)
-        Me.txtJOBDescription.TabIndex = 1
+        txtJOBDescription.Location = New Point(330, 45)
+        txtJOBDescription.Margin = New Padding(4, 4, 4, 4)
+        txtJOBDescription.Name = "txtJOBDescription"
+        txtJOBDescription.PlaceholderText = "Middle Name"
+        txtJOBDescription.Size = New Size(280, 29)
+        txtJOBDescription.TabIndex = 1
         ' 
         ' txtJOBTitle
         ' 
-        txtJOBTitle.Location = New Point(12, 32)
+        txtJOBTitle.Location = New Point(15, 45)
+        txtJOBTitle.Margin = New Padding(4, 4, 4, 4)
         txtJOBTitle.Name = "txtJOBTitle"
         txtJOBTitle.PlaceholderText = "First Name"
-        txtJOBTitle.Size = New Size(196, 23)
+        txtJOBTitle.Size = New Size(280, 29)
         txtJOBTitle.TabIndex = 0
         ' 
         ' Label1
@@ -156,27 +167,30 @@ Partial Class ADMAddJOB
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Maiandra GD", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.MidnightBlue
-        Label1.Location = New Point(433, 41)
+        Label1.Location = New Point(557, 57)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(134, 45)
+        Label1.Size = New Size(166, 56)
         Label1.TabIndex = 18
         Label1.Text = ">ADD"
         ' 
         ' txtJOBConditions
         ' 
-        txtJOBConditions.Location = New Point(257, 146)
+        txtJOBConditions.Location = New Point(330, 204)
+        txtJOBConditions.Margin = New Padding(4, 4, 4, 4)
         txtJOBConditions.Name = "txtJOBConditions"
         txtJOBConditions.PlaceholderText = "Country"
-        txtJOBConditions.Size = New Size(177, 23)
+        txtJOBConditions.Size = New Size(280, 29)
         txtJOBConditions.TabIndex = 35
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(380, 70)
+        Label9.Location = New Point(629, 98)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(35, 15)
+        Label9.Size = New Size(44, 20)
         Label9.TabIndex = 34
         Label9.Text = "Skills"
         ' 
@@ -186,27 +200,30 @@ Partial Class ADMAddJOB
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Maiandra GD", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.MidnightBlue
-        Label2.Location = New Point(1, 15)
+        Label2.Location = New Point(1, 21)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(448, 77)
+        Label2.Size = New Size(558, 96)
         Label2.TabIndex = 19
         Label2.Text = "Job Placement"
         ' 
         ' txtJOBAgencyId
         ' 
-        txtJOBAgencyId.Location = New Point(14, 88)
+        txtJOBAgencyId.Location = New Point(18, 123)
+        txtJOBAgencyId.Margin = New Padding(4, 4, 4, 4)
         txtJOBAgencyId.Name = "txtJOBAgencyId"
         txtJOBAgencyId.PlaceholderText = "Company Name"
-        txtJOBAgencyId.Size = New Size(177, 23)
+        txtJOBAgencyId.Size = New Size(277, 29)
         txtJOBAgencyId.TabIndex = 43
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(14, 185)
+        Label14.Location = New Point(22, 332)
+        Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
-        Label14.Size = New Size(121, 15)
+        Label14.Size = New Size(154, 20)
         Label14.TabIndex = 40
         Label14.Text = "Application Deadline"
         ' 
@@ -214,27 +231,30 @@ Partial Class ADMAddJOB
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(440, 128)
+        Label13.Location = New Point(629, 179)
+        Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(54, 15)
+        Label13.Size = New Size(67, 20)
         Label13.TabIndex = 38
         Label13.Text = "Benefits"
         ' 
         ' txtJOBBenefits
         ' 
-        txtJOBBenefits.Location = New Point(440, 146)
+        txtJOBBenefits.Location = New Point(629, 204)
+        txtJOBBenefits.Margin = New Padding(4, 4, 4, 4)
         txtJOBBenefits.Name = "txtJOBBenefits"
         txtJOBBenefits.PlaceholderText = "Zipcode"
-        txtJOBBenefits.Size = New Size(188, 23)
+        txtJOBBenefits.Size = New Size(280, 29)
         txtJOBBenefits.TabIndex = 37
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(257, 128)
+        Label12.Location = New Point(330, 179)
+        Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
-        Label12.Size = New Size(65, 15)
+        Label12.Size = New Size(84, 20)
         Label12.TabIndex = 36
         Label12.Text = "Conditions"
         ' 
@@ -244,9 +264,10 @@ Partial Class ADMAddJOB
         btnADD.FlatStyle = FlatStyle.Flat
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
-        btnADD.Location = New Point(697, 364)
+        btnADD.Location = New Point(899, 722)
+        btnADD.Margin = New Padding(4, 4, 4, 4)
         btnADD.Name = "btnADD"
-        btnADD.Size = New Size(119, 40)
+        btnADD.Size = New Size(153, 56)
         btnADD.TabIndex = 20
         btnADD.Text = "ADD"
         btnADD.UseVisualStyleBackColor = False
@@ -255,9 +276,10 @@ Partial Class ADMAddJOB
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(14, 70)
+        Label16.Location = New Point(18, 98)
+        Label16.Margin = New Padding(4, 0, 4, 0)
         Label16.Name = "Label16"
-        Label16.Size = New Size(64, 15)
+        Label16.Size = New Size(81, 20)
         Label16.TabIndex = 44
         Label16.Text = "Agency ID"
         ' 
@@ -283,21 +305,41 @@ Partial Class ADMAddJOB
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(Me.txtJOBCountry)
-        Panel1.Controls.Add(Me.txtJOBDescription)
+        Panel1.Controls.Add(txtJOBCountry)
+        Panel1.Controls.Add(txtJOBDescription)
         Panel1.Controls.Add(txtJOBTitle)
-        Panel1.Location = New Point(1, 95)
+        Panel1.Location = New Point(0, 122)
+        Panel1.Margin = New Padding(4, 4, 4, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(827, 254)
+        Panel1.Size = New Size(1065, 580)
         Panel1.TabIndex = 17
+        ' 
+        ' dateJOBDeadline
+        ' 
+        dateJOBDeadline.Format = DateTimePickerFormat.Short
+        dateJOBDeadline.Location = New Point(22, 357)
+        dateJOBDeadline.Margin = New Padding(4, 4, 4, 4)
+        dateJOBDeadline.Name = "dateJOBDeadline"
+        dateJOBDeadline.Size = New Size(180, 29)
+        dateJOBDeadline.TabIndex = 52
+        ' 
+        ' cbxJOBStat
+        ' 
+        cbxJOBStat.FormattingEnabled = True
+        cbxJOBStat.Location = New Point(18, 274)
+        cbxJOBStat.Margin = New Padding(4, 4, 4, 4)
+        cbxJOBStat.Name = "cbxJOBStat"
+        cbxJOBStat.Size = New Size(180, 29)
+        cbxJOBStat.TabIndex = 51
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(14, 128)
+        Label10.Location = New Point(18, 179)
+        Label10.Margin = New Padding(4, 0, 4, 0)
         Label10.Name = "Label10"
-        Label10.Size = New Size(124, 15)
+        Label10.Size = New Size(157, 20)
         Label10.TabIndex = 33
         Label10.Text = "Number of Vacancies"
         ' 
@@ -307,41 +349,27 @@ Partial Class ADMAddJOB
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(572, 364)
+        btnCANCEL.Location = New Point(715, 722)
+        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
         btnCANCEL.Name = "btnCANCEL"
-        btnCANCEL.Size = New Size(119, 40)
+        btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 21
         btnCANCEL.Text = "CANCEL"
         btnCANCEL.UseVisualStyleBackColor = False
         ' 
-        ' cbxJOBStat
-        ' 
-        cbxJOBStat.FormattingEnabled = True
-        cbxJOBStat.Location = New Point(149, 146)
-        cbxJOBStat.Name = "cbxJOBStat"
-        cbxJOBStat.Size = New Size(102, 23)
-        cbxJOBStat.TabIndex = 51
-        ' 
-        ' dateJOBDeadline
-        ' 
-        dateJOBDeadline.Format = DateTimePickerFormat.Short
-        dateJOBDeadline.Location = New Point(14, 203)
-        dateJOBDeadline.Name = "dateJOBDeadline"
-        dateJOBDeadline.Size = New Size(134, 23)
-        dateJOBDeadline.TabIndex = 52
-        ' 
         ' ADMAddJOB
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(828, 419)
+        ClientSize = New Size(1065, 800)
         Controls.Add(Label1)
         Controls.Add(Label2)
         Controls.Add(btnADD)
         Controls.Add(Panel1)
         Controls.Add(btnCANCEL)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 4, 4, 4)
         Name = "ADMAddJOB"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMAddJOB"

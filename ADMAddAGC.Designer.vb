@@ -62,9 +62,10 @@ Partial Class ADMAddAGC
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(197, 70)
+        Label6.Location = New Point(253, 98)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(157, 15)
+        Label6.Size = New Size(195, 20)
         Label6.TabIndex = 50
         Label6.Text = "Government Accreditation"
         ' 
@@ -72,43 +73,48 @@ Partial Class ADMAddAGC
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(197, 128)
+        Label11.Location = New Point(253, 179)
+        Label11.Margin = New Padding(4, 0, 4, 0)
         Label11.Name = "Label11"
-        Label11.Size = New Size(28, 15)
+        Label11.Size = New Size(36, 20)
         Label11.TabIndex = 32
         Label11.Text = "City"
         ' 
         ' txtAGCState
         ' 
-        txtAGCState.Location = New Point(380, 146)
+        txtAGCState.Location = New Point(489, 204)
+        txtAGCState.Margin = New Padding(4, 4, 4, 4)
         txtAGCState.Name = "txtAGCState"
         txtAGCState.PlaceholderText = "State"
-        txtAGCState.Size = New Size(177, 23)
+        txtAGCState.Size = New Size(226, 29)
         txtAGCState.TabIndex = 31
         ' 
         ' txtAGCCity
         ' 
-        txtAGCCity.Location = New Point(197, 146)
+        txtAGCCity.Location = New Point(253, 204)
+        txtAGCCity.Margin = New Padding(4, 4, 4, 4)
         txtAGCCity.Name = "txtAGCCity"
         txtAGCCity.PlaceholderText = "City"
-        txtAGCCity.Size = New Size(177, 23)
+        txtAGCCity.Size = New Size(226, 29)
         txtAGCCity.TabIndex = 30
         ' 
         ' txtAGCStreet
         ' 
-        txtAGCStreet.Location = New Point(14, 146)
+        txtAGCStreet.Location = New Point(18, 204)
+        txtAGCStreet.Margin = New Padding(4, 4, 4, 4)
         txtAGCStreet.Name = "txtAGCStreet"
         txtAGCStreet.PlaceholderText = "Street"
-        txtAGCStreet.Size = New Size(177, 23)
+        txtAGCStreet.Size = New Size(226, 29)
         txtAGCStreet.TabIndex = 29
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(432, 14)
+        Label5.Location = New Point(555, 20)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(83, 15)
+        Label5.Size = New Size(104, 20)
         Label5.TabIndex = 22
         Label5.Text = "Specialization"
         ' 
@@ -116,9 +122,10 @@ Partial Class ADMAddAGC
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 14)
+        Label4.Location = New Point(15, 20)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(84, 15)
+        Label4.Size = New Size(107, 20)
         Label4.TabIndex = 21
         Label4.Text = "Agency Name"
         ' 
@@ -126,34 +133,38 @@ Partial Class ADMAddAGC
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(222, 14)
+        Label3.Location = New Point(285, 20)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(97, 15)
+        Label3.Size = New Size(122, 20)
         Label3.TabIndex = 20
         Label3.Text = "License Number"
         ' 
         ' txtAGCSpec
         ' 
-        txtAGCSpec.Location = New Point(432, 32)
+        txtAGCSpec.Location = New Point(555, 45)
+        txtAGCSpec.Margin = New Padding(4, 4, 4, 4)
         txtAGCSpec.Name = "txtAGCSpec"
         txtAGCSpec.PlaceholderText = "Specialization"
-        txtAGCSpec.Size = New Size(196, 23)
+        txtAGCSpec.Size = New Size(251, 29)
         txtAGCSpec.TabIndex = 2
         ' 
         ' txtAGCLicNum
         ' 
-        txtAGCLicNum.Location = New Point(222, 32)
+        txtAGCLicNum.Location = New Point(285, 45)
+        txtAGCLicNum.Margin = New Padding(4, 4, 4, 4)
         txtAGCLicNum.Name = "txtAGCLicNum"
         txtAGCLicNum.PlaceholderText = "########"
-        txtAGCLicNum.Size = New Size(196, 23)
+        txtAGCLicNum.Size = New Size(251, 29)
         txtAGCLicNum.TabIndex = 1
         ' 
         ' txtAGCFName
         ' 
-        txtAGCFName.Location = New Point(12, 32)
+        txtAGCFName.Location = New Point(15, 45)
+        txtAGCFName.Margin = New Padding(4, 4, 4, 4)
         txtAGCFName.Name = "txtAGCFName"
         txtAGCFName.PlaceholderText = "Agency Name"
-        txtAGCFName.Size = New Size(196, 23)
+        txtAGCFName.Size = New Size(251, 29)
         txtAGCFName.TabIndex = 0
         ' 
         ' Label1
@@ -162,27 +173,30 @@ Partial Class ADMAddAGC
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Maiandra GD", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.MidnightBlue
-        Label1.Location = New Point(223, 41)
+        Label1.Location = New Point(287, 57)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(134, 45)
+        Label1.Size = New Size(166, 56)
         Label1.TabIndex = 18
         Label1.Text = ">ADD"
         ' 
         ' txtAGCCountry
         ' 
-        txtAGCCountry.Location = New Point(563, 146)
+        txtAGCCountry.Location = New Point(724, 204)
+        txtAGCCountry.Margin = New Padding(4, 4, 4, 4)
         txtAGCCountry.Name = "txtAGCCountry"
         txtAGCCountry.PlaceholderText = "Country"
-        txtAGCCountry.Size = New Size(177, 23)
+        txtAGCCountry.Size = New Size(226, 29)
         txtAGCCountry.TabIndex = 35
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(380, 128)
+        Label9.Location = New Point(489, 179)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(37, 15)
+        Label9.Size = New Size(45, 20)
         Label9.TabIndex = 34
         Label9.Text = "State"
         ' 
@@ -192,81 +206,90 @@ Partial Class ADMAddAGC
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Maiandra GD", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.MidnightBlue
-        Label2.Location = New Point(1, 15)
+        Label2.Location = New Point(1, 21)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(241, 77)
+        Label2.Size = New Size(299, 96)
         Label2.TabIndex = 19
         Label2.Text = "Agency"
         ' 
         ' txtAGCWebsite
         ' 
-        txtAGCWebsite.Location = New Point(14, 88)
+        txtAGCWebsite.Location = New Point(18, 123)
+        txtAGCWebsite.Margin = New Padding(4, 4, 4, 4)
         txtAGCWebsite.Name = "txtAGCWebsite"
         txtAGCWebsite.PlaceholderText = "URL"
-        txtAGCWebsite.Size = New Size(177, 23)
+        txtAGCWebsite.Size = New Size(226, 29)
         txtAGCWebsite.TabIndex = 43
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(197, 185)
+        Label15.Location = New Point(253, 259)
+        Label15.Margin = New Padding(4, 0, 4, 0)
         Label15.Name = "Label15"
-        Label15.Size = New Size(41, 15)
+        Label15.Size = New Size(53, 20)
         Label15.TabIndex = 42
         Label15.Text = "E-mail"
         ' 
         ' txtAGCEmail
         ' 
-        txtAGCEmail.Location = New Point(197, 203)
+        txtAGCEmail.Location = New Point(253, 284)
+        txtAGCEmail.Margin = New Padding(4, 4, 4, 4)
         txtAGCEmail.Name = "txtAGCEmail"
         txtAGCEmail.PlaceholderText = "E-mail"
-        txtAGCEmail.Size = New Size(177, 23)
+        txtAGCEmail.Size = New Size(226, 29)
         txtAGCEmail.TabIndex = 41
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(14, 185)
+        Label14.Location = New Point(18, 259)
+        Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
-        Label14.Size = New Size(99, 15)
+        Label14.Size = New Size(125, 20)
         Label14.TabIndex = 40
         Label14.Text = "Contact Number"
         ' 
         ' txtAGCContNum
         ' 
-        txtAGCContNum.Location = New Point(14, 203)
+        txtAGCContNum.Location = New Point(18, 284)
+        txtAGCContNum.Margin = New Padding(4, 4, 4, 4)
         txtAGCContNum.Name = "txtAGCContNum"
         txtAGCContNum.PlaceholderText = "Contact Number"
-        txtAGCContNum.Size = New Size(177, 23)
+        txtAGCContNum.Size = New Size(226, 29)
         txtAGCContNum.TabIndex = 39
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(746, 128)
+        Label13.Location = New Point(959, 179)
+        Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(51, 15)
+        Label13.Size = New Size(64, 20)
         Label13.TabIndex = 38
         Label13.Text = "Zipcode"
         ' 
         ' txtAGCZip
         ' 
-        txtAGCZip.Location = New Point(746, 146)
+        txtAGCZip.Location = New Point(959, 204)
+        txtAGCZip.Margin = New Padding(4, 4, 4, 4)
         txtAGCZip.Name = "txtAGCZip"
         txtAGCZip.PlaceholderText = "Zipcode"
-        txtAGCZip.Size = New Size(72, 23)
+        txtAGCZip.Size = New Size(91, 29)
         txtAGCZip.TabIndex = 37
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(563, 128)
+        Label12.Location = New Point(724, 179)
+        Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
-        Label12.Size = New Size(51, 15)
+        Label12.Size = New Size(66, 20)
         Label12.TabIndex = 36
         Label12.Text = "Country"
         ' 
@@ -276,9 +299,10 @@ Partial Class ADMAddAGC
         btnADD.FlatStyle = FlatStyle.Flat
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
-        btnADD.Location = New Point(697, 364)
+        btnADD.Location = New Point(896, 510)
+        btnADD.Margin = New Padding(4, 4, 4, 4)
         btnADD.Name = "btnADD"
-        btnADD.Size = New Size(119, 40)
+        btnADD.Size = New Size(153, 56)
         btnADD.TabIndex = 20
         btnADD.Text = "ADD"
         btnADD.UseVisualStyleBackColor = False
@@ -287,9 +311,10 @@ Partial Class ADMAddAGC
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(14, 70)
+        Label16.Location = New Point(18, 98)
+        Label16.Margin = New Padding(4, 0, 4, 0)
         Label16.Name = "Label16"
-        Label16.Size = New Size(53, 15)
+        Label16.Size = New Size(66, 20)
         Label16.TabIndex = 44
         Label16.Text = "Website"
         ' 
@@ -324,62 +349,69 @@ Partial Class ADMAddAGC
         Panel1.Controls.Add(txtAGCSpec)
         Panel1.Controls.Add(txtAGCLicNum)
         Panel1.Controls.Add(txtAGCFName)
-        Panel1.Location = New Point(1, 95)
+        Panel1.Location = New Point(1, 133)
+        Panel1.Margin = New Padding(4, 4, 4, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(827, 254)
+        Panel1.Size = New Size(1063, 356)
         Panel1.TabIndex = 17
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(398, 70)
+        Label8.Location = New Point(512, 98)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(101, 15)
+        Label8.Size = New Size(126, 20)
         Label8.TabIndex = 55
         Label8.Text = "License Exp Date"
         ' 
         ' dateAGCExp
         ' 
         dateAGCExp.Format = DateTimePickerFormat.Short
-        dateAGCExp.Location = New Point(398, 88)
+        dateAGCExp.Location = New Point(512, 123)
+        dateAGCExp.Margin = New Padding(4, 4, 4, 4)
         dateAGCExp.Name = "dateAGCExp"
-        dateAGCExp.Size = New Size(117, 23)
+        dateAGCExp.Size = New Size(149, 29)
         dateAGCExp.TabIndex = 54
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(380, 185)
+        Label7.Location = New Point(489, 259)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(108, 15)
+        Label7.Size = New Size(137, 20)
         Label7.TabIndex = 53
         Label7.Text = "Years in Operation"
         ' 
         ' txtAGCYrInOp
         ' 
-        txtAGCYrInOp.Location = New Point(380, 203)
+        txtAGCYrInOp.Location = New Point(489, 284)
+        txtAGCYrInOp.Margin = New Padding(4, 4, 4, 4)
         txtAGCYrInOp.Name = "txtAGCYrInOp"
         txtAGCYrInOp.PlaceholderText = "###"
-        txtAGCYrInOp.Size = New Size(82, 23)
+        txtAGCYrInOp.Size = New Size(104, 29)
         txtAGCYrInOp.TabIndex = 52
         ' 
         ' cbxAGCAccredStat
         ' 
         cbxAGCAccredStat.FormattingEnabled = True
-        cbxAGCAccredStat.Location = New Point(197, 88)
+        cbxAGCAccredStat.Location = New Point(253, 123)
+        cbxAGCAccredStat.Margin = New Padding(4, 4, 4, 4)
         cbxAGCAccredStat.Name = "cbxAGCAccredStat"
-        cbxAGCAccredStat.Size = New Size(195, 23)
+        cbxAGCAccredStat.Size = New Size(250, 29)
         cbxAGCAccredStat.TabIndex = 51
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(14, 128)
+        Label10.Location = New Point(18, 179)
+        Label10.Margin = New Padding(4, 0, 4, 0)
         Label10.Name = "Label10"
-        Label10.Size = New Size(43, 15)
+        Label10.Size = New Size(51, 20)
         Label10.TabIndex = 33
         Label10.Text = "Street"
         ' 
@@ -389,25 +421,27 @@ Partial Class ADMAddAGC
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(572, 364)
+        btnCANCEL.Location = New Point(735, 510)
+        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
         btnCANCEL.Name = "btnCANCEL"
-        btnCANCEL.Size = New Size(119, 40)
+        btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 21
         btnCANCEL.Text = "CANCEL"
         btnCANCEL.UseVisualStyleBackColor = False
         ' 
         ' ADMAddAGC
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(828, 419)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(Label1)
         Controls.Add(Label2)
         Controls.Add(btnADD)
         Controls.Add(Panel1)
         Controls.Add(btnCANCEL)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 4, 4, 4)
         Name = "ADMAddAGC"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMAddAGC"
