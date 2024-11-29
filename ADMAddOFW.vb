@@ -1,9 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports MySqlConnector
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class ADMAddOFW
     Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
     Dim connection As New MySqlConnection(connectionString)
+    Dim uploadedImageUrl As String = ""
 
     Private Sub ADMAddOFW_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbxAddOFWCivStat.Items.Add("Single")
@@ -15,6 +17,20 @@ Public Class ADMAddOFW
         cbxAddOFWGender.Items.Add("Female")
     End Sub
 
+    Private Function UploadImageToServer(filePath As String) As String
+        Try
+            ' Replace with your server's upload endpoint and IP address
+            Dim serverUrl As String = "http://192.168.1.100/upload"
+            Dim webClient As New WebClient()
+
+            ' Upload the file and get the response
+            Dim response As Byte() = webClient.UploadFile(serverUrl, filePath)
+            Return System.Text.Encoding.UTF8.GetString(response)
+        Catch ex As Exception
+            MessageBox.Show("Error uploading image: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return ""
+        End Try
+    End Function
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnADD.Click
         Dim firstName As String = txtbxAddOFWFName.Text
@@ -74,4 +90,29 @@ Public Class ADMAddOFW
         Me.Close()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub btnADDPic_Click(sender As Object, e As EventArgs) Handles btnADDPic.Click
+        ' Open file dialog for selecting an image
+        Dim openFileDialog As New OpenFileDialog()
+        openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
+
+        If openFileDialog.ShowDialog() = DialogResult.OK Then
+            Dim filePath As String = openFileDialog.FileName
+
+            ' Load the image into a PictureBox
+            Try
+                Dim selectedImage As Image = Image.FromFile(filePath)
+                DisplayPIC.Image = selectedImage
+
+                ' Upload the image to the server via IP and get the URL
+                uploadedImageUrl = UploadImageToServer(filePath)
+                MessageBox.Show("Image uploaded successfully!")
+            Catch ex As Exception
+                MessageBox.Show("Error loading or uploading image: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+    End Sub
 End Class
