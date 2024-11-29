@@ -1,4 +1,6 @@
 ﻿Public Class OFWloginPage
+
+
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles imgLoginPg.Click
 
     End Sub
@@ -31,6 +33,6 @@
     End Sub
 
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
-
+        isConnectedToLocalServer()
     End Sub
 End Class

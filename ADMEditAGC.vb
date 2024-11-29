@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 Public Class ADMEditAGC
     Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"

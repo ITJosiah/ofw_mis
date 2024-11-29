@@ -1,6 +1,6 @@
 ﻿Imports System.Net.NetworkInformation
 Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 Public Class ADMAddAGC
     Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"

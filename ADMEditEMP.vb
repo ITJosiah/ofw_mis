@@ -2,7 +2,7 @@
 
 
 Public Class ADMEditEMP
-    Dim connectionString As String = ConnectDB()
+    Dim connectionString As String
     Dim connection As New MySqlConnection(connectionString)
     Private selectedEMPId As Integer
 

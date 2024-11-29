@@ -9,7 +9,7 @@ Public Class ADMDashboardOFWTab
     End Sub
 
 
-    Dim connectionString As String = ConnectDB()
+    Dim connectionString As String
     Dim connection As New MySqlConnection(connectionString)
     Private ofwDataTable As New DataTable()
 

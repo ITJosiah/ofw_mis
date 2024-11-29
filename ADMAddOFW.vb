@@ -1,5 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports MySqlConnector
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class ADMAddOFW

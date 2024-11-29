@@ -25,7 +25,7 @@ Module modDB
 
     Public Sub UpdateConnectionString()
         Try
-            Dim config As String = System.IO.Directory.GetCurrentDirectory & "\config.txt"
+            Dim config As String = System.IO.Directory.GetCurrentDirectory & "config\databaseConnector.txt"
             Dim text As String = Nothing
             If System.IO.File.Exists(config) Then
                 Using reader As System.IO.StreamReader = New System.IO.StreamReader(config)
