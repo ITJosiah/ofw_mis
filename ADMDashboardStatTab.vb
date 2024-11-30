@@ -64,4 +64,16 @@
     Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
 
     End Sub
+
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
+
+    End Sub
+
+    Private Sub Chart2_Click(sender As Object, e As EventArgs) Handles Chart2.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
 End Class
