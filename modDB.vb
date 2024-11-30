@@ -4,18 +4,19 @@ Imports System.Security
 Imports System.Security.Cryptography
 Imports ST = System.Runtime.InteropServices
 Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 
 Module modDB
     Public myadocon, conn As New MySqlConnection
     Public cmd As New MySqlCommand
     Public cmdRead As MySqlDataReader
-    Public db_server As String = "'localhost'"
-    Public db_uid As String = "'root'"
-    Public db_pwd As String = "''"
-    Public db_name As String = "'company'"
-    Public strConnection As String = "server=" & db_server & ";uid=" & db_uid & ";password=" & db_pwd & ";database=" & db_name & ";" & "allowuservariables='True';"
+    Public db_server As String = "localhost"
+    Public db_uid As String = "root"
+    Public db_pwd As String = ""
+    Public db_name As String = ""
+    ' Initial connection string '
+    Public strConnection As String = String.Format("server={0};uid={1};password={2};database={3};allowuservariables='True'", db_server, db_uid, db_pwd, db_name)
 
     Public Structure LoggedUser
         Dim id As Integer
@@ -28,21 +29,49 @@ Module modDB
 
     Public Sub UpdateConnectionString()
         Try
-            Dim config As String = System.IO.Directory.GetCurrentDirectory & "config\databaseConnector.txt"
-            Dim text As String = Nothing
+            Dim currentDir As String = System.IO.Directory.GetCurrentDirectory()
+
+            ' Navigate up three directories '
+            For i As Integer = 1 To 3
+                currentDir = System.IO.Directory.GetParent(currentDir).FullName
+            Next
+
+            Dim config As String = System.IO.Path.Combine(currentDir, "config", "databaseConnector.txt")
+
             If System.IO.File.Exists(config) Then
-                Using reader As System.IO.StreamReader = New System.IO.StreamReader(config)
+                Using reader As New System.IO.StreamReader(config)
+                    Dim text As String = reader.ReadToEnd()
+                    Dim arr_text() As String = Split(text, vbCrLf)
 
-                    text = reader.ReadToEnd
+                    db_server = Split(arr_text(0), "=")(1).Trim()
+                    db_uid = Split(arr_text(1), "=")(1).Trim()
+                    db_pwd = Split(arr_text(2), "=")(1).Trim()
+                    db_name = Split(arr_text(3), "=")(1).Trim()
+
+                    strConnection = String.Format("server={0};uid={1};password={2};database={3};allowuservariables='True'", db_server, db_uid, db_pwd, db_name)
                 End Using
-                Dim arr_text() As String = Split(text, vbCrLf)
-
-                strConnection = "server=" & Split(arr_text(0), "=")(1) & ";uid=" & Split(arr_text(1), "=")(1) & ";password=" & Split(arr_text(2), "=")(1) & ";database=" & Split(arr_text(3), "=")(1) & ";" & "allowuservariables='True';"
             Else
-                MsgBox("Do not exist")
+                MsgBox("Configuration file does not exist.", MsgBoxStyle.Critical)
             End If
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Error updating connection string: " & ex.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    ' Establish connection to the database '
+    Public Sub Connect()
+        Try
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+
+            ' Use updated connection string '
+            conn.ConnectionString = strConnection
+            conn.Open()
+            MsgBox("Connected to the Database!")
+        Catch ex As Exception
+            MsgBox("Can't connect to database: " & ex.Message, MsgBoxStyle.Critical)
+            conn.Close()
         End Try
     End Sub
 

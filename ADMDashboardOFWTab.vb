@@ -1,6 +1,6 @@
 ﻿
 Imports MySql.Data.MySqlClient
-Imports MySqlConnector
+
 
 
 Public Class ADMDashboardOFWTab
@@ -57,15 +57,17 @@ Public Class ADMDashboardOFWTab
             Dim selectedOFWId As Integer = CInt(selectedRow.Cells("OFWId").Value)  ' Assuming "OFWId" is the column name for the ID
 
             If MessageBox.Show("Are you sure you want to delete this OFW record?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim query As String = "DELETE FROM OFW WHERE OFWId = @OFWId"
+                'Dim query As String = "DELETE FROM OFW WHERE OFWId = @OFWId"
+                Dim sql As String = $"DELETE FROM OFW WHERE OFWId = {selectedOFWId}"
+                readQuery(sql)
 
-                Using connection = New MySqlConnection(connectionString)
-                    connection.Open()
-                    Using command = New MySqlCommand(query, connection)
-                        command.Parameters.AddWithValue("@OFWId", selectedOFWId)
-                        command.ExecuteNonQuery()
-                    End Using
-                End Using
+                'Using connection = New MySqlConnection(connectionString)
+                '    connection.Open()
+                '    Using command = New MySqlCommand(query, connection)
+                '        command.Parameters.AddWithValue("@OFWId", selectedOFWId)
+                '        command.ExecuteNonQuery()
+                '    End Using
+                'End Using
 
                 MessageBox.Show("OFW record deleted successfully!")
                 LoadToDGVOfw()  ' Refresh the DataGridView

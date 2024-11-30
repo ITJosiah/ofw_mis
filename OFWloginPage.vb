@@ -1,4 +1,5 @@
-﻿Public Class OFWloginPage
+﻿
+Public Class OFWloginPage
 
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles imgLoginPg.Click
@@ -23,6 +24,7 @@
     End Sub
 
     Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        modDB.Connect()
 
     End Sub
 
@@ -33,6 +35,6 @@
     End Sub
 
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
-        isConnectedToLocalServer()
+        UpdateConnectionString()
     End Sub
 End Class
