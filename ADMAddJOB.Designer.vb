@@ -66,7 +66,7 @@ Partial Class ADMAddJOB
         ' txtJOBSalary
         ' 
         txtJOBSalary.Location = New Point(330, 123)
-        txtJOBSalary.Margin = New Padding(4, 4, 4, 4)
+        txtJOBSalary.Margin = New Padding(4)
         txtJOBSalary.Name = "txtJOBSalary"
         txtJOBSalary.PlaceholderText = "Industry"
         txtJOBSalary.Size = New Size(280, 29)
@@ -86,7 +86,7 @@ Partial Class ADMAddJOB
         ' txtJOBSkill
         ' 
         txtJOBSkill.Location = New Point(629, 123)
-        txtJOBSkill.Margin = New Padding(4, 4, 4, 4)
+        txtJOBSkill.Margin = New Padding(4)
         txtJOBSkill.Name = "txtJOBSkill"
         txtJOBSkill.PlaceholderText = "State"
         txtJOBSkill.Size = New Size(280, 29)
@@ -94,11 +94,11 @@ Partial Class ADMAddJOB
         ' 
         ' txtJOBVacancies
         ' 
-        txtJOBVacancies.Location = New Point(18, 204)
-        txtJOBVacancies.Margin = New Padding(4, 4, 4, 4)
+        txtJOBVacancies.Location = New Point(15, 204)
+        txtJOBVacancies.Margin = New Padding(4)
         txtJOBVacancies.Name = "txtJOBVacancies"
         txtJOBVacancies.PlaceholderText = "Street"
-        txtJOBVacancies.Size = New Size(277, 29)
+        txtJOBVacancies.Size = New Size(280, 29)
         txtJOBVacancies.TabIndex = 29
         ' 
         ' Label5
@@ -137,7 +137,7 @@ Partial Class ADMAddJOB
         ' txtJOBCountry
         ' 
         txtJOBCountry.Location = New Point(629, 45)
-        txtJOBCountry.Margin = New Padding(4, 4, 4, 4)
+        txtJOBCountry.Margin = New Padding(4)
         txtJOBCountry.Name = "txtJOBCountry"
         txtJOBCountry.PlaceholderText = "Last Name"
         txtJOBCountry.Size = New Size(280, 29)
@@ -146,7 +146,7 @@ Partial Class ADMAddJOB
         ' txtJOBDescription
         ' 
         txtJOBDescription.Location = New Point(330, 45)
-        txtJOBDescription.Margin = New Padding(4, 4, 4, 4)
+        txtJOBDescription.Margin = New Padding(4)
         txtJOBDescription.Name = "txtJOBDescription"
         txtJOBDescription.PlaceholderText = "Middle Name"
         txtJOBDescription.Size = New Size(280, 29)
@@ -155,7 +155,7 @@ Partial Class ADMAddJOB
         ' txtJOBTitle
         ' 
         txtJOBTitle.Location = New Point(15, 45)
-        txtJOBTitle.Margin = New Padding(4, 4, 4, 4)
+        txtJOBTitle.Margin = New Padding(4)
         txtJOBTitle.Name = "txtJOBTitle"
         txtJOBTitle.PlaceholderText = "First Name"
         txtJOBTitle.Size = New Size(280, 29)
@@ -177,7 +177,7 @@ Partial Class ADMAddJOB
         ' txtJOBConditions
         ' 
         txtJOBConditions.Location = New Point(330, 204)
-        txtJOBConditions.Margin = New Padding(4, 4, 4, 4)
+        txtJOBConditions.Margin = New Padding(4)
         txtJOBConditions.Name = "txtJOBConditions"
         txtJOBConditions.PlaceholderText = "Country"
         txtJOBConditions.Size = New Size(280, 29)
@@ -209,18 +209,18 @@ Partial Class ADMAddJOB
         ' 
         ' txtJOBAgencyId
         ' 
-        txtJOBAgencyId.Location = New Point(18, 123)
-        txtJOBAgencyId.Margin = New Padding(4, 4, 4, 4)
+        txtJOBAgencyId.Location = New Point(15, 123)
+        txtJOBAgencyId.Margin = New Padding(4)
         txtJOBAgencyId.Name = "txtJOBAgencyId"
         txtJOBAgencyId.PlaceholderText = "Company Name"
-        txtJOBAgencyId.Size = New Size(277, 29)
+        txtJOBAgencyId.Size = New Size(280, 29)
         txtJOBAgencyId.TabIndex = 43
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(22, 332)
+        Label14.Location = New Point(330, 249)
         Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
         Label14.Size = New Size(154, 20)
@@ -241,7 +241,7 @@ Partial Class ADMAddJOB
         ' txtJOBBenefits
         ' 
         txtJOBBenefits.Location = New Point(629, 204)
-        txtJOBBenefits.Margin = New Padding(4, 4, 4, 4)
+        txtJOBBenefits.Margin = New Padding(4)
         txtJOBBenefits.Name = "txtJOBBenefits"
         txtJOBBenefits.PlaceholderText = "Zipcode"
         txtJOBBenefits.Size = New Size(280, 29)
@@ -265,7 +265,7 @@ Partial Class ADMAddJOB
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
         btnADD.Location = New Point(899, 722)
-        btnADD.Margin = New Padding(4, 4, 4, 4)
+        btnADD.Margin = New Padding(4)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(153, 56)
         btnADD.TabIndex = 20
@@ -309,7 +309,7 @@ Partial Class ADMAddJOB
         Panel1.Controls.Add(txtJOBDescription)
         Panel1.Controls.Add(txtJOBTitle)
         Panel1.Location = New Point(0, 122)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1065, 580)
         Panel1.TabIndex = 17
@@ -317,8 +317,8 @@ Partial Class ADMAddJOB
         ' dateJOBDeadline
         ' 
         dateJOBDeadline.Format = DateTimePickerFormat.Short
-        dateJOBDeadline.Location = New Point(22, 357)
-        dateJOBDeadline.Margin = New Padding(4, 4, 4, 4)
+        dateJOBDeadline.Location = New Point(330, 274)
+        dateJOBDeadline.Margin = New Padding(4)
         dateJOBDeadline.Name = "dateJOBDeadline"
         dateJOBDeadline.Size = New Size(180, 29)
         dateJOBDeadline.TabIndex = 52
@@ -327,7 +327,7 @@ Partial Class ADMAddJOB
         ' 
         cbxJOBStat.FormattingEnabled = True
         cbxJOBStat.Location = New Point(18, 274)
-        cbxJOBStat.Margin = New Padding(4, 4, 4, 4)
+        cbxJOBStat.Margin = New Padding(4)
         cbxJOBStat.Name = "cbxJOBStat"
         cbxJOBStat.Size = New Size(180, 29)
         cbxJOBStat.TabIndex = 51
@@ -350,7 +350,7 @@ Partial Class ADMAddJOB
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
         btnCANCEL.Location = New Point(715, 722)
-        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
+        btnCANCEL.Margin = New Padding(4)
         btnCANCEL.Name = "btnCANCEL"
         btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 21
@@ -369,7 +369,7 @@ Partial Class ADMAddJOB
         Controls.Add(Panel1)
         Controls.Add(btnCANCEL)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "ADMAddJOB"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMAddJOB"

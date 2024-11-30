@@ -89,10 +89,10 @@ Partial Class ADMEditOFW
         ' txtbxEditOFWOECNum
         ' 
         txtbxEditOFWOECNum.Location = New Point(18, 514)
-        txtbxEditOFWOECNum.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWOECNum.Margin = New Padding(4)
         txtbxEditOFWOECNum.Name = "txtbxEditOFWOECNum"
         txtbxEditOFWOECNum.PlaceholderText = "OEC Number"
-        txtbxEditOFWOECNum.Size = New Size(226, 29)
+        txtbxEditOFWOECNum.Size = New Size(277, 29)
         txtbxEditOFWOECNum.TabIndex = 47
         ' 
         ' Label17
@@ -109,10 +109,10 @@ Partial Class ADMEditOFW
         ' txtbxEditOFWVisaNum
         ' 
         txtbxEditOFWVisaNum.Location = New Point(18, 444)
-        txtbxEditOFWVisaNum.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWVisaNum.Margin = New Padding(4)
         txtbxEditOFWVisaNum.Name = "txtbxEditOFWVisaNum"
         txtbxEditOFWVisaNum.PlaceholderText = "VISA Number"
-        txtbxEditOFWVisaNum.Size = New Size(226, 29)
+        txtbxEditOFWVisaNum.Size = New Size(277, 29)
         txtbxEditOFWVisaNum.TabIndex = 45
         ' 
         ' Label16
@@ -129,17 +129,17 @@ Partial Class ADMEditOFW
         ' txtbxEditOFWPassportNum
         ' 
         txtbxEditOFWPassportNum.Location = New Point(15, 374)
-        txtbxEditOFWPassportNum.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWPassportNum.Margin = New Padding(4)
         txtbxEditOFWPassportNum.Name = "txtbxEditOFWPassportNum"
         txtbxEditOFWPassportNum.PlaceholderText = "Passport Number"
-        txtbxEditOFWPassportNum.Size = New Size(226, 29)
+        txtbxEditOFWPassportNum.Size = New Size(280, 29)
         txtbxEditOFWPassportNum.TabIndex = 43
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(253, 259)
+        Label15.Location = New Point(330, 419)
         Label15.Margin = New Padding(4, 0, 4, 0)
         Label15.Name = "Label15"
         Label15.Size = New Size(144, 20)
@@ -148,18 +148,18 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWEmrContNum
         ' 
-        txtbxEditOFWEmrContNum.Location = New Point(253, 284)
-        txtbxEditOFWEmrContNum.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWEmrContNum.Location = New Point(330, 444)
+        txtbxEditOFWEmrContNum.Margin = New Padding(4)
         txtbxEditOFWEmrContNum.Name = "txtbxEditOFWEmrContNum"
         txtbxEditOFWEmrContNum.PlaceholderText = "Emergency Contact"
-        txtbxEditOFWEmrContNum.Size = New Size(226, 29)
+        txtbxEditOFWEmrContNum.Size = New Size(280, 29)
         txtbxEditOFWEmrContNum.TabIndex = 41
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(18, 259)
+        Label14.Location = New Point(330, 349)
         Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
         Label14.Size = New Size(125, 20)
@@ -168,18 +168,18 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWContNum
         ' 
-        txtbxEditOFWContNum.Location = New Point(18, 284)
-        txtbxEditOFWContNum.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWContNum.Location = New Point(330, 374)
+        txtbxEditOFWContNum.Margin = New Padding(4)
         txtbxEditOFWContNum.Name = "txtbxEditOFWContNum"
         txtbxEditOFWContNum.PlaceholderText = "Contact Number"
-        txtbxEditOFWContNum.Size = New Size(226, 29)
+        txtbxEditOFWContNum.Size = New Size(280, 29)
         txtbxEditOFWContNum.TabIndex = 39
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(959, 179)
+        Label13.Location = New Point(330, 267)
         Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
         Label13.Size = New Size(64, 20)
@@ -188,8 +188,8 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWZip
         ' 
-        txtbxEditOFWZip.Location = New Point(959, 204)
-        txtbxEditOFWZip.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWZip.Location = New Point(330, 292)
+        txtbxEditOFWZip.Margin = New Padding(4)
         txtbxEditOFWZip.Name = "txtbxEditOFWZip"
         txtbxEditOFWZip.PlaceholderText = "Zipcode"
         txtbxEditOFWZip.Size = New Size(91, 29)
@@ -199,7 +199,7 @@ Partial Class ADMEditOFW
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(724, 179)
+        Label12.Location = New Point(18, 258)
         Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
         Label12.Size = New Size(69, 20)
@@ -208,18 +208,18 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWProv
         ' 
-        txtbxEditOFWProv.Location = New Point(724, 204)
-        txtbxEditOFWProv.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWProv.Location = New Point(18, 283)
+        txtbxEditOFWProv.Margin = New Padding(4)
         txtbxEditOFWProv.Name = "txtbxEditOFWProv"
         txtbxEditOFWProv.PlaceholderText = "Province"
-        txtbxEditOFWProv.Size = New Size(226, 29)
+        txtbxEditOFWProv.Size = New Size(277, 29)
         txtbxEditOFWProv.TabIndex = 35
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(489, 179)
+        Label9.Location = New Point(629, 179)
         Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
         Label9.Size = New Size(129, 20)
@@ -241,7 +241,7 @@ Partial Class ADMEditOFW
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(253, 179)
+        Label11.Location = New Point(330, 179)
         Label11.Margin = New Padding(4, 0, 4, 0)
         Label11.Name = "Label11"
         Label11.Size = New Size(75, 20)
@@ -255,7 +255,7 @@ Partial Class ADMEditOFW
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
         btnCANCEL.Location = New Point(739, 718)
-        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
+        btnCANCEL.Margin = New Padding(4)
         btnCANCEL.Name = "btnCANCEL"
         btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 16
@@ -277,20 +277,20 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWCity
         ' 
-        txtbxEditOFWCity.Location = New Point(489, 204)
-        txtbxEditOFWCity.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWCity.Location = New Point(629, 204)
+        txtbxEditOFWCity.Margin = New Padding(4)
         txtbxEditOFWCity.Name = "txtbxEditOFWCity"
         txtbxEditOFWCity.PlaceholderText = "City/Municipality"
-        txtbxEditOFWCity.Size = New Size(226, 29)
+        txtbxEditOFWCity.Size = New Size(280, 29)
         txtbxEditOFWCity.TabIndex = 31
         ' 
         ' txtbxEditOFWBrgy
         ' 
-        txtbxEditOFWBrgy.Location = New Point(253, 204)
-        txtbxEditOFWBrgy.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWBrgy.Location = New Point(330, 204)
+        txtbxEditOFWBrgy.Margin = New Padding(4)
         txtbxEditOFWBrgy.Name = "txtbxEditOFWBrgy"
         txtbxEditOFWBrgy.PlaceholderText = "Barangay"
-        txtbxEditOFWBrgy.Size = New Size(226, 29)
+        txtbxEditOFWBrgy.Size = New Size(280, 29)
         txtbxEditOFWBrgy.TabIndex = 30
         ' 
         ' Label8
@@ -308,7 +308,7 @@ Partial Class ADMEditOFW
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(226, 102)
+        Label7.Location = New Point(330, 102)
         Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(60, 20)
@@ -319,7 +319,7 @@ Partial Class ADMEditOFW
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(437, 102)
+        Label6.Location = New Point(629, 102)
         Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
         Label6.Size = New Size(86, 20)
@@ -329,8 +329,8 @@ Partial Class ADMEditOFW
         ' cbxEditOFWCivStat
         ' 
         cbxEditOFWCivStat.FormattingEnabled = True
-        cbxEditOFWCivStat.Location = New Point(437, 127)
-        cbxEditOFWCivStat.Margin = New Padding(4, 4, 4, 4)
+        cbxEditOFWCivStat.Location = New Point(629, 127)
+        cbxEditOFWCivStat.Margin = New Padding(4)
         cbxEditOFWCivStat.Name = "cbxEditOFWCivStat"
         cbxEditOFWCivStat.Size = New Size(192, 29)
         cbxEditOFWCivStat.TabIndex = 25
@@ -338,8 +338,8 @@ Partial Class ADMEditOFW
         ' cbxEditOFWGender
         ' 
         cbxEditOFWGender.FormattingEnabled = True
-        cbxEditOFWGender.Location = New Point(226, 127)
-        cbxEditOFWGender.Margin = New Padding(4, 4, 4, 4)
+        cbxEditOFWGender.Location = New Point(330, 127)
+        cbxEditOFWGender.Margin = New Padding(4)
         cbxEditOFWGender.Name = "cbxEditOFWGender"
         cbxEditOFWGender.Size = New Size(192, 29)
         cbxEditOFWGender.TabIndex = 24
@@ -348,7 +348,7 @@ Partial Class ADMEditOFW
         ' 
         dateEditOFWDOB.Format = DateTimePickerFormat.Short
         dateEditOFWDOB.Location = New Point(15, 127)
-        dateEditOFWDOB.Margin = New Padding(4, 4, 4, 4)
+        dateEditOFWDOB.Margin = New Padding(4)
         dateEditOFWDOB.Name = "dateEditOFWDOB"
         dateEditOFWDOB.Size = New Size(192, 29)
         dateEditOFWDOB.TabIndex = 23
@@ -357,7 +357,7 @@ Partial Class ADMEditOFW
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(555, 20)
+        Label5.Location = New Point(631, 21)
         Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(84, 20)
@@ -379,7 +379,7 @@ Partial Class ADMEditOFW
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(285, 20)
+        Label3.Location = New Point(330, 21)
         Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
         Label3.Size = New Size(103, 20)
@@ -388,29 +388,29 @@ Partial Class ADMEditOFW
         ' 
         ' txtbxEditOFWLName
         ' 
-        txtbxEditOFWLName.Location = New Point(555, 45)
-        txtbxEditOFWLName.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWLName.Location = New Point(629, 45)
+        txtbxEditOFWLName.Margin = New Padding(4)
         txtbxEditOFWLName.Name = "txtbxEditOFWLName"
         txtbxEditOFWLName.PlaceholderText = "Last Name"
-        txtbxEditOFWLName.Size = New Size(251, 29)
+        txtbxEditOFWLName.Size = New Size(280, 29)
         txtbxEditOFWLName.TabIndex = 2
         ' 
         ' txtbxEditOFWMName
         ' 
-        txtbxEditOFWMName.Location = New Point(285, 45)
-        txtbxEditOFWMName.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWMName.Location = New Point(330, 45)
+        txtbxEditOFWMName.Margin = New Padding(4)
         txtbxEditOFWMName.Name = "txtbxEditOFWMName"
         txtbxEditOFWMName.PlaceholderText = "Middle Name"
-        txtbxEditOFWMName.Size = New Size(251, 29)
+        txtbxEditOFWMName.Size = New Size(280, 29)
         txtbxEditOFWMName.TabIndex = 1
         ' 
         ' txtbxEditOFWFName
         ' 
         txtbxEditOFWFName.Location = New Point(15, 45)
-        txtbxEditOFWFName.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWFName.Margin = New Padding(4)
         txtbxEditOFWFName.Name = "txtbxEditOFWFName"
         txtbxEditOFWFName.PlaceholderText = "First Name"
-        txtbxEditOFWFName.Size = New Size(251, 29)
+        txtbxEditOFWFName.Size = New Size(280, 29)
         txtbxEditOFWFName.TabIndex = 0
         ' 
         ' btnSAVE
@@ -420,7 +420,7 @@ Partial Class ADMEditOFW
         btnSAVE.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnSAVE.ForeColor = Color.DarkGreen
         btnSAVE.Location = New Point(900, 718)
-        btnSAVE.Margin = New Padding(4, 4, 4, 4)
+        btnSAVE.Margin = New Padding(4)
         btnSAVE.Name = "btnSAVE"
         btnSAVE.Size = New Size(153, 56)
         btnSAVE.TabIndex = 15
@@ -430,10 +430,10 @@ Partial Class ADMEditOFW
         ' txtbxEditOFWStreet
         ' 
         txtbxEditOFWStreet.Location = New Point(18, 204)
-        txtbxEditOFWStreet.Margin = New Padding(4, 4, 4, 4)
+        txtbxEditOFWStreet.Margin = New Padding(4)
         txtbxEditOFWStreet.Name = "txtbxEditOFWStreet"
         txtbxEditOFWStreet.PlaceholderText = "Street"
-        txtbxEditOFWStreet.Size = New Size(226, 29)
+        txtbxEditOFWStreet.Size = New Size(277, 29)
         txtbxEditOFWStreet.TabIndex = 29
         ' 
         ' Panel1
@@ -471,8 +471,8 @@ Partial Class ADMEditOFW
         Panel1.Controls.Add(txtbxEditOFWLName)
         Panel1.Controls.Add(txtbxEditOFWMName)
         Panel1.Controls.Add(txtbxEditOFWFName)
-        Panel1.Location = New Point(1, 126)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Location = New Point(0, 122)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1079, 581)
         Panel1.TabIndex = 12
@@ -489,7 +489,7 @@ Partial Class ADMEditOFW
         Controls.Add(btnSAVE)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "ADMEditOFW"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMEditOFW"
