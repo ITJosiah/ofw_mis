@@ -2,8 +2,7 @@
 
 
 Public Class ADMEditAGC
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
-    Dim connection As New MySqlConnection(connectionString)
+
     Private selectedAGCId As Integer
     Private Sub ADMEditAGC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbxEditAGCAccredStat.Items.Add("Acceredited")
@@ -19,32 +18,38 @@ Public Class ADMEditAGC
     End Sub
 
     Private Sub PopulateFormFields(ofwId As Integer)
-        Dim query As String = "SELECT * FROM agency WHERE AgencyId = @AgencyId"
+        ' Construct the query with the given ID
+        Dim query As String = $"SELECT * FROM agency WHERE AgencyId = {ofwId}"
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@AgencyId", selectedAGCId)
-                Dim reader As MySqlDataReader = command.ExecuteReader()
+        ' Call the readQuery method
+        readQuery(query)
 
-                If reader.Read() Then
-                    txtEditAGCFName.Text = reader("AgencyName").ToString()
-                    txtEditAGCLicNum.Text = reader("AgencyLicenseNumber").ToString()
-                    txtEditAGCSpec.Text = reader("Specialization").ToString()
-                    txtEditAGCWebsite.Text = reader("WebsiteUrl").ToString()
-                    cbxEditAGCAccredStat.SelectedItem = reader("GovAccreditationStat")
-                    txtEditAGCStreet.Text = reader("Street").ToString()
-                    txtEditAGCCity.Text = reader("City").ToString()
-                    txtEditAGCState.Text = reader("State").ToString()
-                    txtEditAGCCountry.Text = reader("Country").ToString()
-                    txtEditAGCZip.Text = reader("Zipcode").ToString()
-                    txtEditAGCContNum.Text = reader("ContactNum").ToString()
-                    txtEditAGCEmail.Text = reader("Email").ToString()
-                    txtEditAGCYrInOp.Text = reader("YearsOfOperation").ToString()
-                End If
-            End Using
-        End Using
+        ' Check if data is available
+        If cmdRead IsNot Nothing AndAlso cmdRead.HasRows Then
+            cmdRead.Read()
+
+            ' Populate the form fields
+            txtEditAGCFName.Text = cmdRead("AgencyName").ToString()
+            txtEditAGCLicNum.Text = cmdRead("AgencyLicenseNumber").ToString()
+            txtEditAGCSpec.Text = cmdRead("Specialization").ToString()
+            txtEditAGCWebsite.Text = cmdRead("WebsiteUrl").ToString()
+            cbxEditAGCAccredStat.SelectedItem = cmdRead("GovAccreditationStat")
+            txtEditAGCStreet.Text = cmdRead("Street").ToString()
+            txtEditAGCCity.Text = cmdRead("City").ToString()
+            txtEditAGCState.Text = cmdRead("State").ToString()
+            txtEditAGCCountry.Text = cmdRead("Country").ToString()
+            txtEditAGCZip.Text = cmdRead("Zipcode").ToString()
+            txtEditAGCContNum.Text = cmdRead("ContactNum").ToString()
+            txtEditAGCEmail.Text = cmdRead("Email").ToString()
+            txtEditAGCYrInOp.Text = cmdRead("YearsOfOperation").ToString()
+        Else
+            MessageBox.Show("No record found for the selected Agency ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+        ' Close the reader
+        cmdRead?.Close()
     End Sub
+
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSAVE.Click
         Dim updatedAGCName As String = txtEditAGCFName.Text
@@ -61,37 +66,33 @@ Public Class ADMEditAGC
         Dim updatedEmail As String = txtEditAGCEmail.Text
         Dim updatedYrInOp As String = txtEditAGCYrInOp.Text
 
-        ' ... other updated fields ...
+        ' Construct the update query
+        Dim query As String = $"UPDATE AGENCY SET AgencyName = '{updatedAGCName}', AgencyLicenseNumber = '{AgencyLicenseNumber}', 
+                           Specialization = '{updatedSpecialization}', WebsiteUrl = '{updatedWebsite}', 
+                           GovAccreditationStat = '{updatedAccredStat}', Street = '{updatedStreet}', City = '{updatedCity}', 
+                           State = '{updatedState}', Country = '{updatedCountry}', Zipcode = '{updatedZipcode}', 
+                           ContactNum = '{updatedContactNum}', YearsOfOperation = '{updatedYrInOp}' 
+                           WHERE AgencyId = {selectedAGCId}"
 
-        Dim query As String = "UPDATE AGENCY SET AgencyName = @AgencyName, AgencyLicenseNumber = @AgencyLicenseNumber, Specialization = @Specialization, WebsiteUrl = @WebsiteUrl, GovAccreditationStat = @GovAccreditationStat, Street = @Street,
-                                              City = @City, State = @State, Country = @Country, Zipcode = @Zipcode, ContactNum = @ContactNum, YearsOfOperation = @YearsOfOperation WHERE AgencyId = @AgencyId"
+        Try
+            ' Use readQuery for the update operation
+            readQuery(query)
+            MessageBox.Show("Agency record updated successfully!")
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@AgencyName", updatedAGCName)
-                command.Parameters.AddWithValue("@AgencyLicenseNumber", AgencyLicenseNumber)
-                command.Parameters.AddWithValue("@Specialization", updatedSpecialization)
-                command.Parameters.AddWithValue("@WebsiteUrl", updatedWebsite)
-                command.Parameters.AddWithValue("@GovAccreditationStat", updatedAccredStat)
-                command.Parameters.AddWithValue("@Street", updatedStreet)
-                command.Parameters.AddWithValue("@City", updatedCity)
-                command.Parameters.AddWithValue("@State", updatedState)
-                command.Parameters.AddWithValue("@Country", updatedCountry)
-                command.Parameters.AddWithValue("@Zipcode", updatedZipcode)
-                command.Parameters.AddWithValue("@ContactNum", updatedContactNum)
-                command.Parameters.AddWithValue("@YearsOfOperation", updatedEmail)
-                command.Parameters.AddWithValue("@AgencyId", updatedYrInOp)
-                ' ... other parameters ...
+            ' Close the edit form and refresh the main form's DataGridView
+            Me.Close()
+            ' Assuming you have a reference to the main form:
+            ADMDashboardAGCTab.refresh() ' Call the refresh method in the main form
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred while updating the record: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Ensure resources are released properly
+            cmdRead?.Close()
+        End Try
+    End Sub
 
-                command.ExecuteNonQuery()
-                MessageBox.Show("Agency record updated successfully!")
 
-                ' Close the edit form and refresh the main form's DataGridView
-                Me.Close()
-                ' Assuming you have a reference to the main form:
-                ADMDashboardAGCTab.LoadToDGVAgency() ' Call the refresh method in the main form
-            End Using
-        End Using
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

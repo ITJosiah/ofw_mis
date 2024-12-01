@@ -28,95 +28,85 @@ Public Class ADMEditOFW
 
 
     Private Sub PopulateFormFields(ofwId As Integer)
-        Dim query As String = "SELECT * FROM OFW WHERE OFWId = @OFWId"
+        ' SQL query with a parameter placeholder
+        Dim query As String = $"SELECT * FROM OFW WHERE OFWId = {ofwId}"
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@OFWId", ofwId)
-                Dim reader As MySqlDataReader = command.ExecuteReader()
+        ' Use readQuery to execute the query
+        readQuery(query)
 
-                If reader.Read() Then
-                    txtbxEditOFWFName.Text = reader("FirstName").ToString()
-                    txtbxEditOFWMName.Text = reader("MiddleName").ToString()
-                    txtbxEditOFWLName.Text = reader("LastName").ToString()
+        ' Check if the reader has been initialized and has rows
+        If cmdRead IsNot Nothing AndAlso cmdRead.Read() Then
+            ' Populate the form fields
+            txtbxEditOFWFName.Text = cmdRead("FirstName").ToString()
+            txtbxEditOFWMName.Text = cmdRead("MiddleName").ToString()
+            txtbxEditOFWLName.Text = cmdRead("LastName").ToString()
 
-                    dateEditOFWDOB.Value = reader("DOB")
-                    cbxEditOFWGender.SelectedItem = reader("Sex")
-                    cbxEditOFWCivStat.SelectedItem = reader("CivilStatus")
+            dateEditOFWDOB.Value = Convert.ToDateTime(cmdRead("DOB"))
+            cbxEditOFWGender.SelectedItem = cmdRead("Sex").ToString()
+            cbxEditOFWCivStat.SelectedItem = cmdRead("CivilStatus").ToString()
 
-                    txtbxEditOFWStreet.Text = reader("Street").ToString()
-                    txtbxEditOFWBrgy.Text = reader("Barangay").ToString()
-                    txtbxEditOFWCity.Text = reader("City").ToString()
-                    txtbxEditOFWProv.Text = reader("Province").ToString()
-                    txtbxEditOFWZip.Text = reader("Zipcode").ToString()
-                    txtbxEditOFWContNum.Text = reader("ContactNum").ToString()
-                    txtbxEditOFWEmrContNum.Text = reader("EmergencyContactNum").ToString()
-                    txtbxEditOFWPassportNum.Text = reader("PassportNum").ToString()
-                    txtbxEditOFWVisaNum.Text = reader("VISANum").ToString()
-                    txtbxEditOFWOECNum.Text = reader("OECNum").ToString()
-                    ' ... populate other fields ...
-                End If
-            End Using
-        End Using
+            txtbxEditOFWStreet.Text = cmdRead("Street").ToString()
+            txtbxEditOFWBrgy.Text = cmdRead("Barangay").ToString()
+            txtbxEditOFWCity.Text = cmdRead("City").ToString()
+            txtbxEditOFWProv.Text = cmdRead("Province").ToString()
+            txtbxEditOFWZip.Text = cmdRead("Zipcode").ToString()
+            txtbxEditOFWContNum.Text = cmdRead("ContactNum").ToString()
+            txtbxEditOFWEmrContNum.Text = cmdRead("EmergencyContactNum").ToString()
+            txtbxEditOFWPassportNum.Text = cmdRead("PassportNum").ToString()
+            txtbxEditOFWVisaNum.Text = cmdRead("VISANum").ToString()
+            txtbxEditOFWOECNum.Text = cmdRead("OECNum").ToString()
+            ' ... populate other fields ...
+        End If
+
+        ' Close the reader and connection if necessary
+        If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+
     End Sub
+
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSAVE.Click
-        Dim updatedFirstName As String = txtbxEditOFWFName.Text
-        Dim updatedMiddleName As String = txtbxEditOFWMName.Text
-        Dim updatedLastName As String = txtbxEditOFWLName.Text
-        Dim updatedDOB As Date = dateEditOFWDOB.Value
-        Dim updatedGender As String = cbxEditOFWGender.SelectedItem.ToString()
-        Dim updatedCivilStatus As String = cbxEditOFWCivStat.SelectedItem.ToString()
-        Dim updatedStreet As String = txtbxEditOFWStreet.Text
-        Dim updatedBarangay As String = txtbxEditOFWBrgy.Text
-        Dim updatedCity As String = txtbxEditOFWCity.Text
-        Dim updatedProvince As String = txtbxEditOFWProv.Text
-        Dim updatedZipcode As String = txtbxEditOFWZip.Text
-        Dim updatedContactNum As String = txtbxEditOFWContNum.Text
-        Dim updatedEmrContactNum As String = txtbxEditOFWEmrContNum.Text
-        Dim updatedPassportNum As String = txtbxEditOFWPassportNum.Text
-        Dim updatedVisaNum As String = txtbxEditOFWVisaNum.Text
-        Dim updatedOECNum As String = txtbxEditOFWOECNum.Text
+        Try
+            ' Collect updated values from the form fields
+            Dim updatedFirstName As String = txtbxEditOFWFName.Text
+            Dim updatedMiddleName As String = txtbxEditOFWMName.Text
+            Dim updatedLastName As String = txtbxEditOFWLName.Text
+            Dim updatedDOB As Date = dateEditOFWDOB.Value
+            Dim updatedGender As String = If(cbxEditOFWGender.SelectedItem IsNot Nothing, cbxEditOFWGender.SelectedItem.ToString(), String.Empty)
+            Dim updatedCivilStatus As String = If(cbxEditOFWCivStat.SelectedItem IsNot Nothing, cbxEditOFWCivStat.SelectedItem.ToString(), String.Empty)
+            Dim updatedStreet As String = txtbxEditOFWStreet.Text
+            Dim updatedBarangay As String = txtbxEditOFWBrgy.Text
+            Dim updatedCity As String = txtbxEditOFWCity.Text
+            Dim updatedProvince As String = txtbxEditOFWProv.Text
+            Dim updatedZipcode As String = txtbxEditOFWZip.Text
+            Dim updatedContactNum As String = txtbxEditOFWContNum.Text
+            Dim updatedEmrContactNum As String = txtbxEditOFWEmrContNum.Text
+            Dim updatedPassportNum As String = txtbxEditOFWPassportNum.Text
+            Dim updatedVisaNum As String = txtbxEditOFWVisaNum.Text
+            Dim updatedOECNum As String = txtbxEditOFWOECNum.Text
 
-        ' ... other updated fields ...
+            ' SQL query
+            Dim query As String = $"UPDATE OFW SET FirstName = '{updatedFirstName}', MiddleName = '{updatedMiddleName}', 
+                                LastName = '{updatedLastName}', DOB = '{updatedDOB:yyyy-MM-dd}', Sex = '{updatedGender}', 
+                                CivilStatus = '{updatedCivilStatus}', Street = '{updatedStreet}', Barangay = '{updatedBarangay}', 
+                                City = '{updatedCity}', Province = '{updatedProvince}', Zipcode = '{updatedZipcode}', 
+                                ContactNum = '{updatedContactNum}', EmergencyContactNum = '{updatedEmrContactNum}', 
+                                PassportNum = '{updatedPassportNum}', VisaNum = '{updatedVisaNum}', OECNum = '{updatedOECNum}' 
+                                WHERE OFWId = {selectedOFWId}"
 
-        Dim query As String = "UPDATE OFW SET FirstName = @FirstName, MiddleName = @MiddleName, LastName = @LastName, DOB = @DOB, Sex = @Sex, CivilStatus = @CivilStatus,
-                                              Street = @Street, Barangay = @Barangay, City = @City, Province = @Province, Zipcode = @Zipcode, ContactNum = @ContactNum,
-                                              EmergencyContactNum = @EmergencyContactNum, PassportNum = @PassportNum, VisaNum = @VisaNum, OECNum = @OECNum WHERE OFWId = @OFWId"
+            ' Execute the query
+            readQuery(query)
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@FirstName", updatedFirstName)
-                command.Parameters.AddWithValue("@MiddleName", updatedMiddleName)
-                command.Parameters.AddWithValue("@LastName", updatedLastName)
-                command.Parameters.AddWithValue("@DOB", updatedDOB)
-                command.Parameters.AddWithValue("@Sex", updatedGender)
-                command.Parameters.AddWithValue("@CivilStatus", updatedCivilStatus)
-                command.Parameters.AddWithValue("@Street", updatedStreet)
-                command.Parameters.AddWithValue("@Barangay", updatedBarangay)
-                command.Parameters.AddWithValue("@City", updatedCity)
-                command.Parameters.AddWithValue("@Province", updatedProvince)
-                command.Parameters.AddWithValue("@Zipcode", updatedZipcode)
-                command.Parameters.AddWithValue("@ContactNum", updatedContactNum)
-                command.Parameters.AddWithValue("@EmergencyContactNum", updatedEmrContactNum)
-                command.Parameters.AddWithValue("@PassportNum", updatedPassportNum)
-                command.Parameters.AddWithValue("@VisaNum", updatedVisaNum)
-                command.Parameters.AddWithValue("@OECNum", updatedOECNum)
-                command.Parameters.AddWithValue("@OFWId", selectedOFWId)
-                ' ... other parameters ...
+            ' Notify the user and close the form
+            MessageBox.Show("OFW record updated successfully!")
+            Me.Close()
 
-                command.ExecuteNonQuery()
-                MessageBox.Show("OFW record updated successfully!")
-
-                ' Close the edit form and refresh the main form's DataGridView
-                Me.Close()
-                ' Assuming you have a reference to the main form:
-                ADMDashboardOFWTab.LoadToDGVOfw() ' Call the refresh method in the main form
-            End Using
-        End Using
+            ' Refresh the main form's DataGridView
+            ADMDashboardOFWTab.refresh()
+        Catch ex As Exception
+            MsgBox($"An error occurred: {ex.Message}", MsgBoxStyle.Critical)
+        End Try
     End Sub
+
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCANCEL.Click
         Me.Close()

@@ -3,8 +3,7 @@ Imports MySql.Data.MySqlClient
 
 
 Public Class ADMAddAGC
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
-    Dim connection As New MySqlConnection(connectionString)
+
 
     Private Sub ADMAddAGC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbxAGCAccredStat.Items.Add("Accredited")
@@ -27,35 +26,26 @@ Public Class ADMAddAGC
         Dim email As String = txtAGCEmail.Text
         Dim yearsOfOperation As Integer = Integer.Parse(txtAGCYrInOp.Text)
 
-        Dim query As String = "INSERT INTO Agency (AgencyName, AgencyLicenseNumber, WebsiteUrl, GovAccreditationStat, LicenseExpDate, Street, City, State, Country, Zipcode, ContactNum, Email, YearsOfOperation) 
-                                           VALUES (@AgencyName, @AgencyLicenseNumber, @WebsiteUrl, @GovAccreditationStat, @LicenseExpDate, @Street, @City, @State, @Country, @Zipcode, @ContactNum, @Email, @YearsOfOperation)"
+        Dim query As String = $"INSERT INTO Agency (AgencyName, AgencyLicenseNumber, WebsiteUrl, GovAccreditationStat, LicenseExpDate, Street, City, State, Country, Zipcode, ContactNum, Email, YearsOfOperation) 
+                VALUES ('{agencyName}', '{AgencylicenseNumber}', '{website}', '{govAccreditation}', '{licenseExpDate:yyyy-MM-dd}', '{street}', '{city}', '{state}', '{country}', '{zipcode}', '{contactNumber}', '{email}', '{yearsOfOperation}')"
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@AgencyName", agencyName)
-                command.Parameters.AddWithValue("@AgencyLicenseNumber", AgencylicenseNumber)
-                command.Parameters.AddWithValue("@WebsiteUrl", website)
-                command.Parameters.AddWithValue("@GovAccreditationStat", govAccreditation)
-                command.Parameters.AddWithValue("@LicenseExpDate", licenseExpDate)
-                command.Parameters.AddWithValue("@Street", street)
-                command.Parameters.AddWithValue("@City", city)
-                command.Parameters.AddWithValue("@State", state)
-                command.Parameters.AddWithValue("@Country", country)
-                command.Parameters.AddWithValue("@Zipcode", zipcode)
-                command.Parameters.AddWithValue("@ContactNum", contactNumber)
-                command.Parameters.AddWithValue("@Email", email)
-                command.Parameters.AddWithValue("@YearsOfOperation", yearsOfOperation)
 
-                command.ExecuteNonQuery()
-                MessageBox.Show("Agency added successfully!")
-                ' Close the form or clear the fields
 
-                Me.Close()
-                ADMDashboardAGCTab.LoadToDGVAgency()
-            End Using
-        End Using
+        Try
+            ' Call readQuery to execute the SQL statement
+            readQuery(query)
+
+            ' Notify the user of success
+            MessageBox.Show("Record successfully inserted!")
+        Catch ex As Exception
+            ' Handle any errors
+            MsgBox($"An error occurred: {ex.Message}", MsgBoxStyle.Critical)
+        End Try
+
+        Me.Close()
+        ADMDashboardOFWTab.refresh()
     End Sub
+
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCANCEL.Click
         Me.Close()

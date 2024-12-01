@@ -5,29 +5,26 @@ Imports MySql.Data.MySqlClient
 
 Public Class ADMDashboardOFWTab
 
-    Private Sub ADMDashboardOFWTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadToDGVOfw()
-    End Sub
-
-
     Dim connectionString As String
     Dim connection As New MySqlConnection(connectionString)
     Private ofwDataTable As New DataTable()
 
-    Public Sub LoadToDGVOfw()
-        Try
-            connection.Open()
-            Dim query As String = "SELECT * FROM ofw"
-            Dim adapter As New MySqlDataAdapter(query, connection)
-            ofwDataTable.Clear() ' Clear any existing data
-            adapter.Fill(ofwDataTable) ' Fill the DataTable with data from the database
-            dgvOFW.DataSource = ofwDataTable ' Bind the DataTable to the DataGridView
+    Private Sub ADMDashboardOFWTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Catch ex As MySqlException
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            connection.Close()
-        End Try
+        Dim query As String = "SELECT * FROM ofw"
+        ofwDataTable.Clear() ' Clear any existing data
+        dgvOFW.DataSource = ofwDataTable ' Bind the DataTable to the DataGridView
+
+        LoadToDGV(query, dgvOFW)
+    End Sub
+
+    Public Sub refresh()
+
+        Dim query As String = "SELECT * FROM ofw"
+        ofwDataTable.Clear() ' Clear any existing data
+        dgvOFW.DataSource = ofwDataTable ' Bind the DataTable to the DataGridView
+
+        LoadToDGV(query, dgvOFW)
     End Sub
 
 
@@ -70,7 +67,7 @@ Public Class ADMDashboardOFWTab
                 'End Using
 
                 MessageBox.Show("OFW record deleted successfully!")
-                LoadToDGVOfw()  ' Refresh the DataGridView
+                LoadToDGV("SELECT * FROM ofw", dgvOFW)  ' Refresh the DataGridView
             End If
         Else
             MessageBox.Show("Please select an OFW record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

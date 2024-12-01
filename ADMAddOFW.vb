@@ -53,39 +53,28 @@ Public Class ADMAddOFW
         Dim OECNum As String = txtbxAddOFWOECNum.Text
 
 
-        Dim query As String = "INSERT INTO OFW (FirstName, MiddleName, LastName, DOB, Sex, CivilStatus, Street, Barangay, City, Province, Zipcode,
-                                                ContactNum, EmergencyContactNum, PassportNum, VISANum, OECNum) 
-                                        VALUES (@FirstName, @MiddleName, @LastName, @DOB, @Sex, @CivilStatus, @Street, @Barangay, @City, @Province, @Zipcode,
-                                                @ContactNum, @EmergencyContactNum, @PassportNum, @VISANum, @OECNum)"
+        Dim query As String = $"INSERT INTO OFW (FirstName, MiddleName, LastName, DOB, Sex, CivilStatus, Street, Barangay, City, Province, Zipcode, 
+                                        ContactNum, EmergencyContactNum, PassportNum, VISANum, OECNum) 
+                        VALUES ('{firstName}', '{middleName}', '{lastName}', '{dateOfBirth:yyyy-MM-dd}', '{gender}', '{civilStatus}', 
+                                '{street}', '{barangay}', '{city}', '{province}', '{zipcode}', '{contactNumber}', 
+                                '{emrgContactNum}', '{passportNum}', '{visaNum}', '{OECNum}')"
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@FirstName", firstName)
-                command.Parameters.AddWithValue("@MiddleName", middleName)
-                command.Parameters.AddWithValue("@LastName", lastName)
-                command.Parameters.AddWithValue("@DOB", dateOfBirth)
-                command.Parameters.AddWithValue("@Sex", gender)
-                command.Parameters.AddWithValue("@CivilStatus", civilStatus)
-                command.Parameters.AddWithValue("@Street", street)
-                command.Parameters.AddWithValue("@Barangay", barangay)
-                command.Parameters.AddWithValue("@City", city)
-                command.Parameters.AddWithValue("@Province", province)
-                command.Parameters.AddWithValue("@Zipcode", zipcode)
-                command.Parameters.AddWithValue("@ContactNum", contactNumber)
-                command.Parameters.AddWithValue("@EmergencyContactNum", emrgContactNum)
-                command.Parameters.AddWithValue("@PassportNum", passportNum)
-                command.Parameters.AddWithValue("@VISANum", visaNum)
-                command.Parameters.AddWithValue("@OECNum", OECNum)
-                ' ... other parameters ...
 
-                command.ExecuteNonQuery()
-                MessageBox.Show("OFW record added successfully!")
 
-                Me.Close()
-                ADMDashboardOFWTab.LoadToDGVOfw()
-            End Using
-        End Using
+        Try
+            ' Call readQuery to execute the SQL statement
+            readQuery(query)
+
+            ' Notify the user of success
+            MessageBox.Show("Record successfully inserted!")
+        Catch ex As Exception
+            ' Handle any errors
+            MsgBox($"An error occurred: {ex.Message}", MsgBoxStyle.Critical)
+        End Try
+
+        Me.Close()
+                ADMDashboardOFWTab.refresh()
+
     End Sub
 
     Private Sub btnCANCEL_Click(sender As Object, e As EventArgs) Handles btnCANCEL.Click

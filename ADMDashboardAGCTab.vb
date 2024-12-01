@@ -1,31 +1,23 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports MySqlConnector
 Imports Mysqlx
 
 Public Class ADMDashboardAGCTab
     Private Sub ADMDashboardAGCTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadToDGVAgency()
+        Dim query As String = "SELECT * FROM agency"
+        agencyDataTable.Clear() ' Clear any existing data
+        dgvAGC.DataSource = agencyDataTable ' Bind the DataTable to the DataGridView
+        LoadToDGV(query, dgvAGC)
     End Sub
 
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
-    Dim connection As New MySqlConnection(connectionString)
     Private agencyDataTable As New DataTable()
 
 
-    Public Sub LoadToDGVAgency()
-        Try
-            connection.Open()
-            Dim query As String = "SELECT * FROM agency"
-            Dim adapter As New MySqlDataAdapter(query, connection)
-            agencyDataTable.Clear() ' Clear any existing data
-            adapter.Fill(agencyDataTable) ' Fill the DataTable with data from the database
-            dgvAGC.DataSource = agencyDataTable ' Bind the DataTable to the DataGridView
+    Public Sub refresh()
 
-        Catch ex As MySqlException
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            connection.Close()
-        End Try
+        Dim query As String = "SELECT * FROM agency"
+        agencyDataTable.Clear() ' Clear any existing data
+        dgvAGC.DataSource = agencyDataTable ' Bind the DataTable to the DataGridView
+        LoadToDGV(query, dgvAGC)
     End Sub
 
     Private Sub dataCount_DataSourceChanged(sender As Object, e As EventArgs) Handles dgvAGC.DataSourceChanged
@@ -93,18 +85,12 @@ Public Class ADMDashboardAGCTab
             Dim selectedAGCId As Integer = CInt(selectedRow.Cells("AgencyId").Value)  ' Assuming "OFWId" is the column name for the ID
 
             If MessageBox.Show("Are you sure you want to delete this OFW record?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim query As String = "DELETE FROM AGENCY WHERE AgencyId = @AgencyId"
+                Dim query As String = $"DELETE FROM AGENCY WHERE AgencyId = {selectedAGCId}"
+                readQuery(query)
 
-                Using connection = New MySqlConnection(connectionString)
-                    connection.Open()
-                    Using command = New MySqlCommand(query, connection)
-                        command.Parameters.AddWithValue("@AgencyId", selectedAGCId)
-                        command.ExecuteNonQuery()
-                    End Using
-                End Using
 
                 MessageBox.Show("Agency record deleted successfully!")
-                LoadToDGVAgency()  ' Refresh the DataGridView
+                refresh()  ' Refresh the DataGridView
             End If
         Else
             MessageBox.Show("Please select an Agency record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

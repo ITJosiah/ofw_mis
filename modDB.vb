@@ -14,7 +14,7 @@ Module modDB
     Public db_server As String = "localhost"
     Public db_uid As String = "root"
     Public db_pwd As String = ""
-    Public db_name As String = ""
+    Public db_name As String = "ofw_mis"
     ' Initial connection string '
     Public strConnection As String = String.Format("server={0};uid={1};password={2};database={3};allowuservariables='True'", db_server, db_uid, db_pwd, db_name)
 
