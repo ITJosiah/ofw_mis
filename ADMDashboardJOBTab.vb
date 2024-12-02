@@ -26,4 +26,8 @@
     Private Sub dgvJOB_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvJOB.CellContentClick
 
     End Sub
+
+    Private Sub ADMDashboardJOBTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

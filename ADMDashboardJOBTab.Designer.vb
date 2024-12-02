@@ -131,7 +131,7 @@ Partial Class ADMDashboardJOBTab
         Label12.AutoSize = True
         Label12.Location = New Point(1126, 467)
         Label12.Name = "Label12"
-        Label12.Size = New Size(158, 15)
+        Label12.Size = New Size(159, 15)
         Label12.TabIndex = 139
         Label12.Text = "Total number of Jobs shown:"
         ' 
@@ -224,7 +224,7 @@ Partial Class ADMDashboardJOBTab
         Label4.AutoSize = True
         Label4.Location = New Point(1124, 269)
         Label4.Name = "Label4"
-        Label4.Size = New Size(50, 15)
+        Label4.Size = New Size(51, 15)
         Label4.TabIndex = 124
         Label4.Text = "Job Title"
         ' 

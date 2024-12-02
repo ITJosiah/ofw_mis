@@ -2,8 +2,6 @@
 
 
 Public Class ADMAddEMP
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
-    Dim connection As New MySqlConnection(connectionString)
     Private Sub ADMAddEMP_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -22,38 +20,31 @@ Public Class ADMAddEMP
         Dim EmployerEmail As String = txtEMPEmail.Text
         Dim Industry As String = txtEMPIndustry.Text
 
+        ' Construct the INSERT query
+        Dim query As String = $"INSERT INTO EMPLOYER 
+                           (EmployerFirstName, EmployerMiddleName, EmployerLastName, CompanyName, CompanyStreet, CompanyCity, CompanyState, CompanyCountry, CompanyZipcode, EmployerContactNum, EmployerEmail, Industry) 
+                           VALUES 
+                           ('{EmployerFirstName}', '{EmployerMiddleName}', '{EmployerLastName}', '{CompanyName}', '{CompanyStreet}', '{CompanyCity}', '{CompanyState}', '{CompanyCountry}', '{CompanyZipcode}', '{EmployerContactNum}', '{EmployerEmail}', '{Industry}')"
 
+        Try
+            ' Use readQuery for execution
+            readQuery(query)
+            MessageBox.Show("Employer record added successfully!")
 
-        Dim query As String = "INSERT INTO EMPLOYER (EmployerFirstName, EmployerMiddleName, EmployerLastName, CompanyName, CompanyStreet, CompanyCity, CompanyState, CompanyCountry,
-                                                CompanyZipcode, EmployerContactNum, EmployerEmail, Industry) 
-                                        VALUES (@EmployerFirstName, @EmployerMiddleName, @EmployerLastName, @CompanyName, @CompanyStreet, @CompanyCity, @CompanyState, @CompanyCountry,
-                                                @CompanyZipcode, @EmployerContactNum, @EmployerEmail, @Industry)"
+            ' Close the current form
+            Me.Close()
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@EmployerFirstName", EmployerFirstName)
-                command.Parameters.AddWithValue("@EmployerMiddleName", EmployerMiddleName)
-                command.Parameters.AddWithValue("@EmployerLastName", EmployerLastName)
-                command.Parameters.AddWithValue("@CompanyName", CompanyName)
-                command.Parameters.AddWithValue("@CompanyStreet", CompanyStreet)
-                command.Parameters.AddWithValue("@CompanyCity", CompanyCity)
-                command.Parameters.AddWithValue("@CompanyState", CompanyState)
-                command.Parameters.AddWithValue("@CompanyCountry", CompanyCountry)
-                command.Parameters.AddWithValue("@CompanyZipcode", CompanyZipcode)
-                command.Parameters.AddWithValue("@EmployerContactNum", EmployerContactNum)
-                command.Parameters.AddWithValue("@EmployerEmail", EmployerEmail)
-                command.Parameters.AddWithValue("@Industry", Industry)
-
-
-                command.ExecuteNonQuery()
-                MessageBox.Show("Employer record added successfully!")
-
-                Me.Close()
-                ADMDashboardEMPTab.LoadToDGVEmployer()
-            End Using
-        End Using
+            ' Refresh the main dashboard
+            ADMDashboardEMPTab.refresh()
+        Catch ex As Exception
+            ' Handle any errors during the operation
+            MessageBox.Show($"An error occurred while adding the record: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Ensure resources are properly released
+            If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+        End Try
     End Sub
+
     Private Sub btnCANCEL_Click(sender As Object, e As EventArgs) Handles btnCANCEL.Click
         Me.Close()
     End Sub

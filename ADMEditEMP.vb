@@ -3,8 +3,7 @@
 
 
 Public Class ADMEditEMP
-    Dim connectionString As String
-    Dim connection As New MySqlConnection(connectionString)
+
     Private selectedEMPId As Integer
 
     Private Sub ADMEditEMP_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -18,31 +17,35 @@ Public Class ADMEditEMP
         PopulateFormFields(empId)
     End Sub
 
-    Private Sub PopulateFormFields(ofwId As Integer)
-        Dim query As String = "SELECT * FROM EMPLOYER WHERE EmployerId = @EmployerId"
+    Private Sub PopulateFormFields(employerId As Integer)
+        ' Define the query to retrieve employer data based on EmployerId
+        Dim query As String = $"SELECT * FROM EMPLOYER WHERE EmployerId = {employerId}"
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@EmployerId", selectedEMPId)
-                Dim reader As MySqlDataReader = command.ExecuteReader()
+        ' Use readQuery to execute the query
+        readQuery(query)
 
-                If reader.Read() Then
-                    txtEMPFName.Text = reader("EmployerFirstName").ToString()
-                    txtEMPMName.Text = reader("EmployerMiddleName").ToString()
-                    txtEMPLName.Text = reader("EmployerLastName").ToString()
-                    txtEMPCompanyName.Text = reader("CompanyName").ToString()
-                    txtEMPStreet.Text = reader("CompanyStreet").ToString()
-                    txtEMPCity.Text = reader("CompanyCity").ToString()
-                    txtEMPState.Text = reader("CompanyState").ToString()
-                    txtEMPCountry.Text = reader("CompanyCountry").ToString()
-                    txtEMPZip.Text = reader("CompanyZipcode").ToString()
-                    txtEMPContNum.Text = reader("EmployerContactNum").ToString()
-                    txtEMPEmail.Text = reader("EmployerEmail").ToString()
-                    txtEMPIndustry.Text = reader("Industry").ToString()
-                End If
-            End Using
-        End Using
+        ' Check if the reader has been initialized and has rows
+        If cmdRead IsNot Nothing AndAlso cmdRead.Read() Then
+            ' Populate the form fields with data from the query result
+            txtEMPFName.Text = cmdRead("EmployerFirstName").ToString()
+            txtEMPMName.Text = cmdRead("EmployerMiddleName").ToString()
+            txtEMPLName.Text = cmdRead("EmployerLastName").ToString()
+            txtEMPCompanyName.Text = cmdRead("CompanyName").ToString()
+            txtEMPStreet.Text = cmdRead("CompanyStreet").ToString()
+            txtEMPCity.Text = cmdRead("CompanyCity").ToString()
+            txtEMPState.Text = cmdRead("CompanyState").ToString()
+            txtEMPCountry.Text = cmdRead("CompanyCountry").ToString()
+            txtEMPZip.Text = cmdRead("CompanyZipcode").ToString()
+            txtEMPContNum.Text = cmdRead("EmployerContactNum").ToString()
+            txtEMPEmail.Text = cmdRead("EmployerEmail").ToString()
+            txtEMPIndustry.Text = cmdRead("Industry").ToString()
+        Else
+            ' Notify the user if no record was found
+            MessageBox.Show("No record found for the specified Employer ID.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        ' Ensure the reader is properly closed after use
+        If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSAVE.Click
@@ -55,46 +58,43 @@ Public Class ADMEditEMP
         Dim updatedCompanyState As String = txtEMPState.Text
         Dim updatedCompanyCountry As String = txtEMPCountry.Text
         Dim updatedCompanyZipcode As String = txtEMPZip.Text
-
-
-
-
         Dim updatedEmployerContactNum As String = txtEMPContNum.Text
         Dim updatedEmployerEmail As String = txtEMPEmail.Text
         Dim updatedIndustry As String = txtEMPIndustry.Text
 
-        ' ... other updated fields ...
+        ' Construct the query
+        Dim query As String = $"UPDATE EMPLOYER SET 
+                           EmployerFirstName = '{updatedEmployerFirstName}', 
+                           EmployerMiddleName = '{updatedEmployerMiddleName}', 
+                           EmployerLastName = '{updatedEmployerLastName}', 
+                           CompanyName = '{updatedCompanyName}', 
+                           CompanyStreet = '{updatedCompanyStreet}', 
+                           CompanyCity = '{updatedCompanyCity}', 
+                           CompanyState = '{updatedCompanyState}', 
+                           CompanyCountry = '{updatedCompanyCountry}', 
+                           CompanyZipcode = '{updatedCompanyZipcode}', 
+                           EmployerContactNum = '{updatedEmployerContactNum}', 
+                           EmployerEmail = '{updatedEmployerEmail}', 
+                           Industry = '{updatedIndustry}' 
+                           WHERE EmployerId = {selectedEMPId}"
 
-        Dim query As String = "UPDATE EMPLOYER SET EmployerFirstName = @EmployerFirstName, EmployerMiddleName = @EmployerMiddleName, EmployerLastName = @EmployerLastName, CompanyName = @CompanyName, CompanyStreet = @CompanyStreet, CompanyCity = @CompanyCity,
-                                              CompanyState = @CompanyState, CompanyCountry = @CompanyCountry, CompanyZipcode = @CompanyZipcode, EmployerContactNum = @EmployerContactNum, EmployerEmail = @EmployerEmail, Industry = @Industry WHERE EmployerId = @EmployerId"
+        Try
+            ' Execute the query using readQuery
+            readQuery(query)
+            MessageBox.Show("Employer record updated successfully!")
 
-        Using connection = New MySqlConnection(connectionString)
-            connection.Open()
-            Using command = New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@EmployerFirstName", updatedEmployerFirstName)
-                command.Parameters.AddWithValue("@EmployerMiddleName", updatedEmployerMiddleName)
-                command.Parameters.AddWithValue("@EmployerLastName", updatedEmployerLastName)
-                command.Parameters.AddWithValue("@CompanyName", updatedCompanyName)
-                command.Parameters.AddWithValue("@CompanyStreet", updatedCompanyStreet)
-                command.Parameters.AddWithValue("@CompanyCity", updatedCompanyCity)
-                command.Parameters.AddWithValue("@CompanyState", updatedCompanyState)
-                command.Parameters.AddWithValue("@CompanyCountry", updatedCompanyCountry)
-                command.Parameters.AddWithValue("@CompanyZipcode", updatedCompanyZipcode)
-                command.Parameters.AddWithValue("@EmployerContactNum", updatedEmployerContactNum)
-                command.Parameters.AddWithValue("@EmployerEmail", updatedEmployerEmail)
-                command.Parameters.AddWithValue("@Industry", updatedIndustry)
-                command.Parameters.AddWithValue("@EmployerId", selectedEMPId)
-                ' ... other parameters ...
+            ' Close the edit form and refresh the main form's DataGridView
+            Me.Close()
 
-                command.ExecuteNonQuery()
-                MessageBox.Show("Employer record updated successfully!")
-
-                ' Close the edit form and refresh the main form's DataGridView
-                Me.Close()
-                ' Assuming you have a reference to the main form:
-                ADMDashboardEMPTab.LoadToDGVEmployer() ' Call the refresh method in the main form
-            End Using
-        End Using
+            ' Assuming you have a reference to the main form:
+            ADMDashboardEMPTab.refresh() ' Call the refresh method in the main form
+        Catch ex As Exception
+            ' Handle any errors during the update
+            MessageBox.Show($"An error occurred while updating the record: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Ensure resources are properly released
+            If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+        End Try
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click

@@ -5,27 +5,19 @@ Imports Mysqlx
 Public Class ADMDashboardEMPTab
 
     Private Sub ADMDashboardEMPTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadToDGVEmployer()
+        Dim query As String = "SELECT * FROM employer"
+        employerDataTable.Clear() ' Clear any existing data
+        dgvEMP.DataSource = employerDataTable ' Bind the DataTable to the DataGridView
+        LoadToDGV(query, dgvEMP)
     End Sub
 
-    Dim connectionString As String = "Server=localhost;Database=ofw_mis;User Id=root;Password=;"
-    Dim connection As New MySqlConnection(connectionString)
     Private employerDataTable As New DataTable()
 
-    Public Sub LoadToDGVEmployer()
-        Try
-            connection.Open()
-            Dim query As String = "SELECT * FROM employer"
-            Dim adapter As New MySqlDataAdapter(query, connection)
-            employerDataTable.Clear() ' Clear any existing data
-            adapter.Fill(employerDataTable) ' Fill the DataTable with data from the database
-            dgvEMP.DataSource = employerDataTable ' Bind the DataTable to the DataGridView
-
-        Catch ex As MySqlException
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            connection.Close()
-        End Try
+    Public Sub refresh()
+        Dim query As String = "SELECT * FROM employer"
+        employerDataTable.Clear() ' Clear any existing data
+        dgvEMP.DataSource = employerDataTable ' Bind the DataTable to the DataGridView
+        LoadToDGV(query, dgvEMP)
     End Sub
 
     Private Sub dataCount_DataSourceChanged(sender As Object, e As EventArgs) Handles dgvEMP.DataSourceChanged
@@ -89,18 +81,11 @@ Public Class ADMDashboardEMPTab
             Dim selectedEMPId As Integer = CInt(selectedRow.Cells("EmployerId").Value)  ' Assuming "OFWId" is the column name for the ID
 
             If MessageBox.Show("Are you sure you want to delete this OFW record?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim query As String = "DELETE FROM EMPLOYER WHERE EmployerId = @EmployerId"
-
-                Using connection = New MySqlConnection(connectionString)
-                    connection.Open()
-                    Using command = New MySqlCommand(query, connection)
-                        command.Parameters.AddWithValue("@EmployerId", selectedEMPId)
-                        command.ExecuteNonQuery()
-                    End Using
-                End Using
+                Dim query As String = $"DELETE FROM EMPLOYER WHERE EmployerId = {selectedEMPId}"
+                readQuery(query)
 
                 MessageBox.Show("Employer record deleted successfully!")
-                LoadToDGVEmployer()  ' Refresh the DataGridView
+                refresh()  ' Refresh the DataGridView
             End If
         Else
             MessageBox.Show("Please select an Employer record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -170,6 +155,10 @@ Public Class ADMDashboardEMPTab
     End Sub
 
     Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+
+    End Sub
+
+    Private Sub dgvEMP_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEMP.CellContentClick
 
     End Sub
 End Class

@@ -1,4 +1,0 @@
-db_server=localhost
-db_uid=root
-db_pwd=
-db_name=ofw_mis
