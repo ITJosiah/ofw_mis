@@ -24,8 +24,9 @@ Public Class OFWloginPage
     End Sub
 
     Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        modDB.Connect()
-
+        UpdateConnectionString()
+        openConn(db_name)
+        'Connect()
     End Sub
 
     Private Sub btnEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnEMPLoginPg.Click
@@ -35,6 +36,6 @@ Public Class OFWloginPage
     End Sub
 
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
-        UpdateConnectionString()
+
     End Sub
 End Class
