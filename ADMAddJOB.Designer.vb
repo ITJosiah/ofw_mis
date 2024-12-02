@@ -349,7 +349,7 @@ Partial Class ADMAddJOB
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(715, 722)
+        btnCANCEL.Location = New Point(738, 722)
         btnCANCEL.Margin = New Padding(4)
         btnCANCEL.Name = "btnCANCEL"
         btnCANCEL.Size = New Size(153, 56)

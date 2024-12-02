@@ -58,61 +58,68 @@ Partial Class ADMEditEMP
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(222, 70)
+        Label6.Location = New Point(330, 98)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(53, 15)
+        Label6.Size = New Size(69, 20)
         Label6.TabIndex = 50
         Label6.Text = "Industry"
         ' 
         ' txtEMPIndustry
         ' 
-        txtEMPIndustry.Location = New Point(222, 88)
+        txtEMPIndustry.Location = New Point(330, 123)
+        txtEMPIndustry.Margin = New Padding(4, 4, 4, 4)
         txtEMPIndustry.Name = "txtEMPIndustry"
         txtEMPIndustry.PlaceholderText = "Industry"
-        txtEMPIndustry.Size = New Size(177, 23)
+        txtEMPIndustry.Size = New Size(280, 29)
         txtEMPIndustry.TabIndex = 49
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(197, 128)
+        Label11.Location = New Point(330, 255)
+        Label11.Margin = New Padding(4, 0, 4, 0)
         Label11.Name = "Label11"
-        Label11.Size = New Size(28, 15)
+        Label11.Size = New Size(36, 20)
         Label11.TabIndex = 32
         Label11.Text = "City"
         ' 
         ' txtEMPState
         ' 
-        txtEMPState.Location = New Point(380, 146)
+        txtEMPState.Location = New Point(629, 280)
+        txtEMPState.Margin = New Padding(4, 4, 4, 4)
         txtEMPState.Name = "txtEMPState"
         txtEMPState.PlaceholderText = "City/Municipality"
-        txtEMPState.Size = New Size(177, 23)
+        txtEMPState.Size = New Size(280, 29)
         txtEMPState.TabIndex = 31
         ' 
         ' txtEMPCity
         ' 
-        txtEMPCity.Location = New Point(197, 146)
+        txtEMPCity.Location = New Point(330, 280)
+        txtEMPCity.Margin = New Padding(4, 4, 4, 4)
         txtEMPCity.Name = "txtEMPCity"
         txtEMPCity.PlaceholderText = "Barangay"
-        txtEMPCity.Size = New Size(177, 23)
+        txtEMPCity.Size = New Size(280, 29)
         txtEMPCity.TabIndex = 30
         ' 
         ' txtEMPStreet
         ' 
-        txtEMPStreet.Location = New Point(14, 146)
+        txtEMPStreet.Location = New Point(15, 280)
+        txtEMPStreet.Margin = New Padding(4, 4, 4, 4)
         txtEMPStreet.Name = "txtEMPStreet"
         txtEMPStreet.PlaceholderText = "Street"
-        txtEMPStreet.Size = New Size(177, 23)
+        txtEMPStreet.Size = New Size(280, 29)
         txtEMPStreet.TabIndex = 29
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(432, 14)
+        Label5.Location = New Point(631, 20)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(65, 15)
+        Label5.Size = New Size(84, 20)
         Label5.TabIndex = 22
         Label5.Text = "Last Name"
         ' 
@@ -120,9 +127,10 @@ Partial Class ADMEditEMP
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 14)
+        Label4.Location = New Point(15, 20)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(67, 15)
+        Label4.Size = New Size(86, 20)
         Label4.TabIndex = 21
         Label4.Text = "First Name"
         ' 
@@ -130,34 +138,38 @@ Partial Class ADMEditEMP
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(222, 14)
+        Label3.Location = New Point(330, 20)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 15)
+        Label3.Size = New Size(103, 20)
         Label3.TabIndex = 20
         Label3.Text = "Middle Name"
         ' 
         ' txtEMPLName
         ' 
-        txtEMPLName.Location = New Point(432, 32)
+        txtEMPLName.Location = New Point(629, 45)
+        txtEMPLName.Margin = New Padding(4, 4, 4, 4)
         txtEMPLName.Name = "txtEMPLName"
         txtEMPLName.PlaceholderText = "Last Name"
-        txtEMPLName.Size = New Size(196, 23)
+        txtEMPLName.Size = New Size(280, 29)
         txtEMPLName.TabIndex = 2
         ' 
         ' txtEMPMName
         ' 
-        txtEMPMName.Location = New Point(222, 32)
+        txtEMPMName.Location = New Point(330, 45)
+        txtEMPMName.Margin = New Padding(4, 4, 4, 4)
         txtEMPMName.Name = "txtEMPMName"
         txtEMPMName.PlaceholderText = "Middle Name"
-        txtEMPMName.Size = New Size(196, 23)
+        txtEMPMName.Size = New Size(280, 29)
         txtEMPMName.TabIndex = 1
         ' 
         ' txtEMPFName
         ' 
-        txtEMPFName.Location = New Point(12, 32)
+        txtEMPFName.Location = New Point(15, 45)
+        txtEMPFName.Margin = New Padding(4, 4, 4, 4)
         txtEMPFName.Name = "txtEMPFName"
         txtEMPFName.PlaceholderText = "First Name"
-        txtEMPFName.Size = New Size(196, 23)
+        txtEMPFName.Size = New Size(280, 29)
         txtEMPFName.TabIndex = 0
         ' 
         ' Label1
@@ -166,27 +178,30 @@ Partial Class ADMEditEMP
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Maiandra GD", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.MidnightBlue
-        Label1.Location = New Point(295, 41)
+        Label1.Location = New Point(379, 57)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(135, 45)
+        Label1.Size = New Size(168, 56)
         Label1.TabIndex = 18
         Label1.Text = ">EDIT"
         ' 
         ' txtEMPCountry
         ' 
-        txtEMPCountry.Location = New Point(563, 146)
+        txtEMPCountry.Location = New Point(15, 362)
+        txtEMPCountry.Margin = New Padding(4, 4, 4, 4)
         txtEMPCountry.Name = "txtEMPCountry"
         txtEMPCountry.PlaceholderText = "Province"
-        txtEMPCountry.Size = New Size(177, 23)
+        txtEMPCountry.Size = New Size(280, 29)
         txtEMPCountry.TabIndex = 35
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(380, 128)
+        Label9.Location = New Point(629, 255)
+        Label9.Margin = New Padding(4, 0, 4, 0)
         Label9.Name = "Label9"
-        Label9.Size = New Size(37, 15)
+        Label9.Size = New Size(45, 20)
         Label9.TabIndex = 34
         Label9.Text = "State"
         ' 
@@ -196,81 +211,90 @@ Partial Class ADMEditEMP
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Maiandra GD", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.MidnightBlue
-        Label2.Location = New Point(1, 15)
+        Label2.Location = New Point(1, 21)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(307, 77)
+        Label2.Size = New Size(382, 96)
         Label2.TabIndex = 19
         Label2.Text = "Employer"
         ' 
         ' txtEMPCompanyName
         ' 
-        txtEMPCompanyName.Location = New Point(14, 88)
+        txtEMPCompanyName.Location = New Point(15, 123)
+        txtEMPCompanyName.Margin = New Padding(4, 4, 4, 4)
         txtEMPCompanyName.Name = "txtEMPCompanyName"
         txtEMPCompanyName.PlaceholderText = "Company Name"
-        txtEMPCompanyName.Size = New Size(177, 23)
+        txtEMPCompanyName.Size = New Size(280, 29)
         txtEMPCompanyName.TabIndex = 43
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(197, 185)
+        Label15.Location = New Point(330, 178)
+        Label15.Margin = New Padding(4, 0, 4, 0)
         Label15.Name = "Label15"
-        Label15.Size = New Size(41, 15)
+        Label15.Size = New Size(53, 20)
         Label15.TabIndex = 42
         Label15.Text = "E-mail"
         ' 
         ' txtEMPEmail
         ' 
-        txtEMPEmail.Location = New Point(197, 203)
+        txtEMPEmail.Location = New Point(330, 203)
+        txtEMPEmail.Margin = New Padding(4, 4, 4, 4)
         txtEMPEmail.Name = "txtEMPEmail"
         txtEMPEmail.PlaceholderText = "E-mail"
-        txtEMPEmail.Size = New Size(177, 23)
+        txtEMPEmail.Size = New Size(280, 29)
         txtEMPEmail.TabIndex = 41
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(14, 185)
+        Label14.Location = New Point(15, 178)
+        Label14.Margin = New Padding(4, 0, 4, 0)
         Label14.Name = "Label14"
-        Label14.Size = New Size(99, 15)
+        Label14.Size = New Size(125, 20)
         Label14.TabIndex = 40
         Label14.Text = "Contact Number"
         ' 
         ' txtEMPContNum
         ' 
-        txtEMPContNum.Location = New Point(14, 203)
+        txtEMPContNum.Location = New Point(15, 203)
+        txtEMPContNum.Margin = New Padding(4, 4, 4, 4)
         txtEMPContNum.Name = "txtEMPContNum"
         txtEMPContNum.PlaceholderText = "Contact Number"
-        txtEMPContNum.Size = New Size(177, 23)
+        txtEMPContNum.Size = New Size(280, 29)
         txtEMPContNum.TabIndex = 39
         ' 
         ' Label13
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(746, 128)
+        Label13.Location = New Point(330, 337)
+        Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(51, 15)
+        Label13.Size = New Size(64, 20)
         Label13.TabIndex = 38
         Label13.Text = "Zipcode"
         ' 
         ' txtEMPZip
         ' 
-        txtEMPZip.Location = New Point(746, 146)
+        txtEMPZip.Location = New Point(330, 362)
+        txtEMPZip.Margin = New Padding(4, 4, 4, 4)
         txtEMPZip.Name = "txtEMPZip"
         txtEMPZip.PlaceholderText = "Zipcode"
-        txtEMPZip.Size = New Size(72, 23)
+        txtEMPZip.Size = New Size(91, 29)
         txtEMPZip.TabIndex = 37
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(563, 128)
+        Label12.Location = New Point(18, 337)
+        Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
-        Label12.Size = New Size(51, 15)
+        Label12.Size = New Size(66, 20)
         Label12.TabIndex = 36
         Label12.Text = "Country"
         ' 
@@ -280,9 +304,10 @@ Partial Class ADMEditEMP
         btnSAVE.FlatStyle = FlatStyle.Flat
         btnSAVE.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnSAVE.ForeColor = Color.DarkGreen
-        btnSAVE.Location = New Point(697, 364)
+        btnSAVE.Location = New Point(899, 722)
+        btnSAVE.Margin = New Padding(4, 4, 4, 4)
         btnSAVE.Name = "btnSAVE"
-        btnSAVE.Size = New Size(119, 40)
+        btnSAVE.Size = New Size(153, 56)
         btnSAVE.TabIndex = 20
         btnSAVE.Text = "SAVE"
         btnSAVE.UseVisualStyleBackColor = False
@@ -291,9 +316,10 @@ Partial Class ADMEditEMP
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(14, 70)
+        Label16.Location = New Point(18, 98)
+        Label16.Margin = New Padding(4, 0, 4, 0)
         Label16.Name = "Label16"
-        Label16.Size = New Size(94, 15)
+        Label16.Size = New Size(121, 20)
         Label16.TabIndex = 44
         Label16.Text = "Company Name"
         ' 
@@ -324,18 +350,20 @@ Partial Class ADMEditEMP
         Panel1.Controls.Add(txtEMPLName)
         Panel1.Controls.Add(txtEMPMName)
         Panel1.Controls.Add(txtEMPFName)
-        Panel1.Location = New Point(1, 95)
+        Panel1.Location = New Point(0, 122)
+        Panel1.Margin = New Padding(4, 4, 4, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(827, 254)
+        Panel1.Size = New Size(1065, 580)
         Panel1.TabIndex = 17
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(14, 128)
+        Label10.Location = New Point(18, 255)
+        Label10.Margin = New Padding(4, 0, 4, 0)
         Label10.Name = "Label10"
-        Label10.Size = New Size(43, 15)
+        Label10.Size = New Size(51, 20)
         Label10.TabIndex = 33
         Label10.Text = "Street"
         ' 
@@ -345,25 +373,27 @@ Partial Class ADMEditEMP
         btnCANCEL.FlatStyle = FlatStyle.Flat
         btnCANCEL.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCANCEL.ForeColor = Color.Firebrick
-        btnCANCEL.Location = New Point(572, 364)
+        btnCANCEL.Location = New Point(735, 510)
+        btnCANCEL.Margin = New Padding(4, 4, 4, 4)
         btnCANCEL.Name = "btnCANCEL"
-        btnCANCEL.Size = New Size(119, 40)
+        btnCANCEL.Size = New Size(153, 56)
         btnCANCEL.TabIndex = 21
         btnCANCEL.Text = "CANCEL"
         btnCANCEL.UseVisualStyleBackColor = False
         ' 
         ' ADMEditEMP
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(828, 419)
+        ClientSize = New Size(1065, 800)
         Controls.Add(Label1)
         Controls.Add(Label2)
         Controls.Add(btnSAVE)
         Controls.Add(Panel1)
         Controls.Add(btnCANCEL)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 4, 4, 4)
         Name = "ADMEditEMP"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMEditEMP"
