@@ -43,7 +43,7 @@ Public Class ADMAddAGC
         End Try
 
         Me.Close()
-        ADMDashboardOFWTab.refresh()
+        ADMDashboardOFWTab.Refresh()
     End Sub
 
 
