@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.OFW_System.OFWDashboard
+            Me.MainForm = Global.OFW_System.OFWloginPage
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

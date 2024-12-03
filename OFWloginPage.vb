@@ -8,12 +8,24 @@ Public Class OFWloginPage
         AddHandler Me.KeyDown, AddressOf OFWloginPage_KeyDown
     End Sub
 
-    ' Event handler for Shift + F key press
+    ' Event handler for key presses
     Private Sub OFWloginPage_KeyDown(sender As Object, e As KeyEventArgs)
         ' Check if Shift + F is pressed
         If e.Shift AndAlso e.KeyCode = Keys.F Then
             UpdateConfigFile()
         End If
+
+        ' Check if Shift + Q is pressed
+        If e.Shift AndAlso e.KeyCode = Keys.Q Then
+            OpenAdminLogin()
+        End If
+    End Sub
+
+    ' Method to open the Admin Login page
+    Private Sub OpenAdminLogin()
+        Dim ADMLoginPage As New ADMloginPage()
+        Me.Hide()
+        ADMLoginPage.Show()
     End Sub
 
     ' Method to update the config.txt file
@@ -92,9 +104,9 @@ Public Class OFWloginPage
         Application.Exit()
     End Sub
 
-    Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs) Handles btnADMLoginPg.Click
-        Dim ADMLoginPage As New ADMloginPage()
-        Me.Hide()
+    Private Sub btnADMLoginPg_Click(sender As Object, e As EventArgs)
+        Dim ADMLoginPage As New ADMloginPage
+        Hide()
         ADMLoginPage.Show()
     End Sub
 

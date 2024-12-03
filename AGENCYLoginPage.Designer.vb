@@ -28,7 +28,6 @@ Partial Class AGENCYLoginPage
         btnOkOFWLoginPg = New Button()
         txtbxOFWIdLogin = New TextBox()
         Label1 = New Label()
-        btnADMLoginPg = New Button()
         btnCloseLoginPg = New Button()
         btnEMPLoginPg = New Button()
         btnAGCLoginPg = New Button()
@@ -88,18 +87,6 @@ Partial Class AGENCYLoginPage
         Label1.Size = New Size(249, 24)
         Label1.TabIndex = 29
         Label1.Text = "Please enter your Agency ID"
-        ' 
-        ' btnADMLoginPg
-        ' 
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(21, 725)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(102, 30)
-        btnADMLoginPg.TabIndex = 28
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
         ' 
         ' btnCloseLoginPg
         ' 
@@ -182,7 +169,6 @@ Partial Class AGENCYLoginPage
         Controls.Add(btnOkOFWLoginPg)
         Controls.Add(txtbxOFWIdLogin)
         Controls.Add(Label1)
-        Controls.Add(btnADMLoginPg)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
         Controls.Add(btnAGCLoginPg)
@@ -205,7 +191,6 @@ Partial Class AGENCYLoginPage
     Friend WithEvents btnOkOFWLoginPg As Button
     Friend WithEvents txtbxOFWIdLogin As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnADMLoginPg As Button
     Friend WithEvents btnCloseLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
     Friend WithEvents btnAGCLoginPg As Button

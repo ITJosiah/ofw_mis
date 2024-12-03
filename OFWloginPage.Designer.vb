@@ -28,7 +28,6 @@ Partial Class OFWloginPage
         btnAGCLoginPg = New Button()
         btnEMPLoginPg = New Button()
         btnCloseLoginPg = New Button()
-        btnADMLoginPg = New Button()
         Label1 = New Label()
         txtbxOFWIdLogin = New TextBox()
         btnOkOFWLoginPg = New Button()
@@ -100,18 +99,6 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
-        ' btnADMLoginPg
-        ' 
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(12, 726)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(102, 30)
-        btnADMLoginPg.TabIndex = 6
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
@@ -182,7 +169,6 @@ Partial Class OFWloginPage
         Controls.Add(btnOkOFWLoginPg)
         Controls.Add(txtbxOFWIdLogin)
         Controls.Add(Label1)
-        Controls.Add(btnADMLoginPg)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
         Controls.Add(btnAGCLoginPg)
@@ -204,7 +190,6 @@ Partial Class OFWloginPage
     Friend WithEvents btnAGCLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
     Friend WithEvents btnCloseLoginPg As Button
-    Friend WithEvents btnADMLoginPg As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents txtbxOFWIdLogin As TextBox
     Friend WithEvents btnOkOFWLoginPg As Button

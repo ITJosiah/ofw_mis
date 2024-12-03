@@ -161,4 +161,8 @@ Public Class ADMDashboardEMPTab
     Private Sub dgvEMP_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEMP.CellContentClick
 
     End Sub
+
+    Private Sub btnClearFilter_Click(sender As Object, e As EventArgs) Handles btnClearFilter.Click
+
+    End Sub
 End Class
