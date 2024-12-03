@@ -1,6 +1,9 @@
-﻿Public Class ADMDashboardStatTab
-    Private Sub ADMDashboardStatTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Imports System.Windows.Forms.DataVisualization.Charting
+Imports MySql.Data.MySqlClient
 
+Public Class ADMDashboardStatTab
+    Private Sub ADMDashboardStatTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadPieChartOFW()
     End Sub
 
 
@@ -76,4 +79,45 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+
+    Private Sub Chart2_Click_1(sender As Object, e As EventArgs) Handles Chart2.Click
+
+    End Sub
+
+    Private Sub LoadPieChartOFW()
+        Try
+            ' SQL query to count OFWs per province
+            Dim query As String = "SELECT Province, COUNT(*) AS TotalOFWs FROM ofw GROUP BY Province"
+
+            ' Execute the query using readQuery method
+            readQuery(query)
+
+            ' Check if cmdRead has data and process it
+            If cmdRead IsNot Nothing AndAlso cmdRead.HasRows Then
+                ' Clear existing data from Chart2
+                Chart2.Series.Clear()
+
+                ' Create a new series for the pie chart
+                Dim series As New Series("OFWs per Province")
+                series.ChartType = SeriesChartType.Pie
+
+                ' Add data points to the series
+                While cmdRead.Read()
+                    series.Points.AddXY(cmdRead("Province").ToString(), Convert.ToInt32(cmdRead("TotalOFWs")))
+                End While
+
+                ' Add the series to Chart2
+                Chart2.Series.Add(series)
+
+                ' Customize the chart appearance
+                Chart2.Titles.Clear()
+                Chart2.Titles.Add("OFWs Distribution by Province")
+                series.IsValueShownAsLabel = True ' Show values on the pie chart
+            End If
+        Catch ex As Exception
+            ' Handle any errors
+            MessageBox.Show("Error loading chart data: " & ex.Message)
+        End Try
+    End Sub
+
 End Class
