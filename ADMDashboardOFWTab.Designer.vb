@@ -200,7 +200,7 @@ Partial Class ADMDashboardOFWTab
         Label1.ForeColor = Color.MidnightBlue
         Label1.Location = New Point(339, 39)
         Label1.Name = "Label1"
-        Label1.Size = New Size(212, 77)
+        Label1.Size = New Size(261, 96)
         Label1.TabIndex = 7
         Label1.Text = "OFWs"
         ' 
@@ -242,7 +242,7 @@ Partial Class ADMDashboardOFWTab
         Label2.Font = New Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(1651, 155)
         Label2.Name = "Label2"
-        Label2.Size = New Size(197, 33)
+        Label2.Size = New Size(250, 43)
         Label2.TabIndex = 10
         Label2.Text = "Filter Search"
         ' 
@@ -251,7 +251,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWIdFilt.Location = New Point(1724, 194)
         txtbxOFWIdFilt.Name = "txtbxOFWIdFilt"
         txtbxOFWIdFilt.PlaceholderText = "#####"
-        txtbxOFWIdFilt.Size = New Size(57, 23)
+        txtbxOFWIdFilt.Size = New Size(57, 27)
         txtbxOFWIdFilt.TabIndex = 11
         ' 
         ' Label3
@@ -259,7 +259,7 @@ Partial Class ADMDashboardOFWTab
         Label3.AutoSize = True
         Label3.Location = New Point(1669, 217)
         Label3.Name = "Label3"
-        Label3.Size = New Size(99, 15)
+        Label3.Size = New Size(125, 20)
         Label3.TabIndex = 12
         Label3.Text = "OFW ID Number"
         ' 
@@ -268,7 +268,7 @@ Partial Class ADMDashboardOFWTab
         Label4.AutoSize = True
         Label4.Location = New Point(1669, 263)
         Label4.Name = "Label4"
-        Label4.Size = New Size(67, 15)
+        Label4.Size = New Size(86, 20)
         Label4.TabIndex = 14
         Label4.Text = "First Name"
         ' 
@@ -277,7 +277,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWFNameFilt.Location = New Point(1669, 236)
         txtbxOFWFNameFilt.Name = "txtbxOFWFNameFilt"
         txtbxOFWFNameFilt.PlaceholderText = "First Name"
-        txtbxOFWFNameFilt.Size = New Size(227, 23)
+        txtbxOFWFNameFilt.Size = New Size(227, 27)
         txtbxOFWFNameFilt.TabIndex = 13
         ' 
         ' Label5
@@ -285,7 +285,7 @@ Partial Class ADMDashboardOFWTab
         Label5.AutoSize = True
         Label5.Location = New Point(1669, 309)
         Label5.Name = "Label5"
-        Label5.Size = New Size(81, 15)
+        Label5.Size = New Size(103, 20)
         Label5.TabIndex = 16
         Label5.Text = "Middle Name"
         ' 
@@ -294,7 +294,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWMNameFilt.Location = New Point(1669, 282)
         txtbxOFWMNameFilt.Name = "txtbxOFWMNameFilt"
         txtbxOFWMNameFilt.PlaceholderText = "Middle Name"
-        txtbxOFWMNameFilt.Size = New Size(227, 23)
+        txtbxOFWMNameFilt.Size = New Size(227, 27)
         txtbxOFWMNameFilt.TabIndex = 15
         ' 
         ' Label6
@@ -302,7 +302,7 @@ Partial Class ADMDashboardOFWTab
         Label6.AutoSize = True
         Label6.Location = New Point(1669, 355)
         Label6.Name = "Label6"
-        Label6.Size = New Size(65, 15)
+        Label6.Size = New Size(84, 20)
         Label6.TabIndex = 18
         Label6.Text = "Last Name"
         ' 
@@ -311,7 +311,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWLNameFilt.Location = New Point(1669, 328)
         txtbxOFWLNameFilt.Name = "txtbxOFWLNameFilt"
         txtbxOFWLNameFilt.PlaceholderText = "Last Name"
-        txtbxOFWLNameFilt.Size = New Size(227, 23)
+        txtbxOFWLNameFilt.Size = New Size(227, 27)
         txtbxOFWLNameFilt.TabIndex = 17
         ' 
         ' cbxOFWGenderFilt
@@ -319,7 +319,7 @@ Partial Class ADMDashboardOFWTab
         cbxOFWGenderFilt.FormattingEnabled = True
         cbxOFWGenderFilt.Location = New Point(1669, 374)
         cbxOFWGenderFilt.Name = "cbxOFWGenderFilt"
-        cbxOFWGenderFilt.Size = New Size(105, 23)
+        cbxOFWGenderFilt.Size = New Size(105, 28)
         cbxOFWGenderFilt.TabIndex = 19
         ' 
         ' cbxOFWCivStatFilt
@@ -327,7 +327,7 @@ Partial Class ADMDashboardOFWTab
         cbxOFWCivStatFilt.FormattingEnabled = True
         cbxOFWCivStatFilt.Location = New Point(1791, 372)
         cbxOFWCivStatFilt.Name = "cbxOFWCivStatFilt"
-        cbxOFWCivStatFilt.Size = New Size(105, 23)
+        cbxOFWCivStatFilt.Size = New Size(105, 28)
         cbxOFWCivStatFilt.TabIndex = 20
         ' 
         ' Label7
@@ -335,7 +335,7 @@ Partial Class ADMDashboardOFWTab
         Label7.AutoSize = True
         Label7.Location = New Point(1669, 401)
         Label7.Name = "Label7"
-        Label7.Size = New Size(49, 15)
+        Label7.Size = New Size(60, 20)
         Label7.TabIndex = 21
         Label7.Text = "Gender"
         ' 
@@ -344,7 +344,7 @@ Partial Class ADMDashboardOFWTab
         Label8.AutoSize = True
         Label8.Location = New Point(1791, 400)
         Label8.Name = "Label8"
-        Label8.Size = New Size(68, 15)
+        Label8.Size = New Size(86, 20)
         Label8.TabIndex = 22
         Label8.Text = "Civil Status"
         ' 
@@ -353,7 +353,7 @@ Partial Class ADMDashboardOFWTab
         Label9.AutoSize = True
         Label9.Location = New Point(1669, 447)
         Label9.Name = "Label9"
-        Label9.Size = New Size(51, 15)
+        Label9.Size = New Size(64, 20)
         Label9.TabIndex = 24
         Label9.Text = "Zipcode"
         ' 
@@ -362,7 +362,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWZipFilt.Location = New Point(1669, 420)
         txtbxOFWZipFilt.Name = "txtbxOFWZipFilt"
         txtbxOFWZipFilt.PlaceholderText = "####"
-        txtbxOFWZipFilt.Size = New Size(137, 23)
+        txtbxOFWZipFilt.Size = New Size(137, 27)
         txtbxOFWZipFilt.TabIndex = 23
         ' 
         ' Label10
@@ -370,7 +370,7 @@ Partial Class ADMDashboardOFWTab
         Label10.AutoSize = True
         Label10.Location = New Point(1669, 539)
         Label10.Name = "Label10"
-        Label10.Size = New Size(78, 15)
+        Label10.Size = New Size(99, 20)
         Label10.TabIndex = 26
         Label10.Text = "OEC Number"
         ' 
@@ -379,7 +379,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWOECFilt.Location = New Point(1669, 512)
         txtbxOFWOECFilt.Name = "txtbxOFWOECFilt"
         txtbxOFWOECFilt.PlaceholderText = "####"
-        txtbxOFWOECFilt.Size = New Size(137, 23)
+        txtbxOFWOECFilt.Size = New Size(137, 27)
         txtbxOFWOECFilt.TabIndex = 25
         ' 
         ' Label11
@@ -387,7 +387,7 @@ Partial Class ADMDashboardOFWTab
         Label11.AutoSize = True
         Label11.Location = New Point(1669, 493)
         Label11.Name = "Label11"
-        Label11.Size = New Size(83, 15)
+        Label11.Size = New Size(105, 20)
         Label11.TabIndex = 28
         Label11.Text = "VISA Number"
         ' 
@@ -396,7 +396,7 @@ Partial Class ADMDashboardOFWTab
         txtbxOFWVisaFilt.Location = New Point(1669, 466)
         txtbxOFWVisaFilt.Name = "txtbxOFWVisaFilt"
         txtbxOFWVisaFilt.PlaceholderText = "####"
-        txtbxOFWVisaFilt.Size = New Size(137, 23)
+        txtbxOFWVisaFilt.Size = New Size(137, 27)
         txtbxOFWVisaFilt.TabIndex = 27
         ' 
         ' chkOFWEmpStatFilt
@@ -404,7 +404,7 @@ Partial Class ADMDashboardOFWTab
         chkOFWEmpStatFilt.AutoSize = True
         chkOFWEmpStatFilt.Location = New Point(1816, 468)
         chkOFWEmpStatFilt.Name = "chkOFWEmpStatFilt"
-        chkOFWEmpStatFilt.Size = New Size(80, 19)
+        chkOFWEmpStatFilt.Size = New Size(100, 24)
         chkOFWEmpStatFilt.TabIndex = 30
         chkOFWEmpStatFilt.Text = "Employed"
         chkOFWEmpStatFilt.UseVisualStyleBackColor = True
@@ -472,7 +472,7 @@ Partial Class ADMDashboardOFWTab
         Label12.AutoSize = True
         Label12.Location = New Point(1669, 607)
         Label12.Name = "Label12"
-        Label12.Size = New Size(173, 15)
+        Label12.Size = New Size(221, 20)
         Label12.TabIndex = 36
         Label12.Text = "Total number of OFWs shown:"
         ' 
@@ -481,7 +481,7 @@ Partial Class ADMDashboardOFWTab
         lblOFWTally.AutoSize = True
         lblOFWTally.Location = New Point(1883, 607)
         lblOFWTally.Name = "lblOFWTally"
-        lblOFWTally.Size = New Size(14, 15)
+        lblOFWTally.Size = New Size(18, 20)
         lblOFWTally.TabIndex = 37
         lblOFWTally.Text = "0"
         ' 
@@ -500,16 +500,16 @@ Partial Class ADMDashboardOFWTab
         Label13.AutoSize = True
         Label13.Location = New Point(1669, 194)
         Label13.Name = "Label13"
-        Label13.Size = New Size(39, 15)
+        Label13.Size = New Size(49, 20)
         Label13.TabIndex = 39
         Label13.Text = "OFW-"
         ' 
         ' ADMDashboardOFWTab
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1920, 1080)
+        ClientSize = New Size(1920, 1055)
         Controls.Add(Label13)
         Controls.Add(btnClearFilter)
         Controls.Add(lblOFWTally)
