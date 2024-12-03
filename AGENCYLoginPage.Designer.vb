@@ -94,7 +94,6 @@ Partial Class AGENCYLoginPage
         Label1.Text = "Please enter your Agency ID"
         ' 
 
-        ' 
         ' btnCloseLoginPg
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
