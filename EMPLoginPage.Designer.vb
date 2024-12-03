@@ -23,10 +23,10 @@ Partial Class EMPLoginPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EMPLoginPage))
-        LinkLabel1 = New LinkLabel()
+        LinkEMPSignIn = New LinkLabel()
         Label2 = New Label()
-        btnOkOFWLoginPg = New Button()
-        txtbxOFWIdLogin = New TextBox()
+        btnOkEMPLoginPg = New Button()
+        txtbxEMPIdLogin = New TextBox()
         Label1 = New Label()
         btnCloseLoginPg = New Button()
         btnEMPLoginPg = New Button()
@@ -38,65 +38,86 @@ Partial Class EMPLoginPage
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' LinkLabel1
+        ' LinkEMPSignIn
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(979, 434)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(43, 15)
-        LinkLabel1.TabIndex = 35
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Sign In"
+        LinkEMPSignIn.AutoSize = True
+        LinkEMPSignIn.Location = New Point(1259, 608)
+        LinkEMPSignIn.Margin = New Padding(4, 0, 4, 0)
+        LinkEMPSignIn.Name = "LinkEMPSignIn"
+        LinkEMPSignIn.Size = New Size(58, 21)
+        LinkEMPSignIn.TabIndex = 35
+        LinkEMPSignIn.TabStop = True
+        LinkEMPSignIn.Text = "Sign In"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(823, 434)
+        Label2.Location = New Point(1058, 608)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(150, 15)
+        Label2.Size = New Size(187, 20)
         Label2.TabIndex = 34
         Label2.Text = "Don't have an account yet?"
         ' 
-        ' btnOkOFWLoginPg
+        ' btnOkEMPLoginPg
         ' 
-        btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
-        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkOFWLoginPg.Location = New Point(910, 392)
-        btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
-        btnOkOFWLoginPg.Size = New Size(41, 28)
-        btnOkOFWLoginPg.TabIndex = 33
-        btnOkOFWLoginPg.Text = "OK"
-        btnOkOFWLoginPg.UseVisualStyleBackColor = True
+        btnOkEMPLoginPg.FlatStyle = FlatStyle.Popup
+        btnOkEMPLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkEMPLoginPg.Location = New Point(1170, 549)
+        btnOkEMPLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOkEMPLoginPg.Name = "btnOkEMPLoginPg"
+        btnOkEMPLoginPg.Size = New Size(53, 39)
+        btnOkEMPLoginPg.TabIndex = 33
+        btnOkEMPLoginPg.Text = "OK"
+        btnOkEMPLoginPg.UseVisualStyleBackColor = True
         ' 
-        ' txtbxOFWIdLogin
+        ' txtbxEMPIdLogin
         ' 
-        txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxOFWIdLogin.Location = New Point(841, 357)
-        txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
-        txtbxOFWIdLogin.PlaceholderText = "EMPLOYER-#####"
-        txtbxOFWIdLogin.Size = New Size(171, 29)
-        txtbxOFWIdLogin.TabIndex = 32
+        txtbxEMPIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxEMPIdLogin.Location = New Point(1081, 500)
+        txtbxEMPIdLogin.Margin = New Padding(4, 4, 4, 4)
+        txtbxEMPIdLogin.Name = "txtbxEMPIdLogin"
+        txtbxEMPIdLogin.PlaceholderText = "EMPLOYER-#####"
+        txtbxEMPIdLogin.Size = New Size(219, 35)
+        txtbxEMPIdLogin.TabIndex = 32
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(792, 330)
+        Label1.Location = New Point(1018, 462)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(265, 24)
+        Label1.Size = New Size(339, 29)
         Label1.TabIndex = 31
         Label1.Text = "Please enter your Employer ID"
         ' 
+
+        '' btnADMLoginPg
+        '' 
+        'btnADMLoginPg.BackColor = Color.Transparent
+        'btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        'btnADMLoginPg.ForeColor = Color.DeepSkyBlue
+        'btnADMLoginPg.Location = New Point(14, 1016)
+        'btnADMLoginPg.Margin = New Padding(4, 4, 4, 4)
+        'btnADMLoginPg.Name = "btnADMLoginPg"
+        'btnADMLoginPg.Size = New Size(131, 42)
+        'btnADMLoginPg.TabIndex = 30
+        'btnADMLoginPg.Text = "Admin Login"
+        'btnADMLoginPg.UseVisualStyleBackColor = False
+        ' 
+
         ' btnCloseLoginPg
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
         btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        btnCloseLoginPg.Location = New Point(1277, 12)
+        btnCloseLoginPg.Location = New Point(1642, 17)
+        btnCloseLoginPg.Margin = New Padding(4, 4, 4, 4)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
-        btnCloseLoginPg.Size = New Size(70, 40)
+        btnCloseLoginPg.Size = New Size(90, 56)
         btnCloseLoginPg.TabIndex = 29
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
@@ -107,9 +128,10 @@ Partial Class EMPLoginPage
         btnEMPLoginPg.FlatStyle = FlatStyle.Popup
         btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnEMPLoginPg.Location = New Point(1059, 546)
+        btnEMPLoginPg.Location = New Point(1362, 764)
+        btnEMPLoginPg.Margin = New Padding(4, 4, 4, 4)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
-        btnEMPLoginPg.Size = New Size(164, 56)
+        btnEMPLoginPg.Size = New Size(211, 78)
         btnEMPLoginPg.TabIndex = 28
         btnEMPLoginPg.Text = "EMPLOYER"
         btnEMPLoginPg.UseVisualStyleBackColor = False
@@ -120,9 +142,10 @@ Partial Class EMPLoginPage
         btnAGCLoginPg.FlatStyle = FlatStyle.Popup
         btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnAGCLoginPg.Location = New Point(848, 546)
+        btnAGCLoginPg.Location = New Point(1090, 764)
+        btnAGCLoginPg.Margin = New Padding(4, 4, 4, 4)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
-        btnAGCLoginPg.Size = New Size(164, 56)
+        btnAGCLoginPg.Size = New Size(211, 78)
         btnAGCLoginPg.TabIndex = 27
         btnAGCLoginPg.Text = "AGENCY"
         btnAGCLoginPg.UseVisualStyleBackColor = False
@@ -133,9 +156,10 @@ Partial Class EMPLoginPage
         btnOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnOFWLoginPg.Location = New Point(637, 546)
+        btnOFWLoginPg.Location = New Point(819, 764)
+        btnOFWLoginPg.Margin = New Padding(4, 4, 4, 4)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
-        btnOFWLoginPg.Size = New Size(164, 56)
+        btnOFWLoginPg.Size = New Size(211, 78)
         btnOFWLoginPg.TabIndex = 26
         btnOFWLoginPg.Text = "OFW"
         btnOFWLoginPg.UseVisualStyleBackColor = False
@@ -143,9 +167,10 @@ Partial Class EMPLoginPage
         ' imgLogoLoginPg
         ' 
         imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
-        imgLogoLoginPg.Location = New Point(728, 189)
+        imgLogoLoginPg.Location = New Point(936, 265)
+        imgLogoLoginPg.Margin = New Padding(4, 4, 4, 4)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
-        imgLogoLoginPg.Size = New Size(379, 371)
+        imgLogoLoginPg.Size = New Size(487, 519)
         imgLogoLoginPg.TabIndex = 25
         imgLogoLoginPg.TabStop = False
         ' 
@@ -153,21 +178,22 @@ Partial Class EMPLoginPage
         ' 
         imgLoginPg.Image = CType(resources.GetObject("imgLoginPg.Image"), Image)
         imgLoginPg.Location = New Point(-1, 0)
+        imgLoginPg.Margin = New Padding(4, 4, 4, 4)
         imgLoginPg.Name = "imgLoginPg"
-        imgLoginPg.Size = New Size(669, 767)
+        imgLoginPg.Size = New Size(860, 1074)
         imgLoginPg.TabIndex = 24
         imgLoginPg.TabStop = False
         ' 
         ' EMPLoginPage
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1366, 768)
-        Controls.Add(LinkLabel1)
+        ClientSize = New Size(1756, 1075)
+        Controls.Add(LinkEMPSignIn)
         Controls.Add(Label2)
-        Controls.Add(btnOkOFWLoginPg)
-        Controls.Add(txtbxOFWIdLogin)
+        Controls.Add(btnOkEMPLoginPg)
+        Controls.Add(txtbxEMPIdLogin)
         Controls.Add(Label1)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
@@ -176,6 +202,7 @@ Partial Class EMPLoginPage
         Controls.Add(imgLogoLoginPg)
         Controls.Add(imgLoginPg)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 4, 4, 4)
         Name = "EMPLoginPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "EMPLoginPage"
@@ -186,10 +213,10 @@ Partial Class EMPLoginPage
         PerformLayout()
     End Sub
 
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LinkEMPSignIn As LinkLabel
     Friend WithEvents Label2 As Label
-    Friend WithEvents btnOkOFWLoginPg As Button
-    Friend WithEvents txtbxOFWIdLogin As TextBox
+    Friend WithEvents btnOkEMPLoginPg As Button
+    Friend WithEvents txtbxEMPIdLogin As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCloseLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
