@@ -450,15 +450,15 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' btnADMDashDEP
         ' 
-        btnADMDashDEP.BackColor = Color.RoyalBlue
+        btnADMDashDEP.BackColor = Color.DeepSkyBlue
         btnADMDashDEP.FlatAppearance.BorderSize = 0
         btnADMDashDEP.FlatStyle = FlatStyle.Flat
-        btnADMDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnADMDashDEP.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashDEP.ForeColor = Color.MidnightBlue
         btnADMDashDEP.Location = New Point(54, 895)
         btnADMDashDEP.Margin = New Padding(4)
         btnADMDashDEP.Name = "btnADMDashDEP"
-        btnADMDashDEP.Size = New Size(305, 63)
+        btnADMDashDEP.Size = New Size(394, 63)
         btnADMDashDEP.TabIndex = 118
         btnADMDashDEP.Text = "Deployments"
         btnADMDashDEP.UseVisualStyleBackColor = False
@@ -468,7 +468,7 @@ Partial Class ADMDashboardAGCTab
         btnADMDashJOB.BackColor = Color.RoyalBlue
         btnADMDashJOB.FlatAppearance.BorderSize = 0
         btnADMDashJOB.FlatStyle = FlatStyle.Flat
-        btnADMDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnADMDashJOB.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashJOB.ForeColor = Color.MidnightBlue
         btnADMDashJOB.Location = New Point(54, 804)
         btnADMDashJOB.Margin = New Padding(4)
@@ -483,7 +483,7 @@ Partial Class ADMDashboardAGCTab
         btnADMDashOFW.BackColor = Color.RoyalBlue
         btnADMDashOFW.FlatAppearance.BorderSize = 0
         btnADMDashOFW.FlatStyle = FlatStyle.Flat
-        btnADMDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnADMDashOFW.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashOFW.ForeColor = Color.MidnightBlue
         btnADMDashOFW.Location = New Point(54, 538)
         btnADMDashOFW.Margin = New Padding(4)
@@ -495,15 +495,15 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' btnADMDashAGC
         ' 
-        btnADMDashAGC.BackColor = Color.DeepSkyBlue
+        btnADMDashAGC.BackColor = Color.RoyalBlue
         btnADMDashAGC.FlatAppearance.BorderSize = 0
         btnADMDashAGC.FlatStyle = FlatStyle.Flat
-        btnADMDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnADMDashAGC.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashAGC.ForeColor = Color.MidnightBlue
         btnADMDashAGC.Location = New Point(54, 710)
         btnADMDashAGC.Margin = New Padding(4)
         btnADMDashAGC.Name = "btnADMDashAGC"
-        btnADMDashAGC.Size = New Size(386, 63)
+        btnADMDashAGC.Size = New Size(305, 63)
         btnADMDashAGC.TabIndex = 116
         btnADMDashAGC.Text = "Agencies"
         btnADMDashAGC.UseVisualStyleBackColor = False
