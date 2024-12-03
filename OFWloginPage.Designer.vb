@@ -34,7 +34,7 @@ Partial Class OFWloginPage
         btnOkOFWLoginPg = New Button()
         imgLoginPg = New PictureBox()
         Label2 = New Label()
-        LinkOFWSignIn = New LinkLabel()
+        LinkLabel1 = New LinkLabel()
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -42,10 +42,9 @@ Partial Class OFWloginPage
         ' imgLogoLoginPg
         ' 
         imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
-        imgLogoLoginPg.Location = New Point(937, 265)
-        imgLogoLoginPg.Margin = New Padding(4, 4, 4, 4)
+        imgLogoLoginPg.Location = New Point(729, 189)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
-        imgLogoLoginPg.Size = New Size(487, 519)
+        imgLogoLoginPg.Size = New Size(379, 371)
         imgLogoLoginPg.TabIndex = 1
         imgLogoLoginPg.TabStop = False
         ' 
@@ -55,10 +54,9 @@ Partial Class OFWloginPage
         btnOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnOFWLoginPg.Location = New Point(820, 764)
-        btnOFWLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOFWLoginPg.Location = New Point(638, 546)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
-        btnOFWLoginPg.Size = New Size(211, 78)
+        btnOFWLoginPg.Size = New Size(164, 56)
         btnOFWLoginPg.TabIndex = 2
         btnOFWLoginPg.Text = "OFW"
         btnOFWLoginPg.UseVisualStyleBackColor = False
@@ -69,10 +67,9 @@ Partial Class OFWloginPage
         btnAGCLoginPg.FlatStyle = FlatStyle.Popup
         btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnAGCLoginPg.Location = New Point(1092, 764)
-        btnAGCLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnAGCLoginPg.Location = New Point(849, 546)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
-        btnAGCLoginPg.Size = New Size(211, 78)
+        btnAGCLoginPg.Size = New Size(164, 56)
         btnAGCLoginPg.TabIndex = 3
         btnAGCLoginPg.Text = "AGENCY"
         btnAGCLoginPg.UseVisualStyleBackColor = False
@@ -83,10 +80,9 @@ Partial Class OFWloginPage
         btnEMPLoginPg.FlatStyle = FlatStyle.Popup
         btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnEMPLoginPg.Location = New Point(1363, 764)
-        btnEMPLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnEMPLoginPg.Location = New Point(1060, 546)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
-        btnEMPLoginPg.Size = New Size(211, 78)
+        btnEMPLoginPg.Size = New Size(164, 56)
         btnEMPLoginPg.TabIndex = 4
         btnEMPLoginPg.Text = "EMPLOYER"
         btnEMPLoginPg.UseVisualStyleBackColor = False
@@ -97,10 +93,9 @@ Partial Class OFWloginPage
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
         btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        btnCloseLoginPg.Location = New Point(1643, 17)
-        btnCloseLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnCloseLoginPg.Location = New Point(1278, 12)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
-        btnCloseLoginPg.Size = New Size(90, 56)
+        btnCloseLoginPg.Size = New Size(70, 40)
         btnCloseLoginPg.TabIndex = 5
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
@@ -110,10 +105,9 @@ Partial Class OFWloginPage
         btnADMLoginPg.BackColor = Color.Transparent
         btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(15, 1016)
-        btnADMLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnADMLoginPg.Location = New Point(12, 726)
         btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(131, 42)
+        btnADMLoginPg.Size = New Size(102, 30)
         btnADMLoginPg.TabIndex = 6
         btnADMLoginPg.Text = "Admin Login"
         btnADMLoginPg.UseVisualStyleBackColor = False
@@ -122,31 +116,28 @@ Partial Class OFWloginPage
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(1059, 462)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(824, 330)
         Label1.Name = "Label1"
-        Label1.Size = New Size(287, 29)
+        Label1.Size = New Size(223, 24)
         Label1.TabIndex = 7
         Label1.Text = "Please enter your User ID"
         ' 
         ' txtbxOFWIdLogin
         ' 
         txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxOFWIdLogin.Location = New Point(1115, 500)
-        txtbxOFWIdLogin.Margin = New Padding(4, 4, 4, 4)
+        txtbxOFWIdLogin.Location = New Point(867, 357)
         txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
         txtbxOFWIdLogin.PlaceholderText = "OFW-#####"
-        txtbxOFWIdLogin.Size = New Size(158, 35)
+        txtbxOFWIdLogin.Size = New Size(124, 29)
         txtbxOFWIdLogin.TabIndex = 8
         ' 
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkOFWLoginPg.Location = New Point(1171, 549)
-        btnOkOFWLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOkOFWLoginPg.Location = New Point(911, 392)
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
-        btnOkOFWLoginPg.Size = New Size(53, 39)
+        btnOkOFWLoginPg.Size = New Size(41, 28)
         btnOkOFWLoginPg.TabIndex = 9
         btnOkOFWLoginPg.Text = "OK"
         btnOkOFWLoginPg.UseVisualStyleBackColor = True
@@ -155,9 +146,8 @@ Partial Class OFWloginPage
         ' 
         imgLoginPg.Image = CType(resources.GetObject("imgLoginPg.Image"), Image)
         imgLoginPg.Location = New Point(0, 0)
-        imgLoginPg.Margin = New Padding(4, 4, 4, 4)
         imgLoginPg.Name = "imgLoginPg"
-        imgLoginPg.Size = New Size(860, 1074)
+        imgLoginPg.Size = New Size(669, 767)
         imgLoginPg.TabIndex = 0
         imgLoginPg.TabStop = False
         ' 
@@ -165,31 +155,29 @@ Partial Class OFWloginPage
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1059, 608)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(824, 434)
         Label2.Name = "Label2"
-        Label2.Size = New Size(187, 20)
+        Label2.Size = New Size(150, 15)
         Label2.TabIndex = 22
         Label2.Text = "Don't have an account yet?"
         ' 
-        ' LinkOFWSignIn
+        ' LinkLabel1
         ' 
-        LinkOFWSignIn.AutoSize = True
-        LinkOFWSignIn.Location = New Point(1260, 608)
-        LinkOFWSignIn.Margin = New Padding(4, 0, 4, 0)
-        LinkOFWSignIn.Name = "LinkOFWSignIn"
-        LinkOFWSignIn.Size = New Size(58, 21)
-        LinkOFWSignIn.TabIndex = 23
-        LinkOFWSignIn.TabStop = True
-        LinkOFWSignIn.Text = "Sign In"
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(980, 434)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(43, 15)
+        LinkLabel1.TabIndex = 23
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Sign In"
         ' 
         ' OFWloginPage
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1756, 1075)
-        Controls.Add(LinkOFWSignIn)
+        ClientSize = New Size(1366, 768)
+        Controls.Add(LinkLabel1)
         Controls.Add(Label2)
         Controls.Add(btnOkOFWLoginPg)
         Controls.Add(txtbxOFWIdLogin)
@@ -202,7 +190,6 @@ Partial Class OFWloginPage
         Controls.Add(imgLogoLoginPg)
         Controls.Add(imgLoginPg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
         Name = "OFWloginPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "loginPage"
@@ -223,5 +210,5 @@ Partial Class OFWloginPage
     Friend WithEvents btnOkOFWLoginPg As Button
     Friend WithEvents imgLoginPg As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents LinkOFWSignIn As LinkLabel
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

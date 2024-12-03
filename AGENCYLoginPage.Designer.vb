@@ -24,9 +24,9 @@ Partial Class AGENCYLoginPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AGENCYLoginPage))
         Label2 = New Label()
-        LinkAGCSignIn = New LinkLabel()
-        btnOkAGCLoginPg = New Button()
-        txtbxAGCIdLogin = New TextBox()
+        LinkLabel1 = New LinkLabel()
+        btnOkOFWLoginPg = New Button()
+        txtbxOFWIdLogin = New TextBox()
         Label1 = New Label()
         btnADMLoginPg = New Button()
         btnCloseLoginPg = New Button()
@@ -43,54 +43,49 @@ Partial Class AGENCYLoginPage
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1067, 608)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(830, 434)
         Label2.Name = "Label2"
-        Label2.Size = New Size(187, 20)
+        Label2.Size = New Size(150, 15)
         Label2.TabIndex = 33
         Label2.Text = "Don't have an account yet?"
         ' 
-        ' LinkAGCSignIn
+        ' LinkLabel1
         ' 
-        LinkAGCSignIn.AutoSize = True
-        LinkAGCSignIn.Location = New Point(1268, 608)
-        LinkAGCSignIn.Margin = New Padding(4, 0, 4, 0)
-        LinkAGCSignIn.Name = "LinkAGCSignIn"
-        LinkAGCSignIn.Size = New Size(58, 21)
-        LinkAGCSignIn.TabIndex = 32
-        LinkAGCSignIn.TabStop = True
-        LinkAGCSignIn.Text = "Sign In"
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(986, 434)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(43, 15)
+        LinkLabel1.TabIndex = 32
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Sign In"
         ' 
-        ' btnOkAGCLoginPg
+        ' btnOkOFWLoginPg
         ' 
-        btnOkAGCLoginPg.FlatStyle = FlatStyle.Popup
-        btnOkAGCLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkAGCLoginPg.Location = New Point(1183, 547)
-        btnOkAGCLoginPg.Margin = New Padding(4)
-        btnOkAGCLoginPg.Name = "btnOkAGCLoginPg"
-        btnOkAGCLoginPg.Size = New Size(53, 39)
-        btnOkAGCLoginPg.TabIndex = 31
-        btnOkAGCLoginPg.Text = "OK"
-        btnOkAGCLoginPg.UseVisualStyleBackColor = True
+        btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
+        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkOFWLoginPg.Location = New Point(920, 391)
+        btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
+        btnOkOFWLoginPg.Size = New Size(41, 28)
+        btnOkOFWLoginPg.TabIndex = 31
+        btnOkOFWLoginPg.Text = "OK"
+        btnOkOFWLoginPg.UseVisualStyleBackColor = True
         ' 
-        ' txtbxAGCIdLogin
+        ' txtbxOFWIdLogin
         ' 
-        txtbxAGCIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxAGCIdLogin.Location = New Point(1115, 498)
-        txtbxAGCIdLogin.Margin = New Padding(4)
-        txtbxAGCIdLogin.Name = "txtbxAGCIdLogin"
-        txtbxAGCIdLogin.PlaceholderText = "AGENCY-#####"
-        txtbxAGCIdLogin.Size = New Size(187, 35)
-        txtbxAGCIdLogin.TabIndex = 30
+        txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxOFWIdLogin.Location = New Point(867, 356)
+        txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
+        txtbxOFWIdLogin.PlaceholderText = "AGENCY-#####"
+        txtbxOFWIdLogin.Size = New Size(146, 29)
+        txtbxOFWIdLogin.TabIndex = 30
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(1053, 461)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(819, 329)
         Label1.Name = "Label1"
-        Label1.Size = New Size(315, 29)
+        Label1.Size = New Size(249, 24)
         Label1.TabIndex = 29
         Label1.Text = "Please enter your Agency ID"
         ' 
@@ -99,10 +94,9 @@ Partial Class AGENCYLoginPage
         btnADMLoginPg.BackColor = Color.Transparent
         btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(27, 1015)
-        btnADMLoginPg.Margin = New Padding(4)
+        btnADMLoginPg.Location = New Point(21, 725)
         btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(131, 42)
+        btnADMLoginPg.Size = New Size(102, 30)
         btnADMLoginPg.TabIndex = 28
         btnADMLoginPg.Text = "Admin Login"
         btnADMLoginPg.UseVisualStyleBackColor = False
@@ -113,10 +107,9 @@ Partial Class AGENCYLoginPage
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
         btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        btnCloseLoginPg.Location = New Point(1655, 15)
-        btnCloseLoginPg.Margin = New Padding(4)
+        btnCloseLoginPg.Location = New Point(1287, 11)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
-        btnCloseLoginPg.Size = New Size(90, 56)
+        btnCloseLoginPg.Size = New Size(70, 40)
         btnCloseLoginPg.TabIndex = 27
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
@@ -127,10 +120,9 @@ Partial Class AGENCYLoginPage
         btnEMPLoginPg.FlatStyle = FlatStyle.Popup
         btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnEMPLoginPg.Location = New Point(1374, 763)
-        btnEMPLoginPg.Margin = New Padding(4)
+        btnEMPLoginPg.Location = New Point(1069, 545)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
-        btnEMPLoginPg.Size = New Size(211, 78)
+        btnEMPLoginPg.Size = New Size(164, 56)
         btnEMPLoginPg.TabIndex = 26
         btnEMPLoginPg.Text = "EMPLOYER"
         btnEMPLoginPg.UseVisualStyleBackColor = False
@@ -141,10 +133,9 @@ Partial Class AGENCYLoginPage
         btnAGCLoginPg.FlatStyle = FlatStyle.Popup
         btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnAGCLoginPg.Location = New Point(1103, 763)
-        btnAGCLoginPg.Margin = New Padding(4)
+        btnAGCLoginPg.Location = New Point(858, 545)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
-        btnAGCLoginPg.Size = New Size(211, 78)
+        btnAGCLoginPg.Size = New Size(164, 56)
         btnAGCLoginPg.TabIndex = 25
         btnAGCLoginPg.Text = "AGENCY"
         btnAGCLoginPg.UseVisualStyleBackColor = False
@@ -155,10 +146,9 @@ Partial Class AGENCYLoginPage
         btnOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnOFWLoginPg.Location = New Point(832, 763)
-        btnOFWLoginPg.Margin = New Padding(4)
+        btnOFWLoginPg.Location = New Point(647, 545)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
-        btnOFWLoginPg.Size = New Size(211, 78)
+        btnOFWLoginPg.Size = New Size(164, 56)
         btnOFWLoginPg.TabIndex = 24
         btnOFWLoginPg.Text = "OFW"
         btnOFWLoginPg.UseVisualStyleBackColor = False
@@ -166,10 +156,9 @@ Partial Class AGENCYLoginPage
         ' imgLogoLoginPg
         ' 
         imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
-        imgLogoLoginPg.Location = New Point(949, 263)
-        imgLogoLoginPg.Margin = New Padding(4)
+        imgLogoLoginPg.Location = New Point(738, 188)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
-        imgLogoLoginPg.Size = New Size(487, 519)
+        imgLogoLoginPg.Size = New Size(379, 371)
         imgLogoLoginPg.TabIndex = 23
         imgLogoLoginPg.TabStop = False
         ' 
@@ -177,22 +166,21 @@ Partial Class AGENCYLoginPage
         ' 
         imgLoginPg.Image = CType(resources.GetObject("imgLoginPg.Image"), Image)
         imgLoginPg.Location = New Point(0, -1)
-        imgLoginPg.Margin = New Padding(4)
         imgLoginPg.Name = "imgLoginPg"
-        imgLoginPg.Size = New Size(860, 1079)
+        imgLoginPg.Size = New Size(669, 771)
         imgLoginPg.TabIndex = 22
         imgLoginPg.TabStop = False
         ' 
         ' AGENCYLoginPage
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1756, 1075)
+        ClientSize = New Size(1366, 768)
         Controls.Add(Label2)
-        Controls.Add(LinkAGCSignIn)
-        Controls.Add(btnOkAGCLoginPg)
-        Controls.Add(txtbxAGCIdLogin)
+        Controls.Add(LinkLabel1)
+        Controls.Add(btnOkOFWLoginPg)
+        Controls.Add(txtbxOFWIdLogin)
         Controls.Add(Label1)
         Controls.Add(btnADMLoginPg)
         Controls.Add(btnCloseLoginPg)
@@ -202,7 +190,6 @@ Partial Class AGENCYLoginPage
         Controls.Add(imgLogoLoginPg)
         Controls.Add(imgLoginPg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4)
         Name = "AGENCYLoginPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "AGENYLoginPage"
@@ -214,9 +201,9 @@ Partial Class AGENCYLoginPage
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents LinkAGCSignIn As LinkLabel
-    Friend WithEvents btnOkAGCLoginPg As Button
-    Friend WithEvents txtbxAGCIdLogin As TextBox
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents btnOkOFWLoginPg As Button
+    Friend WithEvents txtbxOFWIdLogin As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnADMLoginPg As Button
     Friend WithEvents btnCloseLoginPg As Button
