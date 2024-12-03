@@ -94,18 +94,6 @@ Partial Class EMPLoginPage
         Label1.Text = "Please enter your Employer ID"
         ' 
 
-        '' btnADMLoginPg
-        '' 
-        'btnADMLoginPg.BackColor = Color.Transparent
-        'btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        'btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        'btnADMLoginPg.Location = New Point(14, 1016)
-        'btnADMLoginPg.Margin = New Padding(4, 4, 4, 4)
-        'btnADMLoginPg.Name = "btnADMLoginPg"
-        'btnADMLoginPg.Size = New Size(131, 42)
-        'btnADMLoginPg.TabIndex = 30
-        'btnADMLoginPg.Text = "Admin Login"
-        'btnADMLoginPg.UseVisualStyleBackColor = False
         ' 
 
         ' btnCloseLoginPg

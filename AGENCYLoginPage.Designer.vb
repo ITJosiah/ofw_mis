@@ -94,21 +94,22 @@ Partial Class AGENCYLoginPage
         Label1.Text = "Please enter your Agency ID"
         ' 
 
-
+        ' 
         ' btnCloseLoginPg
-        '' 
-        'btnCloseLoginPg.BackColor = Color.Crimson
-        'btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        'btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        'btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        'btnCloseLoginPg.Location = New Point(1655, 15)
-        'btnCloseLoginPg.Margin = New Padding(4)
-        'btnCloseLoginPg.Name = "btnCloseLoginPg"
-        'btnCloseLoginPg.Size = New Size(90, 56)
-        'btnCloseLoginPg.TabIndex = 27
-        'btnCloseLoginPg.Text = "CLOSE"
-        'btnCloseLoginPg.UseVisualStyleBackColor = False
-        '' 
+        ' 
+        btnCloseLoginPg.BackColor = Color.Crimson
+        btnCloseLoginPg.FlatStyle = FlatStyle.Popup
+        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
+        btnCloseLoginPg.Location = New Point(1655, 15)
+        btnCloseLoginPg.Margin = New Padding(4)
+        btnCloseLoginPg.Name = "btnCloseLoginPg"
+        btnCloseLoginPg.Size = New Size(90, 56)
+        btnCloseLoginPg.TabIndex = 27
+        btnCloseLoginPg.Text = "CLOSE"
+        btnCloseLoginPg.UseVisualStyleBackColor = False
+        ' 
+
         ' btnEMPLoginPg
         ' 
         btnEMPLoginPg.BackColor = Color.FromArgb(CByte(7), CByte(30), CByte(34))
@@ -212,3 +213,5 @@ Partial Class AGENCYLoginPage
     Friend WithEvents imgLogoLoginPg As PictureBox
     Friend WithEvents imgLoginPg As PictureBox
 End Class
+
+
