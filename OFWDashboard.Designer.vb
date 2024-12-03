@@ -22,6 +22,7 @@ Partial Class OFWDashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OFWDashboard))
         bg = New PictureBox()
         OFWpic = New PictureBox()
         lblFName = New Label()
@@ -43,7 +44,7 @@ Partial Class OFWDashboard
         ' 
         ' bg
         ' 
-        bg.BackgroundImage = My.Resources.Resources.Untitled_design__7_1
+        bg.BackgroundImage = CType(resources.GetObject("bg.BackgroundImage"), Image)
         bg.Location = New Point(0, 0)
         bg.Name = "bg"
         bg.Size = New Size(1920, 1080)

@@ -23,7 +23,6 @@ Partial Class ADMloginPage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ADMloginPage))
-        btnADMLoginPg = New Button()
         btnCloseLoginPg = New Button()
         btnEMPLoginPg = New Button()
         btnAGCLoginPg = New Button()
@@ -38,18 +37,6 @@ Partial Class ADMloginPage
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' btnADMLoginPg
-        ' 
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(12, 733)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(95, 23)
-        btnADMLoginPg.TabIndex = 16
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
         ' 
         ' btnCloseLoginPg
         ' 
@@ -180,7 +167,6 @@ Partial Class ADMloginPage
         Controls.Add(Label2)
         Controls.Add(txtbxADMUserLoginPg)
         Controls.Add(Label1)
-        Controls.Add(btnADMLoginPg)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
         Controls.Add(btnAGCLoginPg)
@@ -197,8 +183,6 @@ Partial Class ADMloginPage
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents btnADMLoginPg As Button
     Friend WithEvents btnCloseLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
     Friend WithEvents btnAGCLoginPg As Button

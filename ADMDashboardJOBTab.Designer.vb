@@ -459,7 +459,7 @@ Partial Class ADMDashboardJOBTab
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1366, 768)
+        ClientSize = New Size(1370, 768)
         Controls.Add(cbxJOBStatFilt)
         Controls.Add(Label6)
         Controls.Add(txtJOBAgencyFilt)

@@ -26,7 +26,7 @@ Partial Class OFWApplyForm
         lblJobAgency = New Label()
         Label1 = New Label()
         OFWPic = New PictureBox()
-        name = New Label()
+        names = New Label()
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
@@ -122,13 +122,13 @@ Partial Class OFWApplyForm
         ' 
         ' name
         ' 
-        name.AutoSize = True
-        name.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        name.Location = New Point(246, 136)
-        name.Name = "name"
-        name.Size = New Size(86, 18)
-        name.TabIndex = 4
-        name.Text = "Full Name"
+        names.AutoSize = True
+        names.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        names.Location = New Point(246, 136)
+        names.Name = "name"
+        names.Size = New Size(86, 18)
+        names.TabIndex = 4
+        names.Text = "Full Name"
         ' 
         ' TextBox1
         ' 
@@ -686,7 +686,7 @@ Partial Class OFWApplyForm
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
-        Controls.Add(name)
+        Controls.Add(names)
         Controls.Add(OFWPic)
         Controls.Add(Label1)
         Controls.Add(lblJobAgency)
@@ -704,7 +704,7 @@ Partial Class OFWApplyForm
     Friend WithEvents lblJobAgency As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents OFWPic As PictureBox
-    Friend WithEvents name As Label
+    Friend WithEvents names As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
