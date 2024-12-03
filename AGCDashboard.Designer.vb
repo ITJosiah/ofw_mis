@@ -37,6 +37,7 @@ Partial Class AGCDashboard
         btnDLT = New Button()
         AGCName = New Label()
         accreNum = New Label()
+        btnLogout = New Button()
         CType(bg, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvOFW, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvDEP, ComponentModel.ISupportInitialize).BeginInit()
@@ -194,11 +195,24 @@ Partial Class AGCDashboard
         accreNum.TabIndex = 13
         accreNum.Text = "ACCREDITATION NUM HERE"
         ' 
+        ' btnLogout
+        ' 
+        btnLogout.BackColor = Color.Red
+        btnLogout.FlatStyle = FlatStyle.Popup
+        btnLogout.ForeColor = SystemColors.ButtonHighlight
+        btnLogout.Location = New Point(1833, 9)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Size = New Size(75, 23)
+        btnLogout.TabIndex = 14
+        btnLogout.Text = "LOG OUT"
+        btnLogout.UseVisualStyleBackColor = False
+        ' 
         ' AGCDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1920, 1080)
+        Controls.Add(btnLogout)
         Controls.Add(accreNum)
         Controls.Add(AGCName)
         Controls.Add(btnDLT)
@@ -242,4 +256,5 @@ Partial Class AGCDashboard
     Friend WithEvents btnDLT As Button
     Friend WithEvents AGCName As Label
     Friend WithEvents accreNum As Label
+    Friend WithEvents btnLogout As Button
 End Class
