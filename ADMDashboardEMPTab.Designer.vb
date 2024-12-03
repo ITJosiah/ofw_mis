@@ -378,10 +378,10 @@ Partial Class ADMDashboardEMPTab
         ' Panel4
         ' 
         Panel4.BackColor = Color.MidnightBlue
-        Panel4.Location = New Point(428, 165)
+        Panel4.Location = New Point(428, 160)
         Panel4.Margin = New Padding(4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(2042, 31)
+        Panel4.Size = New Size(1493, 35)
         Panel4.TabIndex = 42
         ' 
         ' btnCLose
