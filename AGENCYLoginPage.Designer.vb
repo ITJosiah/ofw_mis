@@ -94,7 +94,7 @@ Partial Class AGENCYLoginPage
 
 
 
-        ' btnCloseLoginPgp
+        ' btnCloseLoginPg
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
