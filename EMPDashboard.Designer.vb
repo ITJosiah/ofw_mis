@@ -38,6 +38,7 @@ Partial Class EMPDashboard
         btnDlt = New Button()
         btnViewApply = New Button()
         btnViewEmployees = New Button()
+        btnLogout = New Button()
         CType(bg, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvEmployees, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvOFWApply, ComponentModel.ISupportInitialize).BeginInit()
@@ -206,11 +207,24 @@ Partial Class EMPDashboard
         btnViewEmployees.Text = "View Details"
         btnViewEmployees.UseVisualStyleBackColor = False
         ' 
+        ' btnLogout
+        ' 
+        btnLogout.BackColor = Color.Red
+        btnLogout.FlatStyle = FlatStyle.Popup
+        btnLogout.ForeColor = SystemColors.ButtonHighlight
+        btnLogout.Location = New Point(1833, 9)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Size = New Size(75, 23)
+        btnLogout.TabIndex = 15
+        btnLogout.Text = "LOG OUT"
+        btnLogout.UseVisualStyleBackColor = False
+        ' 
         ' EMPDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1920, 1080)
+        Controls.Add(btnLogout)
         Controls.Add(btnViewEmployees)
         Controls.Add(btnViewApply)
         Controls.Add(btnDlt)
@@ -256,4 +270,5 @@ Partial Class EMPDashboard
     Friend WithEvents btnDlt As Button
     Friend WithEvents btnViewApply As Button
     Friend WithEvents btnViewEmployees As Button
+    Friend WithEvents btnLogout As Button
 End Class
