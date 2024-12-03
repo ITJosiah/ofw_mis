@@ -97,16 +97,7 @@ Partial Class AGENCYLoginPage
         ' btnADMLoginPg
         ' 
 
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(27, 1015)
-        btnADMLoginPg.Margin = New Padding(4)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(131, 42)
-        btnADMLoginPg.TabIndex = 28
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
+
 
         ' 
 
