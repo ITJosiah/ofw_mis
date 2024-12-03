@@ -28,7 +28,6 @@ Partial Class AGENCYLoginPage
         btnOkOFWLoginPg = New Button()
         txtbxOFWIdLogin = New TextBox()
         Label1 = New Label()
-        btnADMLoginPg = New Button()
         btnCloseLoginPg = New Button()
         btnEMPLoginPg = New Button()
         btnAGCLoginPg = New Button()
@@ -89,8 +88,10 @@ Partial Class AGENCYLoginPage
         Label1.TabIndex = 29
         Label1.Text = "Please enter your Agency ID"
         ' 
+
         ' btnADMLoginPg
         ' 
+
         btnADMLoginPg.BackColor = Color.Transparent
         btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         btnADMLoginPg.ForeColor = Color.DeepSkyBlue
@@ -100,7 +101,9 @@ Partial Class AGENCYLoginPage
         btnADMLoginPg.TabIndex = 28
         btnADMLoginPg.Text = "Admin Login"
         btnADMLoginPg.UseVisualStyleBackColor = False
+
         ' 
+
         ' btnCloseLoginPg
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
@@ -114,6 +117,7 @@ Partial Class AGENCYLoginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
+
         ' btnEMPLoginPg
         ' 
         btnEMPLoginPg.BackColor = Color.FromArgb(CByte(7), CByte(30), CByte(34))
@@ -182,7 +186,6 @@ Partial Class AGENCYLoginPage
         Controls.Add(btnOkOFWLoginPg)
         Controls.Add(txtbxOFWIdLogin)
         Controls.Add(Label1)
-        Controls.Add(btnADMLoginPg)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
         Controls.Add(btnAGCLoginPg)
@@ -205,7 +208,6 @@ Partial Class AGENCYLoginPage
     Friend WithEvents btnOkOFWLoginPg As Button
     Friend WithEvents txtbxOFWIdLogin As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnADMLoginPg As Button
     Friend WithEvents btnCloseLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
     Friend WithEvents btnAGCLoginPg As Button
@@ -213,3 +215,5 @@ Partial Class AGENCYLoginPage
     Friend WithEvents imgLogoLoginPg As PictureBox
     Friend WithEvents imgLoginPg As PictureBox
 End Class
+
+
