@@ -5,8 +5,6 @@ Imports MySql.Data.MySqlClient
 
 Public Class ADMDashboardOFWTab
 
-    Dim connectionString As String
-    Dim connection As New MySqlConnection(connectionString)
     Private ofwDataTable As New DataTable()
 
     Private Sub ADMDashboardOFWTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -82,35 +80,36 @@ Public Class ADMDashboardOFWTab
         ' Build the filter string based on user inputs
         Dim filter As String = ""
 
+        ' Verify and use correct column names
         If Not String.IsNullOrWhiteSpace(txtbxOFWIdFilt.Text) Then
-            filter &= $"OFWID LIKE '%{txtbxOFWIdFilt.Text}%' AND "
+            filter &= $"[OFWID] LIKE '%{txtbxOFWIdFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWFNameFilt.Text) Then
-            filter &= $"FirstName LIKE '%{txtbxOFWFNameFilt.Text}%' AND "
+            filter &= $"[FirstName] LIKE '%{txtbxOFWFNameFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWMNameFilt.Text) Then
-            filter &= $"MiddleName LIKE '%{txtbxOFWMNameFilt.Text}%' AND "
+            filter &= $"[MiddleName] LIKE '%{txtbxOFWMNameFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWLNameFilt.Text) Then
-            filter &= $"LastName LIKE '%{txtbxOFWLNameFilt.Text}%' AND "
+            filter &= $"[LastName] LIKE '%{txtbxOFWLNameFilt.Text}%' AND "
         End If
         If cbxOFWGenderFilt.SelectedIndex <> -1 Then
-            filter &= $"Sex = '{cbxOFWGenderFilt.SelectedItem.ToString()}' AND "
+            filter &= $"[Sex] = '{cbxOFWGenderFilt.SelectedItem.ToString()}' AND "
         End If
         If cbxOFWCivStatFilt.SelectedIndex <> -1 Then
-            filter &= $"CivilStatus = '{cbxOFWCivStatFilt.SelectedItem.ToString()}' AND "
+            filter &= $"[CivilStatus] = '{cbxOFWCivStatFilt.SelectedItem.ToString()}' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWZipFilt.Text) Then
-            filter &= $"Zipcode LIKE '%{txtbxOFWZipFilt.Text}%' AND "
+            filter &= $"[Zipcode] LIKE '%{txtbxOFWZipFilt.Text}%' AND "
         End If
         If chkOFWEmpStatFilt.Checked Then
-            filter &= $"Employed = True AND "
+            filter &= $"[Employed] = True AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWVisaFilt.Text) Then
-            filter &= $"VISANumber LIKE '%{txtbxOFWVisaFilt.Text}%' AND "
+            filter &= $"[VISANumber] LIKE '%{txtbxOFWVisaFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtbxOFWOECFilt.Text) Then
-            filter &= $"OECNumber LIKE '%{txtbxOFWOECFilt.Text}%' AND "
+            filter &= $"[OECNumber] LIKE '%{txtbxOFWOECFilt.Text}%' AND "
         End If
 
         ' Remove the trailing " AND " if filter is not empty
@@ -120,11 +119,14 @@ Public Class ADMDashboardOFWTab
 
         ' Apply the filter to the DataTable
         Dim dataView As New DataView(ofwDataTable)
-        dataView.RowFilter = filter
-        dgvOFW.DataSource = dataView
-
-        ' Update the total number of OFWs shown
-        lblOFWTally.Text = dataView.Count.ToString()
+        Try
+            dataView.RowFilter = filter
+            dgvOFW.DataSource = dataView
+            ' Update the total number of OFWs shown
+            lblOFWTally.Text = dataView.Count.ToString()
+        Catch ex As EvaluateException
+            MessageBox.Show($"Error in filter string: {ex.Message}", "Filter Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClearFilter.Click

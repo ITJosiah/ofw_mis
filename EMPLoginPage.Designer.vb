@@ -51,7 +51,7 @@ Partial Class EMPLoginPage
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(823, 434)
         Label2.Name = "Label2"
         Label2.Size = New Size(150, 15)
@@ -61,7 +61,7 @@ Partial Class EMPLoginPage
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
-        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(910, 392)
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(41, 28)
@@ -90,18 +90,7 @@ Partial Class EMPLoginPage
         ' 
 
 
-<<<<<<< HEAD
-=======
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(11, 726)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(102, 30)
-        btnADMLoginPg.TabIndex = 30
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
->>>>>>> 2f4eddc5668de90f95524c8b29450e32e8096ec2
+
 
         ' 
 
@@ -109,7 +98,7 @@ Partial Class EMPLoginPage
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCloseLoginPg.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
         btnCloseLoginPg.Location = New Point(1277, 12)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
@@ -177,7 +166,7 @@ Partial Class EMPLoginPage
         ' 
         ' EMPLoginPage
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1366, 768)

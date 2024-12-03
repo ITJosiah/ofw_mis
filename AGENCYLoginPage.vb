@@ -123,4 +123,10 @@ Public Class AGENCYLoginPage
     Private Sub OFWloginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub imgLogoLoginPg_Click(sender As Object, e As EventArgs) Handles imgLogoLoginPg.Click
+
+    End Sub
+
+
 End Class
