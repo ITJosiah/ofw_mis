@@ -23,10 +23,8 @@ Partial Class AGENCYLoginPage
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AGENCYLoginPage))
-        Label2 = New Label()
-        LinkLabel1 = New LinkLabel()
         btnOkOFWLoginPg = New Button()
-        txtbxOFWIdLogin = New TextBox()
+        txtbxAGCIdLogin = New TextBox()
         Label1 = New Label()
         btnCloseLoginPg = New Button()
         btnEMPLoginPg = New Button()
@@ -34,10 +32,13 @@ Partial Class AGENCYLoginPage
         btnOFWLoginPg = New Button()
         imgLogoLoginPg = New PictureBox()
         imgLoginPg = New PictureBox()
+        Label2 = New Label()
+        txtAGCPassLogin = New TextBox()
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
+<<<<<<< HEAD
         ' Label2
         ' 
         Label2.AutoSize = True
@@ -58,20 +59,27 @@ Partial Class AGENCYLoginPage
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Sign In"
         ' 
+=======
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+<<<<<<< HEAD
         btnOkOFWLoginPg.Location = New Point(1051, 521)
         btnOkOFWLoginPg.Margin = New Padding(3, 4, 3, 4)
+=======
+        btnOkOFWLoginPg.Location = New Point(972, 390)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(47, 37)
         btnOkOFWLoginPg.TabIndex = 31
         btnOkOFWLoginPg.Text = "OK"
         btnOkOFWLoginPg.UseVisualStyleBackColor = True
         ' 
-        ' txtbxOFWIdLogin
+        ' txtbxAGCIdLogin
         ' 
+<<<<<<< HEAD
         txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtbxOFWIdLogin.Location = New Point(991, 475)
         txtbxOFWIdLogin.Margin = New Padding(3, 4, 3, 4)
@@ -79,16 +87,32 @@ Partial Class AGENCYLoginPage
         txtbxOFWIdLogin.PlaceholderText = "AGENCY-#####"
         txtbxOFWIdLogin.Size = New Size(166, 35)
         txtbxOFWIdLogin.TabIndex = 30
+=======
+        txtbxAGCIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxAGCIdLogin.Location = New Point(867, 296)
+        txtbxAGCIdLogin.Name = "txtbxAGCIdLogin"
+        txtbxAGCIdLogin.PlaceholderText = "AGC-#####"
+        txtbxAGCIdLogin.Size = New Size(146, 29)
+        txtbxAGCIdLogin.TabIndex = 30
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+<<<<<<< HEAD
         Label1.Location = New Point(936, 439)
         Label1.Name = "Label1"
         Label1.Size = New Size(315, 29)
         Label1.TabIndex = 29
         Label1.Text = "Please enter your Agency ID"
+=======
+        Label1.Location = New Point(867, 269)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(97, 24)
+        Label1.TabIndex = 29
+        Label1.Text = "Agency ID"
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' 
         ' btnCloseLoginPg
         ' 
@@ -166,16 +190,43 @@ Partial Class AGENCYLoginPage
         imgLoginPg.TabIndex = 22
         imgLoginPg.TabStop = False
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(867, 328)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(92, 24)
+        Label2.TabIndex = 32
+        Label2.Text = "Password"
+        ' 
+        ' txtAGCPassLogin
+        ' 
+        txtAGCPassLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtAGCPassLogin.Location = New Point(867, 355)
+        txtAGCPassLogin.Name = "txtAGCPassLogin"
+        txtAGCPassLogin.PlaceholderText = "Password"
+        txtAGCPassLogin.Size = New Size(146, 29)
+        txtAGCPassLogin.TabIndex = 33
+        txtAGCPassLogin.UseSystemPasswordChar = True
+        ' 
         ' AGENCYLoginPage
         ' 
+<<<<<<< HEAD
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1561, 1024)
+=======
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.DeepSkyBlue
+        ClientSize = New Size(1366, 768)
+        Controls.Add(txtAGCPassLogin)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         Controls.Add(Label2)
-        Controls.Add(LinkLabel1)
         Controls.Add(btnOkOFWLoginPg)
-        Controls.Add(txtbxOFWIdLogin)
+        Controls.Add(txtbxAGCIdLogin)
         Controls.Add(Label1)
         Controls.Add(btnCloseLoginPg)
         Controls.Add(btnEMPLoginPg)
@@ -194,11 +245,9 @@ Partial Class AGENCYLoginPage
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Label2 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents btnOkOFWLoginPg As Button
-    Friend WithEvents txtbxOFWIdLogin As TextBox
+    Friend WithEvents txtbxAGCIdLogin As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCloseLoginPg As Button
     Friend WithEvents btnEMPLoginPg As Button
@@ -206,6 +255,8 @@ Partial Class AGENCYLoginPage
     Friend WithEvents btnOFWLoginPg As Button
     Friend WithEvents imgLogoLoginPg As PictureBox
     Friend WithEvents imgLoginPg As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtAGCPassLogin As TextBox
 End Class
 
 

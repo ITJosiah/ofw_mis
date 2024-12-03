@@ -8,7 +8,7 @@ Module modDB
     Public myadocon, conn As New MySqlConnection
     Public cmd As New MySqlCommand
     Public cmdRead As MySqlDataReader
-    Public db_server As String = "'localhost'"
+    Public db_server As String = "'192.168.254.118'"
     Public db_uid As String = "'root'"
     Public db_pwd As String = "''"
     Public db_name As String = "'ofw_mis'"

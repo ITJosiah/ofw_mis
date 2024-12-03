@@ -34,6 +34,8 @@ Partial Class OFWloginPage
         imgLoginPg = New PictureBox()
         Label2 = New Label()
         LinkLabel1 = New LinkLabel()
+        Label3 = New Label()
+        txtbxOFWPassLogin = New TextBox()
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -99,24 +101,27 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
+<<<<<<< HEAD
 
 
         ' 
 
+=======
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(824, 330)
+        Label1.Location = New Point(865, 244)
         Label1.Name = "Label1"
-        Label1.Size = New Size(223, 24)
+        Label1.Size = New Size(71, 24)
         Label1.TabIndex = 7
-        Label1.Text = "Please enter your User ID"
+        Label1.Text = "User ID"
         ' 
         ' txtbxOFWIdLogin
         ' 
         txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxOFWIdLogin.Location = New Point(867, 357)
+        txtbxOFWIdLogin.Location = New Point(865, 271)
         txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
         txtbxOFWIdLogin.PlaceholderText = "OFW-#####"
         txtbxOFWIdLogin.Size = New Size(124, 29)
@@ -125,8 +130,13 @@ Partial Class OFWloginPage
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
+<<<<<<< HEAD
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(911, 392)
+=======
+        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkOFWLoginPg.Location = New Point(948, 365)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(41, 28)
         btnOkOFWLoginPg.TabIndex = 9
@@ -145,8 +155,13 @@ Partial Class OFWloginPage
         ' Label2
         ' 
         Label2.AutoSize = True
+<<<<<<< HEAD
         Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(824, 434)
+=======
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(835, 408)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         Label2.Name = "Label2"
         Label2.Size = New Size(150, 15)
         Label2.TabIndex = 22
@@ -155,12 +170,32 @@ Partial Class OFWloginPage
         ' LinkLabel1
         ' 
         LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(980, 434)
+        LinkLabel1.Location = New Point(991, 408)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(43, 15)
         LinkLabel1.TabIndex = 23
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Sign In"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(865, 303)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(92, 24)
+        Label3.TabIndex = 24
+        Label3.Text = "Password"
+        ' 
+        ' txtbxOFWPassLogin
+        ' 
+        txtbxOFWPassLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxOFWPassLogin.Location = New Point(865, 330)
+        txtbxOFWPassLogin.Name = "txtbxOFWPassLogin"
+        txtbxOFWPassLogin.PlaceholderText = "Password"
+        txtbxOFWPassLogin.Size = New Size(124, 29)
+        txtbxOFWPassLogin.TabIndex = 25
+        txtbxOFWPassLogin.UseSystemPasswordChar = True
         ' 
         ' OFWloginPage
         ' 
@@ -168,6 +203,8 @@ Partial Class OFWloginPage
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1366, 768)
+        Controls.Add(txtbxOFWPassLogin)
+        Controls.Add(Label3)
         Controls.Add(LinkLabel1)
         Controls.Add(Label2)
         Controls.Add(btnOkOFWLoginPg)
@@ -200,4 +237,6 @@ Partial Class OFWloginPage
     Friend WithEvents imgLoginPg As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtbxOFWPassLogin As TextBox
 End Class
