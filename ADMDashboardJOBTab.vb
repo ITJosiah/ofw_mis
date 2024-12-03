@@ -90,7 +90,7 @@
         End If
     End Sub
     Private Sub ADMDashboardJOBTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim query As String = "SELECT * FROM employer"
+        Dim query As String = "SELECT * FROM jobplacement"
         JobDataTable.Clear() ' Clear any existing data
         dgvJOB.DataSource = JobDataTable ' Bind the DataTable to the DataGridView
         LoadToDGV(query, dgvJOB)

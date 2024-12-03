@@ -101,15 +101,8 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
-<<<<<<< HEAD
 
 
-        ' 
-
-=======
->>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
-        ' Label1
-        ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(865, 244)
@@ -130,13 +123,10 @@ Partial Class OFWloginPage
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
-<<<<<<< HEAD
-        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkOFWLoginPg.Location = New Point(911, 392)
-=======
+
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(948, 365)
->>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
+
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(41, 28)
         btnOkOFWLoginPg.TabIndex = 9
@@ -155,13 +145,12 @@ Partial Class OFWloginPage
         ' Label2
         ' 
         Label2.AutoSize = True
-<<<<<<< HEAD
-        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(824, 434)
-=======
+
+
+
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(835, 408)
->>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
+
         Label2.Name = "Label2"
         Label2.Size = New Size(150, 15)
         Label2.TabIndex = 22

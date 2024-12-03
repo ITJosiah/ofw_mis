@@ -1,5 +1,8 @@
 ﻿Imports System.IO
 
+Imports MySql.Data.MySqlClient
+
+
 Public Class OFWloginPage
 
     Public Sub New()
@@ -132,6 +135,61 @@ Public Class OFWloginPage
     End Sub
 
     Private Sub btnOkOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkOFWLoginPg.Click
+        ' Retrieve values from the login form
+        Dim ofwId As String = txtbxOFWIdLogin.Text.Trim()
+        Dim password As String = txtbxOFWPassLogin.Text.Trim()
 
+        ' Validate that the ID and password match
+        If ofwId = password Then
+            ' Call the method to validate the login from the database
+            If ValidateLogin(ofwId) Then
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Proceed to the next page or main dashboard
+                OFWDashboard.Show()
+                Me.Hide() ' Hide the login form
+            Else
+                MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+            MessageBox.Show("Password must match the ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
+
+    Private Function ValidateLogin(ofwId As String) As Boolean
+        ' Define the SQL query to check if the OFWId exists in the database
+        Dim query As String = "SELECT COUNT(*) FROM OFW WHERE OFWId = @OFWId"
+
+        Try
+            ' Use the readQuery function to execute the query with parameters
+            readQuery(query)
+
+            ' Clear any existing parameters before adding new ones
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@OFWId", ofwId)
+
+            ' Assuming cmdRead is correctly initialized in the readQuery function
+            If cmdRead IsNot Nothing AndAlso cmdRead.Read() Then
+                ' Check if the count is greater than 0 (valid OFWId)
+                If Convert.ToInt32(cmdRead(0)) > 0 Then
+                    Return True
+                End If
+            End If
+        Catch ex As Exception
+            ' Handle any errors (e.g., database connection issues)
+            MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Ensure cmdRead is properly closed
+            If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+        End Try
+
+        ' If no match, return False (invalid login)
+        Return False
+    End Function
+
+
+
+
+
+
+
 End Class

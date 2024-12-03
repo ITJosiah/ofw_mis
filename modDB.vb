@@ -56,18 +56,18 @@ Module modDB
         End Try
     End Sub
 
-    Public Sub readQuery(ByVal sql As String)
-        Try
-            openConn(db_name)
-            With cmd
-                .Connection = conn
-                .CommandText = sql
-                cmdRead = .ExecuteReader
-            End With
-        Catch EX As Exception
-            MsgBox(EX.Message, MsgBoxStyle.Critical)
-        End Try
-    End Sub
+        Public Sub readQuery(ByVal sql As String)
+            Try
+                openConn(db_name)
+                With cmd
+                    .Connection = conn
+                    .CommandText = sql
+                    cmdRead = .ExecuteReader
+                End With
+            Catch EX As Exception
+                MsgBox(EX.Message, MsgBoxStyle.Critical)
+            End Try
+        End Sub
 
     Public Function isConnectedToLocalServer() As Boolean
         Dim result As Boolean = False

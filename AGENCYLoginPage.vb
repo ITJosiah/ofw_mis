@@ -128,5 +128,59 @@ Public Class AGENCYLoginPage
 
     End Sub
 
+    Private Sub btnOkOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkOFWLoginPg.Click
+        ' Retrieve values from the login form
+        Dim agencyId As String = txtbxAGCIdLogin.Text.Trim()
+        Dim password As String = txtAGCPassLogin.Text.Trim()
+
+        ' Check if the password matches the AgencyId
+        If agencyId = password Then
+            ' Call the method to validate the login from the database
+            If ValidateLogin(agencyId) Then
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Proceed to the next page or main dashboard
+                'AgencyDashboard.Show()
+                Me.Hide() ' Hide the login form
+            Else
+                MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+            MessageBox.Show("Password must match the Agency ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+
+    Private Function ValidateLogin(agencyId As String) As Boolean
+        ' Define the SQL query to validate the AgencyId
+        Dim query As String = "SELECT COUNT(*) FROM AGENCY WHERE AgencyId = @AgencyId"
+
+        Try
+            ' Execute the SQL query
+            readQuery(query)
+
+            ' Clear and add parameters
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@AgencyId", agencyId)
+
+            ' Check query results
+            If cmdRead IsNot Nothing AndAlso cmdRead.Read() Then
+                Dim count As Integer = Convert.ToInt32(cmdRead(0))
+                If count > 0 Then
+                    Return True
+                End If
+            End If
+        Catch ex As Exception
+            ' Handle errors
+            MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Close the reader if it's open
+            If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+        End Try
+
+        ' Return False if no match
+        Return False
+    End Function
+
+
 
 End Class
