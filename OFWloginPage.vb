@@ -130,4 +130,8 @@ Public Class OFWloginPage
     Private Sub btnOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOFWLoginPg.Click
         ' Handle the button click event here if needed
     End Sub
+
+    Private Sub btnOkOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkOFWLoginPg.Click
+
+    End Sub
 End Class
