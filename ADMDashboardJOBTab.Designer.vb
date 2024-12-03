@@ -66,7 +66,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         ' txtJOBAgencyFilt
         ' 
-        txtJOBAgencyFilt.Location = New Point(1411, 327)
+        txtJOBAgencyFilt.Location = New Point(1853, 328)
         txtJOBAgencyFilt.Name = "txtJOBAgencyFilt"
         txtJOBAgencyFilt.PlaceholderText = "#####"
         txtJOBAgencyFilt.Size = New Size(46, 23)
@@ -75,7 +75,7 @@ Partial Class ADMDashboardJOBTab
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(1124, 360)
+        Label8.Location = New Point(1672, 355)
         Label8.Name = "Label8"
         Label8.Size = New Size(81, 15)
         Label8.TabIndex = 144
@@ -83,7 +83,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         ' txtJOBSalaryFilt
         ' 
-        txtJOBSalaryFilt.Location = New Point(1124, 333)
+        txtJOBSalaryFilt.Location = New Point(1672, 328)
         txtJOBSalaryFilt.Name = "txtJOBSalaryFilt"
         txtJOBSalaryFilt.PlaceholderText = "Salary"
         txtJOBSalaryFilt.Size = New Size(137, 23)
@@ -92,7 +92,7 @@ Partial Class ADMDashboardJOBTab
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(1268, 360)
+        Label14.Location = New Point(1816, 355)
         Label14.Name = "Label14"
         Label14.Size = New Size(47, 15)
         Label14.TabIndex = 146
@@ -101,7 +101,7 @@ Partial Class ADMDashboardJOBTab
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(1127, 203)
+        Label13.Location = New Point(1675, 198)
         Label13.Name = "Label13"
         Label13.Size = New Size(32, 15)
         Label13.TabIndex = 142
@@ -110,7 +110,7 @@ Partial Class ADMDashboardJOBTab
         ' btnClearFilter
         ' 
         btnClearFilter.FlatStyle = FlatStyle.Popup
-        btnClearFilter.Location = New Point(1195, 427)
+        btnClearFilter.Location = New Point(1743, 422)
         btnClearFilter.Name = "btnClearFilter"
         btnClearFilter.Size = New Size(76, 27)
         btnClearFilter.TabIndex = 141
@@ -120,7 +120,7 @@ Partial Class ADMDashboardJOBTab
         ' lblJOBTally
         ' 
         lblJOBTally.AutoSize = True
-        lblJOBTally.Location = New Point(1293, 467)
+        lblJOBTally.Location = New Point(1841, 462)
         lblJOBTally.Name = "lblJOBTally"
         lblJOBTally.Size = New Size(13, 15)
         lblJOBTally.TabIndex = 140
@@ -129,9 +129,9 @@ Partial Class ADMDashboardJOBTab
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(1126, 467)
+        Label12.Location = New Point(1674, 462)
         Label12.Name = "Label12"
-        Label12.Size = New Size(159, 15)
+        Label12.Size = New Size(158, 15)
         Label12.TabIndex = 139
         Label12.Text = "Total number of Jobs shown:"
         ' 
@@ -140,7 +140,7 @@ Partial Class ADMDashboardJOBTab
         btnDLT.BackColor = Color.MistyRose
         btnDLT.FlatStyle = FlatStyle.Popup
         btnDLT.ForeColor = Color.DarkRed
-        btnDLT.Location = New Point(1281, 690)
+        btnDLT.Location = New Point(1829, 1002)
         btnDLT.Name = "btnDLT"
         btnDLT.Size = New Size(73, 66)
         btnDLT.TabIndex = 138
@@ -152,7 +152,7 @@ Partial Class ADMDashboardJOBTab
         btnGEN.BackColor = Color.LightCyan
         btnGEN.FlatStyle = FlatStyle.Popup
         btnGEN.ForeColor = Color.DarkBlue
-        btnGEN.Location = New Point(1281, 618)
+        btnGEN.Location = New Point(1829, 930)
         btnGEN.Name = "btnGEN"
         btnGEN.Size = New Size(73, 66)
         btnGEN.TabIndex = 137
@@ -164,7 +164,7 @@ Partial Class ADMDashboardJOBTab
         btnEDIT.BackColor = Color.LightCyan
         btnEDIT.FlatStyle = FlatStyle.Popup
         btnEDIT.ForeColor = Color.DarkBlue
-        btnEDIT.Location = New Point(1202, 618)
+        btnEDIT.Location = New Point(1750, 930)
         btnEDIT.Name = "btnEDIT"
         btnEDIT.Size = New Size(73, 66)
         btnEDIT.TabIndex = 136
@@ -176,7 +176,7 @@ Partial Class ADMDashboardJOBTab
         btnADD.BackColor = Color.LightCyan
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
-        btnADD.Location = New Point(1124, 618)
+        btnADD.Location = New Point(1672, 930)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(73, 66)
         btnADD.TabIndex = 135
@@ -186,7 +186,7 @@ Partial Class ADMDashboardJOBTab
         ' btnFilter
         ' 
         btnFilter.FlatStyle = FlatStyle.Popup
-        btnFilter.Location = New Point(1277, 427)
+        btnFilter.Location = New Point(1825, 422)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(76, 27)
         btnFilter.TabIndex = 134
@@ -196,7 +196,7 @@ Partial Class ADMDashboardJOBTab
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(1124, 407)
+        Label9.Location = New Point(1672, 402)
         Label9.Name = "Label9"
         Label9.Size = New Size(39, 15)
         Label9.TabIndex = 129
@@ -213,7 +213,7 @@ Partial Class ADMDashboardJOBTab
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(1124, 315)
+        Label5.Location = New Point(1672, 310)
         Label5.Name = "Label5"
         Label5.Size = New Size(135, 15)
         Label5.TabIndex = 126
@@ -222,15 +222,15 @@ Partial Class ADMDashboardJOBTab
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(1124, 269)
+        Label4.Location = New Point(1672, 264)
         Label4.Name = "Label4"
-        Label4.Size = New Size(51, 15)
+        Label4.Size = New Size(50, 15)
         Label4.TabIndex = 124
         Label4.Text = "Job Title"
         ' 
         ' txtJOBNameFilt
         ' 
-        txtJOBNameFilt.Location = New Point(1124, 242)
+        txtJOBNameFilt.Location = New Point(1672, 237)
         txtJOBNameFilt.Name = "txtJOBNameFilt"
         txtJOBNameFilt.PlaceholderText = "Job"
         txtJOBNameFilt.Size = New Size(227, 23)
@@ -239,7 +239,7 @@ Partial Class ADMDashboardJOBTab
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(1124, 223)
+        Label3.Location = New Point(1672, 218)
         Label3.Name = "Label3"
         Label3.Size = New Size(108, 15)
         Label3.TabIndex = 122
@@ -247,7 +247,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         ' txtJOBIdFilt
         ' 
-        txtJOBIdFilt.Location = New Point(1166, 198)
+        txtJOBIdFilt.Location = New Point(1714, 193)
         txtJOBIdFilt.Name = "txtJOBIdFilt"
         txtJOBIdFilt.PlaceholderText = "#####"
         txtJOBIdFilt.Size = New Size(57, 23)
@@ -257,7 +257,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(1124, 160)
+        Label2.Location = New Point(1672, 155)
         Label2.Name = "Label2"
         Label2.Size = New Size(197, 33)
         Label2.TabIndex = 120
@@ -270,7 +270,7 @@ Partial Class ADMDashboardJOBTab
         btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnLogout.ForeColor = Color.Black
-        btnLogout.Location = New Point(1347, 2)
+        btnLogout.Location = New Point(1787, 12)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(63, 21)
         btnLogout.TabIndex = 119
@@ -283,12 +283,12 @@ Partial Class ADMDashboardJOBTab
         dgvJOB.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvJOB.Location = New Point(346, 155)
         dgvJOB.Name = "dgvJOB"
-        dgvJOB.Size = New Size(755, 601)
+        dgvJOB.Size = New Size(1301, 913)
         dgvJOB.TabIndex = 118
         ' 
         ' txtJOBCountryFilt
         ' 
-        txtJOBCountryFilt.Location = New Point(1124, 288)
+        txtJOBCountryFilt.Location = New Point(1672, 283)
         txtJOBCountryFilt.Name = "txtJOBCountryFilt"
         txtJOBCountryFilt.PlaceholderText = "Country"
         txtJOBCountryFilt.Size = New Size(227, 23)
@@ -311,7 +311,7 @@ Partial Class ADMDashboardJOBTab
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(333, 118)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(1140, 22)
+        Panel4.Size = New Size(1588, 22)
         Panel4.TabIndex = 116
         ' 
         ' btnCLose
@@ -321,7 +321,7 @@ Partial Class ADMDashboardJOBTab
         btnCLose.FlatStyle = FlatStyle.Flat
         btnCLose.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnCLose.ForeColor = Color.MistyRose
-        btnCLose.Location = New Point(1416, 2)
+        btnCLose.Location = New Point(1856, 12)
         btnCLose.Name = "btnCLose"
         btnCLose.Size = New Size(52, 21)
         btnCLose.TabIndex = 115
@@ -341,7 +341,7 @@ Partial Class ADMDashboardJOBTab
         Panel1.ForeColor = SystemColors.ControlText
         Panel1.Location = New Point(-2, -1)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(337, 836)
+        Panel1.Size = New Size(337, 1081)
         Panel1.TabIndex = 114
         ' 
         ' btnADMDashSTAT
@@ -440,7 +440,7 @@ Partial Class ADMDashboardJOBTab
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(1268, 336)
+        Label6.Location = New Point(1816, 331)
         Label6.Name = "Label6"
         Label6.Size = New Size(36, 15)
         Label6.TabIndex = 147
@@ -449,7 +449,7 @@ Partial Class ADMDashboardJOBTab
         ' cbxJOBStatFilt
         ' 
         cbxJOBStatFilt.FormattingEnabled = True
-        cbxJOBStatFilt.Location = New Point(1124, 381)
+        cbxJOBStatFilt.Location = New Point(1672, 376)
         cbxJOBStatFilt.Name = "cbxJOBStatFilt"
         cbxJOBStatFilt.Size = New Size(137, 23)
         cbxJOBStatFilt.TabIndex = 148
@@ -459,7 +459,7 @@ Partial Class ADMDashboardJOBTab
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1370, 768)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(cbxJOBStatFilt)
         Controls.Add(Label6)
         Controls.Add(txtJOBAgencyFilt)

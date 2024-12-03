@@ -100,20 +100,7 @@ Partial Class OFWloginPage
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
 
-        ' btnADMLoginPg
-        ' 
 
-
-
-        btnADMLoginPg.BackColor = Color.Transparent
-        btnADMLoginPg.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        btnADMLoginPg.ForeColor = Color.DeepSkyBlue
-        btnADMLoginPg.Location = New Point(12, 726)
-        btnADMLoginPg.Name = "btnADMLoginPg"
-        btnADMLoginPg.Size = New Size(102, 30)
-        btnADMLoginPg.TabIndex = 6
-        btnADMLoginPg.Text = "Admin Login"
-        btnADMLoginPg.UseVisualStyleBackColor = False
 
         ' 
 
