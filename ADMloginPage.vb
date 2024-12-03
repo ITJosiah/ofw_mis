@@ -120,4 +120,8 @@ Public Class ADMloginPage
         Me.Hide()
         EMPLoginPage.Show()
     End Sub
+
+    Private Sub imgLoginPg_Click(sender As Object, e As EventArgs) Handles imgLoginPg.Click
+
+    End Sub
 End Class
