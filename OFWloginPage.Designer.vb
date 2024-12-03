@@ -92,7 +92,7 @@ Partial Class OFWloginPage
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCloseLoginPg.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
         btnCloseLoginPg.Location = New Point(1278, 12)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
@@ -101,6 +101,13 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
+<<<<<<< HEAD
+
+
+        ' 
+
+=======
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' Label1
         ' 
         Label1.AutoSize = True
@@ -123,8 +130,13 @@ Partial Class OFWloginPage
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
+<<<<<<< HEAD
+        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkOFWLoginPg.Location = New Point(911, 392)
+=======
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(948, 365)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(41, 28)
         btnOkOFWLoginPg.TabIndex = 9
@@ -143,8 +155,13 @@ Partial Class OFWloginPage
         ' Label2
         ' 
         Label2.AutoSize = True
+<<<<<<< HEAD
+        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(824, 434)
+=======
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(835, 408)
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         Label2.Name = "Label2"
         Label2.Size = New Size(150, 15)
         Label2.TabIndex = 22
@@ -182,7 +199,7 @@ Partial Class OFWloginPage
         ' 
         ' OFWloginPage
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1366, 768)

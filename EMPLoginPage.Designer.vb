@@ -51,12 +51,42 @@ Partial Class EMPLoginPage
         ' 
         ' txtbxEMPIdLogin
         ' 
+<<<<<<< HEAD
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(823, 434)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(150, 15)
+        Label2.TabIndex = 34
+        Label2.Text = "Don't have an account yet?"
+        ' 
+        ' btnOkOFWLoginPg
+        ' 
+        btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
+        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkOFWLoginPg.Location = New Point(910, 392)
+        btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
+        btnOkOFWLoginPg.Size = New Size(41, 28)
+        btnOkOFWLoginPg.TabIndex = 33
+        btnOkOFWLoginPg.Text = "OK"
+        btnOkOFWLoginPg.UseVisualStyleBackColor = True
+        ' 
+        ' txtbxOFWIdLogin
+        ' 
+        txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxOFWIdLogin.Location = New Point(841, 357)
+        txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
+        txtbxOFWIdLogin.PlaceholderText = "EMPLOYER-#####"
+        txtbxOFWIdLogin.Size = New Size(171, 29)
+        txtbxOFWIdLogin.TabIndex = 32
+=======
         txtbxEMPIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtbxEMPIdLogin.Location = New Point(848, 276)
         txtbxEMPIdLogin.Name = "txtbxEMPIdLogin"
         txtbxEMPIdLogin.PlaceholderText = "EMP-#####"
         txtbxEMPIdLogin.Size = New Size(171, 29)
         txtbxEMPIdLogin.TabIndex = 32
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' 
         ' Label1
         ' 
@@ -68,11 +98,20 @@ Partial Class EMPLoginPage
         Label1.TabIndex = 31
         Label1.Text = "Employer ID"
         ' 
+<<<<<<< HEAD
+
+
+
+
+        ' 
+
+=======
+>>>>>>> d456c2fc6715bfa898ef8dbe14193826833ecb48
         ' btnCloseLoginPg
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCloseLoginPg.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
         btnCloseLoginPg.Location = New Point(1277, 12)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
@@ -160,7 +199,7 @@ Partial Class EMPLoginPage
         ' 
         ' EMPLoginPage
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1366, 768)
