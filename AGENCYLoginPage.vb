@@ -128,7 +128,7 @@ Public Class AGENCYLoginPage
 
     End Sub
 
-    Private Sub btnOkOFWLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkOFWLoginPg.Click
+    Private Sub btnOkAGCLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkAGCLoginPg.Click
         ' Retrieve values from the login form
         Dim agencyId As String = txtbxAGCIdLogin.Text.Trim()
         Dim password As String = txtAGCPassLogin.Text.Trim()
@@ -139,7 +139,7 @@ Public Class AGENCYLoginPage
             If ValidateLogin(agencyId) Then
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 ' Proceed to the next page or main dashboard
-                'AgencyDashboard.Show()
+                AGCDashboard.Show()
                 Me.Hide() ' Hide the login form
             Else
                 MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -152,7 +152,7 @@ Public Class AGENCYLoginPage
 
     Private Function ValidateLogin(agencyId As String) As Boolean
         ' Define the SQL query to validate the AgencyId
-        Dim query As String = "SELECT COUNT(*) FROM AGENCY WHERE AgencyId = @AgencyId"
+        Dim query As String = "SELECT COUNT(*) FROM agency WHERE AgencyId = @AgencyId"
 
         Try
             ' Execute the SQL query

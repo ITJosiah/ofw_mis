@@ -118,4 +118,58 @@ Public Class EMPLoginPage
         Hide()
         ADMLoginPage.Show()
     End Sub
+
+    Private Sub btnOkEMPLoginPg_Click(sender As Object, e As EventArgs) Handles btnOkEMPLoginPg.Click
+        ' Retrieve values from the login form
+        Dim employerId As String = txtbxEMPIdLogin.Text.Trim()
+        Dim password As String = txtEMPPassLogin.Text.Trim()
+
+        ' Check if the password matches the EmployerId
+        If employerId = password Then
+            ' Call the method to validate the login from the database
+            If ValidateLogin(employerId) Then
+                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Proceed to the next page or main dashboard
+                EMPDashboard.Show()
+                Me.Hide() ' Hide the login form
+            Else
+                MessageBox.Show("Invalid login credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+            MessageBox.Show("Password must match the Employer ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+
+    Private Function ValidateLogin(employerId As String) As Boolean
+        ' Define the SQL query to validate the EmployerId
+        Dim query As String = "SELECT COUNT(*) FROM EMPLOYER WHERE EmployerId = @EmployerId"
+
+        Try
+            ' Execute the SQL query
+            readQuery(query)
+
+            ' Clear and add parameters
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@EmployerId", employerId)
+
+            ' Check query results
+            If cmdRead IsNot Nothing AndAlso cmdRead.Read() Then
+                Dim count As Integer = Convert.ToInt32(cmdRead(0))
+                If count > 0 Then
+                    Return True
+                End If
+            End If
+        Catch ex As Exception
+            ' Handle errors
+            MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Close the reader if it's open
+            If cmdRead IsNot Nothing AndAlso Not cmdRead.IsClosed Then cmdRead.Close()
+        End Try
+
+        ' Return False if no match
+        Return False
+    End Function
+
 End Class

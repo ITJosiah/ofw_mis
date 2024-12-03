@@ -23,7 +23,7 @@ Partial Class AGENCYLoginPage
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AGENCYLoginPage))
-        btnOkOFWLoginPg = New Button()
+        btnOkAGCLoginPg = New Button()
         txtbxAGCIdLogin = New TextBox()
         Label1 = New Label()
         btnCloseLoginPg = New Button()
@@ -38,16 +38,16 @@ Partial Class AGENCYLoginPage
         CType(imgLoginPg, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' btnOkOFWLoginPg
+        ' btnOkAGCLoginPg
         ' 
-        btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
-        btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnOkOFWLoginPg.Location = New Point(972, 390)
-        btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
-        btnOkOFWLoginPg.Size = New Size(47, 37)
-        btnOkOFWLoginPg.TabIndex = 31
-        btnOkOFWLoginPg.Text = "OK"
-        btnOkOFWLoginPg.UseVisualStyleBackColor = True
+        btnOkAGCLoginPg.FlatStyle = FlatStyle.Popup
+        btnOkAGCLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnOkAGCLoginPg.Location = New Point(972, 390)
+        btnOkAGCLoginPg.Name = "btnOkAGCLoginPg"
+        btnOkAGCLoginPg.Size = New Size(47, 37)
+        btnOkAGCLoginPg.TabIndex = 31
+        btnOkAGCLoginPg.Text = "OK"
+        btnOkAGCLoginPg.UseVisualStyleBackColor = True
         ' 
         ' txtbxAGCIdLogin
         ' 
@@ -172,7 +172,7 @@ Partial Class AGENCYLoginPage
         ClientSize = New Size(1366, 768)
         Controls.Add(txtAGCPassLogin)
         Controls.Add(Label2)
-        Controls.Add(btnOkOFWLoginPg)
+        Controls.Add(btnOkAGCLoginPg)
         Controls.Add(txtbxAGCIdLogin)
         Controls.Add(Label1)
         Controls.Add(btnCloseLoginPg)
@@ -193,7 +193,7 @@ Partial Class AGENCYLoginPage
         PerformLayout()
     End Sub
     Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents btnOkOFWLoginPg As Button
+    Friend WithEvents btnOkAGCLoginPg As Button
     Friend WithEvents txtbxAGCIdLogin As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCloseLoginPg As Button
