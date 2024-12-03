@@ -46,16 +46,16 @@ Partial Class OFWDashboard
         ' 
         bg.BackgroundImage = CType(resources.GetObject("bg.BackgroundImage"), Image)
         bg.Location = New Point(0, 0)
-        bg.Margin = New Padding(4, 4, 4, 4)
+        bg.Margin = New Padding(4)
         bg.Name = "bg"
-        bg.Size = New Size(1944, 1104)
+        bg.Size = New Size(1920, 1080)
         bg.TabIndex = 0
         bg.TabStop = False
         ' 
         ' OFWpic
         ' 
         OFWpic.Location = New Point(82, 63)
-        OFWpic.Margin = New Padding(4, 4, 4, 4)
+        OFWpic.Margin = New Padding(4)
         OFWpic.Name = "OFWpic"
         OFWpic.Size = New Size(270, 294)
         OFWpic.TabIndex = 1
@@ -173,10 +173,10 @@ Partial Class OFWDashboard
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Location = New Point(82, 552)
-        DataGridView1.Margin = New Padding(4, 4, 4, 4)
+        DataGridView1.Margin = New Padding(4)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1862, 552)
+        DataGridView1.Size = New Size(1838, 528)
         DataGridView1.TabIndex = 11
         ' 
         ' btnApply
@@ -186,7 +186,7 @@ Partial Class OFWDashboard
         btnApply.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnApply.ForeColor = Color.DarkBlue
         btnApply.Location = New Point(2151, 1390)
-        btnApply.Margin = New Padding(4, 4, 4, 4)
+        btnApply.Margin = New Padding(4)
         btnApply.Name = "btnApply"
         btnApply.Size = New Size(280, 76)
         btnApply.TabIndex = 12
@@ -200,7 +200,7 @@ Partial Class OFWDashboard
         logout.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         logout.ForeColor = SystemColors.ActiveCaptionText
         logout.Location = New Point(2354, 17)
-        logout.Margin = New Padding(4, 4, 4, 4)
+        logout.Margin = New Padding(4)
         logout.Name = "logout"
         logout.Size = New Size(99, 45)
         logout.TabIndex = 13
@@ -211,7 +211,7 @@ Partial Class OFWDashboard
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1942, 1102)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(logout)
         Controls.Add(btnApply)
         Controls.Add(DataGridView1)
@@ -227,7 +227,7 @@ Partial Class OFWDashboard
         Controls.Add(OFWpic)
         Controls.Add(bg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "OFWDashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "OFWDashboard"
