@@ -23,24 +23,16 @@
         LoadToDGV(query, dgvJOB)
     End Sub
 
-    Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
-        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Application.Exit
-        End If
-    End Sub
+    'Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+    '    If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
+    '                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
+    '                        DialogResult.Yes Then
+    '        Dim loginPage As New ADMloginPage
 
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage
-
-            Close
-            loginPage.Show
-        End If
-    End Sub
+    '        MyBase.Close()
+    '        loginPage.Show()
+    '    End If
+    'End Sub
 
     'Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
     '    Dim ADMDashEMP As New ADMDashboardEMPTab()
@@ -90,7 +82,7 @@
                 readQuery(query)
 
                 MessageBox.Show("Employer record deleted successfully!")
-                refresh()  ' Refresh the DataGridView
+                Refresh()  ' Refresh the DataGridView
             End If
         Else
             MessageBox.Show("Please select an Employer record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -105,38 +97,55 @@
 
     Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
         Dim ADMDashAGC As New ADMDashboardAGCTab
-        Close()
+        MyBase.Close()
         ADMDashAGC.Show()
     End Sub
 
     Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
         Dim ADMDashDEP As New ADMDashboardDEPTab
-        Close()
+        MyBase.Close()
         ADMDashDEP.Show()
     End Sub
 
     Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
         Dim ADMDashEMP As New ADMDashboardEMPTab
-        Close()
+        MyBase.Close()
         ADMDashEMP.Show()
     End Sub
 
     Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
         Dim ADMDashJOB As New ADMDashboardJOBTab
-        Close()
+        MyBase.Close()
         ADMDashJOB.Show()
     End Sub
 
     Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
         Dim ADMDashOFW As New ADMDashboardOFWTab
-        Close()
+        MyBase.Close()
         ADMDashOFW.Show()
     End Sub
 
     Private Sub btnADMDashStat_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
         Dim ADMDashStat As New ADMDashboardStatTab
-        Close()
+        MyBase.Close()
         ADMDashStat.Show()
     End Sub
 
+    Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
+        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
+                            DialogResult.Yes Then
+            Application.Exit()
+        End If
+    End Sub
+    Private Sub btnLogoutJOB_Click(sender As Object, e As EventArgs) Handles btnLogoutJOB.Click
+        If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
+                            DialogResult.Yes Then
+            Dim loginPage As New ADMloginPage
+
+            MyBase.Close()
+            loginPage.Show()
+        End If
+    End Sub
 End Class

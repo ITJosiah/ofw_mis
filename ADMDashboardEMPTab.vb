@@ -38,25 +38,6 @@ Public Class ADMDashboardEMPTab
     '    ADMDashStat.Show()
     'End Sub
 
-    Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
-        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Application.Exit()
-        End If
-    End Sub
-
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage()
-
-            Me.Close()
-            loginPage.Show()
-        End If
-    End Sub
-
     'Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
     '    Dim ADMDashOFW As New ADMDashboardOFWTab
     '    Close()
@@ -205,5 +186,19 @@ Public Class ADMDashboardEMPTab
 
     Private Sub btnClearFilter_Click(sender As Object, e As EventArgs) Handles btnClearFilter.Click
 
+    End Sub
+
+    Private Sub btnCloseEMP_Click(sender As Object, e As EventArgs) Handles btnCloseEMP.Click
+        If MessageBox.Show("Are you sure you want to close?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub btnLogoutEMP_Click(sender As Object, e As EventArgs) Handles btnLogoutEMP.Click
+        If MessageBox.Show("Are you sure you want to log out?", "Confirm Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+            Dim loginPage As New ADMloginPage() ' Replace with your login form
+            loginPage.Show()
+        End If
     End Sub
 End Class

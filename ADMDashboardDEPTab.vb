@@ -37,4 +37,19 @@
         Close()
         ADMDashStat.Show()
     End Sub
+
+    Private Sub btnCloseDEP_Click(sender As Object, e As EventArgs) Handles btnCloseDEP.Click
+        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+            Application.Exit() ' Optionally exits the entire application
+        End If
+    End Sub
+
+    Private Sub btnLogoutDEP_Click(sender As Object, e As EventArgs) Handles btnLogoutDEP.Click
+        If MessageBox.Show("Are you sure you want to log out?", "Confirm Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+            Dim loginPage As New ADMloginPage() ' Replace with your login page form
+            loginPage.Show()
+        End If
+    End Sub
 End Class

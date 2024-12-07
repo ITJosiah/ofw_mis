@@ -69,8 +69,8 @@ Partial Class ADMDashboardDEPTab
         txtDEPFilt = New TextBox()
         cbxDEPStatusFilt = New ComboBox()
         dateDEPContractEndFilt = New DateTimePicker()
-        Button2 = New Button()
-        Button1 = New Button()
+        btnCloseDEP = New Button()
+        btnLogoutDEP = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvDEP, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -397,6 +397,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         ' Panel4
         ' 
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(428, 160)
         Panel4.Margin = New Padding(4)
@@ -598,37 +599,37 @@ Partial Class ADMDashboardDEPTab
         dateDEPContractEndFilt.Size = New Size(174, 29)
         dateDEPContractEndFilt.TabIndex = 162
         ' 
-        ' Button2
+        ' btnCloseDEP
         ' 
-        Button2.Anchor = AnchorStyles.None
-        Button2.BackColor = Color.Crimson
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.MistyRose
-        Button2.Location = New Point(1835, 14)
-        Button2.Margin = New Padding(0)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(70, 25)
-        Button2.TabIndex = 164
-        Button2.Text = "CLOSE"
-        Button2.UseVisualStyleBackColor = False
+        btnCloseDEP.Anchor = AnchorStyles.None
+        btnCloseDEP.BackColor = Color.Crimson
+        btnCloseDEP.FlatAppearance.BorderSize = 0
+        btnCloseDEP.FlatStyle = FlatStyle.Flat
+        btnCloseDEP.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCloseDEP.ForeColor = Color.MistyRose
+        btnCloseDEP.Location = New Point(1835, 14)
+        btnCloseDEP.Margin = New Padding(0)
+        btnCloseDEP.Name = "btnCloseDEP"
+        btnCloseDEP.Size = New Size(70, 25)
+        btnCloseDEP.TabIndex = 164
+        btnCloseDEP.Text = "CLOSE"
+        btnCloseDEP.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' btnLogoutDEP
         ' 
-        Button1.Anchor = AnchorStyles.None
-        Button1.BackColor = Color.LightSlateGray
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.Black
-        Button1.Location = New Point(1745, 14)
-        Button1.Margin = New Padding(0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(80, 25)
-        Button1.TabIndex = 163
-        Button1.Text = "LOGOUT"
-        Button1.UseVisualStyleBackColor = False
+        btnLogoutDEP.Anchor = AnchorStyles.None
+        btnLogoutDEP.BackColor = Color.LightSlateGray
+        btnLogoutDEP.FlatAppearance.BorderSize = 0
+        btnLogoutDEP.FlatStyle = FlatStyle.Flat
+        btnLogoutDEP.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogoutDEP.ForeColor = Color.Black
+        btnLogoutDEP.Location = New Point(1745, 14)
+        btnLogoutDEP.Margin = New Padding(0)
+        btnLogoutDEP.Name = "btnLogoutDEP"
+        btnLogoutDEP.Size = New Size(80, 25)
+        btnLogoutDEP.TabIndex = 163
+        btnLogoutDEP.Text = "LOGOUT"
+        btnLogoutDEP.UseVisualStyleBackColor = False
         ' 
         ' ADMDashboardDEPTab
         ' 
@@ -636,8 +637,8 @@ Partial Class ADMDashboardDEPTab
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btnCloseDEP)
+        Controls.Add(btnLogoutDEP)
         Controls.Add(dateDEPContractEndFilt)
         Controls.Add(cbxDEPStatusFilt)
         Controls.Add(Label18)
@@ -739,7 +740,7 @@ Partial Class ADMDashboardDEPTab
     Private WithEvents txtDEPFilt As TextBox
     Friend WithEvents cbxDEPStatusFilt As ComboBox
     Friend WithEvents dateDEPContractEndFilt As DateTimePicker
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCloseDEP As Button
+    Friend WithEvents btnLogoutDEP As Button
 End Class
 

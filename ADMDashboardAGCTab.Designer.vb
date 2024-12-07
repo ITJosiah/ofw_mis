@@ -62,8 +62,8 @@ Partial Class ADMDashboardAGCTab
         btnADMDashOFW = New Button()
         btnADMDashAGC = New Button()
         btnADMDashEMP = New Button()
-        Button2 = New Button()
-        Button1 = New Button()
+        btnCloseAGC = New Button()
+        btnLogoutAGC = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvAGC, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -526,37 +526,37 @@ Partial Class ADMDashboardAGCTab
         btnADMDashEMP.Text = "Employers"
         btnADMDashEMP.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnCloseAGC
         ' 
-        Button2.Anchor = AnchorStyles.None
-        Button2.BackColor = Color.Crimson
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.MistyRose
-        Button2.Location = New Point(1835, 14)
-        Button2.Margin = New Padding(0)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(70, 25)
-        Button2.TabIndex = 166
-        Button2.Text = "CLOSE"
-        Button2.UseVisualStyleBackColor = False
+        btnCloseAGC.Anchor = AnchorStyles.None
+        btnCloseAGC.BackColor = Color.Crimson
+        btnCloseAGC.FlatAppearance.BorderSize = 0
+        btnCloseAGC.FlatStyle = FlatStyle.Flat
+        btnCloseAGC.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCloseAGC.ForeColor = Color.MistyRose
+        btnCloseAGC.Location = New Point(1835, 14)
+        btnCloseAGC.Margin = New Padding(0)
+        btnCloseAGC.Name = "btnCloseAGC"
+        btnCloseAGC.Size = New Size(70, 25)
+        btnCloseAGC.TabIndex = 166
+        btnCloseAGC.Text = "CLOSE"
+        btnCloseAGC.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' btnLogoutAGC
         ' 
-        Button1.Anchor = AnchorStyles.None
-        Button1.BackColor = Color.LightSlateGray
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.Black
-        Button1.Location = New Point(1745, 14)
-        Button1.Margin = New Padding(0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(80, 25)
-        Button1.TabIndex = 165
-        Button1.Text = "LOGOUT"
-        Button1.UseVisualStyleBackColor = False
+        btnLogoutAGC.Anchor = AnchorStyles.None
+        btnLogoutAGC.BackColor = Color.LightSlateGray
+        btnLogoutAGC.FlatAppearance.BorderSize = 0
+        btnLogoutAGC.FlatStyle = FlatStyle.Flat
+        btnLogoutAGC.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogoutAGC.ForeColor = Color.Black
+        btnLogoutAGC.Location = New Point(1745, 14)
+        btnLogoutAGC.Margin = New Padding(0)
+        btnLogoutAGC.Name = "btnLogoutAGC"
+        btnLogoutAGC.Size = New Size(80, 25)
+        btnLogoutAGC.TabIndex = 165
+        btnLogoutAGC.Text = "LOGOUT"
+        btnLogoutAGC.UseVisualStyleBackColor = False
         ' 
         ' ADMDashboardAGCTab
         ' 
@@ -564,8 +564,8 @@ Partial Class ADMDashboardAGCTab
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(btnCloseAGC)
+        Controls.Add(btnLogoutAGC)
         Controls.Add(txtAGCSpecFilt)
         Controls.Add(Label8)
         Controls.Add(txtAGCWebFilt)
@@ -652,6 +652,6 @@ Partial Class ADMDashboardAGCTab
     Friend WithEvents btnADMDashOFW As Button
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCloseAGC As Button
+    Friend WithEvents btnLogoutAGC As Button
 End Class

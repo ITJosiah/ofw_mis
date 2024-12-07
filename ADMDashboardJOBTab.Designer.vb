@@ -59,8 +59,8 @@ Partial Class ADMDashboardJOBTab
         PictureBox1 = New PictureBox()
         Label6 = New Label()
         cbxJOBStatFilt = New ComboBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        btnLogoutJOB = New Button()
+        Close = New Button()
         CType(dgvJOB, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -495,37 +495,37 @@ Partial Class ADMDashboardJOBTab
         cbxJOBStatFilt.Size = New Size(175, 29)
         cbxJOBStatFilt.TabIndex = 148
         ' 
-        ' Button1
+        ' btnLogoutJOB
         ' 
-        Button1.Anchor = AnchorStyles.None
-        Button1.BackColor = Color.LightSlateGray
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.Black
-        Button1.Location = New Point(1745, 14)
-        Button1.Margin = New Padding(0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(80, 25)
-        Button1.TabIndex = 149
-        Button1.Text = "LOGOUT"
-        Button1.UseVisualStyleBackColor = False
+        btnLogoutJOB.Anchor = AnchorStyles.None
+        btnLogoutJOB.BackColor = Color.LightSlateGray
+        btnLogoutJOB.FlatAppearance.BorderSize = 0
+        btnLogoutJOB.FlatStyle = FlatStyle.Flat
+        btnLogoutJOB.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogoutJOB.ForeColor = Color.Black
+        btnLogoutJOB.Location = New Point(1745, 14)
+        btnLogoutJOB.Margin = New Padding(0)
+        btnLogoutJOB.Name = "btnLogoutJOB"
+        btnLogoutJOB.Size = New Size(80, 25)
+        btnLogoutJOB.TabIndex = 149
+        btnLogoutJOB.Text = "LOGOUT"
+        btnLogoutJOB.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' Close
         ' 
-        Button2.Anchor = AnchorStyles.None
-        Button2.BackColor = Color.Crimson
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.MistyRose
-        Button2.Location = New Point(1835, 14)
-        Button2.Margin = New Padding(0)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(70, 25)
-        Button2.TabIndex = 150
-        Button2.Text = "CLOSE"
-        Button2.UseVisualStyleBackColor = False
+        Close.Anchor = AnchorStyles.None
+        Close.BackColor = Color.Crimson
+        Close.FlatAppearance.BorderSize = 0
+        Close.FlatStyle = FlatStyle.Flat
+        Close.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Close.ForeColor = Color.MistyRose
+        Close.Location = New Point(1835, 14)
+        Close.Margin = New Padding(0)
+        Close.Name = "Close"
+        Close.Size = New Size(70, 25)
+        Close.TabIndex = 150
+        Close.Text = "CLOSE"
+        Close.UseVisualStyleBackColor = False
         ' 
         ' ADMDashboardJOBTab
         ' 
@@ -533,8 +533,8 @@ Partial Class ADMDashboardJOBTab
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(Close)
+        Controls.Add(btnLogoutJOB)
         Controls.Add(cbxJOBStatFilt)
         Controls.Add(Label6)
         Controls.Add(txtJOBAgencyFilt)
@@ -624,6 +624,6 @@ Partial Class ADMDashboardJOBTab
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
     Friend WithEvents btnADMDashOFW As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnLogoutJOB As Button
+    Friend WithEvents Close As Button
 End Class

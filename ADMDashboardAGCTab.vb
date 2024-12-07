@@ -61,37 +61,37 @@ Public Class ADMDashboardAGCTab
 
     Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
         Dim ADMDashAGC As New ADMDashboardAGCTab
-        Close()
+        MyBase.Close()
         ADMDashAGC.Show()
     End Sub
 
     Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
         Dim ADMDashDEP As New ADMDashboardDEPTab
-        Close()
+        MyBase.Close()
         ADMDashDEP.Show()
     End Sub
 
     Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
         Dim ADMDashEMP As New ADMDashboardEMPTab
-        Close()
+        MyBase.Close()
         ADMDashEMP.Show()
     End Sub
 
     Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
         Dim ADMDashJOB As New ADMDashboardJOBTab
-        Close()
+        MyBase.Close()
         ADMDashJOB.Show()
     End Sub
 
     Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
         Dim ADMDashOFW As New ADMDashboardOFWTab
-        Close()
+        MyBase.Close()
         ADMDashOFW.Show()
     End Sub
 
     Private Sub btnADMDashStat_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
         Dim ADMDashStat As New ADMDashboardStatTab
-        Close()
+        MyBase.Close()
         ADMDashStat.Show()
     End Sub
 
@@ -100,24 +100,24 @@ Public Class ADMDashboardAGCTab
         AddAGC.ShowDialog()
     End Sub
 
-    Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
-        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Application.Exit()
-        End If
-    End Sub
+    'Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
+    '    If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
+    '                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
+    '                        DialogResult.Yes Then
+    '        Application.Exit()
+    '    End If
+    'End Sub
 
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage()
+    'Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+    '    If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
+    '                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
+    '                        DialogResult.Yes Then
+    '        Dim loginPage As New ADMloginPage()
 
-            Me.Close()
-            loginPage.Show()
-        End If
-    End Sub
+    '        Me.btnCloseAGC()
+    '        loginPage.Show()
+    '    End If
+    'End Sub
 
     Private Sub btnEDIT_Click(sender As Object, e As EventArgs) Handles btnEDIT.Click
         If dgvAGC.SelectedRows.Count > 0 Then  ' Check if a row is selected
@@ -142,7 +142,7 @@ Public Class ADMDashboardAGCTab
 
 
                 MessageBox.Show("Agency record deleted successfully!")
-                refresh()  ' Refresh the DataGridView
+                Refresh()  ' Refresh the DataGridView
             End If
         Else
             MessageBox.Show("Please select an Agency record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -199,5 +199,31 @@ Public Class ADMDashboardAGCTab
 
     Private Sub dgvAGC_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAGC.CellContentClick
 
+    End Sub
+
+    Private Sub btnLogoutAGC_Click(sender As Object, e As EventArgs) Handles btnLogoutAGC.Click
+        ' Ask for confirmation before logging out
+        If MessageBox.Show("Are you sure you want to log out?", "Confirm Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            ' Perform the logout action here (for example, go to the login form)
+            ' You can replace this with whatever action you'd like to perform on logout (like clearing session, etc.)
+
+            ' Close the current form (which might be the main dashboard)
+            Me.Close()
+
+            ' Optionally, navigate to the login page or show a new login form
+            Dim loginPage As New ADMloginPage() ' Replace with your login form
+            loginPage.Show()
+        End If
+    End Sub
+
+    Private Sub btnCloseAGC_Click(sender As Object, e As EventArgs) Handles btnCloseAGC.Click
+        ' Ask for confirmation before closing the application
+        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            ' Close the form
+            Me.Close()
+
+            ' Optionally, you can call Application.Exit to completely exit the application if necessary
+            Application.Exit()
+        End If
     End Sub
 End Class
