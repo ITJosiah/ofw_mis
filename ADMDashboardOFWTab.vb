@@ -183,10 +183,10 @@ Public Class ADMDashboardOFWTab
         If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
                             DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage()
+            Dim loginPage As New ADMloginPage
 
-            Me.Close()
-            loginPage.Show()
+            Close
+            loginPage.Show
         End If
     End Sub
 

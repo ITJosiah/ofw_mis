@@ -64,6 +64,8 @@ Partial Class ADMDashboardEMPTab
         txtEMPCompanyFilt = New TextBox()
         Label14 = New Label()
         txtEMPIndustryFilt = New TextBox()
+        Button2 = New Button()
+        Button1 = New Button()
         CType(dgvEMP, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -544,12 +546,46 @@ Partial Class ADMDashboardEMPTab
         txtEMPIndustryFilt.Size = New Size(107, 29)
         txtEMPIndustryFilt.TabIndex = 77
         ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Button2.BackColor = Color.Crimson
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.MistyRose
+        Button2.Location = New Point(1835, 14)
+        Button2.Margin = New Padding(0)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(70, 25)
+        Button2.TabIndex = 152
+        Button2.Text = "CLOSE"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.None
+        Button1.BackColor = Color.LightSlateGray
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(1745, 14)
+        Button1.Margin = New Padding(0)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(80, 25)
+        Button1.TabIndex = 151
+        Button1.Text = "LOGOUT"
+        Button1.UseVisualStyleBackColor = False
+        ' 
         ' ADMDashboardEMPTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(Label14)
         Controls.Add(txtEMPIndustryFilt)
         Controls.Add(Label8)
@@ -650,4 +686,6 @@ Partial Class ADMDashboardEMPTab
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
     Friend WithEvents btnADMDashOFW As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

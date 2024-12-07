@@ -145,7 +145,7 @@ Partial Class ADMDashboardOFWTab
         btnADMDashOFW.ForeColor = Color.MidnightBlue
         btnADMDashOFW.Location = New Point(52, 371)
         btnADMDashOFW.Name = "btnADMDashOFW"
-        btnADMDashOFW.Size = New Size(285, 45)
+        btnADMDashOFW.Size = New Size(290, 45)
         btnADMDashOFW.TabIndex = 40
         btnADMDashOFW.Text = "OFWs"
         btnADMDashOFW.UseVisualStyleBackColor = False
@@ -185,9 +185,9 @@ Partial Class ADMDashboardOFWTab
         btnCLose.FlatStyle = FlatStyle.Flat
         btnCLose.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnCLose.ForeColor = Color.MistyRose
-        btnCLose.Location = New Point(1836, 12)
+        btnCLose.Location = New Point(1835, 14)
         btnCLose.Name = "btnCLose"
-        btnCLose.Size = New Size(72, 21)
+        btnCLose.Size = New Size(70, 25)
         btnCLose.TabIndex = 5
         btnCLose.Text = "CLOSE"
         btnCLose.UseVisualStyleBackColor = False
@@ -206,8 +206,10 @@ Partial Class ADMDashboardOFWTab
         ' 
         ' Panel4
         ' 
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(335, 118)
+        Panel4.Margin = New Padding(0)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1587, 22)
         Panel4.TabIndex = 6
@@ -224,14 +226,16 @@ Partial Class ADMDashboardOFWTab
         ' 
         ' btnLogout
         ' 
+        btnLogout.Anchor = AnchorStyles.None
         btnLogout.BackColor = Color.LightSlateGray
         btnLogout.FlatAppearance.BorderSize = 0
         btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnLogout.ForeColor = Color.Black
-        btnLogout.Location = New Point(1767, 12)
+        btnLogout.Location = New Point(1745, 14)
+        btnLogout.Margin = New Padding(0)
         btnLogout.Name = "btnLogout"
-        btnLogout.Size = New Size(63, 21)
+        btnLogout.Size = New Size(80, 25)
         btnLogout.TabIndex = 9
         btnLogout.Text = "LOGOUT"
         btnLogout.UseVisualStyleBackColor = False

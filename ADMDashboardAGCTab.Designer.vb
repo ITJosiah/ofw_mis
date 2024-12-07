@@ -62,6 +62,8 @@ Partial Class ADMDashboardAGCTab
         btnADMDashOFW = New Button()
         btnADMDashAGC = New Button()
         btnADMDashEMP = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvAGC, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -394,9 +396,10 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' Panel4
         ' 
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(428, 160)
-        Panel4.Margin = New Padding(4)
+        Panel4.Margin = New Padding(0)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1493, 35)
         Panel4.TabIndex = 81
@@ -523,12 +526,46 @@ Partial Class ADMDashboardAGCTab
         btnADMDashEMP.Text = "Employers"
         btnADMDashEMP.UseVisualStyleBackColor = False
         ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.None
+        Button2.BackColor = Color.Crimson
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.MistyRose
+        Button2.Location = New Point(1835, 14)
+        Button2.Margin = New Padding(0)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(70, 25)
+        Button2.TabIndex = 166
+        Button2.Text = "CLOSE"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.None
+        Button1.BackColor = Color.LightSlateGray
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(1745, 14)
+        Button1.Margin = New Padding(0)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(80, 25)
+        Button1.TabIndex = 165
+        Button1.Text = "LOGOUT"
+        Button1.UseVisualStyleBackColor = False
+        ' 
         ' ADMDashboardAGCTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(txtAGCSpecFilt)
         Controls.Add(Label8)
         Controls.Add(txtAGCWebFilt)
@@ -615,4 +652,6 @@ Partial Class ADMDashboardAGCTab
     Friend WithEvents btnADMDashOFW As Button
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class
