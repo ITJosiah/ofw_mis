@@ -600,7 +600,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         ' Button2
         ' 
-        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Button2.Anchor = AnchorStyles.None
         Button2.BackColor = Color.Crimson
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
