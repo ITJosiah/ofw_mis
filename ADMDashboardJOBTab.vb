@@ -1,16 +1,23 @@
 ﻿Public Class ADMDashboardJOBTab
     Private JobDataTable As New DataTable()
-    Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
-        Dim ADMDashOFW As New ADMDashboardOFWTab()
+    'Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
+    '    Dim ADMDashOFW As New ADMDashboardOFWTab()
 
-        Me.Close()
-        ADMDashOFW.Show()
-    End Sub
+    '    Me.Close()
+    '    ADMDashOFW.Show()
+    'End Sub
 
 
 
-    Public Sub refresh()
-        Dim query As String = "SELECT * FROM employer"
+    'Public Sub refresh()
+    '    Dim query As String = "SELECT * FROM employer"
+    '    JobDataTable.Clear() ' Clear any existing data
+    '    dgvJOB.DataSource = JobDataTable ' Bind the DataTable to the DataGridView
+    '    LoadToDGV(query, dgvJOB)
+    'End Sub
+
+    Public Sub RefreshDataGrid()
+        Dim query As String = "SELECT * FROM agency"
         JobDataTable.Clear() ' Clear any existing data
         dgvJOB.DataSource = JobDataTable ' Bind the DataTable to the DataGridView
         LoadToDGV(query, dgvJOB)
@@ -35,22 +42,22 @@
         End If
     End Sub
 
-    Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
-        Dim ADMDashEMP As New ADMDashboardEMPTab()
-        Close()
-        ADMDashEMP.Show()
-    End Sub
+    'Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
+    '    Dim ADMDashEMP As New ADMDashboardEMPTab()
+    '    Close()
+    '    ADMDashEMP.Show()
+    'End Sub
 
-    Private Sub BtnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
-        Dim ADMDashStat As New ADMDashboardStatTab()
-        Me.Close()
-        ADMDashStat.Show()
-    End Sub
-    Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
-        Dim ADMDashAGC As New ADMDashboardAGCTab
-        Close()
-        ADMDashAGC.Show()
-    End Sub
+    'Private Sub BtnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+    '    Dim ADMDashStat As New ADMDashboardStatTab()
+    '    Me.Close()
+    '    ADMDashStat.Show()
+    'End Sub
+    'Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
+    '    Dim ADMDashAGC As New ADMDashboardAGCTab
+    '    Close()
+    '    ADMDashAGC.Show()
+    'End Sub
 
     Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
         Dim AddEMP As New ADMAddEMP()
@@ -95,4 +102,41 @@
         dgvJOB.DataSource = JobDataTable ' Bind the DataTable to the DataGridView
         LoadToDGV(query, dgvJOB)
     End Sub
+
+    Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
+        Dim ADMDashAGC As New ADMDashboardAGCTab
+        Close()
+        ADMDashAGC.Show()
+    End Sub
+
+    Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+        Dim ADMDashDEP As New ADMDashboardDEPTab
+        Close()
+        ADMDashDEP.Show()
+    End Sub
+
+    Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
+        Dim ADMDashEMP As New ADMDashboardEMPTab
+        Close()
+        ADMDashEMP.Show()
+    End Sub
+
+    Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
+        Dim ADMDashJOB As New ADMDashboardJOBTab
+        Close()
+        ADMDashJOB.Show()
+    End Sub
+
+    Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
+        Dim ADMDashOFW As New ADMDashboardOFWTab
+        Close()
+        ADMDashOFW.Show()
+    End Sub
+
+    Private Sub btnADMDashStat_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+        Dim ADMDashStat As New ADMDashboardStatTab
+        Close()
+        ADMDashStat.Show()
+    End Sub
+
 End Class

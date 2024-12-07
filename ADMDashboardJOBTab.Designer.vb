@@ -533,6 +533,7 @@ Partial Class ADMDashboardJOBTab
         Name = "ADMDashboardJOBTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardJOBTab"
+        WindowState = FormWindowState.Maximized
         CType(dgvJOB, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

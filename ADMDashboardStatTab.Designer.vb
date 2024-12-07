@@ -22,15 +22,15 @@ Partial Class ADMDashboardStatTab
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea25 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
-        Dim Legend25 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
-        Dim Series25 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
-        Dim ChartArea26 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
-        Dim Legend26 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
-        Dim Series26 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
-        Dim ChartArea27 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
-        Dim Legend27 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
-        Dim Series27 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
+        Dim ChartArea19 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
+        Dim Legend19 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
+        Dim Series19 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
+        Dim ChartArea20 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
+        Dim Legend20 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
+        Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
+        Dim ChartArea21 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
+        Dim Legend21 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
+        Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
         Panel1 = New Panel()
         btnADMDashSTAT = New Button()
         btnADMDashDEP = New Button()
@@ -196,13 +196,14 @@ Partial Class ADMDashboardStatTab
         ' 
         ' btnClose
         ' 
+        btnClose.Anchor = AnchorStyles.None
         btnClose.BackColor = Color.Crimson
         btnClose.FlatAppearance.BorderSize = 0
         btnClose.FlatStyle = FlatStyle.Flat
         btnClose.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnClose.ForeColor = Color.MistyRose
-        btnClose.Location = New Point(1842, 3)
-        btnClose.Margin = New Padding(3, 4, 3, 4)
+        btnClose.Location = New Point(1832, 24)
+        btnClose.Margin = New Padding(0)
         btnClose.Name = "btnClose"
         btnClose.Size = New Size(66, 29)
         btnClose.TabIndex = 2
@@ -211,6 +212,7 @@ Partial Class ADMDashboardStatTab
         ' 
         ' Panel4
         ' 
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(428, 160)
         Panel4.Margin = New Padding(3, 4, 3, 4)
@@ -244,17 +246,17 @@ Partial Class ADMDashboardStatTab
         ' 
         ' Chart2
         ' 
-        ChartArea25.Name = "ChartArea1"
-        Chart2.ChartAreas.Add(ChartArea25)
-        Legend25.Name = "Legend1"
-        Chart2.Legends.Add(Legend25)
+        ChartArea19.Name = "ChartArea1"
+        Chart2.ChartAreas.Add(ChartArea19)
+        Legend19.Name = "Legend1"
+        Chart2.Legends.Add(Legend19)
         Chart2.Location = New Point(27, 116)
-        Chart2.Margin = New Padding(4, 4, 4, 4)
+        Chart2.Margin = New Padding(4)
         Chart2.Name = "Chart2"
-        Series25.ChartArea = "ChartArea1"
-        Series25.Legend = "Legend1"
-        Series25.Name = "Series1"
-        Chart2.Series.Add(Series25)
+        Series19.ChartArea = "ChartArea1"
+        Series19.Legend = "Legend1"
+        Series19.Name = "Series1"
+        Chart2.Series.Add(Series19)
         Chart2.Size = New Size(355, 178)
         Chart2.TabIndex = 8
         Chart2.Text = "Chart2"
@@ -293,13 +295,14 @@ Partial Class ADMDashboardStatTab
         ' 
         ' btnLogout
         ' 
+        btnLogout.Anchor = AnchorStyles.None
         btnLogout.BackColor = Color.LightSlateGray
         btnLogout.FlatAppearance.BorderSize = 0
         btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnLogout.ForeColor = Color.Black
-        btnLogout.Location = New Point(1755, 3)
-        btnLogout.Margin = New Padding(3, 4, 3, 4)
+        btnLogout.Location = New Point(1739, 24)
+        btnLogout.Margin = New Padding(0)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(81, 29)
         btnLogout.TabIndex = 10
@@ -320,17 +323,17 @@ Partial Class ADMDashboardStatTab
         ' 
         ' Chart1
         ' 
-        ChartArea26.Name = "ChartArea1"
-        Chart1.ChartAreas.Add(ChartArea26)
-        Legend26.Name = "Legend1"
-        Chart1.Legends.Add(Legend26)
+        ChartArea20.Name = "ChartArea1"
+        Chart1.ChartAreas.Add(ChartArea20)
+        Legend20.Name = "Legend1"
+        Chart1.Legends.Add(Legend20)
         Chart1.Location = New Point(21, 97)
         Chart1.Name = "Chart1"
-        Series26.ChartArea = "ChartArea1"
-        Series26.ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Series26.Legend = "Legend1"
-        Series26.Name = "Series1"
-        Chart1.Series.Add(Series26)
+        Series20.ChartArea = "ChartArea1"
+        Series20.ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        Series20.Legend = "Legend1"
+        Series20.Name = "Series1"
+        Chart1.Series.Add(Series20)
         Chart1.Size = New Size(378, 223)
         Chart1.TabIndex = 11
         ' 
@@ -423,17 +426,17 @@ Partial Class ADMDashboardStatTab
         ' 
         ' Chart4
         ' 
-        ChartArea27.Name = "ChartArea1"
-        Chart4.ChartAreas.Add(ChartArea27)
-        Legend27.Name = "Legend1"
-        Chart4.Legends.Add(Legend27)
+        ChartArea21.Name = "ChartArea1"
+        Chart4.ChartAreas.Add(ChartArea21)
+        Legend21.Name = "Legend1"
+        Chart4.Legends.Add(Legend21)
         Chart4.Location = New Point(21, 97)
         Chart4.Name = "Chart4"
-        Series27.ChartArea = "ChartArea1"
-        Series27.ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Series27.Legend = "Legend1"
-        Series27.Name = "Series1"
-        Chart4.Series.Add(Series27)
+        Series21.ChartArea = "ChartArea1"
+        Series21.ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        Series21.Legend = "Legend1"
+        Series21.Name = "Series1"
+        Chart4.Series.Add(Series21)
         Chart4.Size = New Size(378, 223)
         Chart4.TabIndex = 11
         Chart4.Text = "Chart4"

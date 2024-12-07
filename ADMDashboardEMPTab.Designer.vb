@@ -590,6 +590,7 @@ Partial Class ADMDashboardEMPTab
         Name = "ADMDashboardEMPTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardEMPTab"
+        WindowState = FormWindowState.Maximized
         CType(dgvEMP, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)

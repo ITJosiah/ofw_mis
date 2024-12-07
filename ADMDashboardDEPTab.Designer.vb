@@ -82,7 +82,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashSTAT.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashSTAT.ForeColor = Color.MidnightBlue
         btnADMDashSTAT.Location = New Point(65, 965)
-        btnADMDashSTAT.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashSTAT.Margin = New Padding(4)
         btnADMDashSTAT.Name = "btnADMDashSTAT"
         btnADMDashSTAT.Size = New Size(310, 65)
         btnADMDashSTAT.TabIndex = 119
@@ -97,7 +97,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashDEP.ForeColor = Color.MidnightBlue
         btnADMDashDEP.Location = New Point(65, 875)
-        btnADMDashDEP.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashDEP.Margin = New Padding(4)
         btnADMDashDEP.Name = "btnADMDashDEP"
         btnADMDashDEP.Size = New Size(368, 65)
         btnADMDashDEP.TabIndex = 118
@@ -112,7 +112,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashJOB.ForeColor = Color.MidnightBlue
         btnADMDashJOB.Location = New Point(65, 790)
-        btnADMDashJOB.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashJOB.Margin = New Padding(4)
         btnADMDashJOB.Name = "btnADMDashJOB"
         btnADMDashJOB.Size = New Size(310, 65)
         btnADMDashJOB.TabIndex = 117
@@ -127,7 +127,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashOFW.ForeColor = Color.MidnightBlue
         btnADMDashOFW.Location = New Point(65, 535)
-        btnADMDashOFW.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashOFW.Margin = New Padding(4)
         btnADMDashOFW.Name = "btnADMDashOFW"
         btnADMDashOFW.Size = New Size(310, 65)
         btnADMDashOFW.TabIndex = 114
@@ -142,7 +142,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashAGC.ForeColor = Color.MidnightBlue
         btnADMDashAGC.Location = New Point(65, 705)
-        btnADMDashAGC.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashAGC.Margin = New Padding(4)
         btnADMDashAGC.Name = "btnADMDashAGC"
         btnADMDashAGC.Size = New Size(310, 65)
         btnADMDashAGC.TabIndex = 116
@@ -157,7 +157,7 @@ Partial Class ADMDashboardDEPTab
         btnADMDashEMP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashEMP.ForeColor = Color.MidnightBlue
         btnADMDashEMP.Location = New Point(65, 620)
-        btnADMDashEMP.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashEMP.Margin = New Padding(4)
         btnADMDashEMP.Name = "btnADMDashEMP"
         btnADMDashEMP.Size = New Size(310, 65)
         btnADMDashEMP.TabIndex = 115
@@ -175,7 +175,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         PictureBox1.Image = My.Resources.Resources.Untitled_design__8_
         PictureBox1.Location = New Point(15, 10)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(404, 469)
         PictureBox1.TabIndex = 1
@@ -195,7 +195,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         btnClearFilter.FlatStyle = FlatStyle.Popup
         btnClearFilter.Location = New Point(2199, 727)
-        btnClearFilter.Margin = New Padding(4, 4, 4, 4)
+        btnClearFilter.Margin = New Padding(4)
         btnClearFilter.Name = "btnClearFilter"
         btnClearFilter.Size = New Size(98, 38)
         btnClearFilter.TabIndex = 141
@@ -228,7 +228,7 @@ Partial Class ADMDashboardDEPTab
         btnDLT.FlatStyle = FlatStyle.Popup
         btnDLT.ForeColor = Color.DarkRed
         btnDLT.Location = New Point(2314, 1380)
-        btnDLT.Margin = New Padding(4, 4, 4, 4)
+        btnDLT.Margin = New Padding(4)
         btnDLT.Name = "btnDLT"
         btnDLT.Size = New Size(94, 92)
         btnDLT.TabIndex = 138
@@ -241,7 +241,7 @@ Partial Class ADMDashboardDEPTab
         btnGEN.FlatStyle = FlatStyle.Popup
         btnGEN.ForeColor = Color.DarkBlue
         btnGEN.Location = New Point(2191, 1380)
-        btnGEN.Margin = New Padding(4, 4, 4, 4)
+        btnGEN.Margin = New Padding(4)
         btnGEN.Name = "btnGEN"
         btnGEN.Size = New Size(94, 92)
         btnGEN.TabIndex = 137
@@ -254,7 +254,7 @@ Partial Class ADMDashboardDEPTab
         btnEDIT.FlatStyle = FlatStyle.Popup
         btnEDIT.ForeColor = Color.DarkBlue
         btnEDIT.Location = New Point(2314, 1264)
-        btnEDIT.Margin = New Padding(4, 4, 4, 4)
+        btnEDIT.Margin = New Padding(4)
         btnEDIT.Name = "btnEDIT"
         btnEDIT.Size = New Size(94, 92)
         btnEDIT.TabIndex = 136
@@ -267,7 +267,7 @@ Partial Class ADMDashboardDEPTab
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
         btnADD.Location = New Point(2191, 1264)
-        btnADD.Margin = New Padding(4, 4, 4, 4)
+        btnADD.Margin = New Padding(4)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(94, 92)
         btnADD.TabIndex = 135
@@ -278,7 +278,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         btnFilter.FlatStyle = FlatStyle.Popup
         btnFilter.Location = New Point(2304, 727)
-        btnFilter.Margin = New Padding(4, 4, 4, 4)
+        btnFilter.Margin = New Padding(4)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(98, 38)
         btnFilter.TabIndex = 134
@@ -337,7 +337,7 @@ Partial Class ADMDashboardDEPTab
         ' txtAGCIdFilt
         ' 
         txtAGCIdFilt.Location = New Point(2209, 276)
-        txtAGCIdFilt.Margin = New Padding(4, 4, 4, 4)
+        txtAGCIdFilt.Margin = New Padding(4)
         txtAGCIdFilt.Name = "txtAGCIdFilt"
         txtAGCIdFilt.PlaceholderText = "#####"
         txtAGCIdFilt.Size = New Size(72, 29)
@@ -362,7 +362,7 @@ Partial Class ADMDashboardDEPTab
         btnLogout.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnLogout.ForeColor = Color.Black
         btnLogout.Location = New Point(2296, 17)
-        btnLogout.Margin = New Padding(4, 4, 4, 4)
+        btnLogout.Margin = New Padding(4)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(81, 29)
         btnLogout.TabIndex = 119
@@ -374,7 +374,7 @@ Partial Class ADMDashboardDEPTab
         dgvDEP.BackgroundColor = SystemColors.ActiveCaption
         dgvDEP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvDEP.Location = New Point(445, 210)
-        dgvDEP.Margin = New Padding(4, 4, 4, 4)
+        dgvDEP.Margin = New Padding(4)
         dgvDEP.Name = "dgvDEP"
         dgvDEP.RowHeadersWidth = 51
         dgvDEP.Size = New Size(1080, 870)
@@ -397,7 +397,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         Panel4.BackColor = Color.MidnightBlue
         Panel4.Location = New Point(428, 160)
-        Panel4.Margin = New Padding(4, 4, 4, 4)
+        Panel4.Margin = New Padding(4)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1493, 35)
         Panel4.TabIndex = 116
@@ -410,7 +410,7 @@ Partial Class ADMDashboardDEPTab
         btnCLose.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnCLose.ForeColor = Color.MistyRose
         btnCLose.Location = New Point(2386, 17)
-        btnCLose.Margin = New Padding(4, 4, 4, 4)
+        btnCLose.Margin = New Padding(4)
         btnCLose.Name = "btnCLose"
         btnCLose.Size = New Size(67, 29)
         btnCLose.TabIndex = 115
@@ -429,7 +429,7 @@ Partial Class ADMDashboardDEPTab
         Panel1.Controls.Add(btnADMDashEMP)
         Panel1.ForeColor = SystemColors.ControlText
         Panel1.Location = New Point(-3, -1)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(433, 1520)
         Panel1.TabIndex = 114
@@ -457,7 +457,7 @@ Partial Class ADMDashboardDEPTab
         ' txtOFWIdFilt
         ' 
         txtOFWIdFilt.Location = New Point(2209, 342)
-        txtOFWIdFilt.Margin = New Padding(4, 4, 4, 4)
+        txtOFWIdFilt.Margin = New Padding(4)
         txtOFWIdFilt.Name = "txtOFWIdFilt"
         txtOFWIdFilt.PlaceholderText = "#####"
         txtOFWIdFilt.Size = New Size(72, 29)
@@ -486,7 +486,7 @@ Partial Class ADMDashboardDEPTab
         ' txtJOBIdFilt
         ' 
         txtJOBIdFilt.Location = New Point(2209, 405)
-        txtJOBIdFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBIdFilt.Margin = New Padding(4)
         txtJOBIdFilt.Name = "txtJOBIdFilt"
         txtJOBIdFilt.PlaceholderText = "#####"
         txtJOBIdFilt.Size = New Size(72, 29)
@@ -496,7 +496,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         dateDEPdateFilt.Format = DateTimePickerFormat.Short
         dateDEPdateFilt.Location = New Point(2155, 465)
-        dateDEPdateFilt.Margin = New Padding(4, 4, 4, 4)
+        dateDEPdateFilt.Margin = New Padding(4)
         dateDEPdateFilt.Name = "dateDEPdateFilt"
         dateDEPdateFilt.Size = New Size(172, 29)
         dateDEPdateFilt.TabIndex = 153
@@ -534,7 +534,7 @@ Partial Class ADMDashboardDEPTab
         ' TextBox1
         ' 
         TextBox1.Location = New Point(2355, 276)
-        TextBox1.Margin = New Padding(4, 4, 4, 4)
+        TextBox1.Margin = New Padding(4)
         TextBox1.Name = "TextBox1"
         TextBox1.PlaceholderText = "#####"
         TextBox1.Size = New Size(72, 29)
@@ -563,7 +563,7 @@ Partial Class ADMDashboardDEPTab
         ' TextBox2
         ' 
         TextBox2.Location = New Point(2359, 342)
-        TextBox2.Margin = New Padding(4, 4, 4, 4)
+        TextBox2.Margin = New Padding(4)
         TextBox2.Name = "TextBox2"
         TextBox2.PlaceholderText = "#####"
         TextBox2.Size = New Size(72, 29)
@@ -572,7 +572,7 @@ Partial Class ADMDashboardDEPTab
         ' txtDEPFilt
         ' 
         txtDEPFilt.Location = New Point(2155, 531)
-        txtDEPFilt.Margin = New Padding(4, 4, 4, 4)
+        txtDEPFilt.Margin = New Padding(4)
         txtDEPFilt.Name = "txtDEPFilt"
         txtDEPFilt.PlaceholderText = "Country"
         txtDEPFilt.Size = New Size(175, 29)
@@ -582,7 +582,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         cbxDEPStatusFilt.FormattingEnabled = True
         cbxDEPStatusFilt.Location = New Point(2155, 594)
-        cbxDEPStatusFilt.Margin = New Padding(4, 4, 4, 4)
+        cbxDEPStatusFilt.Margin = New Padding(4)
         cbxDEPStatusFilt.Name = "cbxDEPStatusFilt"
         cbxDEPStatusFilt.Size = New Size(175, 29)
         cbxDEPStatusFilt.TabIndex = 161
@@ -591,7 +591,7 @@ Partial Class ADMDashboardDEPTab
         ' 
         dateDEPContractEndFilt.Format = DateTimePickerFormat.Short
         dateDEPContractEndFilt.Location = New Point(2156, 658)
-        dateDEPContractEndFilt.Margin = New Padding(4, 4, 4, 4)
+        dateDEPContractEndFilt.Margin = New Padding(4)
         dateDEPContractEndFilt.Name = "dateDEPContractEndFilt"
         dateDEPContractEndFilt.Size = New Size(174, 29)
         dateDEPContractEndFilt.TabIndex = 162
@@ -642,7 +642,7 @@ Partial Class ADMDashboardDEPTab
         Controls.Add(btnCLose)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "ADMDashboardDEPTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardDEPTab"
