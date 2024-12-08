@@ -55,6 +55,7 @@ Partial Class ADMAddAGC
         cbxAGCAccredStat = New ComboBox()
         Label10 = New Label()
         btnCANCEL = New Button()
+        Cancel = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -299,7 +300,7 @@ Partial Class ADMAddAGC
         btnADD.FlatStyle = FlatStyle.Flat
         btnADD.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnADD.ForeColor = Color.DarkGreen
-        btnADD.Location = New Point(896, 510)
+        btnADD.Location = New Point(898, 722)
         btnADD.Margin = New Padding(4)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(153, 56)
@@ -429,12 +430,27 @@ Partial Class ADMAddAGC
         btnCANCEL.Text = "CANCEL"
         btnCANCEL.UseVisualStyleBackColor = False
         ' 
+        ' Cancel
+        ' 
+        Cancel.BackColor = Color.MistyRose
+        Cancel.FlatStyle = FlatStyle.Flat
+        Cancel.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Cancel.ForeColor = Color.Firebrick
+        Cancel.Location = New Point(715, 722)
+        Cancel.Margin = New Padding(4)
+        Cancel.Name = "Cancel"
+        Cancel.Size = New Size(153, 56)
+        Cancel.TabIndex = 22
+        Cancel.Text = "CANCEL"
+        Cancel.UseVisualStyleBackColor = False
+        ' 
         ' ADMAddAGC
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1065, 800)
+        Controls.Add(Cancel)
         Controls.Add(Label1)
         Controls.Add(Label2)
         Controls.Add(btnADD)
@@ -488,4 +504,5 @@ Partial Class ADMAddAGC
     Friend WithEvents cbxAGCAccredStat As ComboBox
     Friend WithEvents Label8 As Label
     Friend WithEvents dateAGCExp As DateTimePicker
+    Friend WithEvents Cancel As Button
 End Class

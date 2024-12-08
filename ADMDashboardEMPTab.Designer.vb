@@ -66,6 +66,29 @@ Partial Class ADMDashboardEMPTab
         txtEMPIndustryFilt = New TextBox()
         btnCloseEMP = New Button()
         btnLogoutEMP = New Button()
+        Label22 = New Label()
+        txtbxEMPZIPCODEFilt = New TextBox()
+        txtbxEMPLicenseExpiryFilt = New TextBox()
+        Label24 = New Label()
+        txtbxEMPAccreditationStaFilt = New TextBox()
+        Label25 = New Label()
+        txtbxEMPYearsOfOperationFilt = New TextBox()
+        Label26 = New Label()
+        txtbxEMPSpecializationFilt = New TextBox()
+        Label27 = New Label()
+        txtbxEMPWebsiteFilt = New TextBox()
+        Label20 = New Label()
+        txtbxEMPEmailFilt = New TextBox()
+        Label21 = New Label()
+        txtbxEMPContactFilt = New TextBox()
+        Label23 = New Label()
+        txtbxEMPLicenseNumFilt = New TextBox()
+        Label28 = New Label()
+        txtbxEMPNameFilt = New TextBox()
+        Label29 = New Label()
+        Label30 = New Label()
+        txtbxEMPIdFilt = New TextBox()
+        Label31 = New Label()
         CType(dgvEMP, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -578,12 +601,235 @@ Partial Class ADMDashboardEMPTab
         btnLogoutEMP.Text = "LOGOUT"
         btnLogoutEMP.UseVisualStyleBackColor = False
         ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Location = New Point(1604, 814)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(82, 23)
+        Label22.TabIndex = 241
+        Label22.Text = "Zip Code"
+        ' 
+        ' txtbxEMPZIPCODEFilt
+        ' 
+        txtbxEMPZIPCODEFilt.Location = New Point(1604, 840)
+        txtbxEMPZIPCODEFilt.Name = "txtbxEMPZIPCODEFilt"
+        txtbxEMPZIPCODEFilt.Size = New Size(82, 29)
+        txtbxEMPZIPCODEFilt.TabIndex = 240
+        ' 
+        ' txtbxEMPLicenseExpiryFilt
+        ' 
+        txtbxEMPLicenseExpiryFilt.Location = New Point(1604, 778)
+        txtbxEMPLicenseExpiryFilt.Name = "txtbxEMPLicenseExpiryFilt"
+        txtbxEMPLicenseExpiryFilt.Size = New Size(245, 29)
+        txtbxEMPLicenseExpiryFilt.TabIndex = 239
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoSize = True
+        Label24.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label24.Location = New Point(1604, 753)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(123, 23)
+        Label24.TabIndex = 238
+        Label24.Text = "License Expiry"
+        ' 
+        ' txtbxEMPAccreditationStaFilt
+        ' 
+        txtbxEMPAccreditationStaFilt.Location = New Point(1604, 721)
+        txtbxEMPAccreditationStaFilt.Name = "txtbxEMPAccreditationStaFilt"
+        txtbxEMPAccreditationStaFilt.Size = New Size(245, 29)
+        txtbxEMPAccreditationStaFilt.TabIndex = 237
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label25.Location = New Point(1604, 696)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(173, 23)
+        Label25.TabIndex = 236
+        Label25.Text = "Accreditation Status"
+        ' 
+        ' txtbxEMPYearsOfOperationFilt
+        ' 
+        txtbxEMPYearsOfOperationFilt.Location = New Point(1604, 664)
+        txtbxEMPYearsOfOperationFilt.Name = "txtbxEMPYearsOfOperationFilt"
+        txtbxEMPYearsOfOperationFilt.Size = New Size(245, 29)
+        txtbxEMPYearsOfOperationFilt.TabIndex = 235
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label26.Location = New Point(1604, 639)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(158, 23)
+        Label26.TabIndex = 234
+        Label26.Text = "Years of Operation"
+        ' 
+        ' txtbxEMPSpecializationFilt
+        ' 
+        txtbxEMPSpecializationFilt.Location = New Point(1604, 607)
+        txtbxEMPSpecializationFilt.Name = "txtbxEMPSpecializationFilt"
+        txtbxEMPSpecializationFilt.Size = New Size(245, 29)
+        txtbxEMPSpecializationFilt.TabIndex = 233
+        ' 
+        ' Label27
+        ' 
+        Label27.AutoSize = True
+        Label27.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label27.Location = New Point(1604, 582)
+        Label27.Name = "Label27"
+        Label27.Size = New Size(112, 23)
+        Label27.TabIndex = 232
+        Label27.Text = "Specilization"
+        ' 
+        ' txtbxEMPWebsiteFilt
+        ' 
+        txtbxEMPWebsiteFilt.Location = New Point(1604, 550)
+        txtbxEMPWebsiteFilt.Name = "txtbxEMPWebsiteFilt"
+        txtbxEMPWebsiteFilt.Size = New Size(245, 29)
+        txtbxEMPWebsiteFilt.TabIndex = 231
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label20.Location = New Point(1604, 525)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(75, 23)
+        Label20.TabIndex = 230
+        Label20.Text = "Website"
+        ' 
+        ' txtbxEMPEmailFilt
+        ' 
+        txtbxEMPEmailFilt.Location = New Point(1604, 493)
+        txtbxEMPEmailFilt.Name = "txtbxEMPEmailFilt"
+        txtbxEMPEmailFilt.Size = New Size(245, 29)
+        txtbxEMPEmailFilt.TabIndex = 229
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label21.Location = New Point(1604, 468)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(54, 23)
+        Label21.TabIndex = 228
+        Label21.Text = "Email"
+        ' 
+        ' txtbxEMPContactFilt
+        ' 
+        txtbxEMPContactFilt.Location = New Point(1604, 436)
+        txtbxEMPContactFilt.Name = "txtbxEMPContactFilt"
+        txtbxEMPContactFilt.Size = New Size(245, 29)
+        txtbxEMPContactFilt.TabIndex = 227
+        ' 
+        ' Label23
+        ' 
+        Label23.AutoSize = True
+        Label23.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label23.Location = New Point(1604, 411)
+        Label23.Name = "Label23"
+        Label23.Size = New Size(72, 23)
+        Label23.TabIndex = 226
+        Label23.Text = "Contact"
+        ' 
+        ' txtbxEMPLicenseNumFilt
+        ' 
+        txtbxEMPLicenseNumFilt.Location = New Point(1604, 379)
+        txtbxEMPLicenseNumFilt.Name = "txtbxEMPLicenseNumFilt"
+        txtbxEMPLicenseNumFilt.Size = New Size(245, 29)
+        txtbxEMPLicenseNumFilt.TabIndex = 225
+        ' 
+        ' Label28
+        ' 
+        Label28.AutoSize = True
+        Label28.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label28.Location = New Point(1604, 354)
+        Label28.Name = "Label28"
+        Label28.Size = New Size(138, 23)
+        Label28.TabIndex = 224
+        Label28.Text = "License Number"
+        ' 
+        ' txtbxEMPNameFilt
+        ' 
+        txtbxEMPNameFilt.Location = New Point(1604, 320)
+        txtbxEMPNameFilt.Name = "txtbxEMPNameFilt"
+        txtbxEMPNameFilt.Size = New Size(245, 29)
+        txtbxEMPNameFilt.TabIndex = 223
+        ' 
+        ' Label29
+        ' 
+        Label29.AutoSize = True
+        Label29.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label29.Location = New Point(1604, 295)
+        Label29.Name = "Label29"
+        Label29.Size = New Size(57, 23)
+        Label29.TabIndex = 222
+        Label29.Text = "Name"
+        ' 
+        ' Label30
+        ' 
+        Label30.AutoSize = True
+        Label30.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label30.Location = New Point(1636, 275)
+        Label30.Name = "Label30"
+        Label30.Size = New Size(109, 23)
+        Label30.TabIndex = 221
+        Label30.Text = "Employer ID"
+        ' 
+        ' txtbxEMPIdFilt
+        ' 
+        txtbxEMPIdFilt.Location = New Point(1750, 272)
+        txtbxEMPIdFilt.Name = "txtbxEMPIdFilt"
+        txtbxEMPIdFilt.Size = New Size(60, 29)
+        txtbxEMPIdFilt.TabIndex = 220
+        ' 
+        ' Label31
+        ' 
+        Label31.AutoSize = True
+        Label31.BackColor = Color.Transparent
+        Label31.Font = New Font("Arial Rounded MT Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label31.ForeColor = SystemColors.ActiveCaptionText
+        Label31.Location = New Point(1565, 215)
+        Label31.Margin = New Padding(4, 0, 4, 0)
+        Label31.Name = "Label31"
+        Label31.Size = New Size(319, 54)
+        Label31.TabIndex = 219
+        Label31.Text = "Filter Search"
+        ' 
         ' ADMDashboardEMPTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Label22)
+        Controls.Add(txtbxEMPZIPCODEFilt)
+        Controls.Add(txtbxEMPLicenseExpiryFilt)
+        Controls.Add(Label24)
+        Controls.Add(txtbxEMPAccreditationStaFilt)
+        Controls.Add(Label25)
+        Controls.Add(txtbxEMPYearsOfOperationFilt)
+        Controls.Add(Label26)
+        Controls.Add(txtbxEMPSpecializationFilt)
+        Controls.Add(Label27)
+        Controls.Add(txtbxEMPWebsiteFilt)
+        Controls.Add(Label20)
+        Controls.Add(txtbxEMPEmailFilt)
+        Controls.Add(Label21)
+        Controls.Add(txtbxEMPContactFilt)
+        Controls.Add(Label23)
+        Controls.Add(txtbxEMPLicenseNumFilt)
+        Controls.Add(Label28)
+        Controls.Add(txtbxEMPNameFilt)
+        Controls.Add(Label29)
+        Controls.Add(Label30)
+        Controls.Add(txtbxEMPIdFilt)
+        Controls.Add(Label31)
         Controls.Add(btnCloseEMP)
         Controls.Add(btnLogoutEMP)
         Controls.Add(Label14)
@@ -688,4 +934,27 @@ Partial Class ADMDashboardEMPTab
     Friend WithEvents btnADMDashOFW As Button
     Friend WithEvents btnCloseEMP As Button
     Friend WithEvents btnLogoutEMP As Button
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtbxEMPZIPCODEFilt As TextBox
+    Friend WithEvents txtbxEMPLicenseExpiryFilt As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtbxEMPAccreditationStaFilt As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txtbxEMPYearsOfOperationFilt As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents txtbxEMPSpecializationFilt As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents txtbxEMPWebsiteFilt As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents txtbxEMPEmailFilt As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtbxEMPContactFilt As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents txtbxEMPLicenseNumFilt As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents txtbxEMPNameFilt As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents txtbxEMPIdFilt As TextBox
+    Friend WithEvents Label31 As Label
 End Class

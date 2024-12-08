@@ -71,6 +71,29 @@ Partial Class ADMDashboardDEPTab
         dateDEPContractEndFilt = New DateTimePicker()
         btnCloseDEP = New Button()
         btnLogoutDEP = New Button()
+        Label22 = New Label()
+        txtbxDEPZIPCODEFilt = New TextBox()
+        txtbxDEPLicenseExpiryFilt = New TextBox()
+        Label24 = New Label()
+        txtbxDEPAccreditationStaFilt = New TextBox()
+        Label25 = New Label()
+        txtbxDEPYearsOfOperationFilt = New TextBox()
+        Label26 = New Label()
+        txtbxDEPSpecializationFilt = New TextBox()
+        Label27 = New Label()
+        txtbxDEPWebsiteFilt = New TextBox()
+        Label20 = New Label()
+        txtbxDEPEmailFilt = New TextBox()
+        Label21 = New Label()
+        txtbxDEPContactFilt = New TextBox()
+        Label23 = New Label()
+        txtbxDEPLicenseNumFilt = New TextBox()
+        Label28 = New Label()
+        txtbxDEPNameFilt = New TextBox()
+        Label29 = New Label()
+        Label30 = New Label()
+        txtbxDEPIdFilt = New TextBox()
+        Label31 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvDEP, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -631,12 +654,235 @@ Partial Class ADMDashboardDEPTab
         btnLogoutDEP.Text = "LOGOUT"
         btnLogoutDEP.UseVisualStyleBackColor = False
         ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Location = New Point(1602, 827)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(82, 23)
+        Label22.TabIndex = 218
+        Label22.Text = "Zip Code"
+        ' 
+        ' txtbxDEPZIPCODEFilt
+        ' 
+        txtbxDEPZIPCODEFilt.Location = New Point(1602, 853)
+        txtbxDEPZIPCODEFilt.Name = "txtbxDEPZIPCODEFilt"
+        txtbxDEPZIPCODEFilt.Size = New Size(82, 29)
+        txtbxDEPZIPCODEFilt.TabIndex = 217
+        ' 
+        ' txtbxDEPLicenseExpiryFilt
+        ' 
+        txtbxDEPLicenseExpiryFilt.Location = New Point(1602, 791)
+        txtbxDEPLicenseExpiryFilt.Name = "txtbxDEPLicenseExpiryFilt"
+        txtbxDEPLicenseExpiryFilt.Size = New Size(245, 29)
+        txtbxDEPLicenseExpiryFilt.TabIndex = 216
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoSize = True
+        Label24.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label24.Location = New Point(1602, 766)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(123, 23)
+        Label24.TabIndex = 215
+        Label24.Text = "License Expiry"
+        ' 
+        ' txtbxDEPAccreditationStaFilt
+        ' 
+        txtbxDEPAccreditationStaFilt.Location = New Point(1602, 734)
+        txtbxDEPAccreditationStaFilt.Name = "txtbxDEPAccreditationStaFilt"
+        txtbxDEPAccreditationStaFilt.Size = New Size(245, 29)
+        txtbxDEPAccreditationStaFilt.TabIndex = 214
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label25.Location = New Point(1602, 709)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(173, 23)
+        Label25.TabIndex = 213
+        Label25.Text = "Accreditation Status"
+        ' 
+        ' txtbxDEPYearsOfOperationFilt
+        ' 
+        txtbxDEPYearsOfOperationFilt.Location = New Point(1602, 677)
+        txtbxDEPYearsOfOperationFilt.Name = "txtbxDEPYearsOfOperationFilt"
+        txtbxDEPYearsOfOperationFilt.Size = New Size(245, 29)
+        txtbxDEPYearsOfOperationFilt.TabIndex = 212
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label26.Location = New Point(1602, 652)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(158, 23)
+        Label26.TabIndex = 211
+        Label26.Text = "Years of Operation"
+        ' 
+        ' txtbxDEPSpecializationFilt
+        ' 
+        txtbxDEPSpecializationFilt.Location = New Point(1602, 620)
+        txtbxDEPSpecializationFilt.Name = "txtbxDEPSpecializationFilt"
+        txtbxDEPSpecializationFilt.Size = New Size(245, 29)
+        txtbxDEPSpecializationFilt.TabIndex = 210
+        ' 
+        ' Label27
+        ' 
+        Label27.AutoSize = True
+        Label27.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label27.Location = New Point(1602, 595)
+        Label27.Name = "Label27"
+        Label27.Size = New Size(112, 23)
+        Label27.TabIndex = 209
+        Label27.Text = "Specilization"
+        ' 
+        ' txtbxDEPWebsiteFilt
+        ' 
+        txtbxDEPWebsiteFilt.Location = New Point(1602, 563)
+        txtbxDEPWebsiteFilt.Name = "txtbxDEPWebsiteFilt"
+        txtbxDEPWebsiteFilt.Size = New Size(245, 29)
+        txtbxDEPWebsiteFilt.TabIndex = 208
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label20.Location = New Point(1602, 538)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(75, 23)
+        Label20.TabIndex = 207
+        Label20.Text = "Website"
+        ' 
+        ' txtbxDEPEmailFilt
+        ' 
+        txtbxDEPEmailFilt.Location = New Point(1602, 506)
+        txtbxDEPEmailFilt.Name = "txtbxDEPEmailFilt"
+        txtbxDEPEmailFilt.Size = New Size(245, 29)
+        txtbxDEPEmailFilt.TabIndex = 206
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label21.Location = New Point(1602, 481)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(54, 23)
+        Label21.TabIndex = 205
+        Label21.Text = "Email"
+        ' 
+        ' txtbxDEPContactFilt
+        ' 
+        txtbxDEPContactFilt.Location = New Point(1602, 449)
+        txtbxDEPContactFilt.Name = "txtbxDEPContactFilt"
+        txtbxDEPContactFilt.Size = New Size(245, 29)
+        txtbxDEPContactFilt.TabIndex = 204
+        ' 
+        ' Label23
+        ' 
+        Label23.AutoSize = True
+        Label23.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label23.Location = New Point(1602, 424)
+        Label23.Name = "Label23"
+        Label23.Size = New Size(72, 23)
+        Label23.TabIndex = 203
+        Label23.Text = "Contact"
+        ' 
+        ' txtbxDEPLicenseNumFilt
+        ' 
+        txtbxDEPLicenseNumFilt.Location = New Point(1602, 385)
+        txtbxDEPLicenseNumFilt.Name = "txtbxDEPLicenseNumFilt"
+        txtbxDEPLicenseNumFilt.Size = New Size(245, 29)
+        txtbxDEPLicenseNumFilt.TabIndex = 202
+        ' 
+        ' Label28
+        ' 
+        Label28.AutoSize = True
+        Label28.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label28.Location = New Point(1602, 359)
+        Label28.Name = "Label28"
+        Label28.Size = New Size(138, 23)
+        Label28.TabIndex = 201
+        Label28.Text = "License Number"
+        ' 
+        ' txtbxDEPNameFilt
+        ' 
+        txtbxDEPNameFilt.Location = New Point(1602, 325)
+        txtbxDEPNameFilt.Name = "txtbxDEPNameFilt"
+        txtbxDEPNameFilt.Size = New Size(245, 29)
+        txtbxDEPNameFilt.TabIndex = 200
+        ' 
+        ' Label29
+        ' 
+        Label29.AutoSize = True
+        Label29.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label29.Location = New Point(1602, 300)
+        Label29.Name = "Label29"
+        Label29.Size = New Size(57, 23)
+        Label29.TabIndex = 199
+        Label29.Text = "Name"
+        ' 
+        ' Label30
+        ' 
+        Label30.AutoSize = True
+        Label30.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label30.Location = New Point(1614, 275)
+        Label30.Name = "Label30"
+        Label30.Size = New Size(132, 23)
+        Label30.TabIndex = 198
+        Label30.Text = "Deployment ID"
+        ' 
+        ' txtbxDEPIdFilt
+        ' 
+        txtbxDEPIdFilt.Location = New Point(1750, 272)
+        txtbxDEPIdFilt.Name = "txtbxDEPIdFilt"
+        txtbxDEPIdFilt.Size = New Size(60, 29)
+        txtbxDEPIdFilt.TabIndex = 197
+        ' 
+        ' Label31
+        ' 
+        Label31.AutoSize = True
+        Label31.BackColor = Color.Transparent
+        Label31.Font = New Font("Arial Rounded MT Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label31.ForeColor = SystemColors.ActiveCaptionText
+        Label31.Location = New Point(1565, 215)
+        Label31.Margin = New Padding(4, 0, 4, 0)
+        Label31.Name = "Label31"
+        Label31.Size = New Size(319, 54)
+        Label31.TabIndex = 196
+        Label31.Text = "Filter Search"
+        ' 
         ' ADMDashboardDEPTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Label22)
+        Controls.Add(txtbxDEPZIPCODEFilt)
+        Controls.Add(txtbxDEPLicenseExpiryFilt)
+        Controls.Add(Label24)
+        Controls.Add(txtbxDEPAccreditationStaFilt)
+        Controls.Add(Label25)
+        Controls.Add(txtbxDEPYearsOfOperationFilt)
+        Controls.Add(Label26)
+        Controls.Add(txtbxDEPSpecializationFilt)
+        Controls.Add(Label27)
+        Controls.Add(txtbxDEPWebsiteFilt)
+        Controls.Add(Label20)
+        Controls.Add(txtbxDEPEmailFilt)
+        Controls.Add(Label21)
+        Controls.Add(txtbxDEPContactFilt)
+        Controls.Add(Label23)
+        Controls.Add(txtbxDEPLicenseNumFilt)
+        Controls.Add(Label28)
+        Controls.Add(txtbxDEPNameFilt)
+        Controls.Add(Label29)
+        Controls.Add(Label30)
+        Controls.Add(txtbxDEPIdFilt)
+        Controls.Add(Label31)
         Controls.Add(btnCloseDEP)
         Controls.Add(btnLogoutDEP)
         Controls.Add(dateDEPContractEndFilt)
@@ -742,5 +988,28 @@ Partial Class ADMDashboardDEPTab
     Friend WithEvents dateDEPContractEndFilt As DateTimePicker
     Friend WithEvents btnCloseDEP As Button
     Friend WithEvents btnLogoutDEP As Button
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtbxDEPZIPCODEFilt As TextBox
+    Friend WithEvents txtbxDEPLicenseExpiryFilt As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtbxDEPAccreditationStaFilt As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txtbxDEPYearsOfOperationFilt As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents txtbxDEPSpecializationFilt As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents txtbxDEPWebsiteFilt As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents txtbxDEPEmailFilt As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtbxDEPContactFilt As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents txtbxDEPLicenseNumFilt As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents txtbxDEPNameFilt As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents txtbxDEPIdFilt As TextBox
+    Friend WithEvents Label31 As Label
 End Class
 

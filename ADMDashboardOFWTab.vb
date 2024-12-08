@@ -235,5 +235,4 @@ Public Class ADMDashboardOFWTab
         Close()
         ADMDashStat.Show()
     End Sub
-
 End Class

@@ -95,10 +95,10 @@ Public Class ADMDashboardAGCTab
         ADMDashStat.Show()
     End Sub
 
-    Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
-        Dim AddAGC As New ADMAddAGC
-        AddAGC.ShowDialog()
-    End Sub
+    'Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
+    '    Dim AddAGC As New ADMAddAGC
+    '    AddAGC.ShowDialog()
+    'End Sub
 
     'Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
     '    If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
@@ -119,67 +119,45 @@ Public Class ADMDashboardAGCTab
     '    End If
     'End Sub
 
-    Private Sub btnEDIT_Click(sender As Object, e As EventArgs) Handles btnEDIT.Click
-        If dgvAGC.SelectedRows.Count > 0 Then  ' Check if a row is selected
-            Dim selectedRow = dgvAGC.SelectedRows(0)
-            Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
+    'Private Sub btnEDIT_Click(sender As Object, e As EventArgs) Handles btnEDIT.Click
+    '    If dgvAGC.SelectedRows.Count > 0 Then  ' Check if a row is selected
+    '        Dim selectedRow = dgvAGC.SelectedRows(0)
+    '        Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
 
-            Dim EditAGC As New ADMEditAGC(selectedAGCId)  ' Pass the selected ID to the constructor
-            EditAGC.ShowDialog()
-        Else
-            MessageBox.Show("Please select an OFW record to edit!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-    End Sub
-
-    Private Sub btnDLT_Click(sender As Object, e As EventArgs) Handles btnDLT.Click
-        If dgvAGC.SelectedRows.Count > 0 Then
-            Dim selectedRow = dgvAGC.SelectedRows(0)
-            Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
-
-            If MessageBox.Show("Are you sure you want to delete this OFW record?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim query = $"DELETE FROM AGENCY WHERE AgencyId = {selectedAGCId}"
-                readQuery(query)
-
-
-                MessageBox.Show("Agency record deleted successfully!")
-                Refresh()  ' Refresh the DataGridView
-            End If
-        Else
-            MessageBox.Show("Please select an Agency record to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-    End Sub
-
-    Private Sub btnFilter_Click(sender As Object, e As EventArgs) Handles btnFilter.Click
-        ApplyFilter()
-    End Sub
+    '        Dim EditAGC As New ADMEditAGC(selectedAGCId)  ' Pass the selected ID to the constructor
+    '        EditAGC.ShowDialog()
+    '    Else
+    '        MessageBox.Show("Please select an OFW record to edit!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '    End If
+    'End Sub
 
     Private Sub ApplyFilter()
         ' Build the filter string based on user inputs
         Dim filter As String = ""
 
-        If Not String.IsNullOrWhiteSpace(txtAGCIdFilt.Text) Then
-            filter &= $"AgencyId LIKE '%{txtAGCIdFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCIdFilt.Text) Then
+            filter &= $"AgencyId LIKE '%{txtbxAGCIdFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCNameFilt.Text) Then
-            filter &= $"AgencyName LIKE '%{txtAGCNameFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCNameFilt.Text) Then
+            filter &= $"AgencyName LIKE '%{txtbxAGCNameFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCLicNumFilt.Text) Then
-            filter &= $"AgencyLicenseNumber LIKE '%{txtAGCLicNumFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCLicenseNumFilt.Text) Then
+            filter &= $"AgencyLicenseNumber LIKE '%{txtbxAGCLicenseNumFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCWebFilt.Text) Then
-            filter &= $"WebsiteUrl LIKE '%{txtAGCWebFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCWebsiteFilt.Text) Then
+            filter &= $"WebsiteUrl LIKE '%{txtbxAGCWebsiteFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCSpecFilt.Text) Then
-            filter &= $"Specialization LIKE '%{txtAGCSpecFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCSpecializationFilt.Text) Then
+            filter &= $"Specialization LIKE '%{txtbxAGCSpecializationFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCZipFilt.Text) Then
-            filter &= $"Zipcode LIKE '%{txtAGCZipFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCZIPCODEFilt.Text) Then
+            filter &= $"Zipcode LIKE '%{txtbxAGCZIPCODEFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCContNumFilt.Text) Then
-            filter &= $"ContactNum LIKE '%{txtAGCContNumFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCContactFilt.Text) Then
+            filter &= $"ContactNum LIKE '%{txtbxAGCContactFilt.Text}%' AND "
         End If
-        If Not String.IsNullOrWhiteSpace(txtAGCEmailFilt.Text) Then
-            filter &= $"Email LIKE '%{txtAGCEmailFilt.Text}%' AND "
+        If Not String.IsNullOrWhiteSpace(txtbxAGCEmailFilt.Text) Then
+            filter &= $"Email LIKE '%{txtbxAGCEmailFilt.Text}%' AND "
         End If
 
 
@@ -224,6 +202,45 @@ Public Class ADMDashboardAGCTab
 
             ' Optionally, you can call Application.Exit to completely exit the application if necessary
             Application.Exit()
+        End If
+    End Sub
+
+    Private Sub btnAGCEDIT_Click(sender As Object, e As EventArgs) Handles btnAGCEDIT.Click
+        If dgvAGC.SelectedRows.Count > 0 Then  ' Check if a row is selected
+            Dim selectedRow = dgvAGC.SelectedRows(0)
+            Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
+
+            Dim EditAGC As New ADMEditAGC(selectedAGCId)  ' Pass the selected ID to the constructor
+            EditAGC.ShowDialog()
+        Else
+            MessageBox.Show("Please select an OFW record to edit!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub btnAGCADD_Click(sender As Object, e As EventArgs) Handles btnAGCADD.Click
+        Dim AddAGC As New ADMAddAGC
+        AddAGC.ShowDialog()
+    End Sub
+
+    Private Sub btnAGCGENERATE_Click(sender As Object, e As EventArgs) Handles btnAGCGENERATE.Click
+
+    End Sub
+
+    Private Sub btnAGCDELETE_click(sender As Object, e As EventArgs) Handles btnAGCDELETE.Click
+        If dgvAGC.SelectedRows.Count > 0 Then
+            Dim selectedrow = dgvAGC.SelectedRows(0)
+            Dim selectedagcid As Integer = selectedrow.Cells("agencyid").Value  ' assuming "ofwid" is the column name for the id
+
+            If MessageBox.Show("are you sure you want to delete this ofw record?", "confirm deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                Dim query = $"delete from agency where agencyid = {selectedagcid}"
+                readQuery(query)
+
+
+                MessageBox.Show("agency record deleted successfully!")
+                Refresh()  ' refresh the datagridview
+            End If
+        Else
+            MessageBox.Show("please select an agency record to delete!", "error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 End Class

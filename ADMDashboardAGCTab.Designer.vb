@@ -66,11 +66,9 @@ Partial Class ADMDashboardAGCTab
         btnLogoutAGC = New Button()
         Label6 = New Label()
         Label15 = New Label()
-        txtbxOFWIdFilt = New TextBox()
+        txtbxAGCIdFilt = New TextBox()
         txtbxAGCNameFilt = New TextBox()
         Label16 = New Label()
-        txtbxAGCAddressFilt = New TextBox()
-        Label17 = New Label()
         txtbxAGCLicenseNumFilt = New TextBox()
         Label18 = New Label()
         txtbxAGCWebsiteFilt = New TextBox()
@@ -87,10 +85,12 @@ Partial Class ADMDashboardAGCTab
         Label26 = New Label()
         txtbxAGCSpecializationFilt = New TextBox()
         Label27 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
+        btnAGCDELETE = New Button()
+        btnAGCGENERATE = New Button()
         btnAGCEDIT = New Button()
-        Button4 = New Button()
+        btnAGCADD = New Button()
+        Label22 = New Label()
+        txtbxAGCZIPCODEFilt = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvAGC, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -591,7 +591,7 @@ Partial Class ADMDashboardAGCTab
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Arial Rounded MT Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = SystemColors.ActiveCaptionText
-        Label6.Location = New Point(1590, 227)
+        Label6.Location = New Point(1565, 215)
         Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
         Label6.Size = New Size(319, 54)
@@ -602,22 +602,22 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(1656, 291)
+        Label15.Location = New Point(1653, 275)
         Label15.Name = "Label15"
         Label15.Size = New Size(92, 23)
         Label15.TabIndex = 169
         Label15.Text = "Agency ID"
         ' 
-        ' txtbxOFWIdFilt
+        ' txtbxAGCIdFilt
         ' 
-        txtbxOFWIdFilt.Location = New Point(1755, 288)
-        txtbxOFWIdFilt.Name = "txtbxOFWIdFilt"
-        txtbxOFWIdFilt.Size = New Size(57, 29)
-        txtbxOFWIdFilt.TabIndex = 168
+        txtbxAGCIdFilt.Location = New Point(1750, 272)
+        txtbxAGCIdFilt.Name = "txtbxAGCIdFilt"
+        txtbxAGCIdFilt.Size = New Size(60, 29)
+        txtbxAGCIdFilt.TabIndex = 168
         ' 
         ' txtbxAGCNameFilt
         ' 
-        txtbxAGCNameFilt.Location = New Point(1590, 350)
+        txtbxAGCNameFilt.Location = New Point(1602, 325)
         txtbxAGCNameFilt.Name = "txtbxAGCNameFilt"
         txtbxAGCNameFilt.Size = New Size(245, 29)
         txtbxAGCNameFilt.TabIndex = 171
@@ -626,32 +626,15 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label16.Location = New Point(1590, 325)
+        Label16.Location = New Point(1602, 300)
         Label16.Name = "Label16"
         Label16.Size = New Size(57, 23)
         Label16.TabIndex = 170
         Label16.Text = "Name"
         ' 
-        ' txtbxAGCAddressFilt
-        ' 
-        txtbxAGCAddressFilt.Location = New Point(1590, 407)
-        txtbxAGCAddressFilt.Name = "txtbxAGCAddressFilt"
-        txtbxAGCAddressFilt.Size = New Size(245, 29)
-        txtbxAGCAddressFilt.TabIndex = 173
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label17.Location = New Point(1590, 382)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(74, 23)
-        Label17.TabIndex = 172
-        Label17.Text = "Address"
-        ' 
         ' txtbxAGCLicenseNumFilt
         ' 
-        txtbxAGCLicenseNumFilt.Location = New Point(1590, 464)
+        txtbxAGCLicenseNumFilt.Location = New Point(1602, 384)
         txtbxAGCLicenseNumFilt.Name = "txtbxAGCLicenseNumFilt"
         txtbxAGCLicenseNumFilt.Size = New Size(245, 29)
         txtbxAGCLicenseNumFilt.TabIndex = 175
@@ -660,7 +643,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label18.Location = New Point(1590, 439)
+        Label18.Location = New Point(1602, 359)
         Label18.Name = "Label18"
         Label18.Size = New Size(138, 23)
         Label18.TabIndex = 174
@@ -668,7 +651,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCWebsiteFilt
         ' 
-        txtbxAGCWebsiteFilt.Location = New Point(1590, 635)
+        txtbxAGCWebsiteFilt.Location = New Point(1602, 555)
         txtbxAGCWebsiteFilt.Name = "txtbxAGCWebsiteFilt"
         txtbxAGCWebsiteFilt.Size = New Size(245, 29)
         txtbxAGCWebsiteFilt.TabIndex = 181
@@ -677,7 +660,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label19.AutoSize = True
         Label19.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label19.Location = New Point(1590, 610)
+        Label19.Location = New Point(1602, 530)
         Label19.Name = "Label19"
         Label19.Size = New Size(75, 23)
         Label19.TabIndex = 180
@@ -685,7 +668,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCEmailFilt
         ' 
-        txtbxAGCEmailFilt.Location = New Point(1590, 578)
+        txtbxAGCEmailFilt.Location = New Point(1602, 498)
         txtbxAGCEmailFilt.Name = "txtbxAGCEmailFilt"
         txtbxAGCEmailFilt.Size = New Size(245, 29)
         txtbxAGCEmailFilt.TabIndex = 179
@@ -694,7 +677,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label20.AutoSize = True
         Label20.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label20.Location = New Point(1590, 553)
+        Label20.Location = New Point(1602, 473)
         Label20.Name = "Label20"
         Label20.Size = New Size(54, 23)
         Label20.TabIndex = 178
@@ -702,7 +685,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCContactFilt
         ' 
-        txtbxAGCContactFilt.Location = New Point(1590, 521)
+        txtbxAGCContactFilt.Location = New Point(1602, 441)
         txtbxAGCContactFilt.Name = "txtbxAGCContactFilt"
         txtbxAGCContactFilt.Size = New Size(245, 29)
         txtbxAGCContactFilt.TabIndex = 177
@@ -711,7 +694,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label21.AutoSize = True
         Label21.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label21.Location = New Point(1590, 496)
+        Label21.Location = New Point(1602, 416)
         Label21.Name = "Label21"
         Label21.Size = New Size(72, 23)
         Label21.TabIndex = 176
@@ -719,7 +702,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCLicenseExpiryFilt
         ' 
-        txtbxAGCLicenseExpiryFilt.Location = New Point(1590, 863)
+        txtbxAGCLicenseExpiryFilt.Location = New Point(1602, 783)
         txtbxAGCLicenseExpiryFilt.Name = "txtbxAGCLicenseExpiryFilt"
         txtbxAGCLicenseExpiryFilt.Size = New Size(245, 29)
         txtbxAGCLicenseExpiryFilt.TabIndex = 189
@@ -728,7 +711,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label24.AutoSize = True
         Label24.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label24.Location = New Point(1590, 838)
+        Label24.Location = New Point(1602, 758)
         Label24.Name = "Label24"
         Label24.Size = New Size(123, 23)
         Label24.TabIndex = 188
@@ -736,7 +719,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCAccreditationStaFilt
         ' 
-        txtbxAGCAccreditationStaFilt.Location = New Point(1590, 806)
+        txtbxAGCAccreditationStaFilt.Location = New Point(1602, 726)
         txtbxAGCAccreditationStaFilt.Name = "txtbxAGCAccreditationStaFilt"
         txtbxAGCAccreditationStaFilt.Size = New Size(245, 29)
         txtbxAGCAccreditationStaFilt.TabIndex = 187
@@ -745,7 +728,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label25.AutoSize = True
         Label25.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label25.Location = New Point(1590, 781)
+        Label25.Location = New Point(1602, 701)
         Label25.Name = "Label25"
         Label25.Size = New Size(173, 23)
         Label25.TabIndex = 186
@@ -753,7 +736,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCYearsOfOperationFilt
         ' 
-        txtbxAGCYearsOfOperationFilt.Location = New Point(1590, 749)
+        txtbxAGCYearsOfOperationFilt.Location = New Point(1602, 669)
         txtbxAGCYearsOfOperationFilt.Name = "txtbxAGCYearsOfOperationFilt"
         txtbxAGCYearsOfOperationFilt.Size = New Size(245, 29)
         txtbxAGCYearsOfOperationFilt.TabIndex = 185
@@ -762,7 +745,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label26.AutoSize = True
         Label26.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label26.Location = New Point(1590, 724)
+        Label26.Location = New Point(1602, 644)
         Label26.Name = "Label26"
         Label26.Size = New Size(158, 23)
         Label26.TabIndex = 184
@@ -770,7 +753,7 @@ Partial Class ADMDashboardAGCTab
         ' 
         ' txtbxAGCSpecializationFilt
         ' 
-        txtbxAGCSpecializationFilt.Location = New Point(1590, 692)
+        txtbxAGCSpecializationFilt.Location = New Point(1602, 612)
         txtbxAGCSpecializationFilt.Name = "txtbxAGCSpecializationFilt"
         txtbxAGCSpecializationFilt.Size = New Size(245, 29)
         txtbxAGCSpecializationFilt.TabIndex = 183
@@ -779,35 +762,35 @@ Partial Class ADMDashboardAGCTab
         ' 
         Label27.AutoSize = True
         Label27.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
-        Label27.Location = New Point(1590, 667)
+        Label27.Location = New Point(1602, 587)
         Label27.Name = "Label27"
         Label27.Size = New Size(112, 23)
         Label27.TabIndex = 182
         Label27.Text = "Specilization"
         ' 
-        ' Button1
+        ' btnAGCDELETE
         ' 
-        Button1.BackColor = Color.MistyRose
-        Button1.FlatStyle = FlatStyle.Popup
-        Button1.ForeColor = Color.DarkRed
-        Button1.Location = New Point(1635, 1007)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(80, 60)
-        Button1.TabIndex = 193
-        Button1.Text = "DELETE"
-        Button1.UseVisualStyleBackColor = False
+        btnAGCDELETE.BackColor = Color.MistyRose
+        btnAGCDELETE.FlatStyle = FlatStyle.Popup
+        btnAGCDELETE.ForeColor = Color.DarkRed
+        btnAGCDELETE.Location = New Point(1635, 1007)
+        btnAGCDELETE.Name = "btnAGCDELETE"
+        btnAGCDELETE.Size = New Size(80, 60)
+        btnAGCDELETE.TabIndex = 193
+        btnAGCDELETE.Text = "DELETE"
+        btnAGCDELETE.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnAGCGENERATE
         ' 
-        Button2.BackColor = Color.LightCyan
-        Button2.FlatStyle = FlatStyle.Popup
-        Button2.ForeColor = Color.DarkBlue
-        Button2.Location = New Point(1721, 1007)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(80, 60)
-        Button2.TabIndex = 192
-        Button2.Text = "GENERATE"
-        Button2.UseVisualStyleBackColor = False
+        btnAGCGENERATE.BackColor = Color.LightCyan
+        btnAGCGENERATE.FlatStyle = FlatStyle.Popup
+        btnAGCGENERATE.ForeColor = Color.DarkBlue
+        btnAGCGENERATE.Location = New Point(1721, 1007)
+        btnAGCGENERATE.Name = "btnAGCGENERATE"
+        btnAGCGENERATE.Size = New Size(80, 60)
+        btnAGCGENERATE.TabIndex = 192
+        btnAGCGENERATE.Text = "GENERATE"
+        btnAGCGENERATE.UseVisualStyleBackColor = False
         ' 
         ' btnAGCEDIT
         ' 
@@ -821,17 +804,34 @@ Partial Class ADMDashboardAGCTab
         btnAGCEDIT.Text = "EDIT"
         btnAGCEDIT.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnAGCADD
         ' 
-        Button4.BackColor = Color.LightCyan
-        Button4.FlatStyle = FlatStyle.Popup
-        Button4.ForeColor = Color.DarkBlue
-        Button4.Location = New Point(1635, 941)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(80, 60)
-        Button4.TabIndex = 190
-        Button4.Text = "ADD"
-        Button4.UseVisualStyleBackColor = False
+        btnAGCADD.BackColor = Color.LightCyan
+        btnAGCADD.FlatStyle = FlatStyle.Popup
+        btnAGCADD.ForeColor = Color.DarkBlue
+        btnAGCADD.Location = New Point(1635, 941)
+        btnAGCADD.Name = "btnAGCADD"
+        btnAGCADD.Size = New Size(80, 60)
+        btnAGCADD.TabIndex = 190
+        btnAGCADD.Text = "ADD"
+        btnAGCADD.UseVisualStyleBackColor = False
+        ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Location = New Point(1602, 819)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(82, 23)
+        Label22.TabIndex = 195
+        Label22.Text = "Zip Code"
+        ' 
+        ' txtbxAGCZIPCODEFilt
+        ' 
+        txtbxAGCZIPCODEFilt.Location = New Point(1602, 845)
+        txtbxAGCZIPCODEFilt.Name = "txtbxAGCZIPCODEFilt"
+        txtbxAGCZIPCODEFilt.Size = New Size(82, 29)
+        txtbxAGCZIPCODEFilt.TabIndex = 194
         ' 
         ' ADMDashboardAGCTab
         ' 
@@ -839,10 +839,12 @@ Partial Class ADMDashboardAGCTab
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
-        Controls.Add(Button1)
-        Controls.Add(Button2)
+        Controls.Add(Label22)
+        Controls.Add(txtbxAGCZIPCODEFilt)
+        Controls.Add(btnAGCDELETE)
+        Controls.Add(btnAGCGENERATE)
         Controls.Add(btnAGCEDIT)
-        Controls.Add(Button4)
+        Controls.Add(btnAGCADD)
         Controls.Add(txtbxAGCLicenseExpiryFilt)
         Controls.Add(Label24)
         Controls.Add(txtbxAGCAccreditationStaFilt)
@@ -859,12 +861,10 @@ Partial Class ADMDashboardAGCTab
         Controls.Add(Label21)
         Controls.Add(txtbxAGCLicenseNumFilt)
         Controls.Add(Label18)
-        Controls.Add(txtbxAGCAddressFilt)
-        Controls.Add(Label17)
         Controls.Add(txtbxAGCNameFilt)
         Controls.Add(Label16)
         Controls.Add(Label15)
-        Controls.Add(txtbxOFWIdFilt)
+        Controls.Add(txtbxAGCIdFilt)
         Controls.Add(Label6)
         Controls.Add(btnCloseAGC)
         Controls.Add(btnLogoutAGC)
@@ -958,11 +958,9 @@ Partial Class ADMDashboardAGCTab
     Friend WithEvents btnLogoutAGC As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents txtbxOFWIdFilt As TextBox
+    Friend WithEvents txtbxAGCIdFilt As TextBox
     Friend WithEvents txtbxAGCNameFilt As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents txtbxAGCAddressFilt As TextBox
-    Friend WithEvents Label17 As Label
     Friend WithEvents txtbxAGCLicenseNumFilt As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents txtbxAGCWebsiteFilt As TextBox
@@ -979,8 +977,10 @@ Partial Class ADMDashboardAGCTab
     Friend WithEvents Label26 As Label
     Friend WithEvents txtbxAGCSpecializationFilt As TextBox
     Friend WithEvents Label27 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnAGCDELETE As Button
+    Friend WithEvents btnAGCGENERATE As Button
     Friend WithEvents btnAGCEDIT As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnAGCADD As Button
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtbxAGCZIPCODEFilt As TextBox
 End Class

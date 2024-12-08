@@ -44,7 +44,7 @@ Partial Class OFWloginPage
         ' 
         imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
         imgLogoLoginPg.Location = New Point(937, 265)
-        imgLogoLoginPg.Margin = New Padding(4, 4, 4, 4)
+        imgLogoLoginPg.Margin = New Padding(4)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
         imgLogoLoginPg.Size = New Size(487, 519)
         imgLogoLoginPg.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class OFWloginPage
         btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
         btnOFWLoginPg.Location = New Point(820, 764)
-        btnOFWLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOFWLoginPg.Margin = New Padding(4)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
         btnOFWLoginPg.Size = New Size(211, 78)
         btnOFWLoginPg.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class OFWloginPage
         btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
         btnAGCLoginPg.Location = New Point(1092, 764)
-        btnAGCLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnAGCLoginPg.Margin = New Padding(4)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
         btnAGCLoginPg.Size = New Size(211, 78)
         btnAGCLoginPg.TabIndex = 3
@@ -85,7 +85,7 @@ Partial Class OFWloginPage
         btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
         btnEMPLoginPg.Location = New Point(1363, 764)
-        btnEMPLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnEMPLoginPg.Margin = New Padding(4)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
         btnEMPLoginPg.Size = New Size(211, 78)
         btnEMPLoginPg.TabIndex = 4
@@ -99,7 +99,7 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
         btnCloseLoginPg.Location = New Point(1817, 13)
-        btnCloseLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnCloseLoginPg.Margin = New Padding(0)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
         btnCloseLoginPg.Size = New Size(90, 56)
         btnCloseLoginPg.TabIndex = 5
@@ -121,7 +121,7 @@ Partial Class OFWloginPage
         ' 
         txtbxOFWIdLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtbxOFWIdLogin.Location = New Point(1112, 379)
-        txtbxOFWIdLogin.Margin = New Padding(4, 4, 4, 4)
+        txtbxOFWIdLogin.Margin = New Padding(4)
         txtbxOFWIdLogin.Name = "txtbxOFWIdLogin"
         txtbxOFWIdLogin.PlaceholderText = "OFW-#####"
         txtbxOFWIdLogin.Size = New Size(158, 35)
@@ -132,7 +132,7 @@ Partial Class OFWloginPage
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(1219, 511)
-        btnOkOFWLoginPg.Margin = New Padding(4, 4, 4, 4)
+        btnOkOFWLoginPg.Margin = New Padding(4)
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(53, 39)
         btnOkOFWLoginPg.TabIndex = 9
@@ -143,7 +143,7 @@ Partial Class OFWloginPage
         ' 
         imgLoginPg.Image = CType(resources.GetObject("imgLoginPg.Image"), Image)
         imgLoginPg.Location = New Point(0, 0)
-        imgLoginPg.Margin = New Padding(4, 4, 4, 4)
+        imgLoginPg.Margin = New Padding(4)
         imgLoginPg.Name = "imgLoginPg"
         imgLoginPg.Size = New Size(860, 1074)
         imgLoginPg.TabIndex = 0
@@ -186,7 +186,7 @@ Partial Class OFWloginPage
         ' 
         txtbxOFWPassLogin.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtbxOFWPassLogin.Location = New Point(1112, 462)
-        txtbxOFWPassLogin.Margin = New Padding(4, 4, 4, 4)
+        txtbxOFWPassLogin.Margin = New Padding(4)
         txtbxOFWPassLogin.Name = "txtbxOFWPassLogin"
         txtbxOFWPassLogin.PlaceholderText = "Password"
         txtbxOFWPassLogin.Size = New Size(158, 35)
@@ -213,9 +213,8 @@ Partial Class OFWloginPage
         Controls.Add(imgLogoLoginPg)
         Controls.Add(imgLoginPg)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "OFWloginPage"
-        StartPosition = FormStartPosition.CenterScreen
         Text = "loginPage"
         WindowState = FormWindowState.Maximized
         CType(imgLogoLoginPg, ComponentModel.ISupportInitialize).EndInit()
