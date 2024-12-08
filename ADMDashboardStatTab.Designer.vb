@@ -25,12 +25,6 @@ Partial Class ADMDashboardStatTab
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New DataVisualization.Charting.Series()
         Panel1 = New Panel()
         btnADMDashSTAT = New Button()
         btnADMDashDEP = New Button()
@@ -49,7 +43,6 @@ Partial Class ADMDashboardStatTab
         Label2 = New Label()
         btnLogout = New Button()
         Panel5 = New Panel()
-        Chart1 = New DataVisualization.Charting.Chart()
         Label3 = New Label()
         Panel6 = New Panel()
         Label4 = New Label()
@@ -58,7 +51,6 @@ Partial Class ADMDashboardStatTab
         Panel8 = New Panel()
         Label6 = New Label()
         Panel9 = New Panel()
-        Chart4 = New DataVisualization.Charting.Chart()
         Label7 = New Label()
         Panel10 = New Panel()
         Label8 = New Label()
@@ -68,12 +60,10 @@ Partial Class ADMDashboardStatTab
         CType(Chart2, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         Panel5.SuspendLayout()
-        CType(Chart1, ComponentModel.ISupportInitialize).BeginInit()
         Panel6.SuspendLayout()
         Panel7.SuspendLayout()
         Panel8.SuspendLayout()
         Panel9.SuspendLayout()
-        CType(Chart4, ComponentModel.ISupportInitialize).BeginInit()
         Panel10.SuspendLayout()
         SuspendLayout()
         ' 
@@ -311,7 +301,6 @@ Partial Class ADMDashboardStatTab
         ' Panel5
         ' 
         Panel5.BackColor = Color.LightSkyBlue
-        Panel5.Controls.Add(Chart1)
         Panel5.Controls.Add(Label3)
         Panel5.Controls.Add(Panel6)
         Panel5.Location = New Point(725, 164)
@@ -319,23 +308,6 @@ Partial Class ADMDashboardStatTab
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(324, 238)
         Panel5.TabIndex = 12
-        ' 
-        ' Chart1
-        ' 
-        ChartArea2.Name = "ChartArea1"
-        Chart1.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Chart1.Legends.Add(Legend2)
-        Chart1.Location = New Point(16, 69)
-        Chart1.Margin = New Padding(2)
-        Chart1.Name = "Chart1"
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Chart1.Series.Add(Series2)
-        Chart1.Size = New Size(294, 159)
-        Chart1.TabIndex = 11
         ' 
         ' Label3
         ' 
@@ -419,7 +391,6 @@ Partial Class ADMDashboardStatTab
         ' Panel9
         ' 
         Panel9.BackColor = Color.LightSkyBlue
-        Panel9.Controls.Add(Chart4)
         Panel9.Controls.Add(Label7)
         Panel9.Controls.Add(Panel10)
         Panel9.Location = New Point(359, 424)
@@ -427,24 +398,6 @@ Partial Class ADMDashboardStatTab
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(324, 238)
         Panel9.TabIndex = 13
-        ' 
-        ' Chart4
-        ' 
-        ChartArea3.Name = "ChartArea1"
-        Chart4.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Chart4.Legends.Add(Legend3)
-        Chart4.Location = New Point(16, 69)
-        Chart4.Margin = New Padding(2)
-        Chart4.Name = "Chart4"
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Chart4.Series.Add(Series3)
-        Chart4.Size = New Size(294, 159)
-        Chart4.TabIndex = 11
-        Chart4.Text = "Chart4"
         ' 
         ' Label7
         ' 
@@ -510,7 +463,6 @@ Partial Class ADMDashboardStatTab
         Panel3.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
-        CType(Chart1, ComponentModel.ISupportInitialize).EndInit()
         Panel6.ResumeLayout(False)
         Panel6.PerformLayout()
         Panel7.ResumeLayout(False)
@@ -519,7 +471,6 @@ Partial Class ADMDashboardStatTab
         Panel8.PerformLayout()
         Panel9.ResumeLayout(False)
         Panel9.PerformLayout()
-        CType(Chart4, ComponentModel.ISupportInitialize).EndInit()
         Panel10.ResumeLayout(False)
         Panel10.PerformLayout()
         ResumeLayout(False)
@@ -543,7 +494,6 @@ Partial Class ADMDashboardStatTab
     Friend WithEvents lblOFWCountStat As Label
     Friend WithEvents btnLogout As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label4 As Label
@@ -552,7 +502,6 @@ Partial Class ADMDashboardStatTab
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents Chart4 As DataVisualization.Charting.Chart
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label8 As Label

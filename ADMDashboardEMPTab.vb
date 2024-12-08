@@ -116,16 +116,16 @@ Public Class ADMDashboardEMPTab
             filter &= $"CompanyName LIKE '%{txtEMPCompanyFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtEMPIndustryFilt.Text) Then
-            filter &= $"Industry LIKE '%{txtbxOFWFNameFilt.Text}%' AND "
+            filter &= $"Industry LIKE '%{txtEMPIndustryFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtEMPZipFilt.Text) Then
-            filter &= $"CompanyZip LIKE '%{txtbxOFWMNameFilt.Text}%' AND "
+            filter &= $"CompanyZip LIKE '%{txtEMPZipFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtEMPContNumFilt.Text) Then
-            filter &= $"EmployerContactNum LIKE '%{txtbxOFWLNameFilt.Text}%' AND "
+            filter &= $"EmployerContactNum LIKE '%{txtEMPContNumFilt.Text}%' AND "
         End If
         If Not String.IsNullOrWhiteSpace(txtEMPEmailFilt.Text) Then
-            filter &= $"EmployerEmail LIKE '%{txtEMPIdFilt.Text}%' AND "
+            filter &= $"EmployerEmail LIKE '%{txtEMPEmailFilt.Text}%' AND "
         End If
 
         ' Remove the trailing " AND " if filter is not empty
@@ -138,9 +138,10 @@ Public Class ADMDashboardEMPTab
         dataView.RowFilter = filter
         dgvEMP.DataSource = dataView
 
-        ' Update the total number of OFWs shown
+        ' Update the total number of records shown
         lblEMPTally.Text = dataView.Count.ToString()
     End Sub
+
 
     Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
         Dim ADMDashAGC As New ADMDashboardAGCTab

@@ -92,7 +92,7 @@ Partial Class OFWloginPage
         ' 
         btnCloseLoginPg.BackColor = Color.Crimson
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
-        btnCloseLoginPg.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
         btnCloseLoginPg.Location = New Point(1278, 12)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
@@ -101,8 +101,8 @@ Partial Class OFWloginPage
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
         ' 
-
-
+        ' Label1
+        ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(865, 244)
@@ -123,10 +123,8 @@ Partial Class OFWloginPage
         ' btnOkOFWLoginPg
         ' 
         btnOkOFWLoginPg.FlatStyle = FlatStyle.Popup
-
         btnOkOFWLoginPg.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnOkOFWLoginPg.Location = New Point(948, 365)
-
         btnOkOFWLoginPg.Name = "btnOkOFWLoginPg"
         btnOkOFWLoginPg.Size = New Size(41, 28)
         btnOkOFWLoginPg.TabIndex = 9
@@ -145,12 +143,8 @@ Partial Class OFWloginPage
         ' Label2
         ' 
         Label2.AutoSize = True
-
-
-
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(835, 408)
-
         Label2.Name = "Label2"
         Label2.Size = New Size(150, 15)
         Label2.TabIndex = 22
@@ -188,7 +182,7 @@ Partial Class OFWloginPage
         ' 
         ' OFWloginPage
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1366, 768)
