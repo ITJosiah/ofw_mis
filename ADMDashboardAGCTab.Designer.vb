@@ -64,6 +64,33 @@ Partial Class ADMDashboardAGCTab
         btnADMDashEMP = New Button()
         btnCloseAGC = New Button()
         btnLogoutAGC = New Button()
+        Label6 = New Label()
+        Label15 = New Label()
+        txtbxOFWIdFilt = New TextBox()
+        txtbxAGCNameFilt = New TextBox()
+        Label16 = New Label()
+        txtbxAGCAddressFilt = New TextBox()
+        Label17 = New Label()
+        txtbxAGCLicenseNumFilt = New TextBox()
+        Label18 = New Label()
+        txtbxAGCWebsiteFilt = New TextBox()
+        Label19 = New Label()
+        txtbxAGCEmailFilt = New TextBox()
+        Label20 = New Label()
+        txtbxAGCContactFilt = New TextBox()
+        Label21 = New Label()
+        txtbxAGCLicenseExpiryFilt = New TextBox()
+        Label24 = New Label()
+        txtbxAGCAccreditationStaFilt = New TextBox()
+        Label25 = New Label()
+        txtbxAGCYearsOfOperationFilt = New TextBox()
+        Label26 = New Label()
+        txtbxAGCSpecializationFilt = New TextBox()
+        Label27 = New Label()
+        Button1 = New Button()
+        Button2 = New Button()
+        btnAGCEDIT = New Button()
+        Button4 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvAGC, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -558,12 +585,287 @@ Partial Class ADMDashboardAGCTab
         btnLogoutAGC.Text = "LOGOUT"
         btnLogoutAGC.UseVisualStyleBackColor = False
         ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Arial Rounded MT Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = SystemColors.ActiveCaptionText
+        Label6.Location = New Point(1590, 227)
+        Label6.Margin = New Padding(4, 0, 4, 0)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(319, 54)
+        Label6.TabIndex = 167
+        Label6.Text = "Filter Search"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Location = New Point(1656, 291)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(92, 23)
+        Label15.TabIndex = 169
+        Label15.Text = "Agency ID"
+        ' 
+        ' txtbxOFWIdFilt
+        ' 
+        txtbxOFWIdFilt.Location = New Point(1755, 288)
+        txtbxOFWIdFilt.Name = "txtbxOFWIdFilt"
+        txtbxOFWIdFilt.Size = New Size(57, 29)
+        txtbxOFWIdFilt.TabIndex = 168
+        ' 
+        ' txtbxAGCNameFilt
+        ' 
+        txtbxAGCNameFilt.Location = New Point(1590, 350)
+        txtbxAGCNameFilt.Name = "txtbxAGCNameFilt"
+        txtbxAGCNameFilt.Size = New Size(245, 29)
+        txtbxAGCNameFilt.TabIndex = 171
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label16.Location = New Point(1590, 325)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(57, 23)
+        Label16.TabIndex = 170
+        Label16.Text = "Name"
+        ' 
+        ' txtbxAGCAddressFilt
+        ' 
+        txtbxAGCAddressFilt.Location = New Point(1590, 407)
+        txtbxAGCAddressFilt.Name = "txtbxAGCAddressFilt"
+        txtbxAGCAddressFilt.Size = New Size(245, 29)
+        txtbxAGCAddressFilt.TabIndex = 173
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label17.Location = New Point(1590, 382)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(74, 23)
+        Label17.TabIndex = 172
+        Label17.Text = "Address"
+        ' 
+        ' txtbxAGCLicenseNumFilt
+        ' 
+        txtbxAGCLicenseNumFilt.Location = New Point(1590, 464)
+        txtbxAGCLicenseNumFilt.Name = "txtbxAGCLicenseNumFilt"
+        txtbxAGCLicenseNumFilt.Size = New Size(245, 29)
+        txtbxAGCLicenseNumFilt.TabIndex = 175
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label18.Location = New Point(1590, 439)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(138, 23)
+        Label18.TabIndex = 174
+        Label18.Text = "License Number"
+        ' 
+        ' txtbxAGCWebsiteFilt
+        ' 
+        txtbxAGCWebsiteFilt.Location = New Point(1590, 635)
+        txtbxAGCWebsiteFilt.Name = "txtbxAGCWebsiteFilt"
+        txtbxAGCWebsiteFilt.Size = New Size(245, 29)
+        txtbxAGCWebsiteFilt.TabIndex = 181
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label19.Location = New Point(1590, 610)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(75, 23)
+        Label19.TabIndex = 180
+        Label19.Text = "Website"
+        ' 
+        ' txtbxAGCEmailFilt
+        ' 
+        txtbxAGCEmailFilt.Location = New Point(1590, 578)
+        txtbxAGCEmailFilt.Name = "txtbxAGCEmailFilt"
+        txtbxAGCEmailFilt.Size = New Size(245, 29)
+        txtbxAGCEmailFilt.TabIndex = 179
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label20.Location = New Point(1590, 553)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(54, 23)
+        Label20.TabIndex = 178
+        Label20.Text = "Email"
+        ' 
+        ' txtbxAGCContactFilt
+        ' 
+        txtbxAGCContactFilt.Location = New Point(1590, 521)
+        txtbxAGCContactFilt.Name = "txtbxAGCContactFilt"
+        txtbxAGCContactFilt.Size = New Size(245, 29)
+        txtbxAGCContactFilt.TabIndex = 177
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label21.Location = New Point(1590, 496)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(72, 23)
+        Label21.TabIndex = 176
+        Label21.Text = "Contact"
+        ' 
+        ' txtbxAGCLicenseExpiryFilt
+        ' 
+        txtbxAGCLicenseExpiryFilt.Location = New Point(1590, 863)
+        txtbxAGCLicenseExpiryFilt.Name = "txtbxAGCLicenseExpiryFilt"
+        txtbxAGCLicenseExpiryFilt.Size = New Size(245, 29)
+        txtbxAGCLicenseExpiryFilt.TabIndex = 189
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoSize = True
+        Label24.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label24.Location = New Point(1590, 838)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(123, 23)
+        Label24.TabIndex = 188
+        Label24.Text = "License Expiry"
+        ' 
+        ' txtbxAGCAccreditationStaFilt
+        ' 
+        txtbxAGCAccreditationStaFilt.Location = New Point(1590, 806)
+        txtbxAGCAccreditationStaFilt.Name = "txtbxAGCAccreditationStaFilt"
+        txtbxAGCAccreditationStaFilt.Size = New Size(245, 29)
+        txtbxAGCAccreditationStaFilt.TabIndex = 187
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label25.Location = New Point(1590, 781)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(173, 23)
+        Label25.TabIndex = 186
+        Label25.Text = "Accreditation Status"
+        ' 
+        ' txtbxAGCYearsOfOperationFilt
+        ' 
+        txtbxAGCYearsOfOperationFilt.Location = New Point(1590, 749)
+        txtbxAGCYearsOfOperationFilt.Name = "txtbxAGCYearsOfOperationFilt"
+        txtbxAGCYearsOfOperationFilt.Size = New Size(245, 29)
+        txtbxAGCYearsOfOperationFilt.TabIndex = 185
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label26.Location = New Point(1590, 724)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(158, 23)
+        Label26.TabIndex = 184
+        Label26.Text = "Years of Operation"
+        ' 
+        ' txtbxAGCSpecializationFilt
+        ' 
+        txtbxAGCSpecializationFilt.Location = New Point(1590, 692)
+        txtbxAGCSpecializationFilt.Name = "txtbxAGCSpecializationFilt"
+        txtbxAGCSpecializationFilt.Size = New Size(245, 29)
+        txtbxAGCSpecializationFilt.TabIndex = 183
+        ' 
+        ' Label27
+        ' 
+        Label27.AutoSize = True
+        Label27.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label27.Location = New Point(1590, 667)
+        Label27.Name = "Label27"
+        Label27.Size = New Size(112, 23)
+        Label27.TabIndex = 182
+        Label27.Text = "Specilization"
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.MistyRose
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.ForeColor = Color.DarkRed
+        Button1.Location = New Point(1635, 1007)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(80, 60)
+        Button1.TabIndex = 193
+        Button1.Text = "DELETE"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.LightCyan
+        Button2.FlatStyle = FlatStyle.Popup
+        Button2.ForeColor = Color.DarkBlue
+        Button2.Location = New Point(1721, 1007)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(80, 60)
+        Button2.TabIndex = 192
+        Button2.Text = "GENERATE"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' btnAGCEDIT
+        ' 
+        btnAGCEDIT.BackColor = Color.LightCyan
+        btnAGCEDIT.FlatStyle = FlatStyle.Popup
+        btnAGCEDIT.ForeColor = Color.DarkBlue
+        btnAGCEDIT.Location = New Point(1721, 941)
+        btnAGCEDIT.Name = "btnAGCEDIT"
+        btnAGCEDIT.Size = New Size(80, 60)
+        btnAGCEDIT.TabIndex = 191
+        btnAGCEDIT.Text = "EDIT"
+        btnAGCEDIT.UseVisualStyleBackColor = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.LightCyan
+        Button4.FlatStyle = FlatStyle.Popup
+        Button4.ForeColor = Color.DarkBlue
+        Button4.Location = New Point(1635, 941)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(80, 60)
+        Button4.TabIndex = 190
+        Button4.Text = "ADD"
+        Button4.UseVisualStyleBackColor = False
+        ' 
         ' ADMDashboardAGCTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Button1)
+        Controls.Add(Button2)
+        Controls.Add(btnAGCEDIT)
+        Controls.Add(Button4)
+        Controls.Add(txtbxAGCLicenseExpiryFilt)
+        Controls.Add(Label24)
+        Controls.Add(txtbxAGCAccreditationStaFilt)
+        Controls.Add(Label25)
+        Controls.Add(txtbxAGCYearsOfOperationFilt)
+        Controls.Add(Label26)
+        Controls.Add(txtbxAGCSpecializationFilt)
+        Controls.Add(Label27)
+        Controls.Add(txtbxAGCWebsiteFilt)
+        Controls.Add(Label19)
+        Controls.Add(txtbxAGCEmailFilt)
+        Controls.Add(Label20)
+        Controls.Add(txtbxAGCContactFilt)
+        Controls.Add(Label21)
+        Controls.Add(txtbxAGCLicenseNumFilt)
+        Controls.Add(Label18)
+        Controls.Add(txtbxAGCAddressFilt)
+        Controls.Add(Label17)
+        Controls.Add(txtbxAGCNameFilt)
+        Controls.Add(Label16)
+        Controls.Add(Label15)
+        Controls.Add(txtbxOFWIdFilt)
+        Controls.Add(Label6)
         Controls.Add(btnCloseAGC)
         Controls.Add(btnLogoutAGC)
         Controls.Add(txtAGCSpecFilt)
@@ -654,4 +956,31 @@ Partial Class ADMDashboardAGCTab
     Friend WithEvents btnADMDashEMP As Button
     Friend WithEvents btnCloseAGC As Button
     Friend WithEvents btnLogoutAGC As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtbxOFWIdFilt As TextBox
+    Friend WithEvents txtbxAGCNameFilt As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents txtbxAGCAddressFilt As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents txtbxAGCLicenseNumFilt As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents txtbxAGCWebsiteFilt As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents txtbxAGCEmailFilt As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents txtbxAGCContactFilt As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtbxAGCLicenseExpiryFilt As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtbxAGCAccreditationStaFilt As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txtbxAGCYearsOfOperationFilt As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents txtbxAGCSpecializationFilt As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents btnAGCEDIT As Button
+    Friend WithEvents Button4 As Button
 End Class

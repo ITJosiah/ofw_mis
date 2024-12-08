@@ -96,7 +96,7 @@ Public Class ADMDashboardAGCTab
     End Sub
 
     Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
-        Dim AddAGC As New ADMAddAGC()
+        Dim AddAGC As New ADMAddAGC
         AddAGC.ShowDialog()
     End Sub
 
@@ -121,8 +121,8 @@ Public Class ADMDashboardAGCTab
 
     Private Sub btnEDIT_Click(sender As Object, e As EventArgs) Handles btnEDIT.Click
         If dgvAGC.SelectedRows.Count > 0 Then  ' Check if a row is selected
-            Dim selectedRow As DataGridViewRow = dgvAGC.SelectedRows(0)
-            Dim selectedAGCId As Integer = CInt(selectedRow.Cells("AgencyId").Value)  ' Assuming "OFWId" is the column name for the ID
+            Dim selectedRow = dgvAGC.SelectedRows(0)
+            Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
 
             Dim EditAGC As New ADMEditAGC(selectedAGCId)  ' Pass the selected ID to the constructor
             EditAGC.ShowDialog()
@@ -133,11 +133,11 @@ Public Class ADMDashboardAGCTab
 
     Private Sub btnDLT_Click(sender As Object, e As EventArgs) Handles btnDLT.Click
         If dgvAGC.SelectedRows.Count > 0 Then
-            Dim selectedRow As DataGridViewRow = dgvAGC.SelectedRows(0)
-            Dim selectedAGCId As Integer = CInt(selectedRow.Cells("AgencyId").Value)  ' Assuming "OFWId" is the column name for the ID
+            Dim selectedRow = dgvAGC.SelectedRows(0)
+            Dim selectedAGCId As Integer = selectedRow.Cells("AgencyId").Value  ' Assuming "OFWId" is the column name for the ID
 
             If MessageBox.Show("Are you sure you want to delete this OFW record?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim query As String = $"DELETE FROM AGENCY WHERE AgencyId = {selectedAGCId}"
+                Dim query = $"DELETE FROM AGENCY WHERE AgencyId = {selectedAGCId}"
                 readQuery(query)
 
 

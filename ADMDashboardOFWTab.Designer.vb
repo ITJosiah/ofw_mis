@@ -428,7 +428,7 @@ Partial Class ADMDashboardOFWTab
         btnADD.BackColor = Color.LightCyan
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
-        btnADD.Location = New Point(1709, 911)
+        btnADD.Location = New Point(1711, 911)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(74, 54)
         btnADD.TabIndex = 32
