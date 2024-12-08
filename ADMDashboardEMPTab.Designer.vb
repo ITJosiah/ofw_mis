@@ -64,6 +64,8 @@ Partial Class ADMDashboardEMPTab
         txtEMPCompanyFilt = New TextBox()
         Label14 = New Label()
         txtEMPIndustryFilt = New TextBox()
+        btnCloseEMP = New Button()
+        btnLogoutEMP = New Button()
         CType(dgvEMP, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
@@ -378,10 +380,10 @@ Partial Class ADMDashboardEMPTab
         ' Panel4
         ' 
         Panel4.BackColor = Color.MidnightBlue
-        Panel4.Location = New Point(428, 165)
+        Panel4.Location = New Point(428, 160)
         Panel4.Margin = New Padding(4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(2042, 31)
+        Panel4.Size = New Size(1493, 35)
         Panel4.TabIndex = 42
         ' 
         ' btnCLose
@@ -544,12 +546,46 @@ Partial Class ADMDashboardEMPTab
         txtEMPIndustryFilt.Size = New Size(107, 29)
         txtEMPIndustryFilt.TabIndex = 77
         ' 
+        ' btnCloseEMP
+        ' 
+        btnCloseEMP.Anchor = AnchorStyles.None
+        btnCloseEMP.BackColor = Color.Crimson
+        btnCloseEMP.FlatAppearance.BorderSize = 0
+        btnCloseEMP.FlatStyle = FlatStyle.Flat
+        btnCloseEMP.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCloseEMP.ForeColor = Color.MistyRose
+        btnCloseEMP.Location = New Point(1835, 14)
+        btnCloseEMP.Margin = New Padding(0)
+        btnCloseEMP.Name = "btnCloseEMP"
+        btnCloseEMP.Size = New Size(70, 25)
+        btnCloseEMP.TabIndex = 152
+        btnCloseEMP.Text = "CLOSE"
+        btnCloseEMP.UseVisualStyleBackColor = False
+        ' 
+        ' btnLogoutEMP
+        ' 
+        btnLogoutEMP.Anchor = AnchorStyles.None
+        btnLogoutEMP.BackColor = Color.LightSlateGray
+        btnLogoutEMP.FlatAppearance.BorderSize = 0
+        btnLogoutEMP.FlatStyle = FlatStyle.Flat
+        btnLogoutEMP.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogoutEMP.ForeColor = Color.Black
+        btnLogoutEMP.Location = New Point(1745, 14)
+        btnLogoutEMP.Margin = New Padding(0)
+        btnLogoutEMP.Name = "btnLogoutEMP"
+        btnLogoutEMP.Size = New Size(80, 25)
+        btnLogoutEMP.TabIndex = 151
+        btnLogoutEMP.Text = "LOGOUT"
+        btnLogoutEMP.UseVisualStyleBackColor = False
+        ' 
         ' ADMDashboardEMPTab
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(btnCloseEMP)
+        Controls.Add(btnLogoutEMP)
         Controls.Add(Label14)
         Controls.Add(txtEMPIndustryFilt)
         Controls.Add(Label8)
@@ -590,6 +626,7 @@ Partial Class ADMDashboardEMPTab
         Name = "ADMDashboardEMPTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardEMPTab"
+        WindowState = FormWindowState.Maximized
         CType(dgvEMP, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
@@ -649,4 +686,6 @@ Partial Class ADMDashboardEMPTab
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
     Friend WithEvents btnADMDashOFW As Button
+    Friend WithEvents btnCloseEMP As Button
+    Friend WithEvents btnLogoutEMP As Button
 End Class

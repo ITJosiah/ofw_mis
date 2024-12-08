@@ -1,5 +1,4 @@
-﻿
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 
 
 
@@ -16,18 +15,20 @@ Public Class ADMDashboardOFWTab
         LoadToDGV(query, dgvOFW)
     End Sub
 
-    Public Sub refresh()
+    'Public Sub refresh()
+    '    Dim query As String = "SELECT * FROM ofw"
+    '    ofwDataTable.Clear() ' Clear any existing data
+    '    dgvOFW.DataSource = ofwDataTable ' Bind the DataTable to the DataGridView
 
-        Dim query As String = "SELECT * FROM ofw"
+    '    LoadToDGV(query, dgvOFW)
+    'End Sub
+
+    Public Sub RefreshDataGrid()
+        Dim query As String = "SELECT * FROM agency"
         ofwDataTable.Clear() ' Clear any existing data
         dgvOFW.DataSource = ofwDataTable ' Bind the DataTable to the DataGridView
-
         LoadToDGV(query, dgvOFW)
     End Sub
-
-
-
-
 
     Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
         Dim AddOFW As New ADMAddOFW()
@@ -154,22 +155,22 @@ Public Class ADMDashboardOFWTab
         lblOFWTally.Text = rowCount - 1
     End Sub
 
-    Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
-        Dim ADMDashEMP As New ADMDashboardEMPTab()
-        Close()
-        ADMDashEMP.Show()
-    End Sub
+    'Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
+    '    Dim ADMDashEMP As New ADMDashboardEMPTab()
+    '    Close()
+    '    ADMDashEMP.Show()
+    'End Sub
 
-    Private Sub BtnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
-        Dim ADMDashStat As New ADMDashboardStatTab()
-        Me.Close()
-        ADMDashStat.Show()
-    End Sub
-    Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
-        Dim ADMDashAGC As New ADMDashboardAGCTab
-        Close()
-        ADMDashAGC.Show()
-    End Sub
+    'Private Sub BtnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+    '    Dim ADMDashStat As New ADMDashboardStatTab()
+    '    Me.Close()
+    '    ADMDashStat.Show()
+    'End Sub
+    'Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
+    '    Dim ADMDashAGC As New ADMDashboardAGCTab
+    '    Close()
+    '    ADMDashAGC.Show()
+    'End Sub
 
     Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
         If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
@@ -183,11 +184,39 @@ Public Class ADMDashboardOFWTab
         If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
                             DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage()
+            Dim loginPage As New ADMloginPage
 
-            Me.Close()
-            loginPage.Show()
+            Close
+            loginPage.Show
         End If
+    End Sub
+
+    'Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
+    '    Dim ADMDashJOB As New ADMDashboardJOBTab
+    '    Close()
+    '    ADMDashJOB.Show()
+    'End Sub
+
+    Private Sub dgvOFW_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvOFW.CellContentClick
+
+    End Sub
+
+    Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
+        Dim ADMDashAGC As New ADMDashboardAGCTab
+        Close()
+        ADMDashAGC.Show()
+    End Sub
+
+    Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+        Dim ADMDashDEP As New ADMDashboardDEPTab
+        Close()
+        ADMDashDEP.Show()
+    End Sub
+
+    Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
+        Dim ADMDashEMP As New ADMDashboardEMPTab
+        Close()
+        ADMDashEMP.Show()
     End Sub
 
     Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
@@ -196,9 +225,16 @@ Public Class ADMDashboardOFWTab
         ADMDashJOB.Show()
     End Sub
 
-    Private Sub dgvOFW_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvOFW.CellContentClick
-
+    Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
+        Dim ADMDashOFW As New ADMDashboardOFWTab
+        Close()
+        ADMDashOFW.Show()
     End Sub
 
+    Private Sub btnADMDashStat_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+        Dim ADMDashStat As New ADMDashboardStatTab
+        Close()
+        ADMDashStat.Show()
+    End Sub
 
 End Class

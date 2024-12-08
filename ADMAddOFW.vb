@@ -73,7 +73,7 @@ Public Class ADMAddOFW
         End Try
 
         Me.Close()
-                ADMDashboardOFWTab.refresh()
+        ADMDashboardOFWTab.Refresh()
 
     End Sub
 

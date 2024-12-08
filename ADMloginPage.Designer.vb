@@ -44,10 +44,10 @@ Partial Class ADMloginPage
         btnCloseLoginPg.FlatStyle = FlatStyle.Popup
         btnCloseLoginPg.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCloseLoginPg.ForeColor = Color.DeepSkyBlue
-        btnCloseLoginPg.Location = New Point(1461, 16)
+        btnCloseLoginPg.Location = New Point(1818, 13)
         btnCloseLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnCloseLoginPg.Name = "btnCloseLoginPg"
-        btnCloseLoginPg.Size = New Size(80, 53)
+        btnCloseLoginPg.Size = New Size(90, 56)
         btnCloseLoginPg.TabIndex = 15
         btnCloseLoginPg.Text = "CLOSE"
         btnCloseLoginPg.UseVisualStyleBackColor = False
@@ -58,10 +58,10 @@ Partial Class ADMloginPage
         btnEMPLoginPg.FlatStyle = FlatStyle.Popup
         btnEMPLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnEMPLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnEMPLoginPg.Location = New Point(1177, 693)
+        btnEMPLoginPg.Location = New Point(1324, 728)
         btnEMPLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnEMPLoginPg.Name = "btnEMPLoginPg"
-        btnEMPLoginPg.Size = New Size(187, 75)
+        btnEMPLoginPg.Size = New Size(210, 79)
         btnEMPLoginPg.TabIndex = 14
         btnEMPLoginPg.Text = "EMPLOYER"
         btnEMPLoginPg.UseVisualStyleBackColor = False
@@ -72,10 +72,10 @@ Partial Class ADMloginPage
         btnAGCLoginPg.FlatStyle = FlatStyle.Popup
         btnAGCLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
         btnAGCLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnAGCLoginPg.Location = New Point(936, 693)
+        btnAGCLoginPg.Location = New Point(1053, 728)
         btnAGCLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnAGCLoginPg.Name = "btnAGCLoginPg"
-        btnAGCLoginPg.Size = New Size(187, 75)
+        btnAGCLoginPg.Size = New Size(210, 79)
         btnAGCLoginPg.TabIndex = 13
         btnAGCLoginPg.Text = "AGENCY"
         btnAGCLoginPg.UseVisualStyleBackColor = False
@@ -86,10 +86,10 @@ Partial Class ADMloginPage
         btnOFWLoginPg.FlatStyle = FlatStyle.Popup
         btnOFWLoginPg.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnOFWLoginPg.ForeColor = Color.FromArgb(CByte(29), CByte(120), CByte(116))
-        btnOFWLoginPg.Location = New Point(695, 693)
+        btnOFWLoginPg.Location = New Point(782, 728)
         btnOFWLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnOFWLoginPg.Name = "btnOFWLoginPg"
-        btnOFWLoginPg.Size = New Size(187, 75)
+        btnOFWLoginPg.Size = New Size(210, 79)
         btnOFWLoginPg.TabIndex = 12
         btnOFWLoginPg.Text = "OFW"
         btnOFWLoginPg.UseVisualStyleBackColor = False
@@ -97,10 +97,10 @@ Partial Class ADMloginPage
         ' imgLogoLoginPg
         ' 
         imgLogoLoginPg.Image = My.Resources.Resources.Untitled_design__7_
-        imgLogoLoginPg.Location = New Point(799, 217)
+        imgLogoLoginPg.Location = New Point(899, 228)
         imgLogoLoginPg.Margin = New Padding(3, 4, 3, 4)
         imgLogoLoginPg.Name = "imgLogoLoginPg"
-        imgLogoLoginPg.Size = New Size(433, 495)
+        imgLogoLoginPg.Size = New Size(487, 520)
         imgLogoLoginPg.TabIndex = 11
         imgLogoLoginPg.TabStop = False
         ' 
@@ -110,7 +110,7 @@ Partial Class ADMloginPage
         imgLoginPg.Location = New Point(-1, -3)
         imgLoginPg.Margin = New Padding(3, 4, 3, 4)
         imgLoginPg.Name = "imgLoginPg"
-        imgLoginPg.Size = New Size(763, 1025)
+        imgLoginPg.Size = New Size(858, 1076)
         imgLoginPg.TabIndex = 10
         imgLoginPg.TabStop = False
         ' 
@@ -118,7 +118,7 @@ Partial Class ADMloginPage
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(867, 316)
+        Label1.Location = New Point(975, 332)
         Label1.Name = "Label1"
         Label1.Size = New Size(130, 29)
         Label1.TabIndex = 17
@@ -127,17 +127,17 @@ Partial Class ADMloginPage
         ' txtbxADMUserLoginPg
         ' 
         txtbxADMUserLoginPg.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxADMUserLoginPg.Location = New Point(867, 352)
+        txtbxADMUserLoginPg.Location = New Point(975, 370)
         txtbxADMUserLoginPg.Margin = New Padding(3, 4, 3, 4)
         txtbxADMUserLoginPg.Name = "txtbxADMUserLoginPg"
-        txtbxADMUserLoginPg.Size = New Size(298, 35)
+        txtbxADMUserLoginPg.Size = New Size(335, 35)
         txtbxADMUserLoginPg.TabIndex = 18
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(867, 407)
+        Label2.Location = New Point(975, 427)
         Label2.Name = "Label2"
         Label2.Size = New Size(126, 29)
         Label2.TabIndex = 19
@@ -146,10 +146,10 @@ Partial Class ADMloginPage
         ' txtbxADMPassLoginPg
         ' 
         txtbxADMPassLoginPg.Font = New Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxADMPassLoginPg.Location = New Point(867, 443)
+        txtbxADMPassLoginPg.Location = New Point(975, 465)
         txtbxADMPassLoginPg.Margin = New Padding(3, 4, 3, 4)
         txtbxADMPassLoginPg.Name = "txtbxADMPassLoginPg"
-        txtbxADMPassLoginPg.Size = New Size(298, 35)
+        txtbxADMPassLoginPg.Size = New Size(335, 35)
         txtbxADMPassLoginPg.TabIndex = 20
         txtbxADMPassLoginPg.UseSystemPasswordChar = True
         ' 
@@ -157,20 +157,20 @@ Partial Class ADMloginPage
         ' 
         btnLoginADMLoginPg.FlatStyle = FlatStyle.Popup
         btnLoginADMLoginPg.Font = New Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnLoginADMLoginPg.Location = New Point(1086, 517)
+        btnLoginADMLoginPg.Location = New Point(1222, 543)
         btnLoginADMLoginPg.Margin = New Padding(3, 4, 3, 4)
         btnLoginADMLoginPg.Name = "btnLoginADMLoginPg"
-        btnLoginADMLoginPg.Size = New Size(80, 37)
+        btnLoginADMLoginPg.Size = New Size(90, 39)
         btnLoginADMLoginPg.TabIndex = 21
         btnLoginADMLoginPg.Text = "Login"
         btnLoginADMLoginPg.UseVisualStyleBackColor = True
         ' 
         ' ADMloginPage
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
-        ClientSize = New Size(1561, 1024)
+        ClientSize = New Size(1920, 1080)
         Controls.Add(btnLoginADMLoginPg)
         Controls.Add(txtbxADMPassLoginPg)
         Controls.Add(Label2)

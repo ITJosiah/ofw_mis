@@ -13,7 +13,14 @@ Public Class ADMDashboardEMPTab
 
     Private employerDataTable As New DataTable()
 
-    Public Sub refresh()
+    'Public Sub refresh()
+    '    Dim query As String = "SELECT * FROM employer"
+    '    employerDataTable.Clear() ' Clear any existing data
+    '    dgvEMP.DataSource = employerDataTable ' Bind the DataTable to the DataGridView
+    '    LoadToDGV(query, dgvEMP)
+    'End Sub
+
+    Public Sub RefreshDataGrid()
         Dim query As String = "SELECT * FROM employer"
         employerDataTable.Clear() ' Clear any existing data
         dgvEMP.DataSource = employerDataTable ' Bind the DataTable to the DataGridView
@@ -25,38 +32,17 @@ Public Class ADMDashboardEMPTab
         lblEMPTally.Text = rowCount - 1
     End Sub
 
-    Private Sub btnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
-        Dim ADMDashStat As New ADMDashboardStatTab
-        Close()
-        ADMDashStat.Show()
-    End Sub
+    'Private Sub btnADMDashSTAT_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+    '    Dim ADMDashStat As New ADMDashboardStatTab
+    '    Close()
+    '    ADMDashStat.Show()
+    'End Sub
 
-
-
-    Private Sub Close_Click(sender As Object, e As EventArgs) Handles btnCLose.Click
-        If MessageBox.Show("Are you sure you want to close the system?", "Confirm Closing",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Application.Exit()
-        End If
-    End Sub
-
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        If MessageBox.Show("Are you sure you want to Log out?", "Confirm Log out",
-                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) =
-                            DialogResult.Yes Then
-            Dim loginPage As New ADMloginPage()
-
-            Me.Close()
-            loginPage.Show()
-        End If
-    End Sub
-
-    Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
-        Dim ADMDashOFW As New ADMDashboardOFWTab
-        Close()
-        ADMDashOFW.Show()
-    End Sub
+    'Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
+    '    Dim ADMDashOFW As New ADMDashboardOFWTab
+    '    Close()
+    '    ADMDashOFW.Show()
+    'End Sub
 
     Private Sub btnADD_Click(sender As Object, e As EventArgs) Handles btnADD.Click
         Dim AddEMP As New ADMAddEMP()
@@ -142,6 +128,24 @@ Public Class ADMDashboardEMPTab
         lblEMPTally.Text = dataView.Count.ToString()
     End Sub
 
+<<<<<<< HEAD
+=======
+    'Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
+    '    Dim ADMDashAGC As New ADMDashboardAGCTab
+    '    Close()
+    '    ADMDashAGC.Show()
+    'End Sub
+
+    'Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
+    '    Dim ADMDashJOB As New ADMDashboardAGCTab
+    '    Close()
+    '    ADMDashJOB.Show()
+    'End Sub
+
+    'Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+
+    'End Sub
+>>>>>>> eb46dfa0c54cc3ad699832e9f3aaac578caba625
 
     Private Sub btnADMDashAGC_Click(sender As Object, e As EventArgs) Handles btnADMDashAGC.Click
         Dim ADMDashAGC As New ADMDashboardAGCTab
@@ -149,14 +153,34 @@ Public Class ADMDashboardEMPTab
         ADMDashAGC.Show()
     End Sub
 
+    Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+        Dim ADMDashDEP As New ADMDashboardDEPTab
+        Close()
+        ADMDashDEP.Show()
+    End Sub
+
+    Private Sub btnADMDashEMP_Click(sender As Object, e As EventArgs) Handles btnADMDashEMP.Click
+        Dim ADMDashEMP As New ADMDashboardEMPTab
+        Close()
+        ADMDashEMP.Show()
+    End Sub
+
     Private Sub btnADMDashJOB_Click(sender As Object, e As EventArgs) Handles btnADMDashJOB.Click
-        Dim ADMDashJOB As New ADMDashboardAGCTab
+        Dim ADMDashJOB As New ADMDashboardJOBTab
         Close()
         ADMDashJOB.Show()
     End Sub
 
-    Private Sub btnADMDashDEP_Click(sender As Object, e As EventArgs) Handles btnADMDashDEP.Click
+    Private Sub btnADMDashOFW_Click(sender As Object, e As EventArgs) Handles btnADMDashOFW.Click
+        Dim ADMDashOFW As New ADMDashboardOFWTab
+        Close()
+        ADMDashOFW.Show()
+    End Sub
 
+    Private Sub btnADMDashStat_Click(sender As Object, e As EventArgs) Handles btnADMDashSTAT.Click
+        Dim ADMDashStat As New ADMDashboardStatTab
+        Close()
+        ADMDashStat.Show()
     End Sub
 
     Private Sub dgvEMP_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEMP.CellContentClick
@@ -165,5 +189,19 @@ Public Class ADMDashboardEMPTab
 
     Private Sub btnClearFilter_Click(sender As Object, e As EventArgs) Handles btnClearFilter.Click
 
+    End Sub
+
+    Private Sub btnCloseEMP_Click(sender As Object, e As EventArgs) Handles btnCloseEMP.Click
+        If MessageBox.Show("Are you sure you want to close?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub btnLogoutEMP_Click(sender As Object, e As EventArgs) Handles btnLogoutEMP.Click
+        If MessageBox.Show("Are you sure you want to log out?", "Confirm Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Close()
+            Dim loginPage As New ADMloginPage() ' Replace with your login form
+            loginPage.Show()
+        End If
     End Sub
 End Class

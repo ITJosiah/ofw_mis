@@ -21,6 +21,7 @@
     <PackageReference Include="Microsoft.Report.Viewer" Version="11.0.0" />
     <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1652.0" />
     <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="WinForms.DataVisualization" Version="1.9.2" />
   </ItemGroup>
 

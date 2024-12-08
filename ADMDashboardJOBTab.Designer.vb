@@ -59,6 +59,8 @@ Partial Class ADMDashboardJOBTab
         PictureBox1 = New PictureBox()
         Label6 = New Label()
         cbxJOBStatFilt = New ComboBox()
+        btnLogoutJOB = New Button()
+        Close = New Button()
         CType(dgvJOB, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -67,7 +69,7 @@ Partial Class ADMDashboardJOBTab
         ' txtJOBAgencyFilt
         ' 
         txtJOBAgencyFilt.Location = New Point(2382, 459)
-        txtJOBAgencyFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBAgencyFilt.Margin = New Padding(4)
         txtJOBAgencyFilt.Name = "txtJOBAgencyFilt"
         txtJOBAgencyFilt.PlaceholderText = "#####"
         txtJOBAgencyFilt.Size = New Size(58, 29)
@@ -86,7 +88,7 @@ Partial Class ADMDashboardJOBTab
         ' txtJOBSalaryFilt
         ' 
         txtJOBSalaryFilt.Location = New Point(2150, 459)
-        txtJOBSalaryFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBSalaryFilt.Margin = New Padding(4)
         txtJOBSalaryFilt.Name = "txtJOBSalaryFilt"
         txtJOBSalaryFilt.PlaceholderText = "Salary"
         txtJOBSalaryFilt.Size = New Size(175, 29)
@@ -116,7 +118,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         btnClearFilter.FlatStyle = FlatStyle.Popup
         btnClearFilter.Location = New Point(2241, 591)
-        btnClearFilter.Margin = New Padding(4, 4, 4, 4)
+        btnClearFilter.Margin = New Padding(4)
         btnClearFilter.Name = "btnClearFilter"
         btnClearFilter.Size = New Size(98, 38)
         btnClearFilter.TabIndex = 141
@@ -149,7 +151,7 @@ Partial Class ADMDashboardJOBTab
         btnDLT.FlatStyle = FlatStyle.Popup
         btnDLT.ForeColor = Color.DarkRed
         btnDLT.Location = New Point(2352, 1403)
-        btnDLT.Margin = New Padding(4, 4, 4, 4)
+        btnDLT.Margin = New Padding(4)
         btnDLT.Name = "btnDLT"
         btnDLT.Size = New Size(94, 92)
         btnDLT.TabIndex = 138
@@ -162,7 +164,7 @@ Partial Class ADMDashboardJOBTab
         btnGEN.FlatStyle = FlatStyle.Popup
         btnGEN.ForeColor = Color.DarkBlue
         btnGEN.Location = New Point(2352, 1302)
-        btnGEN.Margin = New Padding(4, 4, 4, 4)
+        btnGEN.Margin = New Padding(4)
         btnGEN.Name = "btnGEN"
         btnGEN.Size = New Size(94, 92)
         btnGEN.TabIndex = 137
@@ -175,7 +177,7 @@ Partial Class ADMDashboardJOBTab
         btnEDIT.FlatStyle = FlatStyle.Popup
         btnEDIT.ForeColor = Color.DarkBlue
         btnEDIT.Location = New Point(2250, 1302)
-        btnEDIT.Margin = New Padding(4, 4, 4, 4)
+        btnEDIT.Margin = New Padding(4)
         btnEDIT.Name = "btnEDIT"
         btnEDIT.Size = New Size(94, 92)
         btnEDIT.TabIndex = 136
@@ -188,7 +190,7 @@ Partial Class ADMDashboardJOBTab
         btnADD.FlatStyle = FlatStyle.Popup
         btnADD.ForeColor = Color.DarkBlue
         btnADD.Location = New Point(2150, 1302)
-        btnADD.Margin = New Padding(4, 4, 4, 4)
+        btnADD.Margin = New Padding(4)
         btnADD.Name = "btnADD"
         btnADD.Size = New Size(94, 92)
         btnADD.TabIndex = 135
@@ -199,7 +201,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         btnFilter.FlatStyle = FlatStyle.Popup
         btnFilter.Location = New Point(2346, 591)
-        btnFilter.Margin = New Padding(4, 4, 4, 4)
+        btnFilter.Margin = New Padding(4)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(98, 38)
         btnFilter.TabIndex = 134
@@ -248,7 +250,7 @@ Partial Class ADMDashboardJOBTab
         ' txtJOBNameFilt
         ' 
         txtJOBNameFilt.Location = New Point(2150, 332)
-        txtJOBNameFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBNameFilt.Margin = New Padding(4)
         txtJOBNameFilt.Name = "txtJOBNameFilt"
         txtJOBNameFilt.PlaceholderText = "Job"
         txtJOBNameFilt.Size = New Size(291, 29)
@@ -267,7 +269,7 @@ Partial Class ADMDashboardJOBTab
         ' txtJOBIdFilt
         ' 
         txtJOBIdFilt.Location = New Point(2204, 270)
-        txtJOBIdFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBIdFilt.Margin = New Padding(4)
         txtJOBIdFilt.Name = "txtJOBIdFilt"
         txtJOBIdFilt.PlaceholderText = "#####"
         txtJOBIdFilt.Size = New Size(72, 29)
@@ -292,7 +294,7 @@ Partial Class ADMDashboardJOBTab
         btnLogout.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnLogout.ForeColor = Color.Black
         btnLogout.Location = New Point(2298, 17)
-        btnLogout.Margin = New Padding(4, 4, 4, 4)
+        btnLogout.Margin = New Padding(4)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(81, 29)
         btnLogout.TabIndex = 119
@@ -304,7 +306,7 @@ Partial Class ADMDashboardJOBTab
         dgvJOB.BackgroundColor = SystemColors.ActiveCaption
         dgvJOB.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvJOB.Location = New Point(445, 210)
-        dgvJOB.Margin = New Padding(4, 4, 4, 4)
+        dgvJOB.Margin = New Padding(4)
         dgvJOB.Name = "dgvJOB"
         dgvJOB.RowHeadersWidth = 51
         dgvJOB.Size = New Size(1080, 870)
@@ -313,7 +315,7 @@ Partial Class ADMDashboardJOBTab
         ' txtJOBCountryFilt
         ' 
         txtJOBCountryFilt.Location = New Point(2150, 396)
-        txtJOBCountryFilt.Margin = New Padding(4, 4, 4, 4)
+        txtJOBCountryFilt.Margin = New Padding(4)
         txtJOBCountryFilt.Name = "txtJOBCountryFilt"
         txtJOBCountryFilt.PlaceholderText = "Country"
         txtJOBCountryFilt.Size = New Size(291, 29)
@@ -334,11 +336,12 @@ Partial Class ADMDashboardJOBTab
         ' 
         ' Panel4
         ' 
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel4.BackColor = Color.MidnightBlue
-        Panel4.Location = New Point(428, 165)
-        Panel4.Margin = New Padding(4, 4, 4, 4)
+        Panel4.Location = New Point(428, 160)
+        Panel4.Margin = New Padding(0)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(2042, 31)
+        Panel4.Size = New Size(1493, 35)
         Panel4.TabIndex = 116
         ' 
         ' btnCLose
@@ -349,7 +352,7 @@ Partial Class ADMDashboardJOBTab
         btnCLose.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnCLose.ForeColor = Color.MistyRose
         btnCLose.Location = New Point(2386, 17)
-        btnCLose.Margin = New Padding(4, 4, 4, 4)
+        btnCLose.Margin = New Padding(4)
         btnCLose.Name = "btnCLose"
         btnCLose.Size = New Size(67, 29)
         btnCLose.TabIndex = 115
@@ -368,7 +371,7 @@ Partial Class ADMDashboardJOBTab
         Panel1.Controls.Add(PictureBox1)
         Panel1.ForeColor = SystemColors.ControlText
         Panel1.Location = New Point(-3, -1)
-        Panel1.Margin = New Padding(4, 4, 4, 4)
+        Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(433, 1520)
         Panel1.TabIndex = 114
@@ -381,7 +384,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashSTAT.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashSTAT.ForeColor = Color.MidnightBlue
         btnADMDashSTAT.Location = New Point(65, 965)
-        btnADMDashSTAT.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashSTAT.Margin = New Padding(4)
         btnADMDashSTAT.Name = "btnADMDashSTAT"
         btnADMDashSTAT.Size = New Size(310, 65)
         btnADMDashSTAT.TabIndex = 13
@@ -396,7 +399,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashDEP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashDEP.ForeColor = Color.MidnightBlue
         btnADMDashDEP.Location = New Point(65, 875)
-        btnADMDashDEP.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashDEP.Margin = New Padding(4)
         btnADMDashDEP.Name = "btnADMDashDEP"
         btnADMDashDEP.Size = New Size(310, 65)
         btnADMDashDEP.TabIndex = 12
@@ -411,7 +414,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashJOB.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashJOB.ForeColor = Color.MidnightBlue
         btnADMDashJOB.Location = New Point(65, 790)
-        btnADMDashJOB.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashJOB.Margin = New Padding(4)
         btnADMDashJOB.Name = "btnADMDashJOB"
         btnADMDashJOB.Size = New Size(382, 65)
         btnADMDashJOB.TabIndex = 11
@@ -426,7 +429,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashAGC.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashAGC.ForeColor = Color.MidnightBlue
         btnADMDashAGC.Location = New Point(65, 705)
-        btnADMDashAGC.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashAGC.Margin = New Padding(4)
         btnADMDashAGC.Name = "btnADMDashAGC"
         btnADMDashAGC.Size = New Size(310, 65)
         btnADMDashAGC.TabIndex = 10
@@ -441,7 +444,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashEMP.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashEMP.ForeColor = Color.MidnightBlue
         btnADMDashEMP.Location = New Point(65, 620)
-        btnADMDashEMP.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashEMP.Margin = New Padding(4)
         btnADMDashEMP.Name = "btnADMDashEMP"
         btnADMDashEMP.Size = New Size(310, 65)
         btnADMDashEMP.TabIndex = 9
@@ -456,7 +459,7 @@ Partial Class ADMDashboardJOBTab
         btnADMDashOFW.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnADMDashOFW.ForeColor = Color.MidnightBlue
         btnADMDashOFW.Location = New Point(65, 535)
-        btnADMDashOFW.Margin = New Padding(4, 4, 4, 4)
+        btnADMDashOFW.Margin = New Padding(4)
         btnADMDashOFW.Name = "btnADMDashOFW"
         btnADMDashOFW.Size = New Size(310, 65)
         btnADMDashOFW.TabIndex = 8
@@ -467,7 +470,7 @@ Partial Class ADMDashboardJOBTab
         ' 
         PictureBox1.Image = My.Resources.Resources.Untitled_design__8_
         PictureBox1.Location = New Point(15, 10)
-        PictureBox1.Margin = New Padding(4, 4, 4, 4)
+        PictureBox1.Margin = New Padding(4)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(404, 469)
         PictureBox1.TabIndex = 1
@@ -487,10 +490,42 @@ Partial Class ADMDashboardJOBTab
         ' 
         cbxJOBStatFilt.FormattingEnabled = True
         cbxJOBStatFilt.Location = New Point(2150, 526)
-        cbxJOBStatFilt.Margin = New Padding(4, 4, 4, 4)
+        cbxJOBStatFilt.Margin = New Padding(4)
         cbxJOBStatFilt.Name = "cbxJOBStatFilt"
         cbxJOBStatFilt.Size = New Size(175, 29)
         cbxJOBStatFilt.TabIndex = 148
+        ' 
+        ' btnLogoutJOB
+        ' 
+        btnLogoutJOB.Anchor = AnchorStyles.None
+        btnLogoutJOB.BackColor = Color.LightSlateGray
+        btnLogoutJOB.FlatAppearance.BorderSize = 0
+        btnLogoutJOB.FlatStyle = FlatStyle.Flat
+        btnLogoutJOB.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogoutJOB.ForeColor = Color.Black
+        btnLogoutJOB.Location = New Point(1745, 14)
+        btnLogoutJOB.Margin = New Padding(0)
+        btnLogoutJOB.Name = "btnLogoutJOB"
+        btnLogoutJOB.Size = New Size(80, 25)
+        btnLogoutJOB.TabIndex = 149
+        btnLogoutJOB.Text = "LOGOUT"
+        btnLogoutJOB.UseVisualStyleBackColor = False
+        ' 
+        ' Close
+        ' 
+        Close.Anchor = AnchorStyles.None
+        Close.BackColor = Color.Crimson
+        Close.FlatAppearance.BorderSize = 0
+        Close.FlatStyle = FlatStyle.Flat
+        Close.Font = New Font("Arial Rounded MT Bold", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Close.ForeColor = Color.MistyRose
+        Close.Location = New Point(1835, 14)
+        Close.Margin = New Padding(0)
+        Close.Name = "Close"
+        Close.Size = New Size(70, 25)
+        Close.TabIndex = 150
+        Close.Text = "CLOSE"
+        Close.UseVisualStyleBackColor = False
         ' 
         ' ADMDashboardJOBTab
         ' 
@@ -498,6 +533,8 @@ Partial Class ADMDashboardJOBTab
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DeepSkyBlue
         ClientSize = New Size(1920, 1080)
+        Controls.Add(Close)
+        Controls.Add(btnLogoutJOB)
         Controls.Add(cbxJOBStatFilt)
         Controls.Add(Label6)
         Controls.Add(txtJOBAgencyFilt)
@@ -529,10 +566,11 @@ Partial Class ADMDashboardJOBTab
         Controls.Add(btnCLose)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "ADMDashboardJOBTab"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMDashboardJOBTab"
+        WindowState = FormWindowState.Maximized
         CType(dgvJOB, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -586,4 +624,6 @@ Partial Class ADMDashboardJOBTab
     Friend WithEvents btnADMDashAGC As Button
     Friend WithEvents btnADMDashEMP As Button
     Friend WithEvents btnADMDashOFW As Button
+    Friend WithEvents btnLogoutJOB As Button
+    Friend WithEvents Close As Button
 End Class
