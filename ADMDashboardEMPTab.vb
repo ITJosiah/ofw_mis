@@ -1,8 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-
-Imports Mysqlx
-
-Public Class ADMDashboardEMPTab
+﻿Public Class ADMDashboardEMPTab
 
     Private Sub ADMDashboardEMPTab_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim query As String = "SELECT * FROM employer"
